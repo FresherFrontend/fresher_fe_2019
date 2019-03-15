@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Ex1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+  <script>
+    $( function() {
+      $( "#datepicker1,#datepicker2" ).datepicker();
+    } );
+  </script>
+</head>
+<body>
+ <header>
+  <img src="images/banner.jpg" alt="anh banner">
+  <div class="form-find">
+    <h2>Find homes in United States on Airbnb</h2>
+    <p>Discover entire homes and private rooms perfect for any trip.</p>
+    <form>
+      <div class="form-group">
+        <label for="formGroupExampleInput">WHERE</label><br>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Anywhere">
+      </div>
+      <div class="form-group">
+        <label for="datepicker1">CHECK IN</label><br>
+        <input type="text" class="form-control" id="datepicker1" placeholder="dd/mm/yyyy">
+      </div>
+      <div class="form-group">
+        <label for="datepicker2">CHECK OUT</label><br>
+        <input type="text" class="form-control" id="datepicker2" placeholder="dd/mm/yyyy">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">ADULTS</label><br>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1 adult</option>
+          <option>2 adults</option>
+          <option>3 adults</option>
+          <option>4 adults</option>
+          <option>5 adults</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">CHILDRENS</label><br>
+        <select class="form-control" id="exampleFormControlSelect2">
+          <option>0 children</option>
+          <option>1 child</option>
+          <option>2 children</option>
+          <option>3 children</option>
+          <option>4 children</option>
+        </select>
+      </div>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+
+</body>
+</html>
