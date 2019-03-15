@@ -1,0 +1,13 @@
+section{
+	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/dd3f1937594867.5745a6785be0c.png");
+}
+.header{
+	
+	width: 500px;
+	height: auto;
+	padding: 30px;
+}
+.option, .checking {
+	margin: 10px;
+	display: inline-block;
+}
