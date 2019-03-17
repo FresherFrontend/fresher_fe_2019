@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 1 - HTML</title>
+</head>
+<body>
+	<div class="banner">
+		<img src="banner.jpg" alt="Airbnb">
+	</div>
+	<div class="form-search">
+		<div class="title">
+			<h2>Find homes in United States on Airbnb</h2>
+			<p>Discover entire homes and private rooms perfect for any trip.</p>
+		</div>
+		<form action="#">
+			<div class="form-group where">
+				<label for="where">Where</label><br>
+				<input type="text" name="where" placeholder="Anywhere" id="where">
+			</div>
+			<div class="form-group select-date">
+				<div class="check-in">
+					<label for="check-in">Check In</label><br>
+					<input type="text" name="check-in" placeholder="mm/dd/yyyy" id="check-in">
+				</div>
+				<div class="check-out">
+					<label for="check-out">Check out</label><br>
+					<input type="text" name="check-out" placeholder="mm/dd/yyyy" id="check-out">
+				</div>
+				<div class="select-amount">
+					<div class="form-group amount-adults">	
+						<label for="adults" class="text-uppercase fs-12 font-weight-bold letter-spacing">Adults</label><br>
+						<select name="adults" id="adults" class="form-control form-control-lg fs-16">
+							<option value="1">1 adults</option>
+							<option value="2">2 adults</option>
+							<option value="3">3 adults</option>
+							<option value="4">4 adults</option>
+							<option value="5">5 adults</option>
+							<option value="6">6 adults</option>
+							<option value="7">7 adults</option>
+							<option value="8">8 adults</option>
+							<option value="9">9 adults</option>
+							<option value="10">10 adults</option>
+							<option value="11">11 adults</option>
+							<option value="12">12 adults</option>
+							<option value="13">13 adults</option>
+							<option value="14">14 adults</option>
+							<option value="15">15 adults</option>
+							<option value="16">16 adults</option>
+						</select>
+					</div>
+					<div class="form-group amount-children">
+						<label for="children" class="text-uppercase fs-12 font-weight-bold letter-spacing">Children</label><br>
+						<select name="children" id="children" class="form-control form-control-lg fs-16">
+							<option value="0">0 children</option>
+							<option value="1">1 children</option>
+							<option value="2">2 children</option>
+							<option value="3">3 children</option>
+							<option value="4">4 children</option>
+							<option value="5">5 children</option>
+						</select>
+					</div><br><br>
+					<button type="submit">Search</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
