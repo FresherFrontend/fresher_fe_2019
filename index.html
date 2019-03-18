@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--<html lang="en">-->
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Demo git</title>
+	<title>Airbnb</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/circular.css"/>
+	<!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="" rel=""/>-->
 </head>
 <body>
-	
+	<div class="wrapper">
+		<header id="header">
+			<img src="img/header.jpg" class="img-header"/>
+			<div class="container">
+					<div class="content-header">	
+			<form action="/action_page.php" id="fr-search">
+				<h2 class="h2-title">Find homes in United States on Airbnb</h2>
+				<p class="p-frmSearch">Discover entire homes and private rooms perfect for any trip</p>
+				<div class="group-form">
+					<label for="where" class="">where</label><br>
+					<input type="text" name="where"placeholder="Anywhere" id="anywhere">
+				</div>
+				<div class="group-form">
+					<div class="datetime check-in">
+						<label for="checkIn">CHECK-IN</label>
+						<input type="text" name="myCheckIn" placeholder="mm/dd/yyyy" id="checkIn"/>
+					</div>
+					<div class="check"></div>
+					<div class="datetime check-out">
+						<label for="checkOut">Check-out</label>
+						<input type="text" name="myCheckOut" placeholder="mm/dd/yyyy" id="checkOut"/>
+					</div>
+				</div>
+				<div class="group-form">
+					<div class="guestpicker adult">
+						<label for="adult">adults</label><br>
+						<select name="adults">
+							<option value="adult1" seclected="seclected">1 adult</option>
+							<option value="adult2">2 adult</option>
+							<option value="adult3">3 adult</option>
+							<option value="adult4">4 adult</option>
+							<option value="adult5">5 adult</option>
+							<option value="adult6">6 adult</option>
+							<option value="adult7">7 adult</option>
+							<option value="adult8">8 adult</option>
+							<option value="adult9">9 adult</option>
+							<option value="adult10">10 adult</option>
+							<option value="adult11">11 adult</option>
+							<option value="adult12">12 adult</option>
+						</select>
+					</div>
+					<div class="guestpicker children">
+						<label>Children</label><br>
+						<select name="childrens">
+							<option value="children0" selected="selected">0 children</option>
+							<option value="children1">1 children</option>
+							<option value="children2">2 children</option>
+							<option value="children3">3 children</option>
+							<option value="childre4">4 children</option>
+						</select>
+					</div>
+				</div>
+				<input type="submit" value="Search" id="btnSearch">
+			</form>
+			</div>
+			</div>
+		</header>
+		<section class="section">
+			
+		</section>
+		<footer id="footer">
+			<div class="container">
+				<div class="footer-top">
+					<div classs="item-footer">
+						<h4>Airbnb</h4>
+						<ul>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Policies</a></li>
+							<li><a href="#">Help</a></li>
+							<li><a href="#">Diversity & Belonging </a></li>
+						</ul>
+					</div>
+					<div class="item-footer">
+						<h4>Discover</h4>
+						<ul>
+							<li><a href="#">Trust & Safety</a></li>
+							<li><a href="#">Travel Credit</a></li>
+							<li><a href="#">Gift Cards</a></li>
+							<li><a href="#">Airbnb Citizen</a></li>
+							<li><a href="#">Business Travel </a></li>
+							<li><a href="#">Guidebooks</a></li>
+							<li><a href="#">Airbnbmag</a></li>
+							<li><a href="#">EventsNew</a></li>
+						</ul>
+					</div>
+					<div class="item-footer">
+						<h4>Hosting</h4>
+						<ul>
+							<li><a href="#">Why Host</a></li>
+							<li><a href="#">Travel Credit</a></li>
+							<li><a href="#">Responsible Hosting</a></li>
+							<li><a href="#">Community Center</a></li>
+							<li><a href="#">Host an Experience </a></li>
+							<li><a href="#">Open Homes</a></li>
+						</ul>
+					</div>
+					<div class="item-footer">
+						<h4>Discover</h4>
+						<ul>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-buttom">
+					<p>© Airbnb, Inc.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>
