@@ -1,0 +1,16 @@
+section{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sydney_Opera_House_Close_up_HDR_Sydney_Australia.jpg/1024px-Sydney_Opera_House_Close_up_HDR_Sydney_Australia.jpg")
+}
+.header{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    display: inline-block;
+}
+.option{
+    margin: 10px;
+    display: inline-block;
+}
+.body{
+    color: red;
+}
