@@ -4,50 +4,79 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="//code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-	<nav class="navbar navbar" role="navigation">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Title</a>
-			</div>
-	
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Link</a></li>
-					<li><a href="#">Link</a></li>
-				</ul>
-				<form class="navbar-form navbar-left" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
+	<header>
+		<div>
+			<img src="Image/c49d2d28-c0ae-484b-9db9-0dc93a5e1cd4.jpg" alt="background images">
 		</div>
-	</nav>
+		<div>
+			<form action="">
+				<h2>Trouvez des logements à États-Unis sur Airbnb</h2>
+				<div>Découvrez des chambres privées ou des logements entiers, parfaitement adaptés à tout type de voyage.</div>
+				<div>OÙ</div>
+				<input type="text" placeholder="Partout">
+				<div class="form-group">
+					<div>
+						<label for="">
+							<span>ARRIVÉE</span>
+						</label>
+					</div>
+					<div>
+						<input id="" class="form-control" type="date" placeholder="jj/mm/aaaa">
+					</div>
+					<div>
+						<label for="">
+							<span>DÉPART</span>
+						</label>
+					</div>
+					<div>
+						<input id="" class="form-control" type="date" placeholder="jj/mm/aaaa">
+					</div>
+				</div>
+				<div class="form-group">
+					<div>
+						<label for="adults">ADULTS</label>
+						<select name="adults" id="adults">
+							<option value="1 adult">1 adult</option>
+							<option value="2 adults">2 adults</option>
+							<option value="3 adults">3 adults</option>
+							<option value="4 adults">4 adults</option>
+							<option value="5 adults">5 adults</option>
+							<option value="6 adults">6 adults</option>
+							<option value="7 adults">7 adults</option>
+							<option value="8 adults">8 adults</option>
+							<option value="9 adults">9 adults</option>
+							<option value="10 adults">10 adults</option>
+							<option value="11 adults">11 adults</option>
+							<option value="12 adults">12 adults</option>
+							<option value="13 adults">13 adults</option>
+							<option value="14 adults">14 adults</option>
+							<option value="15 adults">15 adults</option>
+							<option value="16 adults">16 adults</option>
+						</select>
+					</div>
+					<div>
+						<label for="enfants">ENFANTS</label>
+						<select name="enfants" id="enfants">
+							<option value="0 enfants">0 enfants</option>
+							<option value="1 enfants">1 enfants</option>
+							<option value="2 enfants">2 enfants</option>
+							<option value="3 enfants">3 enfants</option>
+							<option value="4 enfants">4 enfants</option>
+							<option value="5 enfants">5 enfants</option>
+						</select>
+					</div>
+				</div>
+				<button type="submit"><span>Rechercher</span></button>
+			</form>
+		</div>
+	</header>
+	<footer>
+		<div>
+				<svg viewBox="0 0 1000 1000" role="img" aria-label="Page d'accueil" focusable="false" style="height:1em;width:1em;display:block;fill:#767676"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg>
+			<span>© Airbnb, Inc.</span>
+		</div>
+	</footer>
 </body>
 </html>
