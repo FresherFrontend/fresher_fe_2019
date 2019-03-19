@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../font/73004f8a0d15641f66157015e807b114.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../font/59625ccbaf7ce784673bee5f2a09bb12.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../font/aff1f96c36486f45b2ae68c00637ddc2.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
