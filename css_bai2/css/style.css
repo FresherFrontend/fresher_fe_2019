@@ -1,0 +1,20 @@
+.btn-click a{
+	text-decoration: none;
+
+}
+.btn-click:hover{
+	text-decoration: none;
+	background: red;
+	
+}
+.btn-click a:hover span{
+	display: none;
+}
+.btn-click a:before{
+	content: "Google";
+	display: none;
+}
+.btn-click a:hover:before{
+	display: block;
+	
+}

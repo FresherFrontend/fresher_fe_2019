@@ -1,63 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <img src="image/c49d2d28-c0ae-484b-9db9-0dc93a5e1cd4.jpg" alt="ảnh" title="ảnh demo">
-    </header>
-    <section>
-        <h1>Trouvez des logements à États-Unis sur Airbnb</h1>
-        <p>Découvrez des chambres privées ou des logements entiers, parfaitement adaptés à tout type de voyage.</p>
-        <hr>
-        <form action="">
-            <div>
-                <label for="">OÙ</label>
-                <input type="text" placeholder="Partout">
-            </div>
-            <br>
-            <div>
-                <div>
-                    <label for="">ARRIVÉE</label>
-                    <input type="text" name="" id="">
 
-                    <label for="">DÉPART</label>
-                    <input type="text" placeholder="Partout">
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo"></div>
+                <div class="wrapper_form">
+                    <div class="wrap_from">
+                        <div class="title_form">
+                            <h2>Find homes in United States on Airbnb</h2>
+                        </div>
+                        <div class="content_form">Discover entire homes and private rooms perfect for any trip.</div>
+                        <div class="form">
+                            <form>
+                                <div class="form_group">
+                                    <div class="label">
+                                        <label>WHERE</label>
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" placeholder="Anywhere">
+                                    </div>
+                                </div>
+
+                                <div class="form_group">
+                                    <div class="col_2">
+                                        <div class="right_col2">
+                                            <div class="label">
+                                                <label>CHECK-IN</label>
+                                            </div>
+                                            <div class="input">
+                                                <input type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col_2">
+                                        <div class="left_col2">
+                                            <div class="label">
+                                                <label>CHECKOUT</label>
+                                            </div>
+                                            <div class="input">
+                                                <input type="date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form_group">
+                                    <div class="col_2">
+                                        <div class="right_col2">
+                                            <div class="label">
+                                                <label>ADULTES</label>
+                                            </div>
+                                            <div class="select">
+                                                <select name="adultes" id="adultes">
+                                                    <option value="1" selected>1 adulte</option>
+                                                    <option value="2">2 adulte</option>
+                                                    <option value="3">3 adulte</option>
+                                                    <option value="4">4 adulte</option>
+                                                    <option value="5">5 adulte</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col_2">
+                                        <div class="left_col2">
+                                            <div class="label">
+                                                <label>CHILDREN</label>
+                                            </div>
+                                            <div class="select">
+                                                <select name="enfant" id="enfant">
+                                                    <option value="0" selected>0 children</option>
+                                                    <option value="1">1 child</option>
+                                                    <option value="2">2 children</option>
+                                                    <option value="3">3 children</option>
+                                                    <option value="4">4 children</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn_submit">
+                                    <button type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
+        </div>
+    </div>
 
-            <div>
-                <label for="">ADULTES</label>
-                <select name="" id="">
-                    <option value="0">0 adulte</option>
-                    <option value="1">1 adulte</option>
-                    <option value="2">2 adulte</option>
-                    <option value="3">3 adulte</option>
-                    <option value="4">4 adulte</option>
-                </select>
-
-                <label for="">ENFANTS</label>
-                <select name="" id="">
-                    <option value="0">0 enfant</option>
-                    <option value="1">1 enfant</option>
-                    <option value="2">2 enfant</option>
-                    <option value="3">3 enfant</option>
-                </select>
+    <div class="clear"></div>
+    <div class="container">
+        <div class="wrap_">
+            <div class="wrap_head">
+                <div class="title_">What guests are saying about homes in United States</div>
+                <div class="shot_description">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:24px;width:24px;fill:#FFB400"><path d="m21.95 9.48a.84.84 0 0 0 -.87-.48h-4.62a.5.5 0 0 0 0 1l4.14.01-4.81 4.17a.5.5 0 0 0 -.14.57l2.65 6.38-6.07-3.72a.5.5 0 0 0 -.52 0l-6.08 3.72 2.65-6.37a.5.5 0 0 0 -.13-.57l-4.75-4.18h5.75a.5.5 0 0 0 .46-.3l2.37-5.37 1.58 3.57a.5.5 0 0 0 .91-.41l-1.72-3.88a.8.8 0 0 0 -1.56-.01l-2.38 5.39h-5.9a.83.83 0 0 0 -.87.48.85.85 0 0 0 .32.96l4.85 4.25-2.78 6.67a.81.81 0 0 0 .16.98.66.66 0 0 0 .43.15 1.1 1.1 0 0 0 .56-.18l6.37-3.91 6.38 3.92a.81.81 0 0 0 .99.03c.15-.12.37-.41.15-1l-2.77-6.66 4.92-4.26a.84.84 0 0 0 .31-.95zm-.78.53h-.01" fill="#484848"></path><path d="m11 21.5a.5.5 0 1 1 -.5-.5.5.5 0 0 1 .5.5zm-3.5-15.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm15 10h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-15-13h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm10.22 7.54a.84.84 0 0 0 -.17-.02q-.28-.01-3.19 0a .6.6 0 0 1 -.55-.35l-1.5-3.23a.42.42 0 0 0 -.75 0l-1.81 4.14a2.92 2.92 0 0 0 4.12 3.72l.46-.26 3.49-2.99.16-.18a.5.5 0 0 0 -.26-.82z"></path>
+                        </svg>
+                    </div>
+                    <div class="float_text_des">
+                        <div class="text_des">United States homes were rated <strong>4.8 out of 5 stars</strong> with  <strong>31,500,000+ reviews</strong></div>
+                    </div>
+                </div>
             </div>
-            <br>
+            
+            <div class="clear"></div>
 
-            <button>Rechercher</button>
-        </form>
-    </section>
-    <br>
-    <hr>
-    <footer>
-        <div>© Airbnb, Inc.</div>
+            <div class="wrap_body">
+                <div class="col_3">
+                    <div class="margin_col_3">
+                        <div class="img"><img src="image/c815fefe_original.webp" alt="anh"></div>
+
+                        <div class="star">
+                            <ul class="ul_star">
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="feedback_conten">Deb, our host was very welcoming and met us in person. She checked to make sure we were settled and had all expectations clearly state ...</div>
+
+                        <div class="guests">
+                            <div class="col_2_8">
+                                <div class="avatar">
+                                    <img src="image/bd86c045-5c93-481c-8452-790b050bb958.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col_8_2">
+                                <div class="information">
+                                    <div class="name">Leah</div>
+                                    <div class="country">Frances</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_3">
+                    <div class="margin_col_3">
+                        <div class="img"><img src="image/2503a10c_original.webp" alt="anh"></div>
+
+                        <div class="star">
+                            <ul class="ul_star">
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="feedback_conten">Our stay with Kathy was great!She answered messages promptly and offered us some great recommendations on Sonoma vineyards.Her ...</div>
+
+                        <div class="guests">
+                            <div class="col_2_8">
+                                <div class="avatar">
+                                    <img src="image/original.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col_8_2">
+                                <div class="information">
+                                    <div class="name">Sylvie</div>
+                                    <div class="country">Frances</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_3">
+                    <div class="margin_col_3">
+                        <div class="img"><img src="image/65b2fd17_original.webp" alt="anh"></div>
+
+                        <div class="star">
+                            <ul class="ul_star">
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                                <li class="star_color">
+                                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1em;width:1em;display:block;fill:currentColor"><path d="M971.5 379.5c9 28 2 50-20 67L725.4 618.6l87 280.1c11 39-18 75-54 75-12 0-23-4-33-12l-226.1-172-226.1 172.1c-25 17-59 12-78-12-12-16-15-33-8-51l86-278.1L46.1 446.5c-21-17-28-39-19-67 8-24 29-40 52-40h280.1l87-278.1c7-23 28-39 52-39 25 0 47 17 54 41l87 276.1h280.1c23.2 0 44.2 16 52.2 40z"></path></svg>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="feedback_conten">Très sympathique séjour à Phoenix ! Dernière étape airbnb de notre road trip américain, ce fût sans aucun doute la meilleure. Logement  ...</div>
+
+                        <div class="guests">
+                            <div class="col_2_8">
+                                <div class="avatar">
+                                    <img src="image/gues 2.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="col_8_2">
+                                <div class="information">
+                                    <div class="name">Jonatan</div>
+                                    <div class="country">Frances</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="clear"></div>
+    <footer style="height: 300px; background: black">
+        
     </footer>
 </body>
 
