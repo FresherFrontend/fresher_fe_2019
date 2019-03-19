@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../font/Airbnb_Cereal-Medium.woff2') format('woff');
+ 
+}
+*{
+    font-family: 'Circular';
+}
+
+
