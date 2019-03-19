@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+/* header */
+
+header {
+  width: 100%;
+  /* height: 800px; */
+  background-image: url("../Image/c49d2d28-c0ae-484b-9db9-0dc93a5e1cd4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* form */
+
+
+.form {
+  width: 508px;
+  /* border: 1px solid #333; */
+  border-radius: 4px;
+  position: relative;
+  background-color: #ffffff;
+  padding: 32px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.form .title-header {
+  font-size: 35px;
+}
+
+.form .describe-header {
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.form .where {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.form .input-where {
+  border: 1px solid #c8c1c1;
+  border-radius: 4px;
+  padding: 15px;
+  width: 100%;
+}
+
+.form .check {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.label {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.check input[type="date"] {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #c8c1c1;
+  border-radius: 4px;
+}
+
+.check .check-in {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.check .check-out {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.form .combo {
+  width: 100%;
+  margin-top: 10px;
+}
+
+select {
+  border: 1px solid #c8c1c1;
+  border-radius: 4px;
+  padding: 15px;
+  width: 100%;
+}
+
+.adults {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.children {
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #c8c1c1;
+  border-radius: 4px;
+  background-color: #df3c47;
+}
+
+/* body */
+
+.container {
+  margin-top: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.describe-body {
+    width: 100%;
+}
+
+.describe-body img {
+    float: left;
+}
+
+.describe-body .describe-star {
+
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+}
+
+footer svg {
+  height: 1em;
+  width: 5%;
+  float: left;
+  display: block;
+  fill: #767676;
+  font-size: 30px;
+}
+
+footer .airbnb-icon {
+    /* float: left; */
+    width: 95%;
+}
