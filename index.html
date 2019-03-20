@@ -2,9 +2,417 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Airbnb</title>
+
+	<link rel="stylesheet" href="css/airbnb-icon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 <body>
-	
+	<header id="header" class="header">
+		<div class="logo">
+			<span class="icon icon-airbnb"></span>
+		</div>
+		<div class="banner">
+			<img src="images/banner.jpg" alt="airbnb" class="object-cover">
+		</div>
+		<section class="form-search container">
+				<div class="bookhome">
+					<form action="#" method="post">
+						<div class="title">
+							<h2 class="fs-32 font-weight-bold">Find homes in United States on Airbnb</h2>
+							<p class="sort-description fs-18">Discover entire homes and private rooms perfect for any trip.</p>
+						</div>
+						<div class="form-group flex-direction-column select-where">
+							<label for="where" class="fs-12">Where</label>
+							<input type="text" class="form-control p-11 where" id="where" placeholder="Anywhere" name="where" class="where">
+						</div>
+						<div class="form-group check">
+								<div class="col-6 check-in flex-direction-column form-group">
+									<label for="checkin" class="text-uppercase fs-12 font-weight-bold letter-spacing">Check In</label>
+									<input type="text" class="form-control w-100 input-lg checkin" placeholder="mm/dd/yyyy" name="checkin" id="checkin">
+								</div>
+								<div class="col-6 check-out flex-direction-column form-group">
+									<label for="checkout" class="text-uppercase fs-12 font-weight-bold letter-spacing">Check Out</label>
+									<input type="text" class="form-control w-100 checkout" placeholder="mm/dd/yyyy" name="checkout" id="checkout">
+								</div>
+						</div>
+						<div class="form-group select-amount">
+							<div class="col-6 amount-adults">
+								<div class="form-group flex-direction-column">	
+									<label for="adults" class="text-uppercase fs-12 font-weight-bold letter-spacing">Adults</label>
+									<select name="adults" id="adults" class="form-control fs-16">
+										<option value="1">1 adults</option>
+										<option value="2">2 adults</option>
+										<option value="3">3 adults</option>
+										<option value="4">4 adults</option>
+										<option value="5">5 adults</option>
+										<option value="6">6 adults</option>
+										<option value="7">7 adults</option>
+										<option value="8">8 adults</option>
+										<option value="9">9 adults</option>
+										<option value="10">10 adults</option>
+										<option value="11">11 adults</option>
+										<option value="12">12 adults</option>
+										<option value="13">13 adults</option>
+										<option value="14">14 adults</option>
+										<option value="15">15 adults</option>
+										<option value="16">16 adults</option>
+									</select>
+								</div>
+								
+							</div>
+							<div class="col-6 amount-children">
+								<div class="form-group flex-direction-column">
+									<label for="children" class="text-uppercase fs-12 font-weight-bold letter-spacing">Children</label>
+									<select name="children" id="children" class="form-control fs-16">
+										<option value="0">0 children</option>
+										<option value="1">1 children</option>
+										<option value="2">2 children</option>
+										<option value="3">3 children</option>
+										<option value="4">4 children</option>
+										<option value="5">5 children</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-search font-weight-bold fs-16" type="submit">Search</button>
+					</form>
+				</div>
+		</section>
+	</header>
+	<div class="content container">
+		<section class="review-guests">
+			<div class="title">
+				<h2 class="font-weight-bold fs-24">What guests are saying about homes in United States</h2>
+			</div>
+			<div class="introduce-sort">
+				<div class="icon icon-star-multi">
+					<span class="path1"></span>
+					<span class="path2"></span>
+				</div>
+				<p>
+					United States homes were rated <strong>4.8 out of 5 stars</strong> with <strong>31,500,000+ reviews</strong>
+				</p>
+			</div>
+			<div class="guests-post-all d-flex">
+				<div class="airbnb-col guests-post-1">
+					<div class="images-cover">
+						<img src="images/images-review-1.jpg" alt="images-cover of Megan" class="object-cover">
+					</div>
+					<div class="rating">
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+					</div>
+					<div class="description">
+					<p class="fs-14">Deb, our host was very welcoming and met us in person. She checked to make sure we were settled and had all expectations clearly stated...</p>
+					</div>
+					<div class="avatar">
+						<div class="images-avatar">
+							<img src="images/avatar-1.jpg" alt="avatar of Megan" class="object-cover">
+						</div>
+						<div class="infomation">
+							<span class="name font-weight-bold">Megan</span>
+							<span class="national fs-14">United States</span>
+						</div>
+					</div>
+				</div>
+				<div class="airbnb-col guests-post-2">
+					<div class="images-cover">
+						<img src="images/images-review-2.jpg" alt="images-cover of Megan" class="object-cover">
+					</div>
+					<div class="rating">
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+					</div>
+					<div class="description">
+					<p class="fs-14">Our stay with Kathy was great! She answered messages promptly and offered us some great recommendations on Sonoma vineyards. Her...</p>
+					</div>
+					<div class="avatar">
+						<div class="images-avatar">
+							<img src="images/avatar-2.jpg" alt="avatar of Megan" class="object-cover">
+						</div>
+						<div class="infomation">
+							<span class="name font-weight-bold">Huong</span>
+							<span class="national fs-14">United States</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="airbnb-col guests-post-3">
+					<div class="images-cover">
+						<img src="images/images-review-3.jpg" alt="images-cover of Megan" class="object-cover">
+					</div>
+					<div class="rating">
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+						<span class="icon icon icon-star-rating"></span>
+					</div>
+					<div class="description">
+					<p class="fs-14">Amanda is such an authentically welcoming person. We were welcomed to delightful lodgings, with a great bed, in a beautiful...</p>
+					</div>
+					<div class="avatar">
+						<div class="images-avatar">
+							<img src="images/avatar-3.jpg" alt="avatar of Megan" class="object-cover">
+						</div>
+						<div class="infomation">
+							<span class="name font-weight-bold">Tom</span>
+							<span class="national fs-14">United States</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="benefit">
+			<div class="title">
+				<h2>Traveling with Airbnb</h2>
+			</div>
+			<div class="benefit-all d-flex">
+				<div class="airbnb-col support-customer">
+					<div class="images-cover">
+						<span class="icon icon-heart"></span>
+					</div>
+					<div class="content">
+						<h3 class="title fs-16">24/7 customer support</h3>
+						<p class="description fs-14">
+							Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.
+						</p>
+					</div>
+				</div>			
+				<div class="airbnb-col quality-standards">
+					<div class="images-cover">
+						<span class="icon icon-home"></span>
+					</div>
+					<div class="content">
+						<h3 class="title fs-16">Global hospitality standards</h3>
+						<p class="description fs-14">
+							Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.
+						</p>
+					</div>
+				</div>			
+				<div class="airbnb-col quality-hosts">
+					<div class="images-cover">
+						<span class="icon icon-account"></span>
+					</div>
+					<div class="content">
+						<h3 class="title fs-16">5-star hosts</h3>
+						<p class="description fs-14">
+							From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="list-house">
+			<div class="title">
+				<h2>Just booked in United States</h2>
+			</div>
+			<div class="list-house-all d-flex">
+				<div class="airbnb-col house-1">
+					<div class="images-cover">
+						<img src="images/house-1.jpg" alt="House-1" class="object-cover">
+					</div>
+					<div class="description">
+						<h3 class="catalog fs-12 text-grey">
+							Treehouse <span class="dot">.</span> Atlanta
+						</h3>
+						<h3 class="name">
+							Secluded Intown Treehouse
+						</h3>
+						<div class="info fs-14">
+							<span class="price">$375</span>
+							<span>per night</span>
+							<span class="dot">.</span>
+							<span class="cancellation">Free Cancellation</span>
+						</div>
+						<span class="rating">
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="amount-rating fs-12 font-weight-bold">329</span>
+						</span>
+						<span class="superhost fs-12 font-weight-bold"><span class="dot">.&nbsp;</span>Superhost</span>
+					</div>
+				</div>
+				<div class="airbnb-col house-2">
+					<div class="images-cover">
+						<img src="images/house-2.jpg" alt="House-2" class="object-cover">
+					</div>
+					<div class="description">
+						<h3 class="catalog fs-12 text-grey">
+							Treehouse <span class="dot">.</span> Atlanta
+						</h3>
+						<h3 class="name">
+							Secluded Intown Treehouse
+						</h3>
+						<p class="info fs-14">
+							<span class="price">$375</span>
+							<span>per night</span>
+							<span class="dot">.</span>
+							<span class="cancellation">Free Cancellation</span>
+						</p>
+						<span class="rating">
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="amount-rating fs-12 font-weight-bold">329</span>
+						</span>
+						<span class="superhost fs-12 font-weight-bold"><span class="dot">.&nbsp;</span>Superhost</span>
+					</div>
+				</div>
+				<div class="airbnb-col house-3">
+					<div class="images-cover">
+						<img src="images/house-3.jpg" alt="House-3" class="object-cover">
+					</div>
+					<div class="description">
+						<h3 class="catalog fs-12 text-grey">
+							Treehouse <span class="dot">.</span> Atlanta
+						</h3>
+						<h3 class="name">
+							Mushroom Dome Cabin: #1 on airbnb in the world
+						</h3>
+						<p class="info fs-14">
+							<span class="price">$375</span>
+							<span>per night</span>
+							<span class="dot">.</span>
+							<span class="cancellation">Free Cancellation</span>
+						</p>
+						<span class="rating">
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="amount-rating fs-12 font-weight-bold">329</span>
+						</span>
+						<span class="superhost fs-12 font-weight-bold"><span class="dot">.&nbsp;</span>Superhost</span>
+					</div>
+				</div>
+				<div class="airbnb-col house-4">
+					<div class="images-cover">
+						<img src="images/house-4.jpg" alt="House-4" class="object-cover">
+					</div>
+					<div class="description">
+						<h3 class="catalog fs-12 text-grey">
+							Treehouse <span class="dot">.</span> Atlanta
+						</h3>
+						<h3 class="name">
+							Secluded Intown Treehouse
+						</h3>
+						<div class="info fs-14">
+							<span class="price">$375</span>
+							<span>per night</span>
+							<span class="dot">.</span>
+							<span class="cancellation">Free Cancellation</span>
+						</div>
+						<span class="rating">
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="icon icon icon-star-rating"></span>
+							<span class="amount-rating fs-12 font-weight-bold">329</span>
+						</span>
+						<span class="superhost fs-12 font-weight-bold"><span class="dot">.&nbsp;</span>Superhost</span>
+					</div>
+				</div>
+			</div>
+			<div class="link-view-all">
+				<a href="#">
+					<span>Show all (22,000+)</span>
+					<span class="icon icon-arrown-down"></span>
+				</a>
+			</div>	
+		</section>
+		<section class="choose-time-travel">
+			<h3>When are you traveling?</h3>
+			<span>Add dates for updated pricing and availability.</span>
+			<button type="button" class="add-date">Add dates</button>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="container menu-footer d-flex">
+			<div class="airbnb-col">
+				<div class="title">
+					<h4 class="fs-14">Airbnb</h4>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Policies</a></li>
+						<li><a href="#">Help</a></li>
+						<li><a href="#">Diversity & Belonging</a></li>
+					</ul>
+				</nav>
+			</div>					
+			<div class="airbnb-col">
+				<div class="title">
+					<h4 class="fs-14">Discover</h4>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Trust & Safety</a></li>
+						<li><a href="#">Travel Credit</a></li>
+						<li><a href="#">Gift Cards</a></li>
+						<li><a href="#">Airbnb Citizen</a></li>
+						<li><a href="#">Business Travel</a></li>
+						<li><a href="#">Guidebooks</a></li>
+						<li><a href="#">Airbnbmag</a></li>
+						<li><a href="#">Events <span class="airbnb-badges">New</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="airbnb-col">
+				<div class="title">
+					<h4 class="fs-14">Hosting</h4>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Why Host</a></li>
+						<li><a href="#">Hospitality</a></li>
+						<li><a href="#">Responsible Hosting</a></li>
+						<li><a href="#">Community Center</a></li>
+						<li><a href="#">Host an Experience <span class="airbnb-badges">New</span></a></li>
+						<li><a href="#">Open Homes <span class="airbnb-badges">New</span></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="airbnb-col">
+				<div class="title social">
+					<span class="icon icon-fb"></span>
+					<span class="icon icon-twitter"></span>
+					<span class="icon icon-instagram"></span>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</nav>
+			</div>			
+		</div>
+		<div class="container airbnb-copyright">
+			<div class="content">
+			<span class="icon icon-airbnb"></span>
+			<span class="copyright">© Airbnb, Inc.</span>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
