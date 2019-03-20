@@ -139,6 +139,7 @@ button[type="submit"] {
 .content-title {
   width: 100%;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .icon-star {
@@ -179,6 +180,32 @@ button[type="submit"] {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  -webkit-line-clamp: 3;
+}
+
+.customer {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.avatar {
+    widows: 20%;
+    float: left;
+}
+
+.avatar img {
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 100%;
+}
+
+.customer-info {
+    width: 80%;
+    margin: 10px 70px;
+}
+
+.name {
+    margin-top: -8px;
 }
 
 /* footer */
