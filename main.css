@@ -11,6 +11,70 @@ section{
     margin: 10px;
     display: inline-block;
 }
-.body{
-    color: red;
+
+.content{
+	width: 100%;
+	height: auto;
+}
+.content .vote img{
+	width: 30px;
+	height: 30px;
+	
+}
+.content .home1 .i img{
+	width: 100%;
+}
+.content .home1{
+	display: inline-block;
+	width: 30.3%;
+}
+.title{
+	margin-top: 40px;
+	margin-bottom: 10px;
+	font-size: 24px !important;
+	font-weight: bold;
+	line-height: 1.25em !important;
+	color: #484848 !important;
+}
+.vote{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	line-height: 1.375em !important;
+	color: #484848!important;
+}
+.content .home1 p{
+	margin-bottom: 15px;
+	max-height: 54px;
+	overflow: hidden;
+}
+.content .home1.info{
+	width: 100%;
+	margin:5px;
+}
+.content .home1 .info img{
+	width: 50px;
+	border-radius: 50%;
+	display: block;
+}
+.content .home1 .info .avatar .name {
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	line-height: 1.375em !important;
+	color: #555555 !important;
+	
+}
+.content .home1 .info .avatar .add{
+	font-size: 14px !important;
+	font-weight: 400 !important;
+	line-height: 1.28em !important;
+	color: #444444 !important;
+	}
+.content .home1 .info .avatar.people{
+	display: inline-block;
+	margin-right: 20px;
+}
+.content{
+	margin:40px;
 }
