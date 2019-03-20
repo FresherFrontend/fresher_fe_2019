@@ -3,68 +3,136 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link type="text/css" href="css/main.css" media="all" rel="stylesheet"/>
 </head>
 <body>
 	<header>
-		<div>
-			<h2>Find homes in US on Airbnb</h2>
-			<div>Discover entire homes and private rooms perfect for any trip</div>
-			<form><div>
-				<span>WHERE</span>
+		<img src="img/logo.svg" id="logo" />
+		<img id="bgr" src="img/br.jpg"/>
+		
+		<div class="head">
+				<div class="title"><h2>Find homes in United States on Airbnb</h2>
+			<p>Discover entire homes and private rooms perfect for any trip.</p>
+		</div>
+			<form>
+			<div class="place">
+				<label><p>WHERE</p></label>
 				<input placeholder="Anywhere"/>
 			</div>
-			<div>
+			<div class="checkin">
 				<label><span>CHECK-IN</span></label>
 				<input placeholder="mm/dd/yyyy"/>
+			</div>
+			<div class="checkout">
 				<label><span>CHECK-OUT</span></label>
 				<input placeholder="mm/dd/yyyy"/>
 			</div>
-			<div>
+			<div class="adult">
 				<label><span>ADULTS</span></label>
-				<select placeholder="1 adult"></select>
+				<select placeholder="1 adult">
+					
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					
+				</select>
+			</div>
+			<div class="children">
 				<label><span>CHILDREN</span></label>
-				<select placeholder="0 children"></select>
+				<select placeholder="0 children">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+				</select>
 			</div>
+			<button>Search</button>
+		</form>
 		</div>
-		<button>Search</button>
-	</form>
 	</header>
+
 	<section>
-		<div>
+		<div class="review" >
+		<div class="comment">
 			<h2>What guests are saying about homes in United States</h2>
-			<p>What guests are saying about homes in United States</p>
+			<img src="img/star.svg"/><span>United States homes were rated <strong>4.8 out of 5 stars</strong> with <strong>31,500,000+ reviews</strong></span>
 		</div>
-		<div>
-			<img src="https://www.airbnb.com/rooms/329997"/>
-			<span><path>★★★★★</path></span>
-			<span>The studio is a really comfortable and well designed space, for those travellers looking for a place where they can totally relax after a </span>
-			<div>
-				<img src="https://a0.muscache.com/im/users/36137188/profile_pic/1434911824/original.jpg?aki_policy=large"/>
-				<span><b>Ann</b></span>
-				<span>United Kingdom</span>>
+		<div class="content">
+			<div class="thumbnail">
+			<img src="img/1.PNG"/>
+			</div>
+			<p>
+				<img src="img/star.svg"/>
+				<img src="img/star.svg"/>
+				<img src="img/star.svg"/>
+				<img src="img/star.svg"/>
+			</p>
+			<span>John was very accommodating and the place was perfect for our short stay! My girlfriend and I were able to walk to South Congress in</span>
+			
+			<div class="info">
+				<img src="https://a0.muscache.com/im/pictures/2a585e7c-17e2-468f-b870-e1a738e92c0a.jpg?aki_policy=large"/>
+				<div class="name">
+				<p><strong>Dallas</strong></p>
+				<span>United States</span>
+			</div>
 			</div>
 		</div>
-		<div>
-			<img src="https://www.airbnb.com/rooms/1267141"/>
-			<span><path>★★★★★</path></span>
-			<span>The studio is a really comfortable and well designed space, for those travellers looking for a place where they can totally relax after a </span>
-			<div>
-					<img src="https://a0.muscache.com/im/users/24170121/profile_pic/1416974541/original.jpg?aki_policy=large"/>
-					<span><b>Marie</b></span>
-					<span>France</span>>
+		<div class="content">
+				<div class="thumbnail">
+				<img src="img/2.PNG"/>
+				</div>
+				<p>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+				</p>
+				<span>Wow! if you are heading to Joshua Tree you should ABSOLUTELY stay here! We can't wait to go back. This cabin is peaceful, beautifully</span>
+				<div class="info">
+					<img src="https://a0.muscache.com/im/users/14378260/profile_pic/1397689214/original.jpg?aki_policy=large"/>
+					<div class="name">
+					<p><strong>April</strong></p>
+					<span>Canada</span>
+				</div>
 				</div>
 		</div>
-		<div>
-			<img src="https://www.airbnb.com/rooms/329997"/>
-			<span><path>★★★★★</path></span>
-			<span>Tom and Judy were great hosts. Their home was beautiful, very clean and ideally located in Napa. I would recommend staying at their </span>
-			<div>
-					<img src="https://a0.muscache.com/im/users/7639912/profile_pic/1374485173/original.jpg?aki_policy=large"/>
-					<span><b>Marisa</b></span>
-					<span>United States</span>>
+		<div class="content">
+				<div class="thumbnail">
+				<img src="img/3.PNG"/>
 				</div>
-		</div>
-		<div>
+				<p>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+					<img src="img/star.svg"/>
+				</p>
+				<span>Sky's place was really just like the pictures. It was comfortable and easy to find and Sky was always contactable even when he was away on </span>
+				<div class="info">
+					<img src="https://a0.muscache.com/im/pictures/user/ace74a68-dcd0-40a4-997c-c3df2110c7cd.jpg?aki_policy=large"/>
+					<div class="name">
+					<p><strong>Alyssa</strong></p>
+					<span>Singapore</span>
+					</div>
+				</div>
+			</div>
+
+	</div>
+		<!-- <div>
 			<h2>Traveling with Airbnb</h2>
 			<div>
 				<path>♥</path>
@@ -128,6 +196,6 @@
 	<footer>
 		<img src="#"/>
 		<span>© Airbnb, Inc.</span>
-	</footer>
+	</footer> -->
 </body>
 </html>
