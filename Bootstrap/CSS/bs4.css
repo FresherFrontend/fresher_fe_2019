@@ -23,15 +23,11 @@ body{
 .mg{
     margin-top: 50px;
 }
-.mg .color{
+.mg ul li a:hover{
+    color: #fcb827;
     border-color: #fcb827;
     color: #fcb827;
     border-bottom: 2px solid  #fcb827;
-    padding: 6px 2px;
-    margin-right: 15px;
-}
-.mg ul li a:hover{
-    color: #fcb827;
 }
 .mg .nav-item{
     color:#25487d;
