@@ -1,0 +1,37 @@
+.header{
+    position: relative;
+}
+.banner{
+    width: 100%;
+}
+.img-bg{
+    width: 100%;
+}
+.intro{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+li{
+    list-style-type: none;
+    margin: 0 10;
+}
+li a:hover{
+    color: blue;
+    text-underline-position: above;
+}
+.img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-underline-position: above;
+    color: chartreuse;
+}
+.product{
+    margin-bottom: 15px;
+}
