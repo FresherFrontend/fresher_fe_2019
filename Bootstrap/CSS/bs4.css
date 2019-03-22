@@ -43,6 +43,9 @@ body{
     color: #fcb827;
     border-bottom: 2px solid #fcb827;
 }
+.mg .nav-item{
+    margin: 0;
+}
 .mg .nav-item a{
     color:#25487d;
     font-size: 18px;
