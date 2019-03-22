@@ -47,15 +47,21 @@
 @media all and (min-width: 768px) and (max-width: 1024px) {
 	.menu_bar{
 		margin: 0 auto;
-		width: 70%;
+		width: 100%;
 	}
 }
-
 
 @media all and (max-width: 767px){
 	.menu_bar{
 		margin: 0 auto;
-		width: 70%;
+		width: 100%;
+	}
+	.menu_bar li{
+		list-style: none;
+		float: left;
+		padding: 12px;
+		cursor: pointer;
+		font-size: 15px;
 	}
 
 }
