@@ -1,0 +1,82 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+.header{
+	position: relative;
+}
+.header .banner img{
+	width: 100%;
+	height: 100%;
+}
+.header .overlay{
+	width: 100%;
+	height: 100%;
+	background: #f1c40f;
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+.header .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.header .text h2{
+	text-transform: uppercase;
+	color: #fff;
+}
+.header .text span{
+	text-transform: uppercase;
+	color: #fff;
+}
+.body .menu{
+	margin-top: 40px;
+}
+.body .menu ul{
+	display: flex;
+	justify-content: center;
+}
+.body .menu ul li{
+	list-style: none;
+	margin: 0 10px;
+	position: relative;
+}
+.body .menu ul a:before{
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-bottom: 2px solid #f1c40f;
+	display: none;
+}
+.body .menu ul li a{
+	text-decoration: none;
+	color: #484848;
+}
+.body .menu ul li a:hover:before{
+	display: block;
+}
+.body .menu ul li:hover a{
+	color: #f1c40f;
+}
+.product-all{
+	display: inline-flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.product-all .product{
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.product-all .product img{
+	width: 100%;
+}
