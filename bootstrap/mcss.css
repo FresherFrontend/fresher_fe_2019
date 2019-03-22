@@ -1,0 +1,46 @@
+.header{
+	position: relative;
+}
+.baner1 img{
+	width: 100%;
+	height: 100%;
+}
+.text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translateX(-100%);
+   	text-transform: uppercase;
+   	margin-top: -150px;
+}
+.menu ul{
+	display: flex;
+	justify-content: center;
+}
+.menu ul li{
+	list-style: none;
+	margin: 0 10px;
+	position: relative;
+}
+.menu ul li a:hover:before{
+	display: block;
+}
+.menu ul li:hover a{
+	color: #f1c40f;
+}
+.picture{
+	/*display: inline-flex;
+	flex-wrap: wrap;*/
+	margin-top: 20px;
+}
+.picture picture
+{
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+}
+.picture img{
+	width: 100%;
+	height: 100%;
+}
