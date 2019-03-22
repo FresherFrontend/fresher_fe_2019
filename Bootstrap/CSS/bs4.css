@@ -21,6 +21,7 @@ body{
     font-size: 22px;
 }
 .mg{
+    position: relative;
     margin-top: 50px;
 }
 .mg ul li a{
@@ -42,7 +43,7 @@ body{
     color: #fcb827;
     border-bottom: 2px solid #fcb827;
 }
-.mg .nav-item{
+.mg .nav-item a{
     color:#25487d;
     font-size: 18px;
 }
