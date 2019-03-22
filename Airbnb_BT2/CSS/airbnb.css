@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face{
+    font-family: Circular_medium;
+    src: url(../Fonts/Circular_medium.woff2);
+}
+
+
+@font-face{
+    font-family: Circular_bold;
+    src: url(../Fonts/Circular_bold.woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: Circular_book;
+    src: url(../Fonts/Circular_book.woff2);
+    font-weight: normal;
+    font-style: normal;
+} 
+
+body{
+    font-family: Circular_book;
+}
+.container{
+    width: 1032px;
+    margin: 0 auto;
+}
+.wrapper{
+    width: 100%;
+    height: 1000px;
+}
+.banner{
+    width: 100%;
+    height: 686px;
+}
+.banner .img{
+    position: relative;
+}
+.banner .img img{
+    width: 100%;
+    height: 100%;
+}
+.banner .img form{
+    position: absolute;
+    width: 508px;
+    height: 560px;
+    top: 64px;
+    left: 244px;
+    background: white;
+    border-radius: 5px;
+}
+.banner .img form .margin{
+    padding: 32px;
+}
+.banner .img form h2{
+    font-size: 32px;
+    color: #484848 ;
+    font-weight: bold;
+    line-height: 36px;
+    font-family: Circular_bold;
+}
+.banner .img form #p_form{
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 8px;
+    color: #484848 ;
+    letter-spacing: normal;
+}
+.banner .img form label p{
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color:rgb(72, 72, 72) ;
+    letter-spacing: 0.0833333em ;
+    font-family: Circular_bold;
+}
+.banner .img form input , button , select{
+    width: 215px;
+    height: 48px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    padding-left: 8px;
+}
+.banner .img form input[type="text"]{
+    width: 100%;
+    font-size: 16px;
+    color: #484848;
+    font-weight: 600;
+    margin-top: 9px;
+    font-family: Circular_medium;
+    padding-left: 10px;
+}
+.banner .img form input[type="date"]{
+    color: #484848b3;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 9px;
+    height: 51px;
+}
+.banner .img form .input_text{
+    margin-top: 21px;
+}
+
+.banner .img form .check{
+    display: flex;
+    margin-top: 16px;
+}
+
+.banner .img form .check .out{
+    margin-left: 15px;
+}
+.banner .img form .select{
+    display: flex;
+    margin-top: 18px;
+}
+.banner .img form .select select{
+    font-size: 16px;
+    color:  #484848;
+    margin-top: 8px;
+    font-family: Circular_book;
+}
+[placeholder="Partout"]::placeholder{
+    color:  #484848;
+    font-weight: 550;
+}
+[placeholder="dd/mm/yyyy"]::placeholder{
+    color: darkgray;
+}
+.banner .img form .select .childrens{
+    margin-left: 15px;
+}
+.banner .img form button{
+    width: 100%;
+    margin-top: 32px;
+    color: white;
+    background: #ff5a5f;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+               /* SECTION */
+
+
+section{
+    margin-top: 52px;
+}
+section .unis h2{
+    color: #484848fc;
+    font-size: 24px;
+}
+section .unis .star1{
+    display: flex;
+    margin-top: 12px;
+}
+section .unis .star1 p{
+    margin: 4px 0 0 10px;
+}
+section .unis .star1 p>span{
+    font-weight: bold;
+}
+section .unis .evaluate{
+    width: 100%;
+    display: flex;
+}
+section .unis .evaluate1{
+    width: 332px;
+    height: 410px;
+    margin-top: 27px;
+    
+}
+section .unis .evaluate1 .star2{
+    margin-top: 13px;
+}
+section .unis .evaluate1 p{
+    margin-top: 9px;
+    font-size: 14px;
+    color: #484848; 
+}
+section .unis .evaluate1 .p_content{
+    width: 302px;
+}
+section .unis .evaluate1 .star2 i{
+    color: #008489;
+    font-size: 14px;
+    margin-left: 2px;
+}
+section .unis .evaluate1 img{
+    width: 100%;
+    border-radius: 3px;
+}
+section .unis .evaluate1 .profile{
+    display: flex;
+    margin-top: 15px;
+}
+section .unis .evaluate1 .profile img{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+section .unis .evaluate1 .profile p{
+    margin: 0px 0 5px 15px;
+}
+section .unis .evaluate1 .profile #p_profile{
+    font-weight: bold;
+}
+section .unis .eva_margin{
+    margin: 27px 17px 0 17px;
+}

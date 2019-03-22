@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-container .grid-item{
+    padding: 20px;
+    background:seagreen;
+    margin: 10px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+@media only screen and (max-width: 1024px){
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+}
