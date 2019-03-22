@@ -23,11 +23,24 @@ body{
 .mg{
     margin-top: 50px;
 }
+.mg ul li a{
+    position: relative;
+}
+/*
+.mg ul li a:hover:before{
+    content: "";
+    border-bottom: 2px solid  #fcb827;
+    width: 30px;
+    position: absolute;
+    left: 12px;
+    bottom: 0;
+}
+*/
 .mg ul li a:hover{
     color: #fcb827;
     border-color: #fcb827;
     color: #fcb827;
-    border-bottom: 2px solid  #fcb827;
+    border-bottom: 2px solid #fcb827;
 }
 .mg .nav-item{
     color:#25487d;
@@ -35,7 +48,22 @@ body{
 }
 img{
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
+}
+.fix a{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 66.66%;
+    height: 0;
+    width: 100%;
+}
+.fix img{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .mg2{
     margin-top: 50px;
