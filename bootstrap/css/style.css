@@ -35,6 +35,11 @@
     font-size: 20px;
 }
 
+.active {
+    color: #fcb827;
+    border-bottom: 2px solid #fcb827;
+}
+
 .nav-link:hover {
     color: #fcb827;
 }
