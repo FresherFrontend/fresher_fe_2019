@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 
+}
+.container-fluid{
+    background-image: url("https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg");
+    padding: 100px 0;
+}
+.container{
+    width: 90%;
+}
+.container-fluid h1{
+    color: white;
+    font-size: 90px;
+}
+.container-fluid h4{
+    color: white;
+    font-size: 22px;
+}
+.mg{
+    margin-top: 50px;
+}
+.mg .color{
+    border-color: #fcb827;
+    color: #fcb827;
+    border-bottom: 2px solid  #fcb827;
+    padding: 6px 2px;
+    margin-right: 15px;
+}
+.mg ul li a:hover{
+    color: #fcb827;
+}
+.mg .nav-item{
+    color:#25487d;
+    font-size: 18px;
+}
+img{
+    width: 100%;
+    padding-top: 10px;
+}
+.mg2{
+    margin-top: 50px;
+}
