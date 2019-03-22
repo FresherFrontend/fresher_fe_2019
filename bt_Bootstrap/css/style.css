@@ -1,0 +1,69 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.banner{
+	background-image: url('https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center
+}
+.wrap-tiltle{
+	padding: 163px 0;
+}
+.title{
+	color: #ffffff;
+	font-weight: 300;
+	font-size: 90px;
+	text-transform: uppercase;
+}
+.description{
+	font-size: 22px;
+	font-weight: 400;
+	color: rgba(255,255,255,0.85);
+}
+
+.in{
+	
+	margin: 70px;
+}
+.menu{
+	margin: 0 auto;
+	text-align: center
+}
+ul{
+	list-style: none;
+}
+a{
+	
+}
+ul li{
+	display: inline;
+	margin: 15px;
+
+}
+
+ul li a{
+	color: #25487d;
+	padding: 8px;
+	font-size: 18px;
+	text-decoration: none;
+}
+.active{
+	color: #fcb827;
+	border-bottom: 2px solid #fcb827;
+}
+ul li a:hover{
+	text-decoration: none;
+}
+ul li:hover a{
+	color: #fcb827;
+	border-bottom: 2px solid #fcb827;
+}
+img{
+	max-width: 100%;
+}
+.img{
+	padding: 15px 0;
+}
