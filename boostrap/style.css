@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto'
+}
+header{
+    background-image: url("bgr.jpg");
+    
+    height:500px;
+    margin-bottom: 30px;
+}
+
+header p{
+    color: white;
+}
+header p:first-child{
+    font-size: 100px;
+    
+}
+.logo{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+nav{
+    margin-bottom: 30px;
+}
+nav li{
+    display: inline;
+    list-style: none;
+    text-align: center;
+    font-size: 19px;
+    margin: 0px 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: gold;
+}
+nav ul{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+
+section img{
+    width: 383px;
+    height: 249px;
+    padding: 5px;
+}
+@media screen and (max-width: 992px) {
+    .col-md-4{
+        width: 33.33%;
+    }
+}
