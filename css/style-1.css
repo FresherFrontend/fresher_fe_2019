@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+.breadcrumb-section {
+	background-image: url(https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 130px 0;
+}
+.breadcrumb-section h1 {
+	font-size: 50px;
+	font-weight: 300;
+	color: #fff;
+	padding-bottom: 10px;
+}
+.breadcrumb-section p {
+	font-size: 22px;
+	font-weight: 400;
+	color: rgba(255,255,255,0.85); 
+}
+.isotope-section {
+	padding-top: 60px;
+}
+.isotope-section ul {
+	list-style-type: none;
+	padding-bottom: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+.isotope-section ul li {
+	padding: 0 20px;
+}
+.isotope-section ul li a {
+	color: #25487d;
+}
+.isotope-section ul li a:hover {
+	color: #fcb827;
+}
+.isotope-section .images {
+	margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+	.breadcrumb-section h1 {
+		font-size: 90px;
+	}
+	.isotope-section ul {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
