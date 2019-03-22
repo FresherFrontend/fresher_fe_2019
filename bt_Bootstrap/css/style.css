@@ -67,3 +67,21 @@ img{
 .img{
 	padding: 15px 0;
 }
+
+@media (max-width: 768px){
+	
+	.title{
+		font-size: 50px;
+	}
+	.description{
+		font-size: 14px;
+	}
+	ul li{
+		display: block;
+		margin: 15px;
+
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+
+}
