@@ -64,5 +64,11 @@
 		cursor: pointer;
 		font-size: 13px;
 	}
+	.part1 h1{
+		font-size: 30px;
+	}
+	.part1 h4{
+		font-size: 20px;
+	}
 
 }
