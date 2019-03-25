@@ -5,20 +5,19 @@
 }
 .part1{
 	width: 100%;
-	height: 700px;
 	background-image: url('../image/bg3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 5% 0;
 	/* margin-bottom: 20px; */
-	padding-bottom: 20px;
+	padding-bottom: 50px;
+
 }
 .form{
 	width: 38%;
-    height: 550px;
     background: rgba(255, 255, 255, 0.7);
     margin-left: 10%;
-    
+    padding-bottom: 20px;
 }
 form{
 	padding: 10% 5%;
@@ -153,4 +152,64 @@ h2{
 	padding-top: 6px;
 	padding-bottom: 20px;
 	color: gray;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	.form{
+		width: 60%;
+	}
+	.res{
+		margin-top: 10px;
+	}
+	.part2 h2{
+		font-size: 24px;
+	}
+}
+
+@media all and (max-width: 767px){
+	.part1{
+		padding-top: 45px;
+	}
+	.form{
+		width: 80%;
+	}
+	.form h2{
+		font-size: 20px;
+	}
+	.form p{
+		font-size: 13px;
+	}
+	.res{
+		margin-top: 10px;
+	}
+	.form label{
+		font-size: 12px;
+	}
+	.form button b{
+		font-size: 17px
+	}
+	#comment{
+		display: none;
+	}
+	.part2 h2{
+		font-size: 24px;
+	}
+	.part4 h2{
+		font-size: 24px;
+	}
+	.part5 h2{
+		font-size: 24px;
+	}
+	.para{
+		font-size: 15px;
+	}
+	.part3 h2{
+		font-size: 24px;
+	}
+	.box_p3{
+		margin-bottom: 20px;
+	}
+	.jus{
+		text-align: justify;
+	}
+	
 }
