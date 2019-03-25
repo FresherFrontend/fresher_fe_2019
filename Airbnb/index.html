@@ -6,11 +6,12 @@
 	<title>Document</title>
 	<link type="text/css" href="css/main.css" media="all" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.css">
+	<link type="script" href="js/main.js"/>
 </head>
 <body>
 	<header>
-		<!-- <img src="img/logo.svg" id="logo" /> -->
+		<img src="img/logo.png" id="logo" />
 		
 		
 		<div class="head">
@@ -24,11 +25,11 @@
 			</div>
 			<div class="checkin">
 				<label><span>CHECK-IN</span></label>
-				<input placeholder="mm/dd/yyyy"/>
+				<input type="date" class="date" placeholder="mm/dd/yyyy"/>
 			</div>
 			<div class="checkout">
 				<label><span>CHECK-OUT</span></label>
-				<input placeholder="mm/dd/yyyy"/>
+				<input type="date" class="date" placeholder="mm/dd/yyyy"/>
 			</div>
 			<div class="adult">
 				<label><span>ADULTS</span></label>
@@ -78,19 +79,21 @@
 		</div>
 		<div class="container">
 			<div class="row">
-		<div class="col-md-4">
+		<div class="col-md">
 			<div class="thumbnail">
-			<img src="img/1.PNG"/>
-			</div>
-			<p>
+			<img src="https://a0.muscache.com/im/pictures/44460011/7344df20_original.jpg?aki_policy=large"/>
+		</div>
+		<div class="rating">
+			<span>
 				<img src="img/star.svg"/>
 				<img src="img/star.svg"/>
 				<img src="img/star.svg"/>
 				<img src="img/star.svg"/>
-			</p>
-			<span>John was very accommodating and the place was perfect for our short stay! My girlfriend and I were able to walk to South Congress in</span>
-			
+			</span>
+			<p>John was very accommodating and the place was perfect for our short stay! My girlfriend and I were able to walk to South Congress in</p>
+		</div>
 			<div class="info">
+			
 				<img src="https://a0.muscache.com/im/pictures/2a585e7c-17e2-468f-b870-e1a738e92c0a.jpg?aki_policy=large"/>
 				<div class="name">
 				<p><strong>Dallas</strong></p>
@@ -98,17 +101,20 @@
 			</div>
 			</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md">
 				<div class="thumbnail">
-				<img src="img/2.PNG"/>
+				<img src="https://a0.muscache.com/im/pictures/4213867/0fdedcf7_original.jpg?aki_policy=large"/>
 				</div>
-				<p>
+				<div class="rating">
+				<span>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
-				</p>
-				<span>Wow! if you are heading to Joshua Tree you should ABSOLUTELY stay here! We can't wait to go back. This cabin is peaceful, beautifully</span>
+				</span>
+				
+				<p>Wow! if you are heading to Joshua Tree you should ABSOLUTELY stay here! We can't wait to go back. This cabin is peaceful, beautifully</p>
+			</div>
 				<div class="info">
 					<img src="https://a0.muscache.com/im/users/14378260/profile_pic/1397689214/original.jpg?aki_policy=large"/>
 					<div class="name">
@@ -117,22 +123,25 @@
 				</div>
 				</div>
 		</div>
-		<div class="col-md-4">
+		<div class="col-md">
 				<div class="thumbnail">
-				<img src="img/3.PNG"/>
+				<img src="https://a0.muscache.com/im/pictures/72088075/ea97c405_original.jpg?aki_policy=large"/>
 				</div>
-				<p>
+				<div class="rating">
+				<span>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
 					<img src="img/star.svg"/>
-				</p>
-				<span>Sky's place was really just like the pictures. It was comfortable and easy to find and Sky was always contactable </span>
+				</span>
+			
+				<p>Sky's place was really just like the pictures. It was comfortable and easy to find and Sky was always contactable </p>
+			</div>
 				<div class="info">
 					<img src="https://a0.muscache.com/im/pictures/user/ace74a68-dcd0-40a4-997c-c3df2110c7cd.jpg?aki_policy=large"/>
 					<div class="name">
 					<p><strong>Alyssa</strong></p>
-					<span>Singapore</span>
+					<p>Singapore</span>
 					</div>
 				</div>
 			</div>
@@ -205,5 +214,18 @@
 		<img src="#"/>
 		<span>© Airbnb, Inc.</span>
 	</footer> -->
+
+
+	<!-- <script>
+	$(function(){
+    var date = new Date();
+       date.setDate(date.getDate());
+       $("date").datepicker({
+             format: "mm/dd/yyyy",
+             orientation: "top right",
+             todayHightinght: true,
+             startDate: date
+          });
+})</script> -->
 </body>
 </html>
