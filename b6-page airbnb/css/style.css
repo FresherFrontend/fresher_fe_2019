@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #484848;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*For IE*/
+select::-ms-expand { display: none; }
+input.where::-webkit-input-placeholder { color:#484848 !important; font-weight: 6	00; font-size: 16px;}
+input.where::-moz-placeholder { color:#484848 !important;  font-size: 16px;  } /* firefox 19+ */
+input.where:-ms-input-placeholder { color:#484848 !important;  font-size: 16px;  } /* ie */
+input.where:-moz-placeholder { color:#484848 !important;  font-size: 16px;  }
+
+::-webkit-input-placeholder { color:#767676 !important; font-weight: 600; font-size: 16px;   }
+::-moz-placeholder { color:#767676 !important;  font-size: 16px;  } /* firefox 19+ */
+:-ms-input-placeholder { color:#767676 !important;  font-size: 16px;  } /* ie */
+input:-moz-placeholder { color:#767676 !important;  font-size: 16px;  }
+
+.form-group{
+	margin-bottom: 15px;
+}
+.form-control{
+	border-color: #ebebeb;
+	padding: 11px 40px 11px 11px;
+}
+.form-control:focus{
+	border-color: #ced4da;
+	box-shadow: none;
+}
+
+.container{
+  max-width: 1080px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.header{
+  overflow: hidden;
+}
+.header .logo{
+	padding: 16px 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header .logo span{
+	font-size: 30px;
+}
+.header .banner{
+	position: relative;
+	z-index: -2;
+	padding-top: 690px;
+	background: #ecf0f1;
+}
+.header .banner img{
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header .banner .name-title{
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 700;
+	margin-bottom: 0px;
+	color: #fff;
+	position: absolute;
+	bottom: 0px;
+	left: 24px;
+	display: none;
+}
+.header .form-search{
+	padding-bottom: 60px;
+	position: absolute;
+	top: 64px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.form-search .col-6.bookhome{
+  border-radius: 4px;
+  flex-basis: 508px;
+  min-width: 508px;
+}
+.form-search .bookhome{
+	background: #ffffff;
+	padding: 32px;
+}
+.form-search .bookhome .title .name-title{
+	font-size: 32px;
+	line-height: 36px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.form-search .bookhome .title .sort-description{
+	font-size: 18px;
+	line-height: 26px;
+	margin: 8px 0px;
+	font-weight: 400;
+}
+.form-search .bookhome .form-group.insert-place{
+	margin-top: 12px;
+}
+.form-search .bookhome .form-group label{
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.form-search .bookhome .select-amount{
+	margin-bottom: 20px;
+}
+.form-search .bookhome .select-amount .icon-arrown-down{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+}
+.form-search .bookhome .select-amount select{
+	line-height: 24px;
+	padding-bottom: 11px 40px 11px 11px;
+	font-size: 16px;
+	font-weight: 300;
+}
+.form-search .btn-danger{
+	background: #FF5A5F;
+	border-color: #FF5A5F;
+	border-width: 2px;
+}
+.form-search .btn-lg{
+	line-height: 24px;
+	padding: 10px 22px;
+	font-size: 16px;
+	font-weight: 600;
+}
+.ui-datepicker{
+	padding: 10px 20px;
+	border: 1px solid #ced4da !important;
+}
+
+.ui-datepicker td {
+	border: 1px solid #ebebeb;
+	padding: 0px;
+}
+.ui-datepicker-header a.ui-corner-all{
+	width: 39px;
+	height: 33px;
+	border: 1px solid #ced4da;
+}
+
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 2px;
+	right: 2px;
+	border: 1px solid #c4c4c4 !important;
+}
+.ui-widget-header{
+	background: none;
+	border: none;
+}
+.ui-widget-header .ui-datepicker-title{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.ui-datepicker-calendar .ui-state-default{
+	text-align: center;
+	color: #484848;
+	background: none;
+	border: none;
+}
+.ui-datepicker-calendar .ui-state-default:hover {
+	background: #e4e7e7;
+}
+.ui-widget-content .ui-state-highlight{
+	background: #e4e7e7;
+}
+.ui-datepicker-other-month{
+	border: none !important;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+	background: none !important;
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span{
+	top: 40%;
+	background-image: none !important;
+}
+.ui-datepicker-next span.ui-icon, .ui-datepicker-prev span.ui-icon{
+	text-indent: 0;
+}
+.ui-datepicker-next span.ui-icon:before {
+    content: "\e909";
+  	font-family: 'airbnb-icon';
+  	display: inline-block;
+}
+.ui-datepicker-prev span.ui-icon:before {
+    content: "\e908";
+  	font-family: 'airbnb-icon';
+  	display: inline-block;
+}
+.content .review-guests{
+	margin-top: 48px;
+}
+.review-guests .review-introduce .title{
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 0px;
+	padding-top: 2px 0px;
+	font-weight: 700;
+}
+.review-guests .review-introduce .sort-introduce{
+	margin-top: 8px;
+}
+.review-guests .review-introduce .sort-introduce .icon-star-multi{
+	font-size: 25px;
+}
+.review-guests .review-introduce .sort-introduce .sort-introduce-content{
+	font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	margin-left: 10px;
+}
+
+.review-guests-posts{
+	margin-top: 24px;
+}
+.review-guests-post-all{
+	flex-wrap: nowrap;
+	width: 100%;	
+}
+.review-guests-post-all .row{
+	flex-wrap: nowrap;
+}
+.review-guests-post-all .review-post{
+	padding-left: 0 ;
+	padding-right: 0;
+	flex-basis: 32.3%;
+    max-width: 32.3%;
+    margin-right: 1.55%;
+}
+.review-guests-post-all .review-post .post-cover{
+	position: relative;
+	padding-top: 66.6667%;
+}
+.review-guests-post-all .review-post .post-cover:hover{
+	cursor: pointer;
+}
+.review-guests-post-all .review-post .post-cover .images-cover{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 4px;
+	height: 100%;
+	object-fit: cover;
+}
+.review-guests-post-all .review-post .post-rating{
+	margin-top: 16px;
+}
+.review-guests-post-all .review-post .post-rating .icon-star-rating{
+	font-size: 16px;
+	margin-right: 2px;
+	line-height: 18px;
+}
+.review-guests-post-all .review-post .post-content{
+	margin-top: 8px;
+	margin-right: 32px;
+	line-height: 18px;
+}
+.review-guests-post-all .review-post .post-content span{
+	font-size: 14px;
+}
+.review-guests-post-all .review-post .avatar-guest{
+	margin-top: 16px;
+}
+.review-guests-post-all .review-post .avatar-guest .images-guest{
+	width: 48px;
+	height: 48px;
+}
+.review-guests-post-all .review-post .avatar-guest .images-guest .images-cover{
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.review-guests-post-all .review-post .avatar-guest .address-guest{
+	margin-left: 20px;
+}
+.review-guests-post-all .review-post .avatar-guest .address-guest .name{
+	margin-bottom: 0px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.review-guests-post-all .review-post .avatar-guest .address-guest .national{
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.content .benefit-airbnb{
+	margin-top: 48px;
+}
+.benefit-airbnb .benefit-title .title{
+	font-size: 24px;
+	line-height: 30px;
+	padding: 2px 0px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.benefit-airbnb .benefit-all{
+	margin-top: 16px;
+}
+.benefit-airbnb .benefit-all .row{
+	justify-content: space-between;
+	padding: 32px 0px;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	flex-wrap: nowrap;
+}
+.benefit-all .benefit{
+	padding: 0px;
+	flex-basis: 32.3%;
+	max-width: 32.3%;
+}
+.benefit-all .benefit .benefit-content .benefit-name{
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 16px;
+	font-weight: 700;
+}
+.benefit-all .benefit .benefit-content .benefit-description{
+	font-size: 14px;
+	line-height: 18px;
+	margin-top: 4px;
+	margin-right: 32px;
+	margin-bottom: 0px;
+}
+
+.content .list-houses{
+	margin-top: 48px;
+}
+.content .list-houses .title{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700px;
+	padding: 2px 0px;
+	margin-bottom: 0px;
+}
+.content .list-houses .list-house-all{
+	margin-top: 16px;
+}
+.content .list-houses .list-house-all .row{
+	flex-wrap: nowrap;
+}
+.list-house-all .house{
+	padding: 0px;
+	flex-basis: 23.837209%;
+	max-width: 	23.837209%;
+	margin-right: 1.55%;
+}
+.list-house-all .house:hover{
+	cursor: pointer;
+}
+.list-house-all .house .house-cover{
+	position: relative;
+	padding-top: 66.66667%
+}
+.list-house-all .house .house-cover .images-cover{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 4px;
+}
+.list-house-all .house .house-description{
+	margin-top: 8px;
+}
+.house .house-description .catalog{
+	font-size: 12px;
+	text-transform: uppercase;
+	line-height: 16px;
+	color: #767676;
+	margin-bottom: 0px;
+}
+.house .house-description .name{
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 4px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.house .house-description .info-all-price{
+	line-height: 18px;
+	font-size: 14px;
+	margin-top: 2px;
+}
+.house .house-description .rating{
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 600;
+	margin-top: 2px;
+}
+.house .house-description .rating-star{
+	font-size: 9px;
+	margin-right: 5px;
+}
+.content .list-house-all .view-more-house{
+	margin-top: 20px;
+}
+.content .list-house-all .view-more-house .link-view{
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: 600;
+	color: #008489;
+	position: relative;
+	padding: 2px 0px;
+}
+.content .list-house-all .view-more-house .link-view:after{
+	content: "\e909";
+	font-family: 'airbnb-icon';
+	display: inline-block;
+	font-weight: 300;
+	position: absolute;
+	top: 1px;
+	right: -16px;
+}
+
+.content .choose-time-travel{
+	margin-top: 48px;
+}
+.content .choose-time-travel .title h2{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	padding: 2px 0px;
+	margin-bottom: 0px;
+}
+.content .choose-time-travel .title p{
+	font-size: 16px;
+	line-height: 22px;
+}
+.content .choose-time-travel .btn-add{
+	line-height: 24px;
+	padding: 10px 22px;
+	font-weight: 700;
+	background: #008489;
+}
+.content .choose-time-travel .btn-add:hover{
+	border-color: #008489;
+}
+
+.footer{
+	margin-top: 60px;
+	border-top: 1px solid #EBEBEB;
+}
+.footer .container{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.footer .row{
+	justify-content: space-between;
+	border-bottom: 1px solid #EBEBEB;
+}
+.footer .menu{
+	flex-basis: 23.837209%;
+	max-width: 	23.837209%;
+	text-align: left;
+}
+.footer .menu .title{
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 700;
+}
+.footer .menu.social .title{
+	font-size: 18px;
+}
+.footer .menu.social .title .icon{
+	margin-right: 14px;
+	color: #767676;
+}
+.footer .menu nav{
+	margin-top: 16px;
+}
+.footer .menu ul li{
+	list-style: none;
+}
+
+.footer .menu ul li a{
+	color: #767676;
+	line-height: 18px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.footer .menu .badge-info{
+	font-size: 12px;
+	line-height: 16px;
+	padding: 2px 5px;
+	background: #006a70;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+.footer .copyright {
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+}
+.footer .copyright .icon-airbnb:before{
+	color: #767676;
+	font-size: 19px;
+	font-weight: 500;
+}
+.footer .copyright span{
+	margin-right: 10px;
+	color: #767676;
+	line-height: 18px;
+}
