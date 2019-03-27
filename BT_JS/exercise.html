@@ -1,0 +1,41 @@
+<html>
+
+<head></head>
+
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button id="btn" onclick="tong()">Tính</button>
+    <p id="demo"></p>
+    <script>
+        var kid = {
+            name: "Phong",
+            age: "23",
+            render: "male",
+            like: "AOE",
+            tinhtong: function (a, b, c) {
+                if (c == '+') {
+                    return a + b;
+                } else if (c == '-') {
+                    return a - b;
+                } else if (c == '*') {
+                    return a * b;
+                } else if (c == '/') {
+                    return a / b;
+                } else {
+                    return "Phep toan sai";
+                }
+            }
+        }
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+
+        function tong() {
+            document.getElementById('demo').innerHTML = kid.tinhtong(a, b, '+');
+        }
+
+    </script>
+
+</body>
+
+</html>
