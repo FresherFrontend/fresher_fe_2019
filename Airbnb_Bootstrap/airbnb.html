@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/airbnb.css">
+    <link rel="stylesheet" href="CSS/vanilla.datepicker.css">
 </head>
 
 <body>
-    <!--  BANNER  -->
+    <!--   HEADER    -->
     <header>
         <a href="#">
             <svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false"
@@ -21,7 +22,8 @@
             </svg>
         </a>
         <h2>Trouvez des logements à États-Unis sur Airbnb</h2>
-    </header>
+    </header> <!--    END HEADER    -->
+    <!--  BANNER  -->
     <div class="banner">
         <div class="img">
             <div class="img_padding">
@@ -50,13 +52,13 @@
                                     <label for="">
                                         <p>ARRIVÉE</p>
                                     </label>
-                                    <input class="date" type="date" placeholder="">
+                                    <input class="datepicker" type="text" placeholder="jj/mm/aaaa">
                                 </div>
                                 <div class="out">
                                     <label for="">
                                         <p>DÉPART</p>
                                     </label>
-                                    <input id="date" type="date" placeholder="">
+                                    <input class="datepicker" type="text" placeholder="jj/mm/aaaa">
                                 </div>
                             </div>
 
@@ -465,7 +467,7 @@
                 <span>© Airbnb, 2019 Airbnb, Inc. All rights reserved.</span>
             </div>
         </div>
-    </footer>
+    </footer> <!--  END FOOTER  -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -476,6 +478,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="JS/vanilla.datepicker.js"></script>
+    <script type="text/javascript">
+        datepicker('.datepicker', {
+            firstDayOfWeek: 1,
+            months: {
+                short: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sept', 'Oct', 'Nov', 'Déc'],
+                long: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+            },
+            weekdays: {
+                short: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                long: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+            }
+        });
+    </script>
 </body>
 
 </html>

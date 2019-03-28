@@ -113,7 +113,7 @@ header{
     width: 100%;
     font-size: 16px;
     color: #484848;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 9px;
     font-family: Circular_medium;
     padding-left: 10px;
@@ -552,7 +552,8 @@ footer .end span{
         margin-top: 15px;
     }
     section .reserve .row .col-3{
-        flex: 0 0 96%;
+        flex: 0 0 97.5%;
+        padding: 5px;
     }
     section .reserve .the_a{
         display: none;
@@ -561,8 +562,9 @@ footer .end span{
         margin-top: 25px;
     }
     section .unis .row .evaluate1{
-        flex: 0 0 96%;
+        flex: 0 0 97.5%;
         margin-top: 0;
+        padding: 5px;
     }
     section .unis .star1 p{
         margin-top: -6px;
@@ -593,5 +595,10 @@ footer .end span{
     footer .end{
         margin-top: -25px;
         padding-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .containerr{
+        width: 89% !important;
     }
 }
