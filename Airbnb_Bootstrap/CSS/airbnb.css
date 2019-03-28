@@ -25,12 +25,17 @@
     font-style: normal;
 } 
 .p_content{
-    width: 302px;
+    max-width: 302px;
 }
 h3{
     font-size: 16px;
     font-weight: 800;
     color: #484848 !important;
+}
+h2{
+    color: #484848fc;
+    font-size: 24px;
+    font-family: Circular_bold;
 }
 p{
     margin: 0;
@@ -47,9 +52,8 @@ li{
 body{
     font-family: Circular_book;
 }
-.wrapper{
-    width: 100%;
-    height: auto;
+header{
+    display: none;
 }
 .containerr{
     width: 68%;
@@ -70,7 +74,7 @@ body{
     position: absolute;
     width: 508px;
     height: 560px;
-    top: 65px;
+    top: 64px;
     background: white;
     border-radius: 5px;
 }
@@ -148,9 +152,6 @@ body{
     color:  #484848;
     font-weight: 550;
 }
-[placeholder="dd/mm/yyyy"]::placeholder{
-    color: darkgray;
-}
 .banner .img form .select .childrens{
     margin-left: 15px;
 }
@@ -186,18 +187,11 @@ section .unis .star1 p{
 section .unis .star1 p>span{
     font-family: Circular_bold;
 }
-section .unis .col-4{
+section .unis .evaluate1{
     padding-right: 0;
 }
-section .unis .evaluate{
-    width: 100%;
-    display: flex;
-}
 section .unis .evaluate1{
-    width: 332px;
-    height: auto;
     margin-top: 27px;
-    
 }
 section .unis .evaluate1 .star2{
     margin-top: 13px;
@@ -206,9 +200,6 @@ section .unis .evaluate1 p{
     margin-top: 9px;
     font-size: 14px;
     color: #484848; 
-}
-section .unis .evaluate1 .p_content{
-    width: 302px;
 }
 section .unis .evaluate1 .star2 i{
     color: #008489;
@@ -254,24 +245,18 @@ section .voyager h2{
 section .voyager svg{
     margin-top: 32px;
 }
-section .voyager .items{
-    display: flex;
-}
-section .voyager .items .items_1{
-    width: 332px;
-}
-section .voyager .items .items_1 h3{
+section .voyager .row  h3{
     margin-top: 24px;
     font-size: 16px;
     font-weight: 800;
 }
-section .voyager .items .items_1 p{
+section .voyager .row p{
     margin-top: 12px;
     line-height:  1.2857142857142858em;
     font-size: 14px;
     font-weight: 400;
 }
-section .voyager .items .item_margin{
+section .voyager .row .item_margin{
     margin: 0 18px 0 17px;
 }
 
@@ -283,53 +268,43 @@ section .voyager .items .item_margin{
 section .reserve{
     margin-top: 50px;
 }
-section .reserve .home_items{
-    margin-top: 25px;
-    display: flex;
-}
-section .reserve .home_item{
-    width: 247px;
-}
-section .reserve .home_item a:hover{
+section .reserve .row a:hover{
     text-decoration: none;
 }
-section .reserve .home_item img{
+section .reserve .row img{
     width: 100%;
     border-radius: 4px;
     margin-bottom: 12px;
 }
-section .reserve .home_item h3{
+section .reserve .row .col-3{
+    padding-right: 0;
+}
+section .reserve .row h3{
     margin-top: 10px;
 }
-section .reserve .home_item span{
+section .reserve .row span{
     color: #484848 ;
     font-size: 12px;
     font-weight: 800;
     margin-top: 12px;
 }
-section .reserve .home_item p{
+section .reserve .row p{
     margin-top: 10px;
     font-size: 14px;
     font-weight: 400 ;
     color: #484848;
 }
-section .reserve .home_item .star_small{
+section .reserve .row .star_small{
     margin: -2px;
     display: flex;
 }
-section .reserve .home_item .star_small i{
+section .reserve .row .star_small i{
     font-size: 8px;
     color: #008489;
 }
-section .reserve .home_item .star_small span{
+section .reserve .row .star_small span{
     margin-top: 6px;
     margin-left: 5px;
-}
-section .reserve .home_items .home_item_margin{
-    margin: 0 17px 0 17px;
-}
-section .reserve .home_items .home_item_margin1{
-    margin: 0 17px 0 0;
 }
 section .reserve .the_a{
     margin-top: 25px;
@@ -355,8 +330,11 @@ section .quand{
     margin-top: 62px;
     padding-bottom: 78px;
 }
+section .quand h2{
+    margin: 0;
+}
 section .quand p{
-    margin-top: 6px;
+    margin-top: 0;
     margin-bottom: 30px;
 }
 section .quand a{
@@ -392,9 +370,6 @@ footer h4{
 }
 footer .row{
     width: 100%;
-}
-footer .row .col-3{
-    width: 16.666666666666664% !important;
 }
 footer .row ul{
     margin-top: 16px;
@@ -432,6 +407,13 @@ footer .mg1{
 }
 footer .row .icon{
     display: flex;
+    margin-left: 5px;
+}
+footer .row .mg_left{
+    margin-left: 10px;
+}
+footer .row ul{
+    width: 74.666%;
 }
 footer .icon svg{
     margin: 0 6px;
@@ -456,53 +438,153 @@ footer .end span{
 
 
 @media only screen and (max-width: 1128px){
+    .p_content{
+        max-width: 470px;
+    }
     .containerr{
-        width: 95% !important;
+        width: 96.5% !important;
     }
     .banner .img form{
         left: 105px;
     }
-    section .voyager .items .items_1{
-        flex: 0 0 31.333333%;
-    }
-    section .unis .row {
+    section .unis .row{
+        overflow: auto;
         flex-wrap: inherit;
     }
-    section .unis .evaluate1{
+    section .unis .row .evaluate1{
+        display: inline-block;
         flex: 0 0 50.333333%;
         max-width: none;
     }
     section .reserve .row{
+        overflow: auto;
         flex-wrap: inherit;
-    }
-    section .reserve .col-3{
-        max-width: none;
-        flex: 0 0 25.333333%;
-    }
-    footer .airbnb{
-       margin-left: 30px;
-    }
-    section .unis .row{
-        overflow: auto;
-    }
-    section .unis .row .col-4{
-        display: inline-block;
-        padding: 20px;
-    }
-    section .reserve .row{
-        overflow: auto;
     }
     section .reserve .row .col-3{
         display: inline-block;
-        padding: 20px;
+        max-width: none;
+        flex: 0 0 50.333333%;
     }
-
 }
-@media only screen and (max-width: 748px){
+@media only screen and (max-width: 742px){
+    .containerr{
+        width: 94% !important;
+    }
+    .p_content{
+        max-width: 630px;
+    }
+    h2{
+        font-size: 18px !important;
+        font-weight: 800;
+        margin-left: 5px;
+    }
+    header{
+        display: block;
+        background-image: linear-gradient(351.58deg, #00383E -0.02%, #17989A 50%, #1BABA8 80%),radial-gradient(228.77px at 31.86% 0%, #19A2A0 0%, rgba(0, 122, 135, 0.9) 100%) !important;
+    }
+    header svg{
+        margin-left: 16px;
+        font-size: 48px;
+       padding-top: 16px;
+    }
+    header h2{
+        font-size: 24px !important;
+        color: white;
+        margin-left: 24px;
+        margin-top: 16px;
+        padding-bottom: 16px;
+        line-height: 30px !important;
+    }
+    .banner{
+        height: auto;
+    }
+    .banner .img form{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .banner .img form #p_form{
+        display: none;
+    }
+    .banner .img form .margin {
+        padding: 0 24px;
+    }
+    .banner .img form h2{
+        padding: 30px 0;
+        background: rgba(0, 122, 135, 0.9);
+        color: white;
+        font-size: 24px !important;
+        display: none;
+    }
+    .banner .img form label p{
+        margin-top: 1px;
+    }
+    .banner .img form input[type="date"]{
+        width: 100%;
+    }
+    .banner .img .check .in{
+        flex: 50%;
+    }
+    .banner .img .check .out{
+        flex: 50%;
+    }
+    .banner .img form select{
+        width: 100%;
+    }
+    .banner .img form .select .adules{
+        flex: 50%;
+    }
+    .banner .img form .select .childrens{
+        flex: 50%;
+    }
+    .banner .img img{
+        height: 385px;
+    }
+    section{
+        margin-top: 0px;
+    }
+    section .reserve .row{
+        margin-top: -10px;
+    }
+    section .reserve .row .col-3{
+        flex: 0 0 96%;
+    }
+    section .reserve .the_a{
+        display: none;
+    }
+    section .unis .row .evaluate1{
+        flex: 0 0 96%;
+        margin-top: 0;
+    }
+    section .unis .star1 p{
+        margin-top: -6px;
+    }
+    section .voyager{
+        margin-top: 30px;
+    }
+    section .voyager .row{
+        margin-top: -30px;
+    }
+    section .voyager .row{
+        flex-wrap: inherit;
+        overflow: auto;
+    }
+    section .voyager .row .col-4{
+        display: inline-block;
+        max-width: none;
+        flex: 0 0 60.333333%;
+    }
+    section .quand{
+        margin-top: 20px;
+        padding-bottom: 50px;
+        margin-left: 5px;
+    }
     footer .display_none{
         display: none;
     }
     footer .end{
         margin-top: -25px;
+        padding-bottom: 10px;
     }
 }
