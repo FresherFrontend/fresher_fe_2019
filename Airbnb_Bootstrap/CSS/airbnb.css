@@ -103,8 +103,7 @@ header{
     letter-spacing: 0.0833333em ;
     font-family: Circular_bold;
 }
-.banner .img form input , button , select{
-    width: 215px;
+.banner .img input, form button , select{
     height: 48px;
     border-radius: 4px;
     border: 1px solid #ebebeb;
@@ -121,10 +120,14 @@ header{
 }
 .banner .img form input[type="date"]{
     color: #484848b3;
+    width: 100%;
     font-weight: 600;
     font-size: 16px;
     margin-top: 9px;
     height: 51px;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    padding-left: 8px;
 }
 .banner .img form .input_text{
     margin-top: 15px;
@@ -137,10 +140,23 @@ header{
 
 .banner .img form .check .out{
     margin-left: 15px;
+    flex: 50%;
+}
+.banner .img form .check .in{
+    flex: 50%;
 }
 .banner .img form .select{
     display: flex;
     margin-top: 18px;
+}
+.banner .img form .select select{
+    width: 100%;
+}
+.banner .img form .select .adules{
+    flex: 50%;
+}
+.banner .img form .select .childrens{
+    flex: 50%;
 }
 .banner .img form .select select{
     font-size: 16px;
@@ -468,7 +484,7 @@ footer .end span{
 }
 @media only screen and (max-width: 742px){
     .containerr{
-        width: 94% !important;
+        width: 91% !important;
     }
     .p_content{
         max-width: 630px;
@@ -520,38 +536,29 @@ footer .end span{
     .banner .img form label p{
         margin-top: 1px;
     }
-    .banner .img form input[type="date"]{
-        width: 100%;
+    .banner .img .img_padding{
+        position: relative;
+        padding-bottom: 385px;
     }
-    .banner .img .check .in{
-        flex: 50%;
-    }
-    .banner .img .check .out{
-        flex: 50%;
-    }
-    .banner .img form select{
-        width: 100%;
-    }
-    .banner .img form .select .adules{
-        flex: 50%;
-    }
-    .banner .img form .select .childrens{
-        flex: 50%;
-    }
-    .banner .img img{
-        height: 385px;
+    .banner .img .img_padding img{
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     section{
         margin-top: 0px;
     }
     section .reserve .row{
-        margin-top: -10px;
+        margin-top: 15px;
     }
     section .reserve .row .col-3{
         flex: 0 0 96%;
     }
     section .reserve .the_a{
         display: none;
+    }
+    section .unis .row{
+        margin-top: 25px;
     }
     section .unis .row .evaluate1{
         flex: 0 0 96%;
@@ -561,10 +568,10 @@ footer .end span{
         margin-top: -6px;
     }
     section .voyager{
-        margin-top: 30px;
+        margin-top: 5px;
     }
     section .voyager .row{
-        margin-top: -30px;
+        margin-top: -10px;
     }
     section .voyager .row{
         flex-wrap: inherit;
@@ -573,7 +580,7 @@ footer .end span{
     section .voyager .row .col-4{
         display: inline-block;
         max-width: none;
-        flex: 0 0 60.333333%;
+        flex: 0 0 59.333333%;
     }
     section .quand{
         margin-top: 20px;
