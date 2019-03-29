@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 100%;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    background: #777777;
+    position: relative;
+}
+.menu ul li{
+    list-style: none;
+    line-height: 65px;
+    position: relative;
+}
+.menu ul li a{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding:22px 70px 22px 70px;
+    text-decoration: none;
+}
+.menu ul li:hover{
+    background: #e30613;
+}
+.menu ul li i{
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    color: white;
+    font-size: 20px;
+}
+.menu .fa-angle-up{
+    display: none;
+}
+.menu ul li:hover > .fa-angle-down{
+    display: none;
+}
+.menu ul li:hover > .fa-angle-up{
+    display: block;
+}
+.menu ul li:hover .drop_2{
+    display: block;
+}
+.menu .drop_2{
+    position: fixed;
+    top: 166px;
+    left: 216px;
+    width: 1100px;
+    background: seagreen;
+    display: none;
+}
+.menu .drop_2 .ul_2{
+    flex-direction: column;
+    margin-top: 0;
+    width: 250px;
+}
+.menu .drop_2 .ul_2 li{
+    background: #dbdbdb;
+    width: 250px;
+    line-height: 60px;
+    border-bottom: 1px solid #a9a9a99c;
+}
+.menu .drop_2 .ul_2 li:last-child{
+    border-bottom: none;
+}
+.menu .drop_2 .ul_2 li:hover{
+    background: #666666;
+}
+.menu .drop_2 .ul_2 li:hover a{
+    color: white;
+}
+.menu .drop_2 .ul_2 a{
+    color:black;
+    font-size: 15px;
+    padding: 0;
+    margin-left: 20px;
+}
+.menu .drop_2 .ul_2 a:hover{
+   background: none;
+}
+
