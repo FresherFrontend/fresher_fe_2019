@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		document.querySelector('.nav-mobile-header').classList.add('show-up');
 		wrapOverlay.classList.add('overlay-body');	
 	});
-	
+
 	wrapOverlay.addEventListener("click", function(){
 		document.querySelector('.nav-mobile-header').classList.remove('show-up');	
 		this.classList.remove('overlay-body');
@@ -103,4 +103,15 @@ document.addEventListener("DOMContentLoaded", function() {
 			this.parentNode.classList.remove('show-up');
 		})
 	}
+
+	var searchHeader = document.querySelector('.search-header-box');
+	searchHeader.addEventListener("click", function(){
+		document.querySelector('.search-results-header').classList.add('d-block');
+	})	
+	document.querySelector('.search-header-device').addEventListener("click", function(){
+		document.querySelector('.search-results-header').classList.add('d-block');
+	})
+	document.querySelector('.close-search-header-box').addEventListener("click", function(){
+		document.querySelector('.search-results-header').classList.remove('d-block');
+	})
 });

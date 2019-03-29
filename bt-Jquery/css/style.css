@@ -146,6 +146,7 @@ a{
 	padding: 13px 20px;
 	border-left: 2px solid #d2d2d2;
 	display: none;
+	cursor: pointer;
 }
 .toolbar-header .wrapper .search-header-device a{
 	color: #717171;
@@ -203,6 +204,23 @@ a{
     border-radius: 2px;
     transform: rotate(0deg);
     transition: .25s ease-in-out
+}
+.wrapper-mega-menu{
+	display: flex;
+}
+.mega-menu .search-header-box{
+	display: flex;
+	align-items: center;
+	width: 100px;
+	background: #555555;
+	justify-content: center;
+}
+.mega-menu .search-header-box span{
+	font-size: 20px;
+	color: #fff;
+}
+.mega-menu .dropdown-menu {
+    width: calc(100% - 100px);
 }
 .nav-corporate .icon-bar span:nth-child(1){
 	top: 0px;
@@ -448,4 +466,80 @@ a{
 .nav-mobile-header .mega-menu-mobile .menu-mobile-lv1{
 	background: #e0e0e0;
 	position: relative;
+}
+.search-results-header{
+	position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+.search-results-header .container{
+	position: relative;	
+}
+.search-results-header .form-search{
+	width: 75%;
+}
+.search-results-header .close-search-header-box{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #333333;
+	cursor: pointer;
+}
+.search-results-header .close-search-header-box span{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 40px;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	background: #333333;
+	position: relative;
+	margin: 16px;
+}
+.search-results-header .form-search .heading-search-result{
+	font-size: 1.625em;
+	padding-bottom: 35px;
+	padding-top: 60px;
+}
+.search-results-header .form-search .input-box-search-header{
+	position: relative;
+	width: 100%;
+}
+.search-results-header .form-search .input-box-search-header input{
+	border: none;
+	width: 100%;
+	box-sizing: border-box;
+	border-bottom: 2px solid #555555;
+	padding: 0 60px 15px 20px;
+	font-size: 2em;
+}
+.search-results-header .form-search .input-box-search-header input:focus{
+	outline: none;
+}
+.search-results-header .form-search .input-box-search-header .btn-search-header	{
+	position: absolute;
+	right: 0;
+	top: 0;
+	border: none;
+	background: none;
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	color: #555555;
+	font-size: 35px;
+}
+.search-results-header.d-block{
+	visibility: visible;
+    opacity: 1;
 }
