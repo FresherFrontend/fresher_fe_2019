@@ -13,17 +13,16 @@ $(document).ready(function() {
 	}, function() {
 		$(this).children('ul.dropdown-lv2').slideUp(100);
 	});
-	//khi li lv1 active thi lv2 khong bao gio an di
-	// $('li.dropdown-lv1.active').hover(function() {
-	// 	console.log("adadasd");
-	// 	$(this).children('ul.dropdown-lv2').addClass('test');
-	// });
 	$('li.dropdown-lv3').hover(function() {
+		$(this).addClass('active');
+		$(this).children('a').addClass('active');
 		//menu ben phai xo ra
 		$(this).children('ul.dropdown-lv4').css('display', 'block');
 	}, function() {
 		$(this).children('ul.dropdown-lv4').css('display', 'none');
+		$(this).children('a').removeClass('active');
 	});
+
 	//hover vao body thi bo active o li
 	$('body').hover(function() {
 		$('li.dropdown-lv1').removeClass('active');
