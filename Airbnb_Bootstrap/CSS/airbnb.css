@@ -544,6 +544,7 @@ footer .end span{
         position: absolute;
         top: 0;
         left: 0;
+        display: none;
     }
     section{
         margin-top: 0px;
