@@ -28,9 +28,6 @@
 .menu ul li:hover{
     background: #e30613;
 }
-.menu ul li:hover .drop_2{
-    border-top: 6px solid #e30613;
-} 
 .menu ul li i{
     position: absolute;
     top: 22px;
@@ -49,6 +46,7 @@
 }
 .menu ul li:hover .drop_2{
     display: block;
+    border-top: 6px solid #e30613;
 }
 .menu .drop_2{
     position: fixed;
@@ -87,4 +85,16 @@
 .menu .drop_2 .ul_2 a:hover{
    background: none;
 }
-
+.menu .drop_2 .li_drop{
+    position: relative;
+}
+.menu .drop_2 .li_drop ul{
+    position: absolute;
+    flex-direction: column;
+    top: -100px;
+    left: 250px;
+    background: none;
+}
+.menu .drop_2 .li_drop ul li{
+    background: none;
+}

@@ -21,7 +21,14 @@
                     <i class="fas fa-angle-up"></i>
                     <div class="drop_2">
                         <ul class="ul_2">
-                            <li><a href="#">Capabilities</a></li>
+                            <li class="li_drop"><a href="#">Capabilities</a>
+                                <ul>
+                                    <li><a href="#">Commercial MRO</a></li>
+                                    <li><a href="#">Aircraft Interiors</a></li>
+                                    <li><a href="#">Pilot Training</a></li>
+                                    <li><a href="#">Smart MRO</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Companies & Affiliates</a></li>
                             <li><a href="#">Newsroom</a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -50,7 +57,7 @@
                             <li><a href="#">Capabilities</a></li>
                             <li><a href="#">Companies & Affiliates</a></li>
                             <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Contact Us11</a></li>
                         </ul>
                     </div>
                 </li>
@@ -62,7 +69,7 @@
                             <li><a href="#">Capabilities</a></li>
                             <li><a href="#">Companies & Affiliates</a></li>
                             <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Contact Us111</a></li>
                         </ul>
                     </div>
                 </li>
@@ -72,16 +79,24 @@
 
 
     <script>
-        var navs = document.querySelectorAll("ul li");
-        for (i = 0; i < navs.length; i++) {
-            var nav = navs[i];
-            nav.onclick = function(){
-              var mega = this.getElementsByClassName('drop_2')
-              console.log(mega);
-              
-            } 
-        }
+        var navs = document.querySelectorAll(".menu ul li");
+        for (var i = 0; i < navs.length; i++) {
+            navs[i].onclick = function () {
+                var mega = this.getElementsByClassName('drop_2')[0];
+                var submenu = document.querySelectorAll(".menu .drop_2");
+                for (var j = 0; j < submenu; j++) {
+                    if (submenu[j].style.display == 'block' && mega != submenu[j]) {
+                        submenu[j].style.display = 'none';
+                    }
+                }
 
+                if (mega.style.display == 'block') {
+                    mega.style.display = 'none';
+                } else {
+                    mega.style.display = 'block';
+                }
+            }
+        }
     </script>
 </body>
 
