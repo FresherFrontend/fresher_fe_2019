@@ -4,10 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Airbnb</title>
 	<link rel="stylesheet" href="css/style.css"/>
-	<!-- <link rel="stylesheet" href="css/circular.css"> -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	 <link rel="stylesheet" href="/resources/demos/style.css">
-	 <link rel="stylesheet" href="/resources/demos/style.css">
+	<!--  <link rel="stylesheet" href="/resources/demos/style.css"> -->
 	 <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.min.css">
 </head>
 <body>
@@ -17,57 +16,57 @@
 			<img src="img/header.jpg" class="img-header" alt="img-header1"/>
 			<a class="a-svg-header" href="/?from_belo_click"><svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false" style="height:1em;width:1em;display:block;fill:#ffffff"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></a>
 			<div class="container">
-					<div class="content-header">	
-			<form action="/action_page.php" id="fr-search">
-				<h2 class="h2-title">Find homes in United States on Airbnb</h2>
-				<p class="p-frmSearch">Discover entire homes and private rooms perfect for any trip</p>
-				<div class="group-form">
-					<label for="anywhere">where</label><br>
-					<input type="text" name="where" placeholder="Anywhere" id="anywhere">
+				<div class="content-header">	
+				<form action="/action_page.php" id="fr-search">
+					<h2 class="h2-title">Find homes in United States on Airbnb</h2>
+					<p class="p-frmSearch">Discover entire homes and private rooms perfect for any trip</p>
+					<div class="group-form">
+						<label for="anywhere">where</label><br>
+						<input type="text" name="where" placeholder="Anywhere" id="anywhere">
+					</div>
+					<div class="group-form">
+						<div class="datetime check-in">
+							<label for="checkIn">CHECK-IN</label>
+							<input type="text" id="checkIn" name="myCheckIn" placeholder="mm/dd/yyyy"/>
+						</div>
+						<div class="check"></div>
+						<div class="datetime check-out">
+							<label for="checkOut">Check-out</label>
+							<input type="text" name="myCheckOut" placeholder="mm/dd/yyyy" id="checkOut"/>
+						</div>
+					</div>
+					<div class="group-form">
+						<div class="guestpicker adult">
+							<label for="adult">adults</label><br>
+							<select name="adults" id="adult">
+								<option value="adult1">1 adult</option>
+								<option value="adult2">2 adult</option>
+								<option value="adult3">3 adult</option>
+								<option value="adult4">4 adult</option>
+								<option value="adult5">5 adult</option>
+								<option value="adult6">6 adult</option>
+								<option value="adult7">7 adult</option>
+								<option value="adult8">8 adult</option>
+								<option value="adult9">9 adult</option>
+								<option value="adult10">10 adult</option>
+								<option value="adult11">11 adult</option>
+								<option value="adult12">12 adult</option>
+							</select>
+						</div>
+						<div class="guestpicker children">
+							<label for="children">Children</label><br>
+							<select name="childrens" id="children">
+								<option value="children0">0 children</option>
+								<option value="children1">1 children</option>
+								<option value="children2">2 children</option>
+								<option value="children3">3 children</option>
+								<option value="childre4">4 children</option>
+							</select>
+						</div>
+					</div>
+					<input type="submit" value="Search" id="btnSearch">
+				</form>
 				</div>
-				<div class="group-form">
-					<div class="datetime check-in">
-						<label for="checkIn">CHECK-IN</label>
-						<input type="text" id="checkIn" name="myCheckIn" placeholder="mm/dd/yyyy"/>
-					</div>
-					<div class="check"></div>
-					<div class="datetime check-out">
-						<label for="checkOut">Check-out</label>
-						<input type="text" name="myCheckOut" placeholder="mm/dd/yyyy" id="checkOut"/>
-					</div>
-				</div>
-				<div class="group-form">
-					<div class="guestpicker adult">
-						<label for="adult">adults</label><br>
-						<select name="adults" id="adult">
-							<option value="adult1">1 adult</option>
-							<option value="adult2">2 adult</option>
-							<option value="adult3">3 adult</option>
-							<option value="adult4">4 adult</option>
-							<option value="adult5">5 adult</option>
-							<option value="adult6">6 adult</option>
-							<option value="adult7">7 adult</option>
-							<option value="adult8">8 adult</option>
-							<option value="adult9">9 adult</option>
-							<option value="adult10">10 adult</option>
-							<option value="adult11">11 adult</option>
-							<option value="adult12">12 adult</option>
-						</select>
-					</div>
-					<div class="guestpicker children">
-						<label for="children">Children</label><br>
-						<select name="childrens" id="children">
-							<option value="children0">0 children</option>
-							<option value="children1">1 children</option>
-							<option value="children2">2 children</option>
-							<option value="children3">3 children</option>
-							<option value="childre4">4 children</option>
-						</select>
-					</div>
-				</div>
-				<input type="submit" value="Search" id="btnSearch">
-			</form>
-			</div>
 			</div> 
 		</header>
 		<!----End Header---->

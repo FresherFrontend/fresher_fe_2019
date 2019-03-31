@@ -1,384 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Airbnb Booststrap</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!---Thư viện booststrap--->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!------Link CSS-------->
-	<link rel="stylesheet" href="css/airbanbBooststrap.css"/>
-	<!---Link font awsome-->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	 <link rel="stylesheet" href="/resources/demos/style.css">
-	 <link rel="stylesheet" href="/resources/demos/style.css">
-	 <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.min.css">
-
+    <meta charset="UTF-8">
+    <title>Airbnb Booststrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Thư viện booststrap--->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!---Link font awsome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.9.2.custom.min.css">
+        <!------Link CSS-------->
+    <link rel="stylesheet" href="css/airbanbBooststrap.css">
 </head>
 <body>
-	<!---Document wrapper--->
-	<div id="wrapper">
-		<!---Header--->
-		<header id="header">
-			<a class="a-svg-header" href="/?from_belo_click"><svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false" style="height:1em;width:1em;display:block;fill:#ffffff"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></a>
-		 	<div class="container" id="conent">
-				<div class="row md">
-					<div class="col-lg-6">
-						<form action="/action_page.php" id="fr-search">
-							<h2 class="h2-title">Find homes in United States on Airbnb</h2>
-							<p class="p-frmSearch">Discover entire homes and private rooms perfect for any trip</p>
-							<div class="group-form">
-								<label for="anywhere" class="">where</label><br>
-								<input type="text" name="where" placeholder="Anywhere" id="anywhere">
-							</div>
-							<div class="group-form">
-								<div class="datetime check-in">
-									<label for="checkIn">CHECK-IN</label>
-									<input type="text" id="checkIn" name="myCheckIn" placeholder="mm/dd/yyyy"/>
-								</div>
-								<div class="check"></div>
-								<div class="datetime check-out">
-									<label for="checkOut">Check-out</label>
-									<input type="text" name="myCheckOut" placeholder="mm/dd/yyyy" id="checkOut"/>
-								</div>
-							</div>
-							<div class="group-form">
-								<div class="guestpicker adult">
-									<label for="adults">adults</label><br>
-									<select name="adults" id="adults">
-										<option value="adult1">1 adult</option>
-										<option value="adult2">2 adult</option>
-										<option value="adult3">3 adult</option>
-										<option value="adult4">4 adult</option>
-										<option value="adult5">5 adult</option>
-										<option value="adult6">6 adult</option>
-										<option value="adult7">7 adult</option>
-										<option value="adult8">8 adult</option>
-										<option value="adult9">9 adult</option>
-										<option value="adult10">10 adult</option>
-										<option value="adult11">11 adult</option>
-										<option value="adult12">12 adult</option>
-									</select>
-								</div>
-								<div class="guestpicker children">
-									<label for="children">Children</label><br>
-									<select name="childrens" id="children">
-										<option value="children0" selected="selected">0 children</option>
-										<option value="children1">1 children</option>
-										<option value="children2">2 children</option>
-										<option value="children3">3 children</option>
-										<option value="childre4">4 children</option>
-									</select>
-								</div>
-							</div>
-							<input type="submit" value="Search" id="btnSearch">
-						</form>
-						</div> 
-					<div class="col-lg-6"></div>
-				</div>
-			</div>
-		</header>
-		<!--End header--->
-		<!-----Start customerReviews---->
-		<section class="customerReviews">
-			<div class="container">
-				<h2 class="h2-question">What guests are saying about homes in United States</h2>
-				<p class="ranking"><span class="span-start"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:24px;width:24px;fill:#FFB400"><path d="m21.95 9.48a.84.84 0 0 0 -.87-.48h-4.62a.5.5 0 0 0 0 1l4.14.01-4.81 4.17a.5.5 0 0 0 -.14.57l2.65 6.38-6.07-3.72a.5.5 0 0 0 -.52 0l-6.08 3.72 2.65-6.37a.5.5 0 0 0 -.13-.57l-4.75-4.18h5.75a.5.5 0 0 0 .46-.3l2.37-5.37 1.58 3.57a.5.5 0 0 0 .91-.41l-1.72-3.88a.8.8 0 0 0 -1.56-.01l-2.38 5.39h-5.9a.83.83 0 0 0 -.87.48.85.85 0 0 0 .32.96l4.85 4.25-2.78 6.67a.81.81 0 0 0 .16.98.66.66 0 0 0 .43.15 1.1 1.1 0 0 0 .56-.18l6.37-3.91 6.38 3.92a.81.81 0 0 0 .99.03c.15-.12.37-.41.15-1l-2.77-6.66 4.92-4.26a.84.84 0 0 0 .31-.95zm-.78.53h-.01" fill="#484848"></path><path d="m11 21.5a.5.5 0 1 1 -.5-.5.5.5 0 0 1 .5.5zm-3.5-15.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm15 10h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-15-13h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm10.22 7.54a.84.84 0 0 0 -.17-.02q-.28-.01-3.19 0a .6.6 0 0 1 -.55-.35l-1.5-3.23a.42.42 0 0 0 -.75 0l-1.81 4.14a2.92 2.92 0 0 0 4.12 3.72l.46-.26 3.49-2.99.16-.18a.5.5 0 0 0 -.26-.82z"></path></svg></span>United States homes were rated<span class="span-color"> 4.8 out of 5 stars </span> width <span  class="span-color">31,500,000+ reviews</span></p>
-				<div class="row list-card">
-					<div class="col-lg-4 col-md-4 col-xs-12 item-card">
-						<div class="content-card">
-							<div class="section-room">
-								<a href="#"><img src="https://a0.muscache.com/im/pictures/3922094/546ce84f_original.jpg?aki_policy=large" class="img-fuild" alt="img-card1"/></a>
-								<div class="text-card">
-									<p  class="start">
-										<span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
-									</p>
-									<p class="content-p">The studio is a really comfortable and well designed space, for those travellers looking for a place where they can totally relax after a... </p>
-									<div class="customer">
-										<div class="img-customer">
-											<img src="https://a0.muscache.com/im/users/36137188/profile_pic/1434911824/original.jpg?aki_policy=large" class="customer1" alt="img-customer1"/>
-										</div>
-										<div class="info-customer">
-											<span class="name">Robert</span><br>
-											<span class="national">United Kingdom</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 item-card">
-						<div class="content-card">
-							<div class="section-room">
-								<a href="#"><img src="https://a0.muscache.com/im/pictures/56916238/e313604e_original.jpg?aki_policy=large" class="img-fuild"  alt="img-card2"/></a>
-								<div class="text-card">
-									<p  class="start">
-										<span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
-									</p>
-									<p class="content-p">Tom and Judy were great hosts. Their home was beautiful, very clean and ideally located in Napa. I would recommend staying at their... </p>
-									<div class="customer">
-										<div class="img-customer" >
-											<img src="https://a0.muscache.com/im/users/7639912/profile_pic/1374485173/original.jpg?aki_policy=large" class="customer2" alt="img-customer2"/>
-										</div>
-										<div class="info-customer">
-											<span class="name">Mannie</span><br>
-											<span class="national">France</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 item-card">
-						<div class="content-card">
-							<div class="section-room">
-								<a href="#"><img src="https://a0.muscache.com/im/pictures/56916238/e313604e_original.jpg?aki_policy=large" class="img-fuild" alt="img-card3"/></a>
-								<div class="text-card">
-									<p  class="start">
-										<span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
-									</p>
-									<p class="content-p">I made this reservation on behalf of my parents as a thank you gift (giving them a weekend out of town), so I will simply pass on what they told...</p>
-									<div class="customer">
-										<div class="img-customer">
-											<img src="https://a0.muscache.com/im/users/24170121/profile_pic/1416974541/original.jpg?aki_policy=large" class="customer3" alt="img-customer3"/>
-										</div>
-										<div class="info-customer">
-											<span class="name">Amanda</span><br>
-											<span>United States</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!---End Section customerReviews---->
-		<section id="service"><!---Start Section service-->
-			<div class="container">
-				<h2 class="h2-traveling">Traveling with Airbnb</h2>	
-				<div>
-					<hr>
-				</div>
-				<div class="row content-service" style="margin-top: 32px; margin-bottom: 32px;">
-					<div class="col-lg-4 col-md-4 col-xs-12 item-service">
-						<div style="margin-bottom:16px"><svg style="height:40px;width:40px;display:block;overflow:visible" viewBox="0 0 32 32" fill="#60B6B5" fill-opacity="0" stroke="#60B6B5" stroke-width="1.5" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round"><path d="m23.99 2.75c-.3 0-.6.02-.9.05-1.14.13-2.29.51-3.41 1.14-1.23.68-2.41 1.62-3.69 2.94-1.28-1.32-2.46-2.25-3.69-2.94-1.12-.62-2.27-1-3.41-1.14a7.96 7.96 0 0 0 -.9-.05c-1.88 0-7.26 1.54-7.26 8.38 0 7.86 12.24 16.33 14.69 17.95a1 1 0 0 0 1.11 0c2.45-1.62 14.69-10.09 14.69-17.95 0-6.84-5.37-8.38-7.26-8.38"></path></svg></div>
-						<div>
-							<span class="title-service">24/7 customer support</span>
-							<p class="p-service">Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 item-service">
-						<div style="margin-bottom:16px"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m23.57 11.4-1.75-1.76-3.85-3.87-1.78-1.79-2.7-2.71-.82-.83-.22-.23-.06-.06c-.22-.22-.53-.22-.73-.02l-1.75 1.76-3.85 3.87-3.85 3.87-1.75 1.76a1.49 1.49 0 0 0 -.44 1.05v.01c0 .38.15.77.44 1.06l.55.55a1.49 1.49 0 0 0 2.01.08v8.4c0 .81.68 1.45 1.5 1.45h15c .82 0 1.5-.65 1.5-1.45v-8.4c.59.49 1.45.47 2.01-.08l.55-.55c.29-.29.44-.68.44-1.06v-.01c0-.38-.14-.77-.44-1.06zm-3.57 11.16c0 .24-.22.45-.5.45h-15c-.28 0-.5-.21-.5-.45v-9.36l8-7.99 8 7.99zm2.85-9.74-.55.55c-.2.2-.52.2-.71.01l-9.24-9.22a.5.5 0 0 0 -.71 0l-9.24 9.22a.5.5 0 0 1 -.71-.01l-.55-.55a.5.5 0 0 1 -.01-.71l1.75-1.76 3.85-3.87 3.85-3.87 1.4-1.4.77.77 2.7 2.71 1.78 1.79 3.85 3.87 1.75 1.76a.51.51 0 0 1 -.01.71z" fill-rule="evenodd"></path></svg></div>
-						<div>
-							<span class="title-service">Global hospitality standards</span>
-							<p class="p-service">Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 col-xs-12 item-service">
-						<div style="margin-bottom:16px"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m15.37 13.54-.01.01a.53.53 0 0 0 .01-.01m-.37 9.46h-11.5c-.28 0-.9-.22-1.38-.58-.71-.52-1.12-1.31-1.12-2.42 0-.04 0-.07.01-.11.09-1.1 1.59-2.44 4.02-3.79a33.14 33.14 0 0 1 2.9-1.42 35.57 35.57 0 0 1 1.31-.54c.63-.26.71-.95.18-1.35a4.55 4.55 0 0 1 -.38-.31 7.1 7.1 0 0 1 -.84-.9c-.73-.92-1.17-1.96-1.2-3.09v-2.99c.07-2.36 2.38-4.5 5.04-4.5 2.67 0 4.96 2.14 4.96 4.5v3c0 1.13-.43 2.17-1.15 3.11a7.35 7.35 0 0 1 -1.09 1.13l-.08.07c-.02.02-.02.02-.05.05s-.03.03-.09.14c-.05.47-.05.47.46.7a.49.49 0 0 0 .36-.15l.06-.05a8.32 8.32 0 0 0 1.23-1.28c.84-1.1 1.35-2.35 1.35-3.72v-3c0-2.92-2.75-5.5-5.96-5.5-3.2 0-5.96 2.56-6.04 5.49v3.01c.03 1.38.56 2.62 1.42 3.71.31.39.63.73.96 1.03.06.05.1.08.15.12a34.28 34.28 0 0 0 -3.98 1.87c-2.73 1.51-4.41 3.02-4.54 4.58a2.41 2.41 0 0 0 -.01.19c0 2.55 1.91 3.99 3.5 4h11.5a.5.5 0 1 0 0-1m7.67-4.22c-.36.74-.97 1.55-1.78 2.38a20.33 20.33 0 0 1 -1.89 1.71 19.94 19.94 0 0 1 -1.89-1.71c-.81-.83-1.42-1.64-1.78-2.38-.22-.45-.33-.86-.33-1.23 0-.99.61-1.56 1.43-1.56.7 0 1.55.53 2.18 1.31a.5.5 0 0 0 .78 0c .63-.78 1.48-1.31 2.18-1.31.82 0 1.43.57 1.43 1.56 0 .36-.11.77-.33 1.23m-1.1-3.78c-.89 0-1.82.5-2.57 1.25-.75-.76-1.68-1.25-2.57-1.25-1.36 0-2.43 1.01-2.43 2.56 0 .53.15 1.08.43 1.66.41.85 1.09 1.74 1.96 2.64a21.09 21.09 0 0 0 2.31 2.05.5.5 0 0 0 .6 0 20.91 20.91 0 0 0 2.31-2.05c.87-.9 1.55-1.79 1.96-2.64.28-.58.43-1.13.43-1.66 0-1.55-1.07-2.56-2.43-2.56" fill-rule="evenodd"></path></svg></div>
-						<div>
-							<span class="title-service">5-star hosts</span>
-							<p class="p-service">From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</p>
-						</div>
-					</div>
-				</div>
-				<div>
-					<hr>
-				</div>
-			</div>
-		</section>
-		<!---End Section service---->
-		<!-----Start Section justBooked----->
-		<section id="justBooked">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12 mb-12">	
-						<h2 class="h2-justBooked" style="font-weight: 800; font-size: 24px; line-height: 30px; padding: 2px 0px;
-						 color: #484848;">Just booked in United States</h2>
-					</div> 		
-				</div>
-				<div class="row booked mr-8 ml-8">
-					<div class=" col-lg-3 col-md-3 col-12 item-book pl-8 pr-8">
-						<div class="item-book">
-							<img src="https://a0.muscache.com/im/pictures/21611933/43f6de69_original.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked1"/>
-							<div class="information-house">
-								<a href="#">
-								<span class="title-house justbook">Treehouse . atlanta</span>
-								<p class="justbook infohouse">Secluded Intown Treehouse</p>
-								<span class="price">₫8,700,375 per night· Free cancellation</span>
-								<p  class="small-start">
-									<span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">329</span>
-								</p>
-								</a>
-							</div>
-					    </div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-12 item-book">
-						<div class="item-book">
-							<img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked2"/>
-							<div class="information-house">
-								<a href="#">
-								<span class="title-house">Entire house . joshua tree</span>
-								<p class="justbook infohouse">The Joshua Tree House</p>
-								<span class="price">₫6,612,285 per night · Free cancellation...</span>
-								<p  class="small-start">
-									<span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">407 · Superhost</span>
-								</p>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="ol-lg-3 col-md-3 col-12 item-book">
-						<div class="item-book">
-							<img src="https://a0.muscache.com/im/pictures/140333/3ab8f121_original.jpg?aki_policy=large" class=" img-fuild" alt="img-justbooked3"/>
-							<div class="information-house">
-								<a href="#">
-								<span class="title-house">demo house . aptos</span>
-								<p class="justbook infohouse">Mushroom Dome Cabin: #1 on airbnb in the world</p>
-								<span class="price">₫3,016,130 per night · Free cancellation</span>
-								<p  class="small-start">
-									<span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">1295 · Superhost</span>
-								</p>
-								</a>
-							</div>
-					    </div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-12 item-book">
-						<div class="item-book">
-							<img src="https://a0.muscache.com/im/pictures/45680811/f4987a12_original.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked4"/>
-							<div class="information-house">
-								<a href="#">
-								<span class="title-house">entire house . pioneertown</span>
-								<p class="justbook infohouse">Off-grid itHouse</p>
-								<span class="price">₫9,280,400 per night · Free cancellation</span>
-								<p  class="small-start">
-									<span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">236</span>
-								</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-----End Section justBooked----->
-		<!-----Start Section  showAll----->
-		<section id="showAll">
-			<div class="container">
-				<div class="btnShowAll">
-					<span class="linkShowAll"><a href="#">Show all (22,000+)</a></span>
-					<span class="icon-right"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
-				</div>
-			</div>
-		</section>
-		<!-----End Section  traveling----->
-		<!-----Start Section  traveling----->
-		<section id="traveling">
-			<div class="container">
-				<h2 class="h2-traveling">When are you traveling?</h2>
-				<p>Add dates for updated pricing and availability.</p>
-				<div class="row">	
-					<div class="col-lg col-md-4 col-xs-6">
-						<button type="submit" id="addDate" style="padding: 10px 22px; border-radius: 4px; font-size: 16px;
-						background: #008489; color:white; margin-bottom: 48px; margin-top: 16px; border:none;">Add dates</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!------End Section  traveling----->
-		<!-----Start footer  #footer----->
-		<footer id="footer">
-			<div class="border-hr">
-				<hr>
-			</div>
-			<div class="container">
-				<div class="row footer-top">
-					<div class="col-lg-3 col-md-3 col-sx-12 item-footer">
-						<h4 class="card-title">Airbnb</h4>
-						<nav class="nav flex-column info-Airbnb">
-							<a class="nav-link link-a-footer" href="#">Careers</a>
-							<a class="nav-link link-a-footer" href="#">Press</a>
-							<a class="nav-link link-a-footer" href="#">Policies</a>
-							<a class="nav-link link-a-footer" href="#">Help</a>
-							<a class="nav-link link-a-footer" href="#">Diversity & Belong</a>
-						</nav>	
-					</div>
-					<div class="col-lg-3 col-md-3 col-sx-12 item-footer">
-						<h4 class="card-title">Discover</h4>
-						<nav class="nav flex-column info-Airbnb">
-							<a class="nav-link link-a-footer" href="#">Trust & Safety</a>
-							<a class="nav-link link-a-footer" href="#">Travel Credit</a>
-							<a class="nav-link link-a-footer" href="#">Gift Cards</a>
-							<a class="nav-link link-a-footer" href="#">Airbnb Citizen</a>
-							<a class="nav-link link-a-footer" href="#">Business Travel</a>
-							<a class="nav-link link-a-footer" href="#">Guidebooks</a>
-							<a class="nav-link link-a-footer" href="#">Airbnbmag</a>
-							<a class="nav-link link-a-footer" href="#">EventsNew <span class="badge badge-secondary" style=" padding: 0 4px; background-color: #006a70;font-size: 12px !important; font-weight: 600 !important;margin-left: 8px; line-height: 1.4em">New</span></a>
-						</nav>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sx-12 item-footer">
-						<h4 class="card-title mb-16">Hosting</h4>
-						<nav class="nav flex-column mt-16">
-							<a class="nav-link link-a-footer" href="#" >Why Host</a>
-							<a class="nav-link link-a-footer" href="#">Travel Credit</a>
-							<a class="nav-link link-a-footer" href="#">Responsible Hosting</a>
-							<a class="nav-link link-a-footer" href="#">Community Center</a>
-							<a class="nav-link link-a-footer" href="#">Host an Experience <span class="badge badge-secondary" style=" padding: 0 4px; background-color: #006a70;font-size: 12px !important; font-weight: 600 !important;margin-left: 8px; line-height: 1.4em">News</span></a>
-							<a class="nav-link link-a-footer" href="#" >Open Homes <span class="badge badge-secondary" style=" padding: 0 4px; background-color: #006a70;font-size: 12px !important; font-weight: 600 !important;margin-left: 8px; line-height: 1.4em">News</span></a>
-						</nav>
-					</div>
-					<div class="col-lg-3 col-md-3 col-sx-12 item-footer">
-						<nav class="nav flex-row socialNetwork">
-							<ul class="socialnetwork">
-							<li class="nav-item icon-socialNetwork">
-							    <a href="#">
-							    	<!-- <i class="fa fa-facebook" aria-hidden="true"></i> -->
-							    	<svg viewBox="0 0 32 32" role="img" aria-label="Navigate to Facebook" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78" fill-rule="evenodd"></path></svg>
-							    </a>
-							</li>
-							<li class="nav-item icon-socialNetwork">
-							    <a href="#">
-							    	<!-- <i class="fa fa-twitter" aria-hidden="true"></i> -->
-							    	<svg viewBox="0 0 32 32" role="img" aria-label="Navigate to Twitter" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16" fill-rule="evenodd"></path></svg>
-							    </a>
-							</li>
-						    <li class="nav-item icon-socialNetwork">
-							    <a href="#">
-							    	<!-- <i class="fa fa-instagram" aria-hidden="true"></i> -->
-							    	<svg viewBox="0 0 24 24" role="img" aria-label="Navigate to Instagram" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z" fill-rule="evenodd"></path></svg>
-							    </a>
-							 </li>
-							</ul>
-						 </nav>
-						<nav class="nav flex-column">
-							<a class="nav-link link-a-footer" href="#">Terms</a>
-							<a class="nav-link link-a-footer" href="#">Privacy</a>
-							<a class="nav-link link-a-footer" href="#">Site Map</a>
-						</nav>					
-					</div>
-				</div>
-				<div class="border-hr">
-					<hr>
-				</div>
-				<div class="row footer-buttom">
-					<div class="col-lg-12 col-md-12 col-xs-12 reservedly">
-						<div class="item-svg"><svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1.5em;width:1.5em;display:block;fill:#767676"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></div>
-						<div class="item-buttom">© Airbnb, Inc.</div>
-					 </div>
-				</div>
-			</div>
-		</footer>
-		<!-----End footer  #footer----->
-	</div>	
+    <!---Document wrapper--->
+    <div id="wrapper">
+        <!---Header--->
+        <header id="header">
+            <div class="logo">
+                <a class="a-svg-header" href="/?from_belo_click"><svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false" style="height:1em;width:1em;display:block;fill:#ffffff"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></a>
+            </div>
+            <div class="container" id="conent">
+                <div class="row header-frmSearch">
+                    <div class="col-12 col-md-12 col-lg-6 form-search">
+                        <div class="cm">
+                        <form action="/action_page.php" id="fr-search">
+                            <div class="ground-form gr-top">
+                                <h2 class="h2-title">Find homes in United States on Airbnb</h2>
+                                <p class="p-frmSearch">Discover entire homes and private rooms perfect for any trip</p>
+                            </div>
+                            <div class="group-form">
+                                <label for="anywhere" class="">where</label><br>
+                                <input type="text" name="where" placeholder="Anywhere" id="anywhere">
+                            </div>
+                            <div class="group-form">
+                                <div class="datetime check-in">
+                                    <label for="checkIn">CHECK-IN</label>
+                                    <input type="text" id="checkIn" name="myCheckIn" placeholder="mm/dd/yyyy"/>
+                                </div>
+                                <div class="check"></div>
+                                <div class="datetime check-out">
+                                    <label for="checkOut">Check-out</label>
+                                    <input type="text" name="myCheckOut" placeholder="mm/dd/yyyy" id="checkOut"/>
+                                </div>
+                            </div>
+                            <div class="group-form">
+                                <div class="guestpicker adult">
+                                    <label for="adults">adults</label><br>
+                                    <select name="adults" id="adults">
+                                        <option value="adult1">1 adult</option>
+                                        <option value="adult2">2 adult</option>
+                                        <option value="adult3">3 adult</option>
+                                        <option value="adult4">4 adult</option>
+                                        <option value="adult5">5 adult</option>
+                                        <option value="adult6">6 adult</option>
+                                        <option value="adult7">7 adult</option>
+                                        <option value="adult8">8 adult</option>
+                                        <option value="adult9">9 adult</option>
+                                        <option value="adult10">10 adult</option>
+                                        <option value="adult11">11 adult</option>
+                                        <option value="adult12">12 adult</option>
+                                    </select>
+                                </div>
+                                <div class="guestpicker children">
+                                    <label for="children">Children</label><br>
+                                    <select name="childrens" id="children">
+                                        <option value="children0" selected="selected">0 children</option>
+                                        <option value="children1">1 children</option>
+                                        <option value="children2">2 children</option>
+                                        <option value="children3">3 children</option>
+                                        <option value="childre4">4 children</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="submit" value="Search" id="btnSearch">
+                        </form>
+                        </div>
+                     </div>
+                    <div class="col-lg-6"></div>
+                </div>
+            </div>
+        </header>
+        <!--End header--->
+        <section class="customerReviews">
+            <div class="container">
+                <h2 class="h2-question">What guests are saying about homes in United States</h2>
+                <p class="ranking"><span class="span-start"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:24px;width:24px;fill:#FFB400"><path d="m21.95 9.48a.84.84 0 0 0 -.87-.48h-4.62a.5.5 0 0 0 0 1l4.14.01-4.81 4.17a.5.5 0 0 0 -.14.57l2.65 6.38-6.07-3.72a.5.5 0 0 0 -.52 0l-6.08 3.72 2.65-6.37a.5.5 0 0 0 -.13-.57l-4.75-4.18h5.75a.5.5 0 0 0 .46-.3l2.37-5.37 1.58 3.57a.5.5 0 0 0 .91-.41l-1.72-3.88a.8.8 0 0 0 -1.56-.01l-2.38 5.39h-5.9a.83.83 0 0 0 -.87.48.85.85 0 0 0 .32.96l4.85 4.25-2.78 6.67a.81.81 0 0 0 .16.98.66.66 0 0 0 .43.15 1.1 1.1 0 0 0 .56-.18l6.37-3.91 6.38 3.92a.81.81 0 0 0 .99.03c.15-.12.37-.41.15-1l-2.77-6.66 4.92-4.26a.84.84 0 0 0 .31-.95zm-.78.53h-.01" fill="#484848"></path><path d="m11 21.5a.5.5 0 1 1 -.5-.5.5.5 0 0 1 .5.5zm-3.5-15.5a.5.5 0 1 0 .5.5.5.5 0 0 0 -.5-.5zm15 10h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm-15-13h-.5v-.5a.5.5 0 0 0 -1 0v .5h-.5a.5.5 0 0 0 0 1h .5v.5a.5.5 0 0 0 1 0v-.5h.5a.5.5 0 0 0 0-1zm10.22 7.54a.84.84 0 0 0 -.17-.02q-.28-.01-3.19 0a .6.6 0 0 1 -.55-.35l-1.5-3.23a.42.42 0 0 0 -.75 0l-1.81 4.14a2.92 2.92 0 0 0 4.12 3.72l.46-.26 3.49-2.99.16-.18a.5.5 0 0 0 -.26-.82z"></path></svg></span>United States homes were rated<span class="span-color"> 4.8 out of 5 stars </span> width <span class="span-color">31,500,000+ reviews</span></p>
+                <div class="row list-card">
+                    <div class="col1">
+                        <div class="col-lg-4 col-md-6 col-sm-12 item-card">
+                            <div class="content-card">
+                                <a href="#"><img src="https://a0.muscache.com/im/pictures/3922094/546ce84f_original.jpg?aki_policy=large" class="img-fuild" alt="img-card1"></a>
+                                <div class="text-card">
+                                    <p class="start">
+                                        <span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p class="content-p">The studio is a really comfortable and well designed space, for those travellers looking for a place where they can totally relax after a... </p>
+                                    <div class="customer">
+                                        <div class="img-customer">
+                                            <img src="https://a0.muscache.com/im/users/36137188/profile_pic/1434911824/original.jpg?aki_policy=large" class="customer1" alt="img-customer1">
+                                            </div>
+                                        <div class="info-customer">
+                                            <span class="name">Robert</span><br>
+                                            <span class="national">United Kingdom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 item-card">
+                            <div class="content-card">
+                                <a href="#"><img src="https://a0.muscache.com/im/pictures/56916238/e313604e_original.jpg?aki_policy=large" class="img-fuild" alt="img-card2"></a>
+                                <div class="text-card">
+                                    <p class="start">
+                                       <span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p class="content-p">Tom and Judy were great hosts. Their home was beautiful, very clean and ideally located in Napa. I would recommend staying at their... </p>
+                                    <div class="customer">
+                                        <div class="img-customer">
+                                            <img src="https://a0.muscache.com/im/users/7639912/profile_pic/1374485173/original.jpg?aki_policy=large" class="customer2" alt="img-customer2">
+                                        </div>
+                                        <div class="info-customer">
+                                           <span class="name">Mannie</span><br>
+                                            <span class="national">France</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 item-card">
+                            <div class="content-card">
+                                <a href="#"><img src="https://a0.muscache.com/im/pictures/56916238/e313604e_original.jpg?aki_policy=large" class="img-fuild" alt="img-card3"></a>
+                                <div class="text-card">
+                                    <p class="start">
+                                        <span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p class="content-p">I made this reservation on behalf of my parents as a thank you gift (giving them a weekend out of town), so I will simply pass on what they told...</p>
+                                    <div class="customer">
+                                        <div class="img-customer">
+                                            <img src="https://a0.muscache.com/im/users/24170121/profile_pic/1416974541/original.jpg?aki_policy=large" class="customer3" alt="img-customer3">
+                                            </div>
+                                        <div class="info-customer">
+                                            <span class="name">Amanda</span><br>
+                                            <span class="national">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 item-card">
+                            <div class="content-card">
+                                <a href="#"><img src="https://a0.muscache.com/im/pictures/56916238/e313604e_original.jpg?aki_policy=large" class="img-fuild" alt="img-card3"></a>
+                                <div class="text-card">
+                                    <p class="start">
+                                        <span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="icon-start"><i class="fa fa-star" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p class="content-p">I made this reservation on behalf of my parents as a thank you gift (giving them a weekend out of town), so I will simply pass on what they told...</p>
+                                    <div class="customer">
+                                        <div class="img-customer">
+                                            <img src="https://a0.muscache.com/im/users/24170121/profile_pic/1416974541/original.jpg?aki_policy=large" class="customer3" alt="img-customer3">
+                                        </div>
+                                        <div class="info-customer">
+                                            <span class="name">Amanda</span><br>
+                                            <span class="national">United States</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section><!---End Section customerReviews-->
+        <!--Start Section service-->
+        <section id="service">
+            <div class="container">
+                <div class="box-services">
+                    <h2 class="title-traveling">Traveling with Airbnb</h2>
+                    <div class="row content-service">
+                        <div class="items">
+                            <div class="col-12 col-md-6 col-lg-4 item-service">
+                                <div class="inner-item">
+                                    <div style="margin-bottom:16px"><svg style="height:40px;width:40px;display:block;overflow:visible" viewBox="0 0 32 32" fill="#60B6B5" fill-opacity="0" stroke="#60B6B5" stroke-width="1.5" focusable="false" aria-hidden="true" role="presentation" stroke-linecap="round" stroke-linejoin="round"><path d="m23.99 2.75c-.3 0-.6.02-.9.05-1.14.13-2.29.51-3.41 1.14-1.23.68-2.41 1.62-3.69 2.94-1.28-1.32-2.46-2.25-3.69-2.94-1.12-.62-2.27-1-3.41-1.14a7.96 7.96 0 0 0 -.9-.05c-1.88 0-7.26 1.54-7.26 8.38 0 7.86 12.24 16.33 14.69 17.95a1 1 0 0 0 1.11 0c2.45-1.62 14.69-10.09 14.69-17.95 0-6.84-5.37-8.38-7.26-8.38"></path></svg></div>
+                                    <div>
+                                    <span class="title-service">24/7 customer support</span>
+                                    <p class="p-service">Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item-service">
+                                <div class="inner-item">
+                                    <div style="margin-bottom:16px"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m23.57 11.4-1.75-1.76-3.85-3.87-1.78-1.79-2.7-2.71-.82-.83-.22-.23-.06-.06c-.22-.22-.53-.22-.73-.02l-1.75 1.76-3.85 3.87-3.85 3.87-1.75 1.76a1.49 1.49 0 0 0 -.44 1.05v.01c0 .38.15.77.44 1.06l.55.55a1.49 1.49 0 0 0 2.01.08v8.4c0 .81.68 1.45 1.5 1.45h15c .82 0 1.5-.65 1.5-1.45v-8.4c.59.49 1.45.47 2.01-.08l.55-.55c.29-.29.44-.68.44-1.06v-.01c0-.38-.14-.77-.44-1.06zm-3.57 11.16c0 .24-.22.45-.5.45h-15c-.28 0-.5-.21-.5-.45v-9.36l8-7.99 8 7.99zm2.85-9.74-.55.55c-.2.2-.52.2-.71.01l-9.24-9.22a.5.5 0 0 0 -.71 0l-9.24 9.22a.5.5 0 0 1 -.71-.01l-.55-.55a.5.5 0 0 1 -.01-.71l1.75-1.76 3.85-3.87 3.85-3.87 1.4-1.4.77.77 2.7 2.71 1.78 1.79 3.85 3.87 1.75 1.76a.51.51 0 0 1 -.01.71z" fill-rule="evenodd"></path></svg></div>
+                                <div>
+                                    <span class="title-service">Global hospitality standards</span>
+                                    <p class="p-service">Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.</p>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item-service">
+                                <div class="inner-item">
+                                 <div style="margin-bottom:16px"><svg viewBox="0 0 24 24" role="presentation" aria-hidden="true" focusable="false" style="height:40px;width:40px;display:block;fill:#60B6B5"><path d="m15.37 13.54-.01.01a.53.53 0 0 0 .01-.01m-.37 9.46h-11.5c-.28 0-.9-.22-1.38-.58-.71-.52-1.12-1.31-1.12-2.42 0-.04 0-.07.01-.11.09-1.1 1.59-2.44 4.02-3.79a33.14 33.14 0 0 1 2.9-1.42 35.57 35.57 0 0 1 1.31-.54c.63-.26.71-.95.18-1.35a4.55 4.55 0 0 1 -.38-.31 7.1 7.1 0 0 1 -.84-.9c-.73-.92-1.17-1.96-1.2-3.09v-2.99c.07-2.36 2.38-4.5 5.04-4.5 2.67 0 4.96 2.14 4.96 4.5v3c0 1.13-.43 2.17-1.15 3.11a7.35 7.35 0 0 1 -1.09 1.13l-.08.07c-.02.02-.02.02-.05.05s-.03.03-.09.14c-.05.47-.05.47.46.7a.49.49 0 0 0 .36-.15l.06-.05a8.32 8.32 0 0 0 1.23-1.28c.84-1.1 1.35-2.35 1.35-3.72v-3c0-2.92-2.75-5.5-5.96-5.5-3.2 0-5.96 2.56-6.04 5.49v3.01c.03 1.38.56 2.62 1.42 3.71.31.39.63.73.96 1.03.06.05.1.08.15.12a34.28 34.28 0 0 0 -3.98 1.87c-2.73 1.51-4.41 3.02-4.54 4.58a2.41 2.41 0 0 0 -.01.19c0 2.55 1.91 3.99 3.5 4h11.5a.5.5 0 1 0 0-1m7.67-4.22c-.36.74-.97 1.55-1.78 2.38a20.33 20.33 0 0 1 -1.89 1.71 19.94 19.94 0 0 1 -1.89-1.71c-.81-.83-1.42-1.64-1.78-2.38-.22-.45-.33-.86-.33-1.23 0-.99.61-1.56 1.43-1.56.7 0 1.55.53 2.18 1.31a.5.5 0 0 0 .78 0c .63-.78 1.48-1.31 2.18-1.31.82 0 1.43.57 1.43 1.56 0 .36-.11.77-.33 1.23m-1.1-3.78c-.89 0-1.82.5-2.57 1.25-.75-.76-1.68-1.25-2.57-1.25-1.36 0-2.43 1.01-2.43 2.56 0 .53.15 1.08.43 1.66.41.85 1.09 1.74 1.96 2.64a21.09 21.09 0 0 0 2.31 2.05.5.5 0 0 0 .6 0 20.91 20.91 0 0 0 2.31-2.05c.87-.9 1.55-1.79 1.96-2.64.28-.58.43-1.13.43-1.66 0-1.55-1.07-2.56-2.43-2.56" fill-rule="evenodd"></path></svg></div>
+                                <div>
+                                    <span class="title-service">5-star hosts</span>
+                                    <p class="p-service">From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--      -End Section service-->
+        <!--- ---Start Section justBooked--- -->
+        <section id="justBooked">
+            <div class="container">
+                <div class="box-justbooks">
+                    <h2 class="h2-justBooked">Just booked in United States</h2>
+                    <div class="row booked mr-8 ml-8">
+                        <div class="cols-justBooked">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item-book pl-8 pr-8">
+                                <div class="item">
+                                    <img src="https://a0.muscache.com/im/pictures/21611933/43f6de69_original.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked1"/>
+                                    <div class="information-house">
+                                        <a href="#">
+                                            <span class="title-house justbook">Treehouse . atlanta</span>
+                                            <p class="justbook infohouse">Secluded Intown Treehouse</p>
+                                            <span class="price">₫8,700,375 per night· Free cancellation</span>
+                                            <p class="small-start">
+                                                <span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">329</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item-book">
+                                <div class="item">
+                                    <img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked2"/>
+                                    <div class="information-house">
+                                        <a href="#">
+                                            <span class="title-house">Entire house . joshua tree</span>
+                                            <p class="justbook infohouse">The Joshua Tree House</p>
+                                            <span class="price">₫6,612,285 per night · Free cancellation...</span>
+                                            <p  class="small-start">
+                                                <span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">407 · Superhost</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item-book">
+                                <div class="item">
+                                    <img src="https://a0.muscache.com/im/pictures/140333/3ab8f121_original.jpg?aki_policy=large" class=" img-fuild" alt="img-justbooked3"/>
+                                    <div class="information-house">
+                                        <a href="#">
+                                            <span class="title-house">demo house . aptos</span>
+                                            <p class="justbook infohouse">Mushroom Dome Cabin: #1 on airbnb in the world</p>
+                                            <span class="price">₫3,016,130 per night · Free cancellation</span>
+                                            <p  class="small-start">
+                                                <span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">1295 · Superhost</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-3 item-book">
+                                <div class="item">
+                                    <img src="https://a0.muscache.com/im/pictures/45680811/f4987a12_original.jpg?aki_policy=large" class="img-fuild" alt="img-justbooked4"/>
+                                    <div class="information-house">
+                                        <a href="#">
+                                            <span class="title-house">entire house . pioneertown</span>
+                                            <p class="justbook infohouse">Off-grid itHouse</p>
+                                            <span class="price">₫9,280,400 per night · Free cancellation</span>
+                                            <p  class="small-start">
+                                                <span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="item-icon-start"><i class="fa fa-star" aria-hidden="true"></i></span><span class="storage">236</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!---End Section justBooked--->
+            <!---Start Section  showAll--->
+        <section id="showAll">
+            <div class="container">
+                <div class="btnShowAll">
+                    <span class="linkShowAll"><a href="#">Show all (22,000+)</a></span>
+                    <span class="icon-right"><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+                </div>
+            </div>
+        </section>
+        <!---End Section  traveling--->
+        <!---Start Section  traveling--->
+        <section id="traveling">
+            <div class="container">
+                <h2 class="h2-traveling">When are you traveling?</h2>
+                <p>Add dates for updated pricing and availability.</p>
+                <div class="row">
+                    <div class="col-lg col-md-4 col-xs-6">
+                        <button type="submit" id="addDate">Add dates</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----End Section  traveling--->
+        <!---Start footer  #footer--->
+        <footer id="footer">
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-sx-12 col-lg-3 item-footer">
+                        <h4 class="card-title">Airbnb</h4>
+                        <nav class="nav flex-column info-Airbnb">
+                            <a class="nav-link link-a-footer" href="#">Careers</a>
+                            <a class="nav-link link-a-footer" href="#">Press</a>
+                            <a class="nav-link link-a-footer" href="#">Policies</a>
+                            <a class="nav-link link-a-footer" href="#">Help</a>
+                            <a class="nav-link link-a-footer" href="#">Diversity & Belong</a>
+                        </nav>
+                    </div>
+                    <div class="col-sx-12 col-lg-3 item-footer">
+                        <h4 class="card-title">Discover</h4>
+                        <nav class="nav flex-column info-Airbnb">
+                            <a class="nav-link link-a-footer" href="#">Trust & Safety</a>
+                            <a class="nav-link link-a-footer" href="#">Travel Credit</a>
+                            <a class="nav-link link-a-footer" href="#">Gift Cards</a>
+                            <a class="nav-link link-a-footer" href="#">Airbnb Citizen</a>
+                            <a class="nav-link link-a-footer" href="#">Business Travel</a>
+                            <a class="nav-link link-a-footer" href="#">Guidebooks</a>
+                            <a class="nav-link link-a-footer" href="#">Airbnbmag</a>
+                            <a class="nav-link link-a-footer" href="#">EventsNew <span class="badge badge-secondary">New</span></a>
+                        </nav>
+                    </div>
+                    <div class="col-sx-12 col-lg-3 item-footer">
+                        <h4 class="card-title mb-16">Hosting</h4>
+                        <nav class="nav flex-column mt-16">
+                            <a class="nav-link link-a-footer" href="#" >Why Host</a>
+                            <a class="nav-link link-a-footer" href="#">Travel Credit</a>
+                            <a class="nav-link link-a-footer" href="#">Responsible Hosting</a>
+                            <a class="nav-link link-a-footer" href="#">Community Center</a>
+                            <a class="nav-link link-a-footer" href="#">Host an Experience <span class="badge badge-secondary">News</span></a>
+                            <a class="nav-link link-a-footer" href="#" >Open Homes <span class="badge badge-secondary">News</span></a>
+                        </nav>
+                    </div>
+                    <div class="col-sx-12 col-lg-3 item-footer">
+                        <nav class="nav flex-row socialNetwork">
+                            <ul class="socialnetwork">
+                            <li class="nav-item icon-socialNetwork">
+                                <a href="#">
+                                    <svg viewBox="0 0 32 32" role="img" aria-label="Navigate to Facebook" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m8 14.41v-4.17c0-.42.35-.81.77-.81h2.52v-2.08c0-4.84 2.48-7.31 7.42-7.35 1.65 0 3.22.21 4.69.64.46.14.63.42.6.88l-.56 4.06c-.04.18-.14.35-.32.53-.21.11-.42.18-.63.14-.88-.25-1.78-.35-2.8-.35-1.4 0-1.61.28-1.61 1.73v1.8h4.52c.42 0 .81.42.81.88l-.35 4.17c0 .42-.35.71-.77.71h-4.21v16c0 .42-.35.81-.77.81h-5.21c-.42 0-.8-.39-.8-.81v-16h-2.52a.78.78 0 0 1 -.78-.78" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item icon-socialNetwork">
+                                <a href="#">
+                                <svg viewBox="0 0 32 32" role="img" aria-label="Navigate to Twitter" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m31 6.36c-1.16.49-2.32.82-3.55.95 1.29-.76 2.22-1.87 2.72-3.38a13.05 13.05 0 0 1 -3.91 1.51c-1.23-1.28-2.75-1.94-4.51-1.94-3.41 0-6.17 2.73-6.17 6.12 0 .49.07.95.17 1.38-4.94-.23-9.51-2.6-12.66-6.38-.56.95-.86 1.97-.86 3.09 0 2.07 1.03 3.91 2.75 5.06-1-.03-1.92-.3-2.82-.76v.07c0 2.89 2.12 5.42 4.94 5.98-.63.17-1.16.23-1.62.23-.3 0-.7-.03-1.13-.13a6.07 6.07 0 0 0 5.74 4.24c-2.22 1.74-4.78 2.63-7.66 2.63-.56 0-1.06-.03-1.43-.1 2.85 1.84 6 2.76 9.41 2.76 7.29 0 12.83-4.01 15.51-9.3 1.36-2.66 2.02-5.36 2.02-8.09v-.46c-.03-.17-.03-.3-.03-.33a12.66 12.66 0 0 0 3.09-3.16" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item icon-socialNetwork">
+                                <a href="#">
+                                <svg viewBox="0 0 24 24" role="img" aria-label="Navigate to Instagram" focusable="false" style="height:18px;width:18px;display:block;fill:#767676"><path d="m23.09.91c-.61-.61-1.33-.91-2.17-.91h-17.84c-.85 0-1.57.3-2.17.91s-.91 1.33-.91 2.17v17.84c0 .85.3 1.57.91 2.17s1.33.91 2.17.91h17.84c.85 0 1.57-.3 2.17-.91s.91-1.33.91-2.17v-17.84c0-.85-.3-1.57-.91-2.17zm-14.48 7.74c.94-.91 2.08-1.37 3.4-1.37 1.33 0 2.47.46 3.41 1.37s1.41 2.01 1.41 3.3-.47 2.39-1.41 3.3-2.08 1.37-3.41 1.37c-1.32 0-2.46-.46-3.4-1.37s-1.41-2.01-1.41-3.3.47-2.39 1.41-3.3zm12.66 11.63c0 .27-.09.5-.28.68a.92.92 0 0 1 -.67.28h-16.7a.93.93 0 0 1 -.68-.28.92.92 0 0 1 -.27-.68v-10.13h2.2a6.74 6.74 0 0 0 -.31 2.05c0 2 .73 3.71 2.19 5.12s3.21 2.12 5.27 2.12a7.5 7.5 0 0 0 3.75-.97 7.29 7.29 0 0 0 2.72-2.63 6.93 6.93 0 0 0 1-3.63c0-.71-.11-1.39-.31-2.05h2.11v10.12zm0-13.95c0 .3-.11.56-.31.77a1.05 1.05 0 0 1 -.77.31h-2.72c-.3 0-.56-.11-.77-.31a1.05 1.05 0 0 1 -.31-.77v-2.58c0-.29.11-.54.31-.76s.47-.32.77-.32h2.72c.3 0 .56.11.77.32s.31.47.31.76z" fill-rule="evenodd"></path></svg>
+                                </a>
+                            </li>
+                            </ul>
+                         </nav>
+                        <nav class="nav flex-column">
+                            <a class="nav-link link-a-footer" href="#">Terms</a>
+                            <a class="nav-link link-a-footer" href="#">Privacy</a>
+                            <a class="nav-link link-a-footer" href="#">Site Map</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row footer-buttom">
+                    <p class="col reservedly">
+                        <span class="item-svg"><svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false" style="height:1.5em;width:1.5em;display:block;fill:#767676"><path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z"></path></svg></span>
+                        <span class="item-buttom">© Airbnb, Inc.</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-----End footer  #footer----->
+        </div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!---Nhung link js--->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
-  	<script src="js/index.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!---Nhung link js--->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
 </html>
