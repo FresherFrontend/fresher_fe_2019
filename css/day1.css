@@ -153,6 +153,29 @@ h2{
 	padding-bottom: 20px;
 	color: gray;
 }
+.owl-nav button{
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	background-color: red;
+}
+.owl-prev{
+	width: 30px;
+	height: 30px;
+	border: 1px solid;
+	background-color: red;
+}
+.owl-nav span{
+	font-size: 20px;
+}
+/* div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+.scrollmenu .col-lg-4{
+	display: inline-block;
+} */
 @media all and (min-width: 768px) and (max-width: 1024px) {
 	.form{
 		width: 60%;
@@ -168,9 +191,12 @@ h2{
 @media all and (max-width: 767px){
 	.part1{
 		padding-top: 45px;
+		padding: 5% 0 0 0;
+		padding-bottom: 0px;
 	}
 	.form{
-		width: 80%;
+		width: 100%;
+		margin-left: 0;
 	}
 	.form h2{
 		font-size: 20px;

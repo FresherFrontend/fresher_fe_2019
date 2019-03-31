@@ -4,10 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Day1</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/day1.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="js/bootstrap.min.js" type="text/javascript" ></script>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" href="js/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/owl.theme.default.min.css">
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js" ></script>
 </head>
 <body>
 	<div class="part1">
@@ -77,9 +82,11 @@
 				</span>
 				<span class="para">United States home were rated <b>4.8 out of 5 stars</b> with <b>31,500,000+ review</b></span>
 			</div>
-			<div class="row p2_content">
-				<div class="col-lg-4 col-md-6 col-xs-12">
-					<div class="card" style="border: 0;">
+			<div class="row p2_content scrollmenu">
+				<div class="container section4 slide10">
+					<div class="owl-carousel owl-theme" >
+						<div class="oneSlide">
+							<div class="card" style="border: 0;">
 						<a href="#">
 							<img src="https://a0.muscache.com/im/pictures/50616050/43df6979_original.jpg?aki_policy=xx_large" class="card-img-top image_p2" alt="no image">
 						</a>
@@ -103,184 +110,191 @@
 					    	</div>
 					    </div>
 					  </div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-xs-12">
-					<div class="card" style="border: 0;" >
-						<a href="#">
-							<img src="https://a0.muscache.com/im/pictures/55305748/58a4aaf0_original.jpg?aki_policy=xx_large" class="card-img-top image_p2" alt="no image">
-						</a>
-					  
-					  <div class="star">
-					    <h5 class="card-title">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    </h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <div class="row" id="comment">
-					    	<div class="col-lg-3 col-md-3 col-xs-3 image_comment">
-					    		<img src="https://a0.muscache.com/im/pictures/ae3ce523-c5ce-4be0-bf3b-b4aff409a2c4.jpg?aki_policy=large" alt="" class="img-thumbnail">
-					    	</div>
-					    	<div class="col-lg-9 col-md-9 col-xs-9 col9">
-					    		<p class="name">Huong</p>
-					    		<p>United States</p>
-					    	</div>
-					    </div>
-					  </div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-xs-12">
-					<div class="card" style="border: 0;" >
-						<a href="#">
-							<img src="https://a0.muscache.com/im/pictures/491567/2e5ce21e_original.jpg?aki_policy=large" class="card-img-top image_p2" alt="no image">
-						</a>
-					  
-					  <div class="star">
-					    <h5 class="card-title">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-					    </h5>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <div class="row" id="comment">
-					    	<div class="col-lg-3 col-md-3 col-xs-3 image_comment">
-					    		<img src="https://a0.muscache.com/im/users/27840838/profile_pic/1424107287/original.jpg?aki_policy=large" alt="" class="img-thumbnail">
-					    	</div>
-					    	<div class="col-lg-9 col-md-9 col-xs-9 col9">
-					    		<p class="name">Tom</p>
-					    		<p>United States</p>
-					    	</div>
-					    </div>
-					  </div>
+					</div>	
+						</div>
+						<div class="oneSlide">
+							<div class="card" style="border: 0;">
+							<a href="#">
+								<img src="https://a0.muscache.com/im/pictures/55305748/58a4aaf0_original.jpg?aki_policy=xx_large" class="card-img-top image_p2" alt="no image">
+							</a>
+						  
+						  <div class="star">
+						    <h5 class="card-title">
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    </h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <div class="row" id="comment">
+						    	<div class="col-lg-3 col-md-3 col-xs-3 image_comment">
+						    		<img src="https://a0.muscache.com/im/users/20134697/profile_pic/1410230911/original.jpg?aki_policy=large" alt="" class="img-thumbnail">
+						    	</div>
+						    	<div class="col-lg-9 col-md-9 col-xs-7 col9">
+						    		<p class="name">Megan</p>
+						    		<p>United States</p>
+						    	</div>
+						    </div>
+						  </div>
+						</div>	
+						</div>
+						<div class="oneSlide" id="URLHash">
+							<div class="card" style="border: 0;">
+							<a href="#">
+								<img src="https://a0.muscache.com/im/pictures/50616050/43df6979_original.jpg?aki_policy=xx_large" class="card-img-top image_p2" alt="no image">
+							</a>
+						  
+						  <div class="star">
+						    <h5 class="card-title">
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    	<i class="fa fa-star" aria-hidden="true"></i>
+						    </h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <div class="row" id="comment">
+						    	<div class="col-lg-3 col-md-3 col-xs-3 image_comment">
+						    		<img src="https://a0.muscache.com/im/users/20134697/profile_pic/1410230911/original.jpg?aki_policy=large" alt="" class="img-thumbnail">
+						    	</div>
+						    	<div class="col-lg-9 col-md-9 col-xs-7 col9">
+						    		<p class="name">Megan</p>
+						    		<p>United States</p>
+						    	</div>
+						    </div>
+						  </div>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	<div class="part part3">
 		<h2>Traveling with Airbnb</h2>
 		<hr>
-		<div class="row">
-			<div class="col-lg-4 col-md-6 col-xs-12">
-				<div class="box_p3" >
-				  <div class="">
-				    <h5 class="card-title"><i class="fa fa-heart-o" aria-hidden="true"></i></h5>
-				    <h6 class="card-subtitle">24/7 customer support</h6>
-				    <p class="card-text jus">Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.</p>
-				  </div>
+		<div class="section4 slide10">
+					<div class="owl-carousel owl-theme" >
+						<div class="oneSlide">
+							<div class="box_p3" >
+							  <div class="">
+							    <h5 class="card-title"><i class="fa fa-heart-o" aria-hidden="true"></i></h5>
+							    <h6 class="card-subtitle">24/7 customer support</h6>
+							    <p class="card-text jus">Day or night, we’re here for you. Talk to our support team from anywhere in the world, any hour of day.</p>
+							  </div>
+							</div>	
+						</div>
+						<div class="oneSlide">
+							<div class="box_p3" >
+							  <div class="">
+							    <h5 class="card-title"><i class="fa fa-home" aria-hidden="true"></i></h5>
+							    <h6 class="card-subtitle ">Global hospitality standards</h6>
+							    <p class="card-text jus">Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.</p>
+							  </div>
+							</div>	
+						</div>
+						<div class="oneSlide" id="URLHash">
+							<div class="box_p3" >
+							  <div class="">
+							    <h5 class="card-title"><i class="fa fa-user-o" aria-hidden="true"></i></h5>
+							    <h6 class="card-subtitle">5-star hosts</h6>
+							    <p class="card-text jus">From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</p>
+							  </div>
+							</div>	
+						</div>		
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-xs-12">
-				<div class="box_p3" >
-				  <div class="">
-				    <h5 class="card-title"><i class="fa fa-home" aria-hidden="true"></i></h5>
-				    <h6 class="card-subtitle ">Global hospitality standards</h6>
-				    <p class="card-text jus">Guests review their hosts after each stay. All hosts must maintain a minimum rating and our hospitality standards to be on Airbnb.</p>
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6 col-xs-12">
-				<div class="box_p3" >
-				  <div class="">
-				    <h5 class="card-title"><i class="fa fa-user-o" aria-hidden="true"></i></h5>
-				    <h6 class="card-subtitle">5-star hosts</h6>
-				    <p class="card-text jus">From fresh-pressed sheets to tips on where to get the best brunch, our hosts are full of local hospitality.</p>
-				  </div>
-				</div>
-			</div>
-		</div>
 		<hr>
 	</div>
 
 	<div class="part part4">
 		<h2>Just booked in United States</h2>
-		<div class="row">
-			<div class="col-lg-3  col-md-6 col-xs-12">
-				<div class="card1">
-					<a href="#">
-						<img src="https://a0.muscache.com/im/pictures/21611933/43f6de69_original.jpg?aki_policy=xx_large" class="card-img-top" alt="Bedroom-detail">
-					</a>
-				  <div class="card-body">    
-				    <a href="#"><h6 class="card-subtitle text-muted">Treehouse . atlanta</h6></a>
-				    <a href="#"><h5 class="">Secluded Intown Treehouse</h5></a>
-				    <a href="#"><p class="card-subtitle">$795 per night.Free Cancellation</p></a>
-				    <a href="#" class="rate_p4">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-						    <i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<span>329</span>
-				    </a>    
-				  </div>
+		<div class="section4 slide12">
+					<div class="owl-carousel owl-theme" >
+						<div class="oneSlide">
+							<div class="card1">
+								<a href="#">
+									<img src="https://a0.muscache.com/im/pictures/21611933/43f6de69_original.jpg?aki_policy=xx_large" class="card-img-top" alt="Bedroom-detail">
+								</a>
+							  <div class="card-body">    
+							    <a href="#"><h6 class="card-subtitle text-muted">Treehouse . atlanta</h6></a>
+							    <a href="#"><h5 class="">Secluded Intown Treehouse</h5></a>
+							    <a href="#"><p class="card-subtitle">$795 per night.Free Cancellation</p></a>
+							    <a href="#" class="rate_p4">
+								    	<i class="fa fa-star" aria-hidden="true"></i>
+									    <i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+								    	<span>329</span>
+							    </a>    
+							  </div>
+							</div>				
+						</div>
+						<div class="oneSlide">
+							<div class="card1">
+							  <a href="#">
+							  	<img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=xx_large" class="card-img-top" alt="The Living Room and Dining area">
+							  </a>
+							  <div class="card-body">    
+							    <a href="#"><h6 class="card-subtitle text-muted">entire house . joshua tree</h6></a>
+							    <a href="#"><h5 class="">The Joshua Tree House</h5></a>
+							    <a href="#"><p class="card-subtitle"><span>đ</span>6,612,604 per night</p></a>
+							    <a href="#" class="rate_p4">
+								    	<i class="fa fa-star" aria-hidden="true"></i>
+									    <i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+								    	<span>407 .Superhost</span>
+							    </a>
+							    
+							  </div>
+							</div>
+						</div>
+						<div class="oneSlide" id="URLHash">
+							<div class="card1">
+							  <a href="#">
+							  	<img src="https://a0.muscache.com/im/pictures/140333/3ab8f121_original.jpg?aki_policy=xx_large" class="card-img-top" alt="The front door and deck - before we coated the roof to waterproof it.">
+							  </a>
+							  <div class="card-body">    
+							    <a href="#"><h6 class="card-subtitle text-muted">dome house . aptos</h6></a>
+							    <a href="#"><h5 class="">Mushroom Dome Cabin: #1 on airbnb in the world</h5></a>
+							    <a href="#"><p class="card-subtitle"><span>đ</span>3,016,276 per night</p></a>
+							    <a href="#" class="rate_p4">
+								    	<i class="fa fa-star" aria-hidden="true"></i>
+									    <i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+								    	<span>1295.Superhost</span>
+							    </a>   
+							  </div>
+							</div>
+						</div>
+						<div class="oneSlide">
+							<div class="card1">
+							  <a href="#">
+							  	<img src="https://a0.muscache.com/im/pictures/45680811/f4987a12_original.jpg?aki_policy=xx_large" class="card-img-top" alt="homestay">
+							  </a>
+							  <div class="card-body">    
+							    <a href="#"><h6 class="card-subtitle text-muted">entire house . pioneertown</h6></a>
+							    <a href="#"><h5 class="">Off-grid itHouse</h5></a>
+							    <a href="#"><p class="card-subtitle">$589 per night.Free Cancellation</p></a>
+							    <a href="#" class="rate_p4">
+								    	<i class="fa fa-star" aria-hidden="true"></i>
+									    <i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+									   	<i class="fa fa-star" aria-hidden="true"></i>
+								    	<span>329</span>
+							    </a>    
+							  </div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-xs-12">
-				<div class="card1">
-				  <a href="#">
-				  	<img src="https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg?aki_policy=xx_large" class="card-img-top" alt="The Living Room and Dining area">
-				  </a>
-				  <div class="card-body">    
-				    <a href="#"><h6 class="card-subtitle text-muted">entire house . joshua tree</h6></a>
-				    <a href="#"><h5 class="">The Joshua Tree House</h5></a>
-				    <a href="#"><p class="card-subtitle"><span>đ</span>6,612,604 per night</p></a>
-				    <a href="#" class="rate_p4">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-						    <i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<span>407 .Superhost</span>
-				    </a>
-				    
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-xs-12">
-				<div class="card1">
-				  <a href="#">
-				  	<img src="https://a0.muscache.com/im/pictures/140333/3ab8f121_original.jpg?aki_policy=xx_large" class="card-img-top" alt="The front door and deck - before we coated the roof to waterproof it.">
-				  </a>
-				  <div class="card-body">    
-				    <a href="#"><h6 class="card-subtitle text-muted">dome house . aptos</h6></a>
-				    <a href="#"><h5 class="">Mushroom Dome Cabin: #1 on airbnb in the world</h5></a>
-				    <a href="#"><p class="card-subtitle"><span>đ</span>3,016,276 per night</p></a>
-				    <a href="#" class="rate_p4">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-						    <i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<span>1295.Superhost</span>
-				    </a>   
-				  </div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-xs-12">
-				<div class="card1">
-				  <a href="#">
-				  	<img src="https://a0.muscache.com/im/pictures/45680811/f4987a12_original.jpg?aki_policy=xx_large" class="card-img-top" alt="homestay">
-				  </a>
-				  <div class="card-body">    
-				    <a href="#"><h6 class="card-subtitle text-muted">entire house . pioneertown</h6></a>
-				    <a href="#"><h5 class="">Off-grid itHouse</h5></a>
-				    <a href="#"><p class="card-subtitle">$589 per night.Free Cancellation</p></a>
-				    <a href="#" class="rate_p4">
-					    	<i class="fa fa-star" aria-hidden="true"></i>
-						    <i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-						   	<i class="fa fa-star" aria-hidden="true"></i>
-					    	<span>329</span>
-				    </a>    
-				  </div>
-				</div>
-			</div>
-		</div>
 		<a href="" class="show">Show all(22,000+) ></a>
 	</div>
 	<div class="part part5">
