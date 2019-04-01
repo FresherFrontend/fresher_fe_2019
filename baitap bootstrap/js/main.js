@@ -1,5 +1,25 @@
-$(".owl-carousel").owlCarousel({
+$(".product").owlCarousel({
+    nav: true,
+    margin: 10,
+    dots: false,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: false,
+    responsive: {
+        0: {
+            item: 1,
+            nav: true
+        },
 
+        767: {
+            item: 2,
+            nav: true
+        }
+    },
+});
+
+$(".support").owlCarousel({
     nav: true,
     margin: 10,
     dots: false,
