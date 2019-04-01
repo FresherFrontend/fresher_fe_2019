@@ -465,11 +465,11 @@ div#conent{
  @media  screen and (min-width: 768px)
 {
     .container {
-    max-width: 1080px;
-    padding-left: 24px!important;
-    padding-right: 24px!important;
-    padding-top: 48px !important;
-    margin: 0 auto;
+        max-width: 1080px;
+        padding-left: 24px!important;
+        padding-right: 24px!important;
+        padding-top: 48px !important;
+        margin: 0 auto;
     }
     .row.header-frmSearch {
         margin-top: 0px;
@@ -492,11 +492,11 @@ div#conent{
         display: inline-block;
     }
     h2.h2-title{
-        color: #000;
+        color: #484848 !important;
     }
     .row.list-card .col1 {
-    overflow-x: scroll;
-    overflow-y: hidden;
+        overflow-x: scroll;
+        overflow-y: hidden;
     }
 }
 @media  screen and (min-width: 1024px)
@@ -526,11 +526,11 @@ div#conent{
         font-size: 18px;
         line-height: 26px;
         margin: 8px 0;
-        display: inline-block;\
+        display: inline-block;
         color: #484848 !important;
     }
     h2.h2-title{
-        color: #000;
+        color: #484848 !important;
     }
     .row.list-card .col1, .cols-justBooked, .row.content-service .items {
         overflow: hidden;
