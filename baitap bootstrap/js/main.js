@@ -1,5 +1,5 @@
 $(".product, .support").owlCarousel({
-    nav: true,
+
     margin: 10,
     dots: false,
     loop: true,
@@ -9,12 +9,12 @@ $(".product, .support").owlCarousel({
     responsive: {
         0: {
             items: 1,
-            nav: true
+            nav: false,
         },
 
         767: {
             items: 2,
-            nav: true
+            nav: false,
         },
 
         1024: {
@@ -35,12 +35,12 @@ $(".booked").owlCarousel({
     responsive: {
         0: {
             item: 1,
-            nav: true
+            nav: false
         },
 
         767: {
             item: 2,
-            nav: true
+            nav: false
         },
 
         1024: {

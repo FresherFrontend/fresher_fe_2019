@@ -206,9 +206,9 @@ button[type="submit"] {
     /* float: left; */
 }
 
-.avatar img {
-    width: 3.5em;
-    height: 3.5em;
+.owl-carousel .owl-item .avatar img {
+    width: 46px;
+    height: 46px;
     border-radius: 100%;
 }
 
