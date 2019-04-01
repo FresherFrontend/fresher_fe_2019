@@ -185,6 +185,7 @@ button[type="submit"] {
 
 .rated-product {
     padding: 5px;
+    display: flex;
 }
 
 .content-product {
