@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Homework</title>
+	<title>Vacation Homes & Condo Rentals - Airbnb</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -36,7 +36,7 @@
 	<p class="ten"></p>
 </div>
 
-	<div class="container form-container">
+	<div class="container form-container" id="check-form">
 		<div class="row">
 			<div class="col-lg-6 col-md-8 col-12 form">
 				<h2>Find homes in United States on Airbnb</h2>
@@ -120,8 +120,7 @@
 			</div>
 		</div>
 		<div class="scrollmenu">
-			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-12">
 					<div class="rate">
 						<div class="user-rate">
 							<div class="rate-place">
@@ -149,7 +148,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-12">
 					<div class="rate">
 						<div class="user-rate">
 							<div class="rate-place">
@@ -177,7 +176,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-12">
 					<div class="rate">
 						<div class="user-rate">
 							<div class="rate-place">
@@ -205,16 +204,17 @@
 						</div>
 					</div>
 				</div>
-			</div>
+
 		</div>
 	</div>
 </div>
 <div class="container travel">
-	<div class="scrollmenu">
+	
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-12 " style="border-bottom: 1px solid #EBEBEB;">
 					<h4>Traveling with Airbnb</h4>
 			</div>
+			<div class="scrollmenu">
 			<div class="col-lg-4 col-md-4 col-12">
 				<div class="rate">
 					<div class="travel-icon">
@@ -253,8 +253,8 @@
 </div>
 <div class="container book">
 	<h4>Just booked in United States</h4>
-	<div class="scrollmenu">
-		<div class="row">
+	<div class="row">
+		<div class="scrollmenu">
 			<div class="col-lg-3 col-md-6 col-12">
 				<a href="#"><div class="book-place">
 					<img class="place-img" src="https://a0.muscache.com/im/pictures/3922094/546ce84f_original.jpg?aki_policy=xx_large" alt="TREEHOUSE · ATLANTA">
@@ -340,18 +340,22 @@
 </div>
 <div class="container">
 	<div class="row">
-		<a href="#"><div class="all-opt">
-			<span class="all">Show all (22,000+)</span>
-			<span><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg></span>
-		</div></a>
+		<div class="col-lg-12 col-md-12 col-12">
+			<a href="#"><div class="all-opt">
+				<span class="all">Show all (22,000+)</span>
+				<span><svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height:10px;width:10px;fill:currentColor"><path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd"></path></svg></span>
+			</div></a>
+		</div>
 	</div>
 </div>
 <div class="container">
 	<div class="row">
-		<div class="add-date">
-			<h4>Where are you traveling?</h4>
-			<span  class="add-date-des">Add dates for updated pricing and availability.</span>
-			<button class="select"><span class="add-text">Add dates</span></button>
+		<div class="col-lg-12 col-md-12 col-12">
+			<div class="add-date">
+				<h4>Where are you traveling?</h4>
+				<span  class="add-date-des">Add dates for updated pricing and availability.</span>
+				<a href="#datepicker-checkin"></a><button class="select"><span class="add-text">Add dates</span></button></a>
+			</div>
 		</div>
 	</div>
 </div>
