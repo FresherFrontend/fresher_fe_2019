@@ -1,4 +1,4 @@
-$(".product").owlCarousel({
+$(".product, .support").owlCarousel({
     nav: true,
     margin: 10,
     dots: false,
@@ -8,18 +8,23 @@ $(".product").owlCarousel({
     autoplayHoverPause: false,
     responsive: {
         0: {
-            item: 1,
+            items: 1,
             nav: true
         },
 
         767: {
-            item: 2,
+            items: 2,
             nav: true
+        },
+
+        1024: {
+            items: 3,
+            nav: true,
         }
     },
 });
 
-$(".support").owlCarousel({
+$(".booked").owlCarousel({
     nav: true,
     margin: 10,
     dots: false,
@@ -36,6 +41,11 @@ $(".support").owlCarousel({
         767: {
             item: 2,
             nav: true
+        },
+
+        1024: {
+            items: 4,
+            nav: true,
         }
     },
 });
