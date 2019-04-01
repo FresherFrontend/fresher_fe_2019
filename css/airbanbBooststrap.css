@@ -63,19 +63,16 @@ a.a-svg-header {
     bottom: 20px;
     padding: 32px;
     background: #fff;
-    margin-bottom: 64px !important;
     border-radius: 4px;
-    margin-bottom: 64px;
 }
 h2.h2-title{
     line-height: 36px !important;
     font-size: 32px !important;
     font-weight: 700 !important;
+    color: #fff;
 }
 .p-frmSearch{
-    font-size: 18px;
-    line-height: 26px;
-    margin: 8px 0;
+    display: none;
 }
 .group-form {
     width: 100%;
@@ -155,6 +152,7 @@ select{
     float: left;
 }
 .guestpicker.children {
+
     width: 48%;
     float: right;
 }
@@ -163,16 +161,12 @@ select{
     padding-left: 2px;
     padding-right: 2px;
 }
-#fr-search{
-    margin-top: 0;
-    bottom: 20px;
-    padding: 32px;
-    background: #fff;
-    margin-bottom: 32px;
-}
 /********************Section customerReviews"*****************/
 section{
     width: 100%;
+}
+h2.h2-question {
+    font-size: 24px !important;
 }
 p.start .icon-start {
     color: #008489;
@@ -277,9 +271,17 @@ span.name {
 .service-traveling{
     width: 100%;
 }
-h2.title-traveling {
+#traveling h2.title-traveling{
     border-bottom: 1px solid #EBEBEB !important;
     padding-bottom: 16px!important;
+    line-height: 30px!important;
+    font-size: 24px;
+}
+h2.title-traveling, .h2-traveling{
+    border-bottom: 1px solid #EBEBEB !important;
+    padding-bottom: 16px!important;
+    line-height: 30px!important;
+    font-size: 24px;
 }
 #addDate{
     padding: 10px 22px;
@@ -438,8 +440,60 @@ label.new {
 .row.footer-buttom {
     border-top: none;
 }
+div#conent{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.form-search{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.row.header-frmSearch{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.ground-form.gr-top {
+    top: -95px!important;
+    position: absolute!important;
+    line-height: 36px;
+}
+.row.header-frmSearch {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 62px;
+}
  @media  screen and (min-width: 768px)
 {
+    .container {
+    max-width: 1080px;
+    padding-left: 24px!important;
+    padding-right: 24px!important;
+    padding-top: 48px !important;
+    margin: 0 auto;
+    }
+    .row.header-frmSearch {
+        margin-top: 0px;
+    }
+    .form-search{
+        padding-left: 76px!important;
+    }
+    .ground-form.gr-top {
+        top: 0px!important;
+        line-height: 36px;
+        position: relative!important;
+    }
+    #fr-search{
+       margin-bottom: 64px !important;
+    }
+    .p-frmSearch{
+        font-size: 18px;
+        line-height: 26px;
+        margin: 8px 0;
+        display: inline-block;
+    }
+    h2.h2-title{
+        color: #000;
+    }
     .row.list-card .col1 {
     overflow-x: scroll;
     overflow-y: hidden;
@@ -447,8 +501,39 @@ label.new {
 }
 @media  screen and (min-width: 1024px)
 {
+    .container{
+    max-width: 1080px;
+    padding-left: 24px!important;
+    padding-right: 24px!important;
+    padding-top: 48px !important;
+    margin: 0 auto;
+    }
+    .row.header-frmSearch {
+        margin-top: 0px;
+    }
+    .form-search {
+        padding-left: 0px!important;
+    }
+    .ground-form.gr-top {
+        top: 0px!important;
+        line-height: 36px;
+        position: relative!important;
+    }
+    #fr-search{
+       margin-bottom: 64px !important;
+    }
+    .p-frmSearch{
+        font-size: 18px;
+        line-height: 26px;
+        margin: 8px 0;
+        display: inline-block;\
+        color: #484848 !important;
+    }
+    h2.h2-title{
+        color: #000;
+    }
     .row.list-card .col1, .cols-justBooked, .row.content-service .items {
-    overflow: hidden;
+        overflow: hidden;
     }
     .nav-link.link-a-footer{
         padding: 0;
@@ -478,13 +563,13 @@ label.new {
         color: #484848 !important;
     }
     .row.footer-top .item-footer {
-    display: block;
+        display: block;
     }
     .row.footer-top {
-    padding-bottom: 10px;
+        padding-bottom: 10px;
     }
     .row.footer-buttom {
-    border-top: 1px solid #EBEBEB;
-    padding-top: 20px;
+        border-top: 1px solid #EBEBEB;
+        padding-top: 20px;
     }
 }
