@@ -12,6 +12,7 @@ h2{
 	margin-bottom: 25px;
 }
 section{
+	width: 100%;
 	height: 700px;
 	background-image: url("https://a0.muscache.com/4ea/air/r:w775-h300-sfit,e:fjpg-c70/pictures/c49d2d28-c0ae-484b-9db9-0dc93a5e1cd4.jpg");
 	background-size: 100% 700px;
@@ -23,10 +24,10 @@ section{
 	width: 30px;
 }
 .header{
-	padding: 0px 30px 30px 30px;
+	padding: 30px 30px 30px 30px;
 	margin-left: 240px;
 	background-color:#ffffff;
-	width: 444px;
+	width: 508px;
 	height: auto;
 	border-radius: 5px;
 	position: absolute;
@@ -180,4 +181,206 @@ input[type=submit] {
 .content .content1 .info .avatar,.location{
 	display: inline-block;
 	margin-right: 20px;
+}
+/*traveling with airnb*/
+
+.trling{
+	margin: 48px 240px 0px 240px;
+}
+.trltit{
+	margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    line-height: 1.375em !important;
+    color: #484848 !important;
+}
+.trling div h2{
+	margin-bottom: 20px;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 24px !important;
+     font-weight: bold;
+    line-height: 1.25em !important;
+    color: #484848 !important;
+}
+.trlblock{
+	border-bottom: 1px solid #EBEBEB !important;
+    border-top: 1px solid #EBEBEB !important;
+}
+.trling .trlthum{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*Just booked in United States*/
+
+.booking{
+	margin: 48px 240px 48px 240px;
+	position: relative;
+}
+.booking div h2{
+
+	margin-bottom: 20px;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 24px !important;
+     font-weight: bold;
+    line-height: 1.25em !important;
+    color: #484848 !important;
+}
+.container .row div{
+	padding: 0px;
+}
+.linkpic{
+	background-size: 246px 164px;
+    cursor: pointer;
+	width: 246px;
+	height: 164px;
+	border-radius: 2px;
+	background-image: url("https://a0.muscache.com/im/pictures/812e040f-6f6f-4cae-ad67-66c050b57c1f.jpg");
+}
+.bookinginfo .add{
+	cursor: pointer;
+	line-height: 1.3333333333333333em !important;
+	font-weight: bold;
+	font-size: 14px;
+    color: #767676;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+.bookinginfo div p{
+	cursor: pointer;
+	margin:0;
+	font-weight: bold;
+	font-size: 16px;
+    line-height: 1.375em !important;
+    color: #484848 !important;
+}
+.bookinginfo .price{
+	cursor: pointer;
+	font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 200 !important;
+    line-height: 1.2857142857142858em !important;
+    color: #484848 !important;
+}
+.bookingvote svg{
+	float: left;
+	display: inline-block;
+	margin-top: 8px;
+}
+.bookingvote .sl{
+	display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #484848;
+}
+.booking .showall a span{
+	color: #008489;
+	display: inline-block;
+}
+.booking .showall{
+	position: absolute;
+	left: 0;
+	margin-left: 0;
+	margin-top: 25px;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.wru{
+	margin: 96px 240px 48px 240px;
+}
+.wru div h2{
+	margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 24px !important;
+    font-weight: bold;
+    line-height: 1.25em !important;
+    color: #484848 !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+.wru div p{
+	margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.375em !important;
+    color: #484848 !important;
+}
+.wru div button{
+	margin-top: 15px;
+	border-radius: var(--border-button-border-radius, 4px) !important;
+    font-size: var(--font-button-font-size, 16px) !important;
+    line-height: var(--font-button-line-height, 24px) !important;
+    letter-spacing: var(--font-button-letter-spacing, normal) !important;
+    font-family: var(--font-button-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif) !important;
+    text-transform: var(--font-button-text-transform, undefined) !important;
+    padding-top: var(--spacing-button-vertical, 10px) !important;
+    padding-bottom: var(--spacing-button-vertical, 10px) !important;
+    font-weight: var(--font-bold-font-weight, 800) !important;
+    border-width: var(--border-button-border-width, 2px) !important;
+    padding-left: var(--spacing-button-horizontal, 22px) !important;
+    padding-right: var(--spacing-button-horizontal, 22px) !important;
+    box-shadow: var(--shadow-button-level0-box-shadow, none) !important;
+    background: var(--color-buttons-default-color, #008489) !important;
+    border-color: var(--color-buttons-default-border, transparent) !important;
+    color: var(--color-buttons-default-text, #ffffff) !important;
+}
+
+/*category*/
+.category{
+	margin: 0px 240px 0px 240px;
+}
+.category div h4{
+	margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2857142857142858em !important;
+    color: #484848 !important;
+}
+.category .container{
+	margin-top: 48px;
+}
+.category div ul li a{
+	color: #767676;
+	font-size: 14px;
+	font-weight: 600;
+	display: inline-block;
+}
+.category .list{
+margin-top: 10px;	
+}
+.category div ul{
+	margin:0;
+	padding:0;
+
+}
+.category div ul li{
+	list-style-type: none;
+}
+.category .new{
+	font-weight: 600;
+	margin-left: 8px;
+	font-size: 12px;
+	color: white;
+	display: inline-block !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    padding: 0 4px !important;
+    background-color: #006a70 !important;
+}
+.hori{
+	margin-top: 10px;
+	border-top: 1px solid #EBEBEB;
+}
+.category .media svg{
+	margin-right: 15px;
 }
