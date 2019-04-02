@@ -77,45 +77,70 @@
         </header>
         <div class="nav">
             <a href="#">
-                <p> <img class="icon"
+                <p>
+                    <img class="icon"
                         src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-nav-01.svg?d=20190315t025445"
-                        alt=""></p>
+                        alt="">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-explore-white.svg?d=20190315t025427"
+                        alt="">
+                </p>
                 <span>
                     <p>Explore</p>
                 </span>
             </a>
             <a href="#">
-                <p><img class="icon"
+                <p>
+                    <img class="icon"
                         src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-nav-05.svg?d=20190315t025449"
-                        alt=""></p>
+                        alt="">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-map-white.svg?d=20190315t025435"
+                        alt="">
+                </p>
                 <span>
                     <p>Open・Fee</p>
                 </span>
             </a>
             <a href="#">
                 <p> <img src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-faq-gray.svg?d=20190315t025428"
-                        alt="" class="icon"></p>
+                        alt="" class="icon">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-faq-white.svg?d=20190315t025429"
+                        alt="">
+                </p>
                 <span>
                     <p>FAG</p>
                 </span>
             </a>
             <a href="#">
                 <p><img src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-hotel-gray.svg?d=20190315t025432"
-                        alt="" class="icon"></p>
+                        alt="" class="icon">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-hotel-white.svg?d=20190315t025434"
+                        alt="">
+                </p>
                 <span>
                     <p>Hotel</p>
                 </span>
             </a>
             <a href="#">
                 <p> <img src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-point-gray.svg?d=20190315t025437"
-                        alt="" class="icon"></p>
+                        alt="" class="icon">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-point-white.svg?d=20190315t025438"
+                        alt="">
+                </p>
                 <span>
                     <p>Access</p>
                 </span>
             </a>
             <a href="#">
                 <p> <img src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-call-gray.svg?d=20190315t025425"
-                        alt="" class="icon"></p>
+                        alt="" class="icon">
+                    <img class="icon hover"
+                        src="https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/cmn/icn-fnav-call-white.svg?d=20190315t025426"
+                        alt=""></p>
                 <span>
                     <p>06-7670-5126</p>
                 </span>
@@ -159,13 +184,14 @@
 
 
         var all_p = document.querySelectorAll(".nav a p img");
+        // console.log(all_a.length);
+
         // for (var i = 0; i < all_a.length ; i++) {
+
         //     all_a[i].addEventListener("mouseover", function () {
         //         for (var j = 0; j < all_p.length ; j++) {
-        //         //      all_p[j].src = img_after[j];
-        //         console.log(img_after[0]);
-
-
+        //         all_p[j].src = img_after[j];
+        //         console.log(all_p[j]);
         //         }
         //     })
         //     all_a[i].addEventListener("mouseout", function () {
@@ -177,51 +203,51 @@
         // }
 
 
-        all_a[0].addEventListener("mouseover", function () {
-            all_p[0].src = img_after[0];
-        })
-        all_a[0].addEventListener("mouseout", function () {
-            all_p[0].src = img_before[0];
-        })
+        // all_a[0].addEventListener("mouseover", function () {
+        //     all_p[0].src = img_after[0];
+        // })
+        // all_a[0].addEventListener("mouseout", function () {
+        //     all_p[0].src = img_before[0];
+        // })
 
-        all_a[1].addEventListener("mouseover", function () {
-            all_p[1].src = img_after[1];
-        })
-        all_a[1].addEventListener("mouseout", function () {
-            all_p[1].src = img_before[1];
-        })
-
-
-        all_a[2].addEventListener("mouseover", function () {
-            all_p[2].src = img_after[2];
-        })
-        all_a[2].addEventListener("mouseout", function () {
-            all_p[2].src = img_before[2];
-        })
+        // all_a[1].addEventListener("mouseover", function () {
+        //     all_p[1].src = img_after[1];
+        // })
+        // all_a[1].addEventListener("mouseout", function () {
+        //     all_p[1].src = img_before[1];
+        // })
 
 
-        all_a[3].addEventListener("mouseover", function () {
-            all_p[3].src = img_after[3];
-        })
-        all_a[3].addEventListener("mouseout", function () {
-            all_p[3].src = img_before[3];
-        })
+        // all_a[2].addEventListener("mouseover", function () {
+        //     all_p[2].src = img_after[2];
+        // })
+        // all_a[2].addEventListener("mouseout", function () {
+        //     all_p[2].src = img_before[2];
+        // })
 
 
-        all_a[4].addEventListener("mouseover", function () {
-            all_p[4].src = img_after[4];
-        })
-        all_a[4].addEventListener("mouseout", function () {
-            all_p[4].src = img_before[4];
-        })
+        // all_a[3].addEventListener("mouseover", function () {
+        //     all_p[3].src = img_after[3];
+        // })
+        // all_a[3].addEventListener("mouseout", function () {
+        //     all_p[3].src = img_before[3];
+        // })
 
 
-        all_a[5].addEventListener("mouseover", function () {
-            all_p[5].src = img_after[5];
-        })
-        all_a[5].addEventListener("mouseout", function () {
-            all_p[5].src = img_before[5];
-        })
+        // all_a[4].addEventListener("mouseover", function () {
+        //     all_p[4].src = img_after[4];
+        // })
+        // all_a[4].addEventListener("mouseout", function () {
+        //     all_p[4].src = img_before[4];
+        // })
+
+
+        // all_a[5].addEventListener("mouseover", function () {
+        //     all_p[5].src = img_after[5];
+        // })
+        // all_a[5].addEventListener("mouseout", function () {
+        //     all_p[5].src = img_before[5];
+        // })
     </script>
 </body>
 

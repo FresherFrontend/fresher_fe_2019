@@ -13,6 +13,17 @@ a{
     width: 80%;
     margin: 0 auto;
 }
+.search{
+    position: absolute;
+    top: 0;
+    right: 87px;
+}
+.search i{
+    color: white;
+    font-size: 22px;
+    padding: 22px 40px;
+    background: #555555;
+}
 .mega-menu{
     height: 66px;
     background: #777777;
@@ -20,6 +31,7 @@ a{
 .mega-menu .container{
     display: flex;
     position: relative;
+    margin-top: 100px;
 }
 .mega-menu .drop1{
    width: 260px;
@@ -46,10 +58,12 @@ a{
 }
 .mega-menu .drop1 .drop2{
     position: absolute;
-    top: 66px;
     left: 0;
+    top: 66px;
     width: 1040px;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
 }
 .mega-menu .drop1 .drop2 .left{
     width: 235px;
@@ -89,7 +103,11 @@ a{
 }
 .mega-menu .drop1:hover .drop2{
     border-top: 6px solid #e30613;
-    display: block;
+    height: 235px;
+}
+.mega-menu .hover:hover .drop2{
+    border-top: 6px solid #e30613;
+    height: 293px;
 }
 .mega-menu .drop1 .drop2 .right{
     margin-top: 1px;
@@ -97,4 +115,7 @@ a{
     height: 100%;
     float: right;
     width: 805px;
+}
+.mega-menu .drop1 .drop2 .right .ul_lv3 li a::after{
+    content:"";
 }

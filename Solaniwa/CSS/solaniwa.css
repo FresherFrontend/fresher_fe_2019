@@ -64,6 +64,9 @@ li{
     text-decoration: none;
     border-right: 1px solid white;
 }
+.banner header nav .menu ul li .hover{
+    display: none;
+}
 .banner header nav .menu ul li span{
     padding-bottom: 5px;
     margin: 0 0 0 25px;
@@ -155,6 +158,16 @@ li{
     width: 180px;
     color: white;
 }
+.banner .nav .hover{
+    display: none;
+}
+.banner .nav a:hover .icon{
+    display: none;
+}
+.banner .nav a:hover .hover{
+    display: block;
+    margin-top: 5px;
+}
 .banner .logo-center{
     position: absolute;
     top: 9vw;
@@ -177,4 +190,25 @@ li{
 }
 .banner .logo_mg img{
     width: 100%;
+}
+
+
+@media only screen and (max-width: 768px){
+    .banner .nav{
+       flex-direction: row;
+        width: 100%;
+        top: 600px;
+        height: 115px;
+        justify-content: center;
+    }
+    .banner .nav a{
+        padding: 0px 50px 43px 55px;
+    }
+    .banner .nav .icon{
+        width: 100px;
+        height: 50px;
+    }
+    .banner .nav a:hover span{
+       display: none;
+    }
 }
