@@ -1,100 +1,100 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.menu{
-    width: 100%;
-}
-.menu ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    background: #777777;
-    position: relative;
-}
-.menu ul li{
+li{
     list-style: none;
-    line-height: 65px;
-    position: relative;
 }
-.menu ul li a{
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding:20px 70px 22px 70px;
+a{
     text-decoration: none;
 }
-.menu ul li:hover{
-    background: #e30613;
+.container{
+    width: 80%;
+    margin: 0 auto;
 }
-.menu ul li i{
-    position: absolute;
-    top: 22px;
-    right: 20px;
-    color: white;
-    font-size: 20px;
+.mega-menu{
+    height: 66px;
+    background: #777777;
 }
-.menu .fa-angle-up{
-    display: none;
-}
-.menu ul li:hover > .fa-angle-down{
-    display: none;
-}
-.menu ul li:hover > .fa-angle-up{
-    display: block;
-}
-.menu ul li:hover .drop_2{
-    display: block;
-    border-top: 6px solid #e30613;
-}
-.menu .drop_2{
-    position: fixed;
-    top: 166px;
-    left: 216px;
-    width: 1104px;
-    background: seagreen;
-    display: none;
-}
-.menu .drop_2 .ul_2{
-    flex-direction: column;
-    margin-top: 0;
-    width: 250px;
-}
-.menu .drop_2 .ul_2 li{
-    background: #dbdbdb;
-    width: 250px;
-    line-height: 60px;
-    border-bottom: 1px solid #a9a9a99c;
-}
-.menu .drop_2 .ul_2 li:last-child{
-    border-bottom: none;
-}
-.menu .drop_2 .ul_2 li:hover{
-    background: #666666;
-}
-.menu .drop_2 .ul_2 li:hover a{
-    color: white;
-}
-.menu .drop_2 .ul_2 a{
-    color:black;
-    font-size: 15px;
-    padding: 0;
-    margin-left: 20px;
-}
-.menu .drop_2 .ul_2 a:hover{
-   background: none;
-}
-.menu .drop_2 .li_drop{
+.mega-menu .container{
+    display: flex;
     position: relative;
 }
-.menu .drop_2 .li_drop ul{
-    position: absolute;
-    flex-direction: column;
-    top: -100px;
-    left: 250px;
-    background: none;
+.mega-menu .drop1{
+   width: 260px;
+   padding: 20px 0 24px 0;
 }
-.menu .drop_2 .li_drop ul li{
-    background: none;
+.mega-menu .drop1:hover{
+   background: #e30613;
+ }
+.mega-menu .drop1 a{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+}
+.mega-menu .drop1 a::after{
+    content: '\f107';
+   font-family: "FontAwesome";
+   margin-left: 10px;
+}
+.mega-menu .drop1:hover a::after{
+    content: '\f106';
+   font-family: "FontAwesome";
+   margin-left: 10px;
+}
+.mega-menu .drop1 .drop2{
+    position: absolute;
+    top: 66px;
+    left: 0;
+    width: 1040px;
+    display: none;
+}
+.mega-menu .drop1 .drop2 .left{
+    width: 235px;
+    background: #55555561;
+    opacity: 0.9;
+    float: left;
+}
+.mega-menu .drop1 .drop2 ul li{
+    padding: 19px 20px;
+    border-bottom: 1px solid darkgray;
+}
+.mega-menu .drop1 .drop2 ul li a::after{
+    content: "";
+}
+.mega-menu .drop1 .drop2 ul li a{
+    color: black;
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.mega-menu .drop1 .drop2 ul li a::after{
+    content: "\f105";
+    font-family: "FontAwesome";
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.mega-menu .drop1 .drop2 ul li:hover{
+    background: #666666;
+}
+.mega-menu .drop1 .drop2 ul li:hover a{
+    color: white;
+}
+.mega-menu .drop1 .drop2 ul li:hover a::after{
+    background: #666666;
+    margin-right: -10px;
+}
+.mega-menu .drop1:hover .drop2{
+    border-top: 6px solid #e30613;
+    display: block;
+}
+.mega-menu .drop1 .drop2 .right{
+    margin-top: 1px;
+    background: #e7e7e7;
+    height: 100%;
+    float: right;
+    width: 805px;
 }

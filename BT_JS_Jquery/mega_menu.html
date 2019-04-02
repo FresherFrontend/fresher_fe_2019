@@ -8,76 +8,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/mega_menu.css">
 </head>
 
 <body>
-    <div class="menu">
+    <div class="mega-menu">
         <div class="container">
-            <ul>
-                <li><a href="#">AEROSPACE</a>
-                    <i class="fas fa-angle-down"></i>
-                    <i class="fas fa-angle-up"></i>
-                    <div class="drop_2">
-                        <ul class="ul_2">
-                            <li class="li_drop"><a href="#">Capabilities</a>
-                                <ul>
-                                    <li><a href="#">Commercial MRO</a></li>
-                                    <li><a href="#">Aircraft Interiors</a></li>
-                                    <li><a href="#">Pilot Training</a></li>
-                                    <li><a href="#">Smart MRO</a></li>
-                                </ul>
-                            </li>
+            <div class="drop1">
+                <a href="#">AEROSPACE</a>
+                <div class="drop2">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Capabilities</a></li>
+                            <li><a href="#">Companies & Affiliates</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">Phong</div>
+                </div>
+            </div>
+
+            <div class="drop1">
+                <a href="">ELECTRONICS</a>
+                <div class="drop2">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Capabilities</a></li>
+                            <li><a href="#">Companies & Affiliates</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">RFQs and Tender Listings</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">Phong</div>
+                </div>
+            </div>
+
+
+            <div class="drop1">
+                <a href="">LAND SYSTEMS</a>
+                <div class="drop2">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Capabilities</a></li>
                             <li><a href="#">Companies & Affiliates</a></li>
                             <li><a href="#">Newsroom</a></li>
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                     </div>
-                </li>
-                <li><a href="#">ELECTRONICS</a>
-                    <i class="fas fa-angle-down"></i>
-                    <i class="fas fa-angle-up"></i>
-                    <div class="drop_2">
-                        <ul class="ul_2">
+                    <div class="right">Phong</div>
+                </div>
+            </div>
+            <div class="drop1">
+                <a href="">MARINE</a>
+                <div class="drop2">
+                    <div class="left">
+                        <ul>
                             <li><a href="#">Capabilities</a></li>
                             <li><a href="#">Companies & Affiliates</a></li>
                             <li><a href="#">Newsroom</a></li>
                             <li><a href="#">Contact Us</a></li>
-                            <li><a href="">RFQs and TENDER </a></li>
                         </ul>
                     </div>
-                </li>
-                <li><a href="#">LAND SYSTEMS
-                    </a>
-                    <i class="fas fa-angle-down"></i>
-                    <i class="fas fa-angle-up"></i>
-                    <div class="drop_2">
-                        <ul class="ul_2">
-                            <li><a href="#">Capabilities</a></li>
-                            <li><a href="#">Companies & Affiliates</a></li>
-                            <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">Contact Us11</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#">MARINE</a>
-                    <i class="fas fa-angle-down"></i>
-                    <i class="fas fa-angle-up"></i>
-                    <div class="drop_2">
-                        <ul class="ul_2">
-                            <li><a href="#">Capabilities</a></li>
-                            <li><a href="#">Companies & Affiliates</a></li>
-                            <li><a href="#">Newsroom</a></li>
-                            <li><a href="#">Contact Us111</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                    <div class="right">Phong</div>
+                </div>
+            </div>
         </div>
     </div>
-
-
+    <!-- <script>
+        $(document).ready(function () {
+            $(".drop1").hover(function () {
+                $(".drop2").fadeIn("slow");
+            });
+        });
+    </script> -->
     <script>
         var navs = document.querySelectorAll(".menu ul li");
         for (var i = 0; i < navs.length; i++) {
@@ -89,7 +96,6 @@
                         submenu[j].style.display = 'none';
                     }
                 }
-
                 if (mega.style.display == 'block') {
                     mega.style.display = 'none';
                 } else {
