@@ -3,4 +3,80 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	font-family: area;
+}
+.background img{
+	height: 100%;
+	width: 100%;
+
+	
+}
+p img{
+	width: 24px;
+	height: 24px;
+	display: block
+}
+a{
+	text-decoration: none;
+}
+.wrapper{
+	
+}
+.fixed-nav{
+	position: fixed;
+	right: 0;
+    top: 160px;
+    width: 40px;
+    z-index: 100;
+    background: #fff
+
+}
+.fixed-nav a{
+	height: 44px;
+	padding: 10px 0;
+	display: block;
+	position: relative;
+}
+.img-white{
+	display: none;
+}
+span.pc{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	display: none;
+    height: 100%;
+    width: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgba(195, 13, 35, 1);
+    border-right: 0 solid #c30d23;
+    font-size: 15px;
+    right: -165px;
+    text-transform: uppercase;
+    transition: .5s ease;
+    color: #fff;
+	padding: 12px;
+}
+p{
+	position: absolute;
+	z-index: 3;
+	padding: 0 9px;
+}
+p img{
+	border: none;
+	vertical-align: middle;
+}
+.fixed-nav a:hover span.pc{
+	right: 0;
+	display: block;
+	width: 165px
+	
+	
+}
+.fixed-nav a:hover p img{
+	display: none;
+}
+.fixed-nav a:hover p img.img-white{
+	display: block;
 }
