@@ -15,6 +15,9 @@ li{
 /* body{
     position: relative;
 } */
+/* .hover_menu{
+   background:  #666666;
+} */
 .icon{
     width: 20px;
     height: 20px;
@@ -147,7 +150,8 @@ li{
 .banner .nav a span p{
     margin: 10px 0 0 15px;
     display: flex;
-    color: #c30d23;
+    /* color: #c30d23; */
+    opacity: 0;
 }
 .banner .nav a:hover span{
     display: block;
@@ -157,6 +161,7 @@ li{
     display: block;
     width: 180px;
     color: white;
+    opacity: 1;
 }
 .banner .nav .hover{
     display: none;
