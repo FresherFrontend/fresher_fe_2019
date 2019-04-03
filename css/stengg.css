@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wapper{
+    width: 100%;
+}
+body{
+    color: #555555;
+    font-size: 16px;
+    font-weight: 400;
+}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* position: relative; */
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+/*****Header top*****/
+.header-top {
+    margin-left: 50%;
+    display: flex;
+}
+.shareprice {
+    width: 39%;
+    font-weight: 700;
+    padding: 18px 20px 10px 20px;
+    background-color: #f4f4f4;
+    color: #7f7f7f;
+}
+span.s-name {
+    margin-right: 5px;
+}
+span.s-money {
+    margin-right: 15px;
+}
+span.s-trade .icon-trade {
+    padding-right: 5px;
+    color: #119c0a;
+}
+.fontsize-control {
+    width: 15%;
+    margin-left: 20px;
+}
+.fontsize-control span.font-small a,
+.fontsize-control span.font-big a{
+    color: #9a9a9a;
+    /* margin-right: 14px; */
+    font-size: 14px;
+}
+.contact {
+    width: 20%;
+}
+span.content-contact a {
+    font-size: 0.875em;
+    color: #949494;
+    text-transform: capitalize;
+}
+span.content-contact a:hover
+.fontsize-control span.font-small a:hover,
+.fontsize-control span.font-big a:hover
+{
+    color: #e30613;
+}
+.fontsize-control, .contact,.socical-network {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 20px;
+}
+.socical-network {
+    width: 26%;
+    padding-right: 0px!important;
+    float: right;
+    left: 0px;
+}
+.socical-network ul.socicalNetwork {
+/*     padding-left: 18px; */
+    float: right;
+}
+ul.socicalNetwork li.item-socicalNetwork{
+    margin-left: 10px;
+}
+ul.socicalNetwork li.item-socicalNetwork a{
+    color: #555555;
+}
+ul.socicalNetwork li.item-socicalNetwork a:hover{
+    color: #e30613;
+}
+.fontsize-control::before, .contact::before{
+    content: '';
+    border-left: 1px solid red;
+    line-height: 15px;
+}
+/*****Header center******/
+.header-center{
+    display: flex;
+    margin-top: 3px;
+    margin-bottom: 25px;
+}
+.logoEnineering {
+    width: 30%;
+}
+.logoEnineering a img.logo {
+    width: 100%;
+}
+.menu {
+    width: 70%;
+}
+ul.list-menu {
+    float: right;
+    margin-top: 30px;
+}
+ul.list-menu li.item-menu {
+    margin-left: 30px;
+    float: right;
+}
+ul.list-menu li.item-menu a{
+    line-height: 18px;
+    font-size: 12.8px;
+    text-transform: uppercase;
+    color: #818181;
+}
+ul.list-menu li.item-menu a:hover{
+    color: #e30613;
+}
+/********Nav**********/
+nav.nav {
+    background-color: #777777;
+    height: 65px;
+}
+.navigration {
+    display: flex;
+    position: relative;
+}
+.content-nav{
+    width: 90%;
+}
+.search {
+    width: 10%;
+}
+ul.list-nav {
+    width: 100%;
+    display: flex;
+}
+li.item-nav-lv1 {
+    width: 25%;
+    line-height: 65px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.link-nav-a i.icon-nav {
+    margin-left: 8px;
+    font-weight: 100;
+    font-size: 14px;
+}
+li.item-nav-lv1 a {
+    font-size: 1.1875em;
+    color: #fff;
+}
+.search {
+    width: 10%;
+    text-align: center;
+    color: #fff;
+    background-color: #555555;
+    line-height: 65px;
+    height: 65px;
+}
+ul.list-nav li.item-nav-lv1:hover{
+    background-color: #e30613;
+}
+.content-list-nav-lv2 {
+    position: absolute;
+    width: 100%;
+    background-color: #e7e7e7;
+    top: 65px;
+}
+ul.list-nav-lv2 {
+    width: 254px;
+    background: #dbdbdb;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+li.item-nav-lv2 {
+    text-transform: capitalize;
+    border-bottom: 1px solid #fafafa;
+    width: 100%;
+    color: #555555;
+}
+li.item-nav-lv2 a {
+    padding-left: 30px;
+}
+li.item-nav-lv2:hover{
+    background-color: #666666;
+    color: #fff;
+}
+li.item-nav-lv2 a:hover{
+    color: #fff;
+}
+ul.list-nav-lv2 li.item-nav-lv2:last-child{
+    border-bottom: none;
+}
+.icon-navc2 {
+    float: right;
+    padding-right: 20px;
+    padding-top: 25px;
+}
+.icon-navc2:hover{
+
+}
+ul.group-item-lv2{
+    left: 254px;
+    position: absolute;
+}
+ul.group-item-nav-lv2 {
+    /* display: none; */
+    top: 0;
+    position: absolute;
+    left: 260px;
+    height: 304px;
+    padding: 10px 20px;
+}
+li.item-lv2 {
+    /* width: 50px; */
+    display: inline-block;
+    width: 49.5%;
+    left: 0px;
+}
+
