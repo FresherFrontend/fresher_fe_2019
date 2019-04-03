@@ -1,0 +1,139 @@
+@media all and (max-width:420px){
+
+}
+
+@media all and (min-width:421px) and (max-width:768px){
+
+}
+
+@media all and (min-width:768px) and (max-width:1024px){
+ 
+} 
+
+@media all and (min-width:1024px){ 
+    .cover {
+        padding: 25px;
+        background: url(https://d26s194ubor3a7.cloudfront.net/-/media/solaniwa/top/kv.jpg?d=20190304t121933);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 1000px;
+        z-index: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+.topnav {
+    position: fixed;
+    display: flex;
+    z-index: 10;
+    width: 100%;
+}
+
+.topnav-container {
+    display: flex;
+    margin: 5px auto;
+    width: 50%;
+    color: white;
+}
+.topnav-item {
+    display: flex;
+    margin: 0 2em 0 2em;
+}
+
+.topnav-item:hover {
+    border-bottom: 1px solid white;
+}
+.topnav-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: .5em;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+
+.dropdown {
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.dropdown .dropbtn {
+border: none;
+outline: none;
+color: white;
+
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: transparent;
+min-width: 160px;
+z-index: 0;
+margin-top: 2px;
+margin-left: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.flag {
+    height: 20px;
+    margin-top: -10px;
+}
+
+.kv-grandopen {
+    margin: 140px auto;
+    width: 25%;
+}
+
+.kv-grandopen img {
+    width: 100%;
+}
+
+.fixednav {
+    background-color: white;
+    right: 0;
+    top: 200px;
+    position: fixed;
+    z-index: 9;
+}
+
+.fixednav-item {
+    padding: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+
+.fixednav-item:hover {
+    background-color: red;
+    width: 200px;
+}
+
+.fixednav-text {
+    display: none;
+}
+
+.fixednav-item:hover span{
+    display: inline;
+}
+
+.fixednav-icon {
+    width: 20px;
+}
+nav {
+    background: transparent;
+}
+.changeColor {
+    background: red;
+}
