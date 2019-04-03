@@ -151,43 +151,40 @@
 			<li class="parent1"><a><i class="fa fa-search" aria-hidden="true"></i></a></li>
 		</ul>
 	</div>
-
-
-
 	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 
-		  $(".parent1").hover(function(){
-		    $(".dropdown", this).slideDown();
-		    $(".child1", this).css("display", "block");
-		    $(this).css("background-color", "#ba120d");
-		    $(".parent2", this).first().css({"background-color": "#777777", "color": "white"});
-		    $(".parent2", this).first().children().css("display", "block");
-		    $(".icon-change", this).removeClass("fa-chevron-down");
-		    $(".icon-change", this).addClass("fa-chevron-up");
-		  }, function(){
-		    $(".dropdown", this).stop().slideUp();
-		    $(".parent2", this).first().css({"background-color": "#e7e7e7", "color": "#4d4e4f"});
-		    $(".child1", this).css("display", "none");
-		    $(this).css("background-color", "#777777");
-		    $(".icon-change", this).addClass("fa-chevron-down");
-		    $(".icon-change", this).removeClass("fa-chevron-up");
-		  });
+			$(".parent1").hover(function(){
+				$(".dropdown", this).slideDown();
+				$(".child1", this).css("display", "block");
+				$(this).css("background-color", "#ba120d");
+				$(".parent2", this).first().css({"background-color": "#777777", "color": "white"});
+				$(".parent2", this).first().children().css("display", "block");
+				$(".icon-change", this).removeClass("fa-chevron-down");
+				$(".icon-change", this).addClass("fa-chevron-up");
+			}, function(){
+				$(".dropdown", this).stop().slideUp();
+				$(".parent2", this).first().css({"background-color": "#e7e7e7", "color": "#4d4e4f"});
+				$(".child1", this).css("display", "none");
+				$(this).css("background-color", "#777777");
+				$(".icon-change", this).addClass("fa-chevron-down");
+				$(".icon-change", this).removeClass("fa-chevron-up");
+			});
 
-		  $(".parent2").hover(function(){
-		  	$(this).first().css({"background-color": "#777777", "color": "white"});
-		    $(".child2", this).css("display", "block");
-		  }, function(){
-		    $(".child2", this).css("display", "none");
-		    $(this).first().css({"background-color": "#e7e7e7", "color": "#4d4e4f"});
-		  });
-		  $(".baby").hover(function(){
-		  	$(this).css("color", "#ba120d");
-		  }, function(){
-		    $(this).css( "color", "#4d4e4f");
-		  });
+			$(".parent2").hover(function(){
+				$(this).first().css({"background-color": "#777777", "color": "white"});
+				$(".child2", this).css("display", "block");
+			}, function(){
+				$(".child2", this).css("display", "none");
+				$(this).first().css({"background-color": "#e7e7e7", "color": "#4d4e4f"});
+			});
+			$(".baby").hover(function(){
+				$(this).css("color", "#ba120d");
+			}, function(){
+				$(this).css( "color", "#4d4e4f");
+			});
 		});
 	</script>
 </body>
