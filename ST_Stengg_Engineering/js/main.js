@@ -50,7 +50,37 @@ function onclickBackPC(){
 	}
 }
 
+function nextMenuLv2(){
+	var getLiLv1s = document.querySelectorAll(".menu-mobile-lv1");
+	for (var i = 0; i < getLiLv1s.length; i++) {
+		let getLiLv1 = getLiLv1s[i];
+		getLiLv1.setAttribute("class","menu-mobile-lv1 next-view-lv2")
+	}
+	
+}
+function backMenuLv1(){
+	var getLiLv1s = document.querySelectorAll(".menu-mobile-lv1");
+	for (var i = 0; i < getLiLv1s.length; i++) {
+		let getLiLv1 = getLiLv1s[i];
+		getLiLv1.setAttribute("class","menu-mobile-lv1")
+	}
+}
 
+function viewSearch(){
+	var viewSearchs = document.querySelectorAll(".wrapper_view_search");
+	for (var i = 0; i < viewSearchs.length; i++) {
+		let viewSearch = viewSearchs[i];
+		viewSearch.style.display = "block";
+	}
+}
+
+function backPC(){
+	var viewSearchs = document.querySelectorAll(".wrapper_view_search");
+	for (var i = 0; i < viewSearchs.length; i++) {
+		let viewSearch = viewSearchs[i];
+		viewSearch.style.display = "none";
+	}
+}
 
 
 

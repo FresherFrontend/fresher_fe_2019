@@ -54,7 +54,7 @@
 					</div>
 				</div>
 				<div class="left_side social_network">
-					<div class="left_side left_border">
+					<div class="left_side left_border" onclick = "viewSearch()">
 						<a href="#" class="fa fa-search" ></a>
 					</div>
 				</div>
@@ -172,11 +172,32 @@
 						</div>
 					</div>
 				</li>
-				<li class="search_pro"><a href="#" class="fa fa-search btn_search_header"></a></li>
+				<li class="search_pro" onclick = "viewSearch()">
+					<a href="#" class="fa fa-search btn_search_header"></a>
+				</li>
 			</ul>
 		</div>
 	</div>
-
+	<div class="wrapper_view_search">
+		<div class="wrap_view_search">
+			<div class="header_search">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="heading-search-result">Search ST Engineering</h2>
+					</div>
+					<div class="col-lg-6">
+						<div class="close-search-header-box">
+							<a id="searchCloseButton" href="#" title="Close" class="close-search-header-btn" onclick="backPC()"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box_search">
+				<input type="text" name="search" class="ipt_search">
+				<button name="btn_search" class="btn_search"></button>
+			</div>
+		</div>
+	</div>
 	<div class="background_menu_mobi" >
 		<div class="wrap_menu_mobi" onclick="onclickBackPC()"></div>
 		<div class="menu_mobi">
@@ -189,35 +210,34 @@
 				</li>
 				<li class="menu-mobile-lv1">
 					<a href="#" class="link-menu-mobile-lv1">about us</a>
-					<div class="next-view-lv next-view-lv2"></div>
-					<!-- <div class="menu_mb_lv2">
-						<div class="back_lv1">
-							<a href="#">about us</a>
-						</div>
+					<div class="next-view-lv" onclick="nextMenuLv2()"></div>
+
+					<div class="menu_mb_lv2">
+						<div class="back_lv1" onclick="backMenuLv1()">about us</div>
 						<ul class="list_menu_mb_lv2">
-							<li class="menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Our Business</a>
+							<li class="li_menu_mb_lv2">
+								<a href="#" class="link-menu-mobile-lv2">Our Business</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Our Vision and Values</a>
+								<a href="#" class="link-menu-mobile-lv2">Our Vision and Values</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Global Presence</a>
+								<a href="#" class="link-menu-mobile-lv2">Global Presence</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Board of Directors</a>
+								<a href="#" class="link-menu-mobile-lv2">Board of Directors</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Leadership Team</a>
+								<a href="#" class="link-menu-mobile-lv2">Leadership Team</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Corporate Governance</a>
+								<a href="#" class="link-menu-mobile-lv2">Corporate Governance</a>
 							</li>
 							<li class="li_menu_mb_lv2">
-								<a href="#" class="link-menu-mobile-lv1">Code of Business Conduct and Ethics</a>
+								<a href="#" class="link-menu-mobile-lv2">Code of Business Conduct and Ethics</a>
 							</li>
 						</ul>
-					</div> -->
+					</div>
 				</li>
 				<li class="menu-mobile-lv1">
 					<a href="#" class="link-menu-mobile-lv1">investor relations</a>
