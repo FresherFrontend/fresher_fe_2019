@@ -123,8 +123,10 @@
 	padding-top: 7px;
 	position: absolute;
 	top: 0px;
-	right: -1000px;
+	right: 0px;
+	display: none;
 	z-index: -1;
+	animation-duration: 1s !important;
 }
 .logo1{
 	position: relative;
