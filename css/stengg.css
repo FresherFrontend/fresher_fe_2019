@@ -16,7 +16,6 @@ body{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* position: relative; */
 }
 ul li{
     list-style: none;
@@ -55,7 +54,6 @@ span.s-trade .icon-trade {
 .fontsize-control span.font-small a,
 .fontsize-control span.font-big a{
     color: #9a9a9a;
-    /* margin-right: 14px; */
     font-size: 14px;
 }
 .contact {
@@ -64,8 +62,13 @@ span.s-trade .icon-trade {
 span.content-contact a {
     font-size: 0.875em;
     color: #949494;
+    padding-left: 18px;
     text-transform: capitalize;
 }
+span.font-small {
+    padding-left: 18px;
+}
+
 span.content-contact a:hover
 .fontsize-control span.font-small a:hover,
 .fontsize-control span.font-big a:hover
@@ -73,8 +76,6 @@ span.content-contact a:hover
     color: #e30613;
 }
 .fontsize-control, .contact,.socical-network {
-    padding-left: 18px;
-    padding-right: 18px;
     padding-top: 20px;
 }
 .socical-network {
@@ -84,7 +85,6 @@ span.content-contact a:hover
     left: 0px;
 }
 .socical-network ul.socicalNetwork {
-/*     padding-left: 18px; */
     float: right;
 }
 ul.socicalNetwork li.item-socicalNetwork{
@@ -96,10 +96,10 @@ ul.socicalNetwork li.item-socicalNetwork a{
 ul.socicalNetwork li.item-socicalNetwork a:hover{
     color: #e30613;
 }
-.fontsize-control::before, .contact::before{
-    content: '';
-    border-left: 1px solid red;
+.socical-network::before, .contact::before, .fontsize-control::before {
+    border-left: 1px solid #555;
     line-height: 15px;
+    content: '';
 }
 /*****Header center******/
 .header-center{
@@ -136,7 +136,6 @@ ul.list-menu li.item-menu a:hover{
 /********Nav**********/
 nav.nav {
     background-color: #777777;
-    height: 65px;
 }
 .navigration {
     display: flex;
@@ -152,13 +151,13 @@ ul.list-nav {
     width: 100%;
     display: flex;
 }
-li.item-nav-lv1 {
+ul.list-nav>li.item-nav-lv1 {
     width: 25%;
-    line-height: 65px;
     text-transform: uppercase;
     text-align: center;
+    padding: 22px 0px;
 }
-.link-nav-a i.icon-nav {
+ul.list-nav>li.item-nav-lv1>.link-nav-a i.icon-nav {
     margin-left: 8px;
     font-weight: 100;
     font-size: 14px;
@@ -175,8 +174,18 @@ li.item-nav-lv1 a {
     line-height: 65px;
     height: 65px;
 }
-ul.list-nav li.item-nav-lv1:hover{
+ ul.list-nav li.item-nav-lv1:hover{
     background-color: #e30613;
+}
+ul.list-nav li.item-nav-lv1 .content-list-nav-lv2{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+
+ul.list-nav li.item-nav-lv1:hover .content-list-nav-lv2{
+    display: block;
+    color: #fff;
 }
 .content-list-nav-lv2 {
     position: absolute;
@@ -184,22 +193,26 @@ ul.list-nav li.item-nav-lv1:hover{
     background-color: #e7e7e7;
     top: 65px;
 }
+ul.list-nav li.item-nav-lv1 .content-list-nav-lv2 .list-nav-lv2:hover .item-nav-lv2{
+    display: block;
+    color: #fff;
+}
 ul.list-nav-lv2 {
     width: 254px;
     background: #dbdbdb;
     text-align: left;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
-li.item-nav-lv2 {
+.list-nav-lv2 > li.item-nav-lv2 {
     text-transform: capitalize;
     border-bottom: 1px solid #fafafa;
     width: 100%;
+    padding: 22px 15px 22px 23px;
+}
+.list-nav-lv2 > li.item-nav-lv2>a {
     color: #555555;
 }
-li.item-nav-lv2 a {
-    padding-left: 30px;
-}
-li.item-nav-lv2:hover{
+.content-list-nav-lv2>ul.list-nav-lv2 li.item-nav-lv2:hover{
     background-color: #666666;
     color: #fff;
 }
@@ -211,28 +224,37 @@ ul.list-nav-lv2 li.item-nav-lv2:last-child{
 }
 .icon-navc2 {
     float: right;
-    padding-right: 20px;
-    padding-top: 25px;
-}
-.icon-navc2:hover{
-
+    padding-right: 5px;
 }
 ul.group-item-lv2{
     left: 254px;
     position: absolute;
 }
 ul.group-item-nav-lv2 {
-    /* display: none; */
     top: 0;
     position: absolute;
-    left: 260px;
-    height: 304px;
-    padding: 10px 20px;
+    left: 254px;
+    padding: 20px 40px;
+    width: calc(100% - 254px);
 }
 li.item-lv2 {
-    /* width: 50px; */
     display: inline-block;
     width: 49.5%;
     left: 0px;
+    padding-bottom: 7px;
+    font-size: 0.875em;
+    letter-spacing: 0px;
+    vertical-align: top;
 }
-
+li.item-lv2>a {
+    color: #555555;
+}
+li.item-lv2 a:hover {
+    color: red;
+}
+ul.list-nav-lv2 li.item-nav-lv2:hover ul.group-item-nav-lv2{
+    display: block;
+}
+.item-nav-lv1:hover ul.list-nav-lv2 li.item-nav-lv2:hover ul.group-item-nav-lv2 {
+    display: block;
+}
