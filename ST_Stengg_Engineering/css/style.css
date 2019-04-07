@@ -512,7 +512,7 @@ button.btn_search:after{
 
 }
 .menu_mb_lv2{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: -310px;
 	z-index: 510;
