@@ -41,5 +41,47 @@ const Header = {
       });
     }
   },
+
+
+  onClickMenu: () => {
+    // window.onClickMenu = Header.onClickMenu;
+    var menuLv1s = document.querySelectorAll("span.btn_menu_lv2");
+    var menuLv2 = document.querySelector("ul.ul_menu_lv2");
+    var menuMobi = document.querySelector(".menu_mobile");
+    menuLv1s.forEach(menuLv1 => {
+      // var styleRotateLv1 = menuLv1.style.transform;
+      // var styleDisplayLv2 = menuLv2.style.display;
+      menuLv1.addEventListener('click', () => {
+        if ("rotate(180deg)" == menuLv1.style.transform) {
+          menuLv1.style.transform = "rotate(0deg)";
+          menuLv2.style.height = "0";
+          menuMobi.style.height = "389.69px";
+        } else {
+          menuLv1.style.transform = "rotate(180deg)";
+          menuLv2.style.height = "169px";
+          menuMobi.style.height = "558.69px";
+
+        }
+      });
+    })
+  },
+
+  onClickShowMenu: () => {
+    var menu = document.querySelector(".mobile_menu");
+    var menuMobi = document.querySelector(".menu_mobile");
+    menu.onclick = () => {
+      let menu2 = document.querySelector(".mobile_menu");
+      let getClassMoiMenu2 = menu2.getAttribute("class");
+      
+      if (getClassMoiMenu2 == "mobile_menu mobile_menu_icon") {
+        menu2.setAttribute("class","mobile_menu mobile_menu_icon_x");
+        menuMobi.style.height = "389.69px";
+      }else{
+        menu2.setAttribute("class","mobile_menu mobile_menu_icon");
+        menuMobi.style.height = "0";
+      }
+    }
+  }
+
 };
 export default Header;

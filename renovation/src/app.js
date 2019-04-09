@@ -4,7 +4,9 @@ import Header from './views/components/header/header';
 require('normalize.css');
 
 $(() => {
-  // Code here
+ // Code here 
+ Header.onClickMenu();
+ Header.onClickShowMenu();
 });
 
 $(document).ready(() => {
@@ -18,5 +20,5 @@ $(window).on('resize', () => {
 });
 
 window.onload = () => {
-
+  
 };
