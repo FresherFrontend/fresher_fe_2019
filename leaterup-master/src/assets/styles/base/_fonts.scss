@@ -33,3 +33,12 @@
     font-weight: 700;
     font-style: normal;
 }
+/* overpass-regular - latin */
+@font-face {
+    font-family: 'Overpass';
+    font-display: fallback;
+    src: url('./fonts/Overpass/overpass-v3-latin-regular.woff') format('woff'),
+        url('./fonts/Overpass/overpass-v3-latin-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
