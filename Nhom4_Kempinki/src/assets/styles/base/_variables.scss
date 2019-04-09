@@ -23,14 +23,17 @@ $fonts: (
     heading: ('Kreon', sans-serif),
     content: ('ProximaNova', sans-serif),
     icomoon: ('icomoon'),
-    fontawesome: ('Fontawesome')
+    fontawesome: ('Fontawesome'),
+    hel: ('Helvetica_Neue', sans-serif),
+    hel-medium : ('Helvetica',sans-serif)
 );
 
 $font-main: fonts(main);
 $font-heading: fonts(heading);
 $font-icomoon: fonts(icomoon);
 $font-fontawesome: fonts(fontawesome);
-
+$font-hel: fonts(hel);
+$font-hel-medium: fonts(hel-medium);
 $fontweight-light: fontWeight(light);
 $fontweight-regular: fontWeight(regular);
 $fontweight-medium: fontWeight(medium);
@@ -56,8 +59,12 @@ $colors: (
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
     c-red: #A94442,
+    bg-color: #010f2a,
+    text-color: #b5a191
 );
 // // main-colors:
+$text-color: color(text-color);
+$bg-color: color(bg-color);
 $bg-color-primary: color(c-blue);
 $bg-color-primary-white: color(c-white);
 $bg-color-primary-pink: color(c-pink);

@@ -6,7 +6,12 @@
     src: url('./fonts/FontAwesome/FontAwesome.woff') format('woff');
     font-style: normal;
 }
-
+@font-face{
+    font-family: 'FontAwe';
+    font-display: fallback;
+    src: url('./fonts/FontAwe/fontawe.otf') format('otf');
+    font-style: normal;
+}
 @font-face {
     font-family: 'Kreon';
     font-display: fallback;
@@ -32,4 +37,18 @@
         url('./fonts/Kreon/Kreon-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica_Neue';
+    font-display: fallback;
+    src: url('./fonts/Helvetica/helveticaneue.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Helvetica';
+    font-display: fallback;
+    src: url('./fonts/Helvetica/helveticaneuelight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
