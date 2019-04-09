@@ -1,11 +1,6 @@
-/*----------------------------------------------------*/
-/*  Portfolio Isotope js
-/*----------------------------------------------------*/
-// var isotope = require('isotope-layout/dist/isotope.pkgd.min');
 var $ = require('jquery');
 var jQueryBridget = require('jquery-bridget');
 var Isotope = require('isotope-layout');
-
 const Portfolio = {
     portfolio_isotope: () => {
         jQueryBridget('isotope', Isotope, $);
