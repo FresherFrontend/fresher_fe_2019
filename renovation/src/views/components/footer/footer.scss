@@ -1,0 +1,161 @@
+.bgr_contact_footer {
+  width: 100%;
+  background-color: #f59720;
+  padding: 15px;
+
+  .boreder_contact_footer {
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    text-align: center;
+    padding: 60px 0;
+
+    p:last-child {
+      margin-top: 15px;
+    }
+    p {
+      padding: 15px 0;
+    }
+    p span.span_title {
+      font-family: $font-main;
+      color: $text-color-secondary;
+      font-size: 24px;
+      font-weight: $fontweight-light;
+      line-height: 24px;
+      text-transform: uppercase;
+
+      @include not-mobile {
+        font-size: 36px;
+        line-height: 36px;
+      }
+    }
+    p .span_content {
+      font-family: $font-main;
+      color: hsla(0, 0%, 100%, 0.69);
+      font-size: 18px;
+      font-weight: $fontweight-light;
+      line-height: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      @include not-mobile {
+        font-size: 18px;
+        letter-spacing: 4px;
+      }
+    }
+    p .btn_contact_us {
+      span {
+        padding: 15px 25px;
+        font-weight: 400;
+        line-height: 1.3em;
+        color: #393939;
+        background-color: #f6c427;
+        letter-spacing: 0;
+        font-family: fonts(pTSansNarrow);
+        font-size: 17px;
+
+        &:hover {
+          background-color: #ffd957;
+        }
+        &:after {
+          font-family: "Fontawesome";
+          content: "\f0e0";
+          padding-left: 10px;
+          font-size: 17px;
+          color: $text-color-black;
+        }
+      }
+    }
+  }
+}
+.wrapper_footer {
+  padding: 80px 0;
+  background-color: #f1f1f1;
+  .container {
+    margin: 10px;
+    @include desktop{
+        margin: 0 40px;
+    }
+    .column_footer {
+      .footer_title {
+        margin-bottom: 25px;
+        color: #3f3f3f;
+        font-size: 15px;
+        font-weight: $fontweight-bold;
+        text-transform: uppercase;
+      }
+      .footer_content {
+        padding-bottom: 26px;
+        color: #757575;
+        line-height: 1.7;
+        font-size: 15px;
+        font-weight: $fontweight-light;
+
+        @include desktop{
+            font-size: 20px;
+        }
+      }
+      .social_icon {
+        ul {
+          width: 100%;
+
+          li {
+            display: inline-block;
+            margin: 0 2px;
+            border-radius: 10%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin-top: 4px;
+
+            @include tablet{
+                width: 27px;
+                height: 27px;
+            }
+            a {
+              color: #fff;
+              font-size: 15px;
+              font-family: "Font Awesome 5 Brands";
+              display: block;
+              margin-top: 4px;
+
+            }
+          }
+          .social_icon_facebook {
+            background-color: #3b5998;
+
+            a::before {
+              content: "\f39e";
+            }
+          }
+          .social_icon_twitter {
+            background-color: #1da1f2;
+
+            a::before {
+              content: "\f099";
+            }
+          }
+          .social_icon_houzz {
+            background-color: #7ac142;
+
+            a::before {
+              content: "\f27c";
+            }
+          }
+          .social_icon_yelp {
+            background-color: #af0606;
+
+            a::before {
+              content: "\f1e9";
+            }
+          }
+          .social_icon_pinterest {
+            background-color: #bd081c;
+
+            a::before {
+              content: "\f231";
+            }
+          }
+        }
+      }
+    }
+  }
+}

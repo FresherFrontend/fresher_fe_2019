@@ -72,16 +72,16 @@ const Header = {
     menu.onclick = () => {
       let menu2 = document.querySelector(".mobile_menu");
       let getClassMoiMenu2 = menu2.getAttribute("class");
-      
+
       if (getClassMoiMenu2 == "mobile_menu mobile_menu_icon") {
-        menu2.setAttribute("class","mobile_menu mobile_menu_icon_x");
+        menu2.setAttribute("class", "mobile_menu mobile_menu_icon_x");
         menuMobi.style.height = "389.69px";
-      }else{
-        menu2.setAttribute("class","mobile_menu mobile_menu_icon");
+      } else {
+        menu2.setAttribute("class", "mobile_menu mobile_menu_icon");
         menuMobi.style.height = "0";
       }
     }
-  }
+  },
 
 };
 export default Header;

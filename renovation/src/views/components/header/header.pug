@@ -2,42 +2,58 @@
 header
     .bgr_header
         .width_container
-            //- .logo_web
-            //-     a(href="index.pug" title="Renovation")
-            //-         img.default_logo(src="https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/themes/renovation-progression/images/logo.png" alt="Renovation")
-            .wrap_grid_menu
-                .grid_menu
-                    .nav_container
+            .logo_web
+                a(href="/" title="Renovation")
+                    img.default_logo(src="https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/themes/renovation-progression/images/logo.png" alt="Renovation")
+            .wrap_grid_menu_left.start-lg
+                .grid_menu_left
+                    .nav_container_left
                         .menu_left
                             ul.menu_left_lv1
                                 li
-                                    a(href="#") home
+                                    a(href="/")
+                                        span home
+                                li.li__shop
+                                    a.link__shop(href="#")
+                                        span.span_icon_shop shop
+                                    ul.menu_left_lv2
+                                        li
+                                            a(href="#") 
+                                                span.icon_account My Account
+                                        li
+                                            a(href="#")
+                                                span.icon_cart Shopping cart
+                                        li
+                                            a(href="#")
+                                                span.icon_checkout Checkout
                                 li
-                                    a(href="#") shop
+                                    a(href="#")
+                                        span services
                                 li
-                                    a(href="#") services
+                                    a(href="#")
+                                        span portfolio
+            .wrap_grid_menu_right.end-lg
+                .grid_menu_right
+                    .nav_container_right
+                        .menu_right
+                            ul.menu_right_lv1
                                 li
-                                    a(href="#") portfolio
-            .wrap_grid_menu
-                .grid_menu
-                    .nav_container
-                        .menu_left
-                            ul.menu_left_lv1
+                                    a(href="#") 
+                                        span testimonials
                                 li
-                                    a(href="#") testimonials
+                                    a(href="#") 
+                                        span latest news
                                 li
-                                    a(href="#") latest
-                                li
-                                    a(href="#") services
-                                li
-                                    a(href="#") portfolio
+                                    a(href="#") 
+                                        span contact us
+                                
             .colum_icon_mobi
                 .mobile_menu.mobile_menu_icon
     .wrapp_menu_mobile
         .menu_mobile
             ul.ul_menu_lv1
                 li.menu_lv1
-                    a.link_menu_lv1(href="#") home
+                    a.link_menu_lv1(href="/") home
                 li.menu_lv1
                     a.link_menu_lv1(href="#") shop
                     span.btn_menu_lv2

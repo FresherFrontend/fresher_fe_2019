@@ -19,11 +19,14 @@ $font-weight: (
 );
 
 $fonts: (
-    main: ("Roboto",sans-serif),
+    main: ("Fira Sans",sans-serif),
     heading: ('Kreon', sans-serif),
     content: ('ProximaNova', sans-serif),
     icomoon: ('icomoon'),
-    fontawesome: ('Fontawesome')
+    fontawesome: ('Fontawesome'),
+    pTSansNarrow: ('PT Sans Narrow', sans-serif)
+    
+
 );
 
 $font-main: fonts(main);
