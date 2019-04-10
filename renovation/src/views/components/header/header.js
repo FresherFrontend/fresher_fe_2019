@@ -41,6 +41,7 @@ const Header = {
       });
     }
   },
+<<<<<<< HEAD
 
 
   onClickMenu: () => {
@@ -85,3 +86,7 @@ const Header = {
 
 };
 export default Header;
+=======
+};
+export default Header;
+>>>>>>> Khanv49

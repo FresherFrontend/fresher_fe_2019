@@ -4,21 +4,43 @@ import Header from './views/components/header/header';
 require('normalize.css');
 
 $(() => {
- // Code here 
- Header.onClickMenu();
- Header.onClickShowMenu();
+    // Code here 
+    Header.onClickMenu();
+    Header.onClickShowMenu();
 });
 
 $(document).ready(() => {
-  Global.lazyLoad();
+    Global.lazyLoad();
 });
 
 $(window).on('resize', () => {
-  setTimeout(() => {
-    Global.lazyLoad();
-  }, 250);
+    setTimeout(() => {
+        Global.lazyLoad();
+    }, 250);
 });
 
 window.onload = () => {
-  
+
+};
+import Portfolio from './views/components/portfolio/portfolio';
+require('normalize.css');
+// require('isotope-layout');
+
+$(() => {
+    // Code here
+});
+
+$(document).ready(() => {
+    Global.lazyLoad();
+    Portfolio.portfolio_isotope();
+});
+
+$(window).on('resize', () => {
+    setTimeout(() => {
+        Global.lazyLoad();
+    }, 250);
+});
+
+window.onload = () => {
+
 };
