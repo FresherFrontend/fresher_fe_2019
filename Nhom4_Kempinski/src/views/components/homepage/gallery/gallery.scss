@@ -1,0 +1,151 @@
+
+
+.home-gallery{
+    margin-bottom: 33px;
+    .container{
+        max-width: 1055px;
+    }
+    .section-title{
+        margin-bottom: 46px;
+    }
+    .gallery-slide{
+        .slick-prev{
+            left: -105px;
+        }
+        .slick-next{
+            right: -59px;
+        }
+        .slick-prev,.slick-next{
+            top: 36%;
+        }
+        .slick-prev:before, .slick-next:before{
+            display: block;
+        }
+        .slick-slide{
+            margin: 0 10px;
+        }
+        .gallery-item{
+            display: block;
+            position: relative;
+            padding-top: 100%;
+            .bg-dark,img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+            .bg-dark{
+                z-index: 2;
+                visibility: hidden;
+                opacity: 0;
+                background-color: #00000030;
+                color: white;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:hover .bg-dark{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .gallery-footer{
+        padding-top: 30px;
+        text-align: center;
+        position: relative;
+        a.btn-further-info{
+            margin: 0 6px;
+        }
+        a.btn-further-info{
+            padding: 6px 42px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+        .gallery-copy{
+            position: absolute;
+            top: 3px;
+            right: 0;
+            font-size: 13px;
+            font-weight: 100;
+            color: #BAB4AF;
+            letter-spacing: 0.7px;
+        }
+    }
+
+}
+// end home-gallery
+
+.gallery-slide2{
+    a,p{
+        color: $text-color-black;
+    }
+    .user{
+        margin-bottom: 40px;
+        a{
+            display: flex;
+            img{
+                width: auto;
+                margin-right: 45px;
+            }
+
+        }
+        
+    }
+    .photo-caption{
+        height: 70px;
+        overflow-y: scroll;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 35px;
+    }
+    .photo-sharing{
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            li{
+                margin-left: 10px;
+            }
+        }
+        a{
+            i::after{
+                font-family: 'Fontawesome';
+                font-style: normal;
+            }
+        }
+        i.fa-facebook::after{
+            content: "\f109";
+        }
+        i.fa-twitter::after{
+            content: "\f26c";
+        }
+        i.fa-pinterest-p::after{
+            content: "\f108";
+        }
+    }
+    h3{
+        font-size: 20px;
+        text-align: center;
+        color: $text-color-black;
+    }
+    // .hotel-info{
+    //     // width: 130px;
+    //     // margin: 0 auto;
+    //     // padding-top: 10%;
+    //     // position: relative;
+    //     // img{
+    //     //     // position: absolute;
+    //     //     // top: 0;
+    //     //     // left: 0;
+    //     //     // width: 100%;
+    //     //     // height: 100%;
+    //     // }
+    // }
+    img{
+        width: 100%;
+    }
+}
