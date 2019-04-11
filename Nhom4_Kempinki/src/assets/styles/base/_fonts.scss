@@ -41,7 +41,7 @@
 @font-face {
     font-family: 'Helvetica_Neue';
     font-display: fallback;
-    src: url('./fonts/Helvetica/helveticaneue.ttf') format('truetype');
+    src: url('./fonts/Helvetica/helveticaneuebold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -49,6 +49,13 @@
     font-family: 'Helvetica';
     font-display: fallback;
     src: url('./fonts/Helvetica/helveticaneuelight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'KingsCaslon';
+    font-display: fallback;
+    src: url('./fonts/KingsCaslon/KingsCaslon-Italic.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
