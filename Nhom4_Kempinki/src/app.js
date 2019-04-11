@@ -1,7 +1,11 @@
-// import './assets/styles/_app.scss';
 import Global from './views/components/global/global';
 import Header from './views/components/header/header';
+import Experiences from './views/components/homepage/experiences/experiences';
+import HomeGallery from './views/components/homepage/gallery/gallery';
+import SpecialOffers from './views/components/homepage/specialoffers/specialoffers';
+import './assets/scripts/jquery.fancybox.min.js';
 require('normalize.css');
+require('slick-carousel');
 
 $(() => {
   // Code here
@@ -9,6 +13,10 @@ $(() => {
 
 $(document).ready(() => {
   Global.lazyLoad();
+  Experiences.experiencesCarousel();
+  HomeGallery.homeGalleryCarousel();
+  HomeGallery.homeGalleryCarouselInfo();
+  SpecialOffers.specialOffersCarousel();
 });
 
 $(window).on('resize', () => {

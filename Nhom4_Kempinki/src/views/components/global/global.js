@@ -1,4 +1,6 @@
 import LazyLoad from 'vanilla-lazyload';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+
 
 const Global = {
   lazyLoad: (thresDistance) => {
