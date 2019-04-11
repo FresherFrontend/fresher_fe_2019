@@ -2,6 +2,7 @@
 $grid-breakpoints: (
     xxs: 360px,
     xs: 481px,
+    smminus:767px,
     sm: 768px,
     smplus: 769px,
     md: 992px,
@@ -19,7 +20,7 @@ $font-weight: (
 );
 
 $fonts: (
-    main: ("Roboto",sans-serif),
+    main: ("Runda",sans-serif),
     heading: ('Kreon', sans-serif),
     content: ('ProximaNova', sans-serif),
     icomoon: ('icomoon'),
@@ -56,9 +57,10 @@ $colors: (
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
     c-red: #A94442,
+    c-gray-2: #fcfcfc,
 );
 // // main-colors:
-$bg-color-primary: color(c-blue);
+$bg-color-primary: color(c-gray-2);
 $bg-color-primary-white: color(c-white);
 $bg-color-primary-pink: color(c-pink);
 $bg-color-black: color(c-black);

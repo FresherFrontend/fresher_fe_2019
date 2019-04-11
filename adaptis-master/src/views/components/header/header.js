@@ -1,45 +1,28 @@
 const Header = {
-  toggleLanguageDropDownDesktop: () => {
-    const languageBtn = document.querySelector('#dropdownLanguageBtn');
-    const languageList = document.querySelector('#dropdownLanguageList');
-    if (languageBtn && languageList) {
-      languageBtn.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        evt.stopPropagation();
-        languageList.classList.toggle('open-language');
-      });
-      document.querySelector('body').addEventListener('click', () => {
-        if (languageList.classList.contains('open-language')) languageList.classList.remove('open-language');
-      });
-    }
+  toggleDropDownMenu: () => {
+    $(".hamburger").on("click", function () {
+      $(this).toggleClass("menu_active");
+      $('.main-menu nav ul').toggle(200, 'linear');    
+    });
   },
-  handleClickHamburgerOpenNav: () => {
-    const hamburgerBtn = document.querySelector('.navigation button.navigation__hamburger-btn');
-    const navMain = document.querySelector('.navigation nav');
-    if (hamburgerBtn && navMain) {
-      hamburgerBtn.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        evt.stopPropagation();
-        navMain.classList.add('nav__is-open');
-        document.querySelector('body').classList.add('body__is__nav-open');
-        document.querySelector('html').classList.add('body__is__nav-open');
-      });
-    }
+
+  fixedMenu: () => {
+    var navbarFix = $("#js-navbar-fixed");
+    var headerOffset = navbarFix.offset().top + 100;
+    $(window).on('scroll',function () {
+        if ($(window).scrollTop() > headerOffset) {
+            navbarFix.addClass('fixed').removeClass("unfixed");
+        } else {
+            navbarFix.addClass('unfixed').removeClass("fixed");
+        }
+    });
   },
-  handleClickCloseNav: () => {
-    const closeNavs = document.querySelectorAll('.navigation .navigation__close-button button, .navigation__layout');
-    const navMain = document.querySelector('.navigation nav');
-    if (closeNavs && navMain) {
-      [].forEach.call(closeNavs, (closeNav) => {
-        closeNav.addEventListener('click', (evt) => {
-          evt.preventDefault();
-          evt.stopPropagation();
-          navMain.classList.remove('nav__is-open');
-          document.querySelector('body').classList.remove('body__is__nav-open');
-          document.querySelector('html').classList.remove('body__is__nav-open');
-        });
-      });
-    }
+
+  addClassCurrent: () => {
+    $(".header-general .menu-item a").on("click", function() {
+      $('.menu-item a').removeClass("current");
+      $(this).addClass("current");
+    });
   },
 };
 export default Header;

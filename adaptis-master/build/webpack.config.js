@@ -179,7 +179,7 @@ module.exports = (env) => {
         MicroModal: 'micromodal',
       }),
       new WebpackNotifierPlugin({
-        title: 'Village House',
+        title: 'Adaptis',
       }),
     ],
   };

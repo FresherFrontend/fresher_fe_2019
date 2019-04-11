@@ -1,11 +1,11 @@
 * {
     font-family: $font-main;
-    box-sizing: border-box;
+    @include box-sizing(border-box);
 }
 
 *:focus {
     outline: 0;
-    outline: none;
+    @include outline(none);
 }
 
 html {
@@ -13,51 +13,50 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: fontWeight(regular);
-    color: $text-color-primary;    
-    padding-top: 60px;
-    line-height: 2.3rem;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: $text-color-primary;   
+    background: $bg-color-primary;
+    // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
-    @include not-mobile {
-        padding-top: 90px;
-    }
+    // @include not-mobile {
+    //     padding-top: 90px;
+    // }
     
-    &.body__is__nav-open {
-        overflow: hidden;
-        .navigation__layout {
-            opacity: 0.8;
-            z-index: 10;
-            visibility: visible; 
-        }
-    }
+    // &.body__is__nav-open {
+    //     overflow: hidden;
+    //     .navigation__layout {
+    //         opacity: 0.8;
+    //         z-index: 10;
+    //         visibility: visible; 
+    //     }
+    // }
 
-    .navigation__layout {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity .4s ease;
-        background-color: $bg-color-primary-white;
-        z-index: 0;
-        visibility: hidden; 
-        @include not-mobile {
-            display: none;
-        }
-    }
+    // .navigation__layout {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     opacity: 0;
+    //     transition: opacity .4s ease;
+    //     background-color: $bg-color-primary-white;
+    //     z-index: 0;
+    //     visibility: hidden; 
+    //     @include not-mobile {
+    //         display: none;
+    //     }
+    // }
 
-    &.modal-open,
-    &.map-open {
-        overflow: hidden;
-    }
+    // &.modal-open,
+    // &.map-open {
+    //     overflow: hidden;
+    // }
 
-    .contentPage {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+    // .contentPage {
+    //     padding-top: 3rem;
+    //     padding-bottom: 3rem;
+    // }
 
     // typography
     h1 {
@@ -91,7 +90,7 @@ body {
     }
 
     a {
-        outline: none;
+        @include outline(none);
         text-decoration: none;
         background-color: transparent;
 
@@ -120,17 +119,48 @@ p {
     padding: 0;
     margin: 0;
 }
-
-.btn-default {
-    display: inline-block;
-    background-color: $bg-color-primary-white;
-    text-align: center;
-    white-space: nowrap;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    outline: none;
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
 }
+.btn-adaptis {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 14.5px 55px 10.5px 20px;
+    color: $text-color-secondary;
+    letter-spacing: 2px;
+    border: 1px solid $text-color-secondary;
+    background: rgba(255,255,255,.25);
+    &:after {
+        content: "→";
+        position: absolute;
+        font-size: 16px;
+        opacity: 0;
+        top: 50%;
+        left: 80%;
+        @include transform(translateY(-50%));
+        @include transition(all .2s ease-in-out);
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+            left: 85%;
+        }
+    }
+}
+// .btn-default {
+//     display: inline-block;
+//     background-color: $bg-color-primary-white;
+//     text-align: center;
+//     white-space: nowrap;
+//     cursor: pointer;
+//     border: none;
+//     padding: 0;
+//     outline: none;
+// }
 
 // utility
 
@@ -194,55 +224,57 @@ p {
     text-align: center;
 }
 
-.btn {
-    display: inline-block;
-    border-radius: $page-border-radius;
-    @include typography(fonts(main), fontWeight(medium), 1.4rem, 1.9rem);
-    text-align: center;
-    padding: 1.1rem 3.5rem 1.1rem;
+// .btn {
+//     display: inline-block;
+//     border-radius: $page-border-radius;
+//     @include typography(fonts(main), fontWeight(medium), 1.4rem, 1.9rem);
+//     text-align: center;
+//     padding: 1.1rem 3.5rem 1.1rem;
 
-    &.btn-info {
-        background: $btn-bg-color-primary;
-        @include typography(fonts(main), fontWeight(medium), 1.6rem, 4rem);
-        color: $btn-text-color-primary;
-        padding: 0 3.5rem;
-        border: none;
-        text-decoration: none;
-    }
-}
+//     &.btn-info {
+//         background: $btn-bg-color-primary;
+//         @include typography(fonts(main), fontWeight(medium), 1.6rem, 4rem);
+//         color: $btn-text-color-primary;
+//         padding: 0 3.5rem;
+//         border: none;
+//         text-decoration: none;
+//     }
+// }
 
-.fluid-video {
-    width: 100%;
-    height: 0;
-    position: relative;
-    padding-top: 56.25%;
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
+// .fluid-video {
+//     width: 100%;
+//     height: 0;
+//     position: relative;
+//     padding-top: 56.25%;
+//     iframe {
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
 
-.content-page {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
+// .content-page {
+//     padding-top: 3rem;
+//     padding-bottom: 3rem;
+// }
 
-.input-loading {
-    &:after {
-        content: '';
-        background-image: url('../images/search-loader.gif');
-        background-repeat: no-repeat;
-        background-position: 47% -0.1rem;
-        height: 100%;
-        width: 100%;
-        background-color: color(c-white);
-        border-radius: $page-border-radius;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-}
+// .input-loading {
+//     &:after {
+//         content: '';
+//         background-image: url('../images/search-loader.gif');
+//         background-repeat: no-repeat;
+//         background-position: 47% -0.1rem;
+//         height: 100%;
+//         width: 100%;
+//         background-color: color(c-white);
+//         border-radius: $page-border-radius;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         z-index: 1;
+//     }
+// }
+
+@keyframes shine{from{-webkit-mask-position:150%}to{-webkit-mask-position:-50%}};

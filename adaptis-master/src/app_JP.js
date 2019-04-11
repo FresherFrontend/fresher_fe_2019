@@ -8,6 +8,8 @@ $(() => {
 
 $(document).ready(() => {
   Global.lazyLoad();
+  Header.toggleDropDownMenu();
+  Header.fixedMenu();
 });
 
 $(window).on('resize', () => {

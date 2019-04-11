@@ -1,0 +1,70 @@
+.footer-general {
+    padding: 57px 0 35px;
+    margin-top: 100px;
+    text-align: center;
+    background-image: url('../images/background-footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    @include background-size(cover);
+    a,
+    p {
+        color: $text-color-secondary;
+    }
+    .logo {
+        a {
+            font-size: 20px;
+            letter-spacing: 12px;
+            @include transition(all .3s);
+            &:hover {
+                @include animation(shine 2s);
+                mask-image: linear-gradient(-75deg,rgba(0,0,0,.6) 30%,#000 50%,rgba(0,0,0,.6) 70%);
+                -webkit-mask-image: linear-gradient(-75deg,rgba(0,0,0,.6) 30%,#000 50%,rgba(0,0,0,.6) 70%);
+                mask-size: 200%;
+                -webkit-mask-size: 200%;
+            }
+        }
+    }
+    .footer-menu {
+        margin-top: 39px;
+        li {
+            padding-bottom: 11px;
+        }
+        a {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover {
+                color: #9f57ae;
+            }
+        }
+    }
+    .footer-iems {
+        font-weight: 500;
+        .location {
+            letter-spacing: 8px;
+            font-size: 12px;
+        }
+        .phone {
+            margin: 22px 0 10px;
+            a {
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+        .email {
+            a {
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+        .clock {
+            img {
+                max-width: 100%;
+                width: 71px;
+                height: 71px;
+                margin: 82px auto 40px;
+            }
+        }
+    }
+}

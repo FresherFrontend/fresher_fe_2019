@@ -9,6 +9,9 @@ $(() => {
 
 $(document).ready(() => {
   Global.lazyLoad();
+  Header.toggleDropDownMenu();
+  Header.fixedMenu();
+  Header.addClassCurrent();
 });
 
 $(window).on('resize', () => {
