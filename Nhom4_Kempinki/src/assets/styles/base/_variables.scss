@@ -19,24 +19,23 @@ $font-weight: (
 );
 
 $fonts: (
-    main: ("Helvetica",sans-serif),
-    kingscalson: ("KingsCalsonItalic",Arial,sans-serif),
+    main: ("Roboto",sans-serif),
+    heading: ('Kreon', sans-serif),
+    content: ('ProximaNova', sans-serif),
     icomoon: ('icomoon'),
     fontawesome: ('Fontawesome'),
-    arial: ('Arial'),
-    helvelticaBold: ('Helvetica-bold'),
-    helvelticaRegular: ('Helvetica-Regular')
+    hel: ('Helvetica_Neue', sans-serif),
+    hel-light : ('Helvetica',sans-serif),
+    kings-caslon : ('KingsCaslon',sans-serif)
 );
 
 $font-main: fonts(main);
-$font-helvelticaBold: fonts(helvelticaBold);
-$font-helvelticaRegular: fonts(helvelticaRegular);
-$font-kingscalson: fonts(kingscalson);
+$font-heading: fonts(heading);
 $font-icomoon: fonts(icomoon);
 $font-fontawesome: fonts(fontawesome);
-$font-arial: fonts(arial);
-$font-icomoon: fonts(icomoon);
-
+$font-hel: fonts(hel);
+$font-hel-light: fonts(hel-light);
+$font-kings-caslon: fonts(kings-caslon);
 $fontweight-light: fontWeight(light);
 $fontweight-regular: fontWeight(regular);
 $fontweight-medium: fontWeight(medium);
@@ -64,7 +63,7 @@ $colors: (
     c-pink-light: #EBCCD1,
     c-red: #A94442,
     bg-color: #010f2a,
-    text-color: #b5a191,
+    text-color: #b5a191
 );
 // // main-colors:
 $text-color: color(text-color);
