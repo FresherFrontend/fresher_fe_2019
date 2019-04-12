@@ -100,14 +100,11 @@ $height_hotels_des: 550px;
             left: 48%;
             display: none;
           }
-          .circle {
-            display: inline-block;
-          }
         }
-        .selected {
-          span {
-            display: inline-block;
-          }
+      }
+      .slick-slide.slick-current{
+        span{
+          display: inline-block;
         }
       }
     }
