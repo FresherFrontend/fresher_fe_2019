@@ -10,7 +10,7 @@ $height_icon: 31px;
     position: relative;
     font-weight: 100;
     margin-left: 3px;
-    font-family: $font-hel-light;
+    font-family: $font-main;
     &:before {
       content: "";
       position: absolute;
@@ -34,10 +34,10 @@ footer {
   .container {
     width: $container;
     margin: 0 auto;
-    font-family: $font-hel;
+    font-family: $font-main;
     h3 {
       font-size: $text_fontsize;
-      font-family: $font-hel-light;
+      font-family: $font-helvelticaRegular;
       color: $text_color;
       margin-top: 47px;
       margin-bottom: 8px;

@@ -30,7 +30,6 @@ $height_hotels_des: 550px;
     h3 {
       font-size: $fontsize;
       font-weight: 300;
-      font-family: $font-hel-light;
       letter-spacing: 5px;
       margin-bottom: 10px;
       visibility: visible;
@@ -38,7 +37,7 @@ $height_hotels_des: 550px;
     }
     span {
       position: relative;
-      font-family: $font-kings-caslon;
+      font-family: $font-kingscalson;
       font-size: $fontsize;
       padding: 0 16px;
       &::before {
@@ -215,7 +214,7 @@ $height_hotels_des: 550px;
                 color: $color_ex;
                 font-size: 11px;
                 font-weight: bold;
-                font-family: $font-hel;
+                font-family: $font-main;
                 position: absolute;
                 bottom: 0;
                 left: 20px;
