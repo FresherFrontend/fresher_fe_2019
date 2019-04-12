@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add isotope.pkgd
+  C:\Program Files\nodejs\node.exe C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js dev
 
 PATH: 
   C:\Users\mrnvk\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mrnvk\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\120\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\mrnvk\AppData\Local\Microsoft\WindowsApps;C:\Users\mrnvk\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.5\bin;C:\Users\mrnvk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mrnvk\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,20 +14,90 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/isotope.pkgd: Not found
-      at Request.params.callback [as _callback] (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66058:18)
-      at Request.self.callback (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129541:22)
-      at Request.emit (events.js:189:13)
-      at Request.<anonymous> (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:130513:10)
-      at Request.emit (events.js:189:13)
-      at IncomingMessage.<anonymous> (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:130435:12)
-      at Object.onceWrapper (events.js:277:13)
-      at IncomingMessage.emit (events.js:194:15)
-      at endReadableNT (_stream_readable.js:1125:12)
-      at process._tickCallback (internal/process/next_tick.js:63:19)
+  SyntaxError: C:\Users\mrnvk\Documents\GitHub\fresher_fe_2019\renovation\package.json: Unexpected token < in JSON at position 2
+      at JSON.parse (<anonymous>)
+      at C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
 
 npm manifest: 
   {
+  <<<<<<< HEAD
+    "name": "villagehouse",
+    "version": "0.0.1",
+    "description": "My project description",
+    "main": "app.js",
+    "repository": "git@github.com:my-user/my-repo.git",
+    "license": "MIT",
+    "scripts": {
+      "lint": "eslint",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev-network": "webpack-dev-server --config ./build/webpack.config.js --progress --open --host 0.0.0.0",
+      "dev": "webpack-dev-server --config ./build/webpack.config.js --env.NODE_ENV=development --progress --open",
+      "prod": "webpack --config ./build/webpack.config.js --env.NODE_ENV=production --progress"
+    },
+    "devDependencies": {
+      "autoprefixer": "^8.2.0",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.4",
+      "babel-minify-webpack-plugin": "^0.3.1",
+      "babel-plugin-module-resolver": "^3.1.0",
+      "babel-plugin-syntax-dynamic-import": "^6.18.0",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-es2015": "^6.24.1",
+      "clean-webpack-plugin": "^0.1.19",
+      "copy-webpack-plugin": "^4.5.1",
+      "css-loader": "^0.28.11",
+      "eslint": "^5.7.0",
+      "eslint-config-airbnb-base": "^13.1.0",
+      "eslint-plugin-import": "^2.14.0",
+      "extract-text-webpack-plugin": "^3.0.2",
+      "file-loader": "^1.1.11",
+      "html-webpack-plugin": "^3.1.0",
+      "image-webpack-loader": "^4.3.1",
+      "mini-css-extract-plugin": "^0.5.0",
+      "multi-loader": "^0.1.0",
+      "node-sass": "^4.7.2",
+      "postcss": "^6.0.21",
+      "postcss-cssnext": "^3.1.0",
+      "postcss-import": "^11.1.0",
+      "postcss-loader": "^2.1.3",
+      "postcss-modules": "^1.1.0",
+      "pug": "^2.0.3",
+      "pug-loader": "^2.3.0",
+      "sass-loader": "^6.0.7",
+      "style-loader": "^0.20.3",
+      "tslib": "^1.9.0",
+      "url-loader": "^1.0.1",
+      "webp-loader": "^0.4.0",
+      "webpack": "^4.29.0",
+      "webpack-cli": "^3.2.1",
+      "webpack-dev-server": "^3.1.4",
+      "webpack-notifier": "^1.6.0"
+    },
+    "dependencies": {
+      "bunnyjs": "^0.14.41",
+      "eve": "^0.5.4",
+      "fitvids": "^2.0.0",
+      "gsap": "^1.20.4",
+      "jquery": "^3.3.1",
+      "jquery-touchswipe": "^1.6.19",
+      "magnific-popup": "^1.1.0",
+      "micromodal": "^0.3.2",
+      "normalize.css": "^8.0.0",
+      "overlayscrollbars": "^1.6.0",
+      "raphael": "^2.2.7",
+      "scrollmagic": "^2.0.5",
+      "slick-carousel": "^1.8.1",
+      "sticky-js": "^1.2.0",
+      "tippy.js": "^3.2.0",
+      "vanilla-lazyload": "^10.0.1",
+      "yarn": "^1.10.1"
+    }
+  }
+  =======
       "name": "villagehouse",
       "version": "0.0.1",
       "description": "My project description",
@@ -86,9 +156,9 @@ npm manifest:
           "eve": "^0.5.4",
           "fitvids": "^2.0.0",
           "gsap": "^1.20.4",
-          "isotope": "^1.0.0-alpha.3",
           "isotope-layout": "^3.0.6",
           "jquery": "^3.3.1",
+          "jquery-bridget": "^2.0.1",
           "jquery-touchswipe": "^1.6.19",
           "magnific-popup": "^1.1.0",
           "micromodal": "^0.3.2",
@@ -103,6 +173,7 @@ npm manifest:
           "yarn": "^1.10.1"
       }
   }
+  >>>>>>> Khanv49
 
 yarn manifest: 
   No manifest
@@ -6404,11 +6475,6 @@ Lockfile:
       masonry-layout "^4.1.0"
       outlayer "^2.1.0"
   
-  isotope@^1.0.0-alpha.3:
-    version "1.0.0-alpha.3"
-    resolved "https://registry.yarnpkg.com/isotope/-/isotope-1.0.0-alpha.3.tgz#6668aaf264e78c20cd02463eb5bd6794546bc4ac"
-    integrity sha1-Zmiq8mTnjCDNAkY+tb1nlFRrxKw=
-  
   isstream@~0.1.2:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -6422,12 +6488,19 @@ Lockfile:
       has-to-string-tag-x "^1.2.0"
       is-object "^1.0.1"
   
+  jquery-bridget@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/jquery-bridget/-/jquery-bridget-2.0.1.tgz#784d17a85e641780c5d89ac3f8a7eb47b0bce1fc"
+    integrity sha1-eE0XqF5kF4DF2JrD+KfrR7C84fw=
+    dependencies:
+      jquery ">=1.4.2 <4"
+  
   jquery-touchswipe@^1.6.19:
     version "1.6.19"
     resolved "https://registry.yarnpkg.com/jquery-touchswipe/-/jquery-touchswipe-1.6.19.tgz#dfd5ddaec0b78212dd500d29707129b9c7fd6cd4"
     integrity sha512-b0BGje9reNRU3u6ksAK9QqnX7yBRgLNe/wYG7DOfyDlhBlYjayIT8bSOHmcuvptIDW/ubM9CTW/mnZf9Rohuow==
   
-  jquery@^3.3.1:
+  "jquery@>=1.4.2 <4", jquery@^3.3.1:
     version "3.3.1"
     resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
     integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
@@ -6672,6 +6745,11 @@ Lockfile:
     dependencies:
       prelude-ls "~1.1.2"
       type-check "~0.3.2"
+  
+  lightbox2@^2.10.0:
+    version "2.10.0"
+    resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.10.0.tgz#06b3f7b7bd7c1332c20d037602d9657542fd7de4"
+    integrity sha1-BrP3t718EzLCDQN2AtlldUL9feQ=
   
   load-json-file@^1.0.0:
     version "1.1.0"
