@@ -1,0 +1,45 @@
+.special-offers{
+    .container{
+        @include min-md{
+           width: 1140px; 
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+    }
+    .section-title{
+        padding: 30px 0 98px 0;
+        background: #f8f8f6;
+        margin-bottom: 0;
+        .text{
+            background: #f8f8f6;
+        }
+    }
+    .offers-slide{
+        .slick-slide{
+            margin: 0 10px;
+        }
+        .slide-caption{
+            margin-top: 19px;
+            .title{
+                margin-bottom: 9px;
+                height: 4.6rem;
+                overflow: hidden;
+            }
+            .description{
+                height: 174px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                p{
+                    line-height: 23px;
+                }
+            }
+            .further-info{
+                transform: translateY(-3px);
+                a{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+// end special-offers
