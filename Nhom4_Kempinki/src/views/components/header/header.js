@@ -1,48 +1,32 @@
+import Choices from 'choices.js'
 const Header = {
-  toggleLanguageDropDownDesktop: () => {
-    const languageBtn = document.querySelector('#dropdownLanguageBtn');
-    const languageList = document.querySelector('#dropdownLanguageList');
-    if (languageBtn && languageList) {
-      languageBtn.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        evt.stopPropagation();
-        languageList.classList.toggle('open-language');
-      });
-      document.querySelector('body').addEventListener('click', () => {
-        if (languageList.classList.contains('open-language')) languageList.classList.remove('open-language');
-      });
-    }
+  selectLanguage: () => {
+    document.querySelector('.top-panel .dropdown-toggle').addEventListener('click', function(){
+      this.nextElementSibling.classList.toggle('show-up');
+    })
+    var element = document.getElementById('a')
+    const choices = new Choices(element)
+    choices.setChoices([{
+      label: 'Group one',
+      id: 1,
+      disabled: false,
+      choices: [
+        {value: 'Child One', label: 'Child One', selected: true},
+        {value: 'Child Two', label: 'Child Two'},
+        {value: 'Child Three', label: 'Child Three'},
+      ]
+    },
+    {
+      label: 'Group two',
+      id: 2,
+      disabled: false,
+      choices: [
+        {value: 'Child Four', label: 'Child Four'},
+        {value: 'Child Five', label: 'Child Five'},
+        {value: 'Child Six', label: 'Child Six'},
+      ]
+    }], 'value', 'label', false);
   },
-  handleClickHamburgerOpenNav: () => {
-    const hamburgerBtn = document.querySelector('.navigation button.navigation__hamburger-btn');
-    const navMain = document.querySelector('.navigation nav');
-    if (hamburgerBtn && navMain) {
-      hamburgerBtn.addEventListener('click', (evt) => {
-        evt.preventDefault();
-        evt.stopPropagation();
-        navMain.classList.add('nav__is-open');
-        document.querySelector('body').classList.add('body__is__nav-open');
-        document.querySelector('html').classList.add('body__is__nav-open');
-      });
-    }
-  },
-  handleClickCloseNav: () => {
-    const closeNavs = document.querySelectorAll('.navigation .navigation__close-button button, .navigation__layout');
-    const navMain = document.querySelector('.navigation nav');
-    if (closeNavs && navMain) {
-      [].forEach.call(closeNavs, (closeNav) => {
-        closeNav.addEventListener('click', (evt) => {
-          evt.preventDefault();
-          evt.stopPropagation();
-          navMain.classList.remove('nav__is-open');
-          document.querySelector('body').classList.remove('body__is__nav-open');
-          document.querySelector('html').classList.remove('body__is__nav-open');
-        });
-      });
-    }
-  },
-  testslick: () => {
-    $('.navigation__nav-bar').slick();
-  }
+  
 };
 export default Header;
