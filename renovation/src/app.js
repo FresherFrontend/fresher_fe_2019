@@ -14,15 +14,16 @@ $(() => {
 });
 
 $(document).ready(() => {
-  Global.lazyLoad();
+    Global.lazyLoad();
+    // Portfolio.portfolio_isotope();
 });
 
 $(window).on('resize', () => {
-  setTimeout(() => {
-    Global.lazyLoad();
-  }, 250);
+    setTimeout(() => {
+        Global.lazyLoad();
+    }, 250);
 });
 
 window.onload = () => {
-  
+
 };

@@ -79,7 +79,7 @@ const Testiminials = {
             html +=    '</div>'
             html +='</div>'
         });
-        testimonials_items.innerHTML = html;
+        // testimonials_items.innerHTML = html;
     },
     setTestimonialPageActive: () => {
         if($('.bgr_content_testimonial')) {

@@ -17,24 +17,21 @@ html {
 body {
     font-size: 1.6rem;
     font-weight: fontWeight(regular);
-    color: $text-color-primary;    
+    color: $text-color-primary;
     // padding-top: 60px;
     line-height: 2.3rem;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     @include not-mobile {
         padding-top: 90px;
     }
-    
     &.body__is__nav-open {
         overflow: hidden;
         .navigation__layout {
             opacity: 0.8;
             z-index: 10;
-            visibility: visible; 
+            visibility: visible;
         }
     }
-
     .navigation__layout {
         position: fixed;
         top: 0;
@@ -45,58 +42,47 @@ body {
         transition: opacity .4s ease;
         background-color: $bg-color-primary-white;
         z-index: 0;
-        visibility: hidden; 
+        visibility: hidden;
         @include not-mobile {
             display: none;
         }
     }
-
     &.modal-open,
     &.map-open {
         overflow: hidden;
     }
-
     .contentPage {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
-
     // typography
     h1 {
         @include typography(fonts(heading), fontWeight(bold), 4rem, 4.8rem);
     }
-
     h2 {
         @include typography(fonts(heading), fontWeight(bold), 3.5rem, 4.4rem);
     }
-
     h3 {
         @include typography(fonts(heading), fontWeight(bold), 2.8rem, 1.33);
     }
-
     h4 {
         @include typography(fonts(heading), fontWeight(bold), 1.8rem, 2.4rem);
     }
-
     h5 {
         @include typography(fonts(heading), fontWeight(bold), 1.8rem, 2.4rem);
     }
-
     h6 {
         @include typography(fonts(main), fontWeight(bold), 1.8rem, 2.4rem);
     }
-
     p,
     a {
         @include typography(fonts(main), fontWeight(regular), 1.6rem, inherit);
         color: $text-color-primary;
     }
-
     a {
         outline: none;
         text-decoration: none;
         background-color: transparent;
-
         &:hover {
             color: color(c-dark-blue-navy-2);
         }
@@ -106,13 +92,13 @@ body {
             }
         }
     }
-
     label {
-        font-weight: fontWeight(regular); 
+        font-weight: fontWeight(regular);
     }
 }
 
-ul, ol {
+ul,
+ol {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -135,7 +121,6 @@ p {
 }
 
 // utility
-
 .left {
     text-align: left;
 }
@@ -202,7 +187,6 @@ p {
     @include typography(fonts(main), fontWeight(medium), 1.4rem, 1.9rem);
     text-align: center;
     padding: 1.1rem 3.5rem 1.1rem;
-
     &.btn-info {
         background: $btn-bg-color-primary;
         @include typography(fonts(main), fontWeight(medium), 1.6rem, 4rem);
