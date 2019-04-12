@@ -10,7 +10,7 @@ $height_icon: 31px;
     position: relative;
     font-weight: 100;
     margin-left: 3px;
-    font-family: $font-hel-light;
+    font-family: $font-main;
     &:before {
       content: "";
       position: absolute;
@@ -19,7 +19,7 @@ $height_icon: 31px;
       width: 0;
       height: 1px;
       background: $text-color-footer;
-      transition: 0.2s;
+      transition: 0.3s;
     }
     &:hover:before {
       width: 100%;
@@ -35,12 +35,12 @@ footer {
   // height: 500px;
   background: $bg-color;
   .container {
-    width: $container;
+    width: 1170px;
     margin: 0 auto;
-    font-family: $font-hel;
+    font-family: $font-main;
     h3 {
       font-size: $text_fontsize;
-      font-family: $font-hel-light;
+      font-family: $font-helvelticaRegular;
       color: $text-color-footer;
       margin-top: 47px;
       margin-bottom: 8px;

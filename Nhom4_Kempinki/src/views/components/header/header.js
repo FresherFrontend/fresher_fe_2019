@@ -41,5 +41,8 @@ const Header = {
       });
     }
   },
+  testslick: () => {
+    $('.navigation__nav-bar').slick();
+  }
 };
 export default Header;
