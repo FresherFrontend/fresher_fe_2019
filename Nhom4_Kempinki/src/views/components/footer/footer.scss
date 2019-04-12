@@ -18,16 +18,13 @@ $height_icon: 31px;
       left: 0;
       width: 0;
       height: 1px;
-      background: $text-color-footer;
-      transition: 0.2s;
+      background: $text-color;
+      transition: 0.3s;
     }
     &:hover:before {
       width: 100%;
     }
   }
-}
-html{
-  scroll-behavior: smooth;
 }
 footer {
   // margin-bottom: 20px;
@@ -40,13 +37,8 @@ footer {
     font-family: $font-main;
     h3 {
       font-size: $text_fontsize;
-<<<<<<< HEAD
       font-family: $font-helvelticaRegular;
       color: $text_color;
-=======
-      font-family: $font-hel-light;
-      color: $text-color-footer;
->>>>>>> nhom4_phonght
       margin-top: 47px;
       margin-bottom: 8px;
       letter-spacing: 2px;
@@ -66,7 +58,7 @@ footer {
     }
     a {
       font-size: $li_size;
-      color: $text-color-footer;
+      color: $text_color;
     }
     .icon {
       display: flex;
@@ -90,7 +82,7 @@ footer {
         margin-right: 0;
       }
       .blog {
-        background: $text-color-footer url("https://www.kempinski.com/images/icon/blog-w.png");
+        background: $text_color url("https://www.kempinski.com/images/icon/blog-w.png");
         background-size: 16px;
         background-position: center center;
         background-repeat: no-repeat;
@@ -110,7 +102,7 @@ footer {
             margin-top: 15px;
             margin-left: 10px;
             span {
-              color: $text-color-footer;
+              color: $text-color;
               margin: 3px 2px 0 6px;
               font-size: 12px;
             }
@@ -143,8 +135,8 @@ footer {
         font-size: 11px;
         margin-top: 5px;
         padding: 11px 75px;
-        background: $text-color-footer;
-        border: 2px solid $text-color-footer;
+        background: $text-color;
+        border: 2px solid $text-color;
         color: white;
         font-weight: bold;
         letter-spacing: 1.3px;
@@ -157,7 +149,7 @@ footer {
         width: 84%;
       }
       p {
-        color: $text-color-footer;
+        color: $text-color;
         margin-top: 6px;
         font-size: 12px;
         font-weight: 100;
