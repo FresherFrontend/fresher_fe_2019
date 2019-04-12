@@ -74,24 +74,24 @@ const slide = {
     var slick_slide = document.querySelectorAll(".country_name .slick-slide");
     var next = document.querySelector('.slick-next');
       
-    for(let i=0 ; i < slick_slide.length ; i++){
-      slick_slide[i].onclick = () =>{
-        span[i-1].classList.remove('circle');
-        span[i+1].classList.remove('circle');
-        span[i+6].classList.remove('circle');
-        span[i-6].classList.remove('circle');
-        name[i].classList.add('selected');
-        name[i-1].classList.remove('selected');
-        name[i+1].classList.remove('selected');
-      }  
-      // next.onclick = () =>{
-      //   name[i].classList.add('selected');
-      //   name[i-1].classList.remove('selected');
-      //   name[i+1].classList.remove('selected');
-      //   name[i+6].classList.remove('selected');
-      //   name[i-6].classList.remove('selected');
-      // }   
-    }
+    // for(let i=0 ; i < slick_slide.length ; i++){
+    //   slick_slide[i].onclick = () =>{
+    //     span[i-1].classList.remove('circle');
+    //     span[i+1].classList.remove('circle');
+    //     span[i+6].classList.remove('circle');
+    //     span[i-6].classList.remove('circle');
+    //     name[i].classList.add('selected');
+    //     name[i-1].classList.remove('selected');
+    //     name[i+1].classList.remove('selected');
+    //   }  
+    //   // next.onclick = () =>{
+    //   //   name[i].classList.add('selected');
+    //   //   name[i-1].classList.remove('selected');
+    //   //   name[i+1].classList.remove('selected');
+    //   //   name[i+6].classList.remove('selected');
+    //   //   name[i-6].classList.remove('selected');
+    //   // }   
+    // }
   }
 }
 
