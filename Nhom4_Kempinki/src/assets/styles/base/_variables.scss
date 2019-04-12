@@ -65,9 +65,11 @@ $colors: (
     c-red: #A94442,
     bg-color: #010f2a,
     text-color: #b5a191,
+    text-color-global: #010f2a
 );
 // // main-colors:
-$text-color: color(text-color);
+$text-color-global: color(text-color-global);
+$text_color: color(text-color);
 $bg-color: color(bg-color);
 $bg-color-primary: color(c-blue);
 $bg-color-primary-white: color(c-white);
