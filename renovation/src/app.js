@@ -3,7 +3,7 @@ import Global from './views/components/global/global';
 import Header from './views/components/header/header';
 import Portfolio from './views/components/portfolio/portfolio';
 require('normalize.css');
-// require('isotope-layout');
+require('lightbox2');
 
 $(() => {
     // Code here

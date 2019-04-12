@@ -10,6 +10,8 @@
 @import './base/_global';
 @import './base/_flexboxgrid';
 @import './base/_lazyload';
+@import './base/_lightbox';
 // Component
 @import '../../views/components/header/header';
 @import '../../views/components/portfolio/portfolio';
+@import '../../views/components/services/services.scss';

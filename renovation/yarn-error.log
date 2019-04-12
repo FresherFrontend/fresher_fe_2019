@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add isotope.pkgd
+  C:\Program Files\nodejs\node.exe C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add lightbox-plus-jquery
 
 PATH: 
   C:\Users\mrnvk\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mrnvk\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn;C:\Program Files\Microsoft SQL Server\120\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\mrnvk\AppData\Local\Microsoft\WindowsApps;C:\Users\mrnvk\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.5\bin;C:\Users\mrnvk\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\mrnvk\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/isotope.pkgd: Not found
+  Error: https://registry.yarnpkg.com/lightbox-plus-jquery: Not found
       at Request.params.callback [as _callback] (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66058:18)
       at Request.self.callback (C:\Users\mrnvk\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:129541:22)
       at Request.emit (events.js:189:13)
@@ -86,10 +86,11 @@ npm manifest:
           "eve": "^0.5.4",
           "fitvids": "^2.0.0",
           "gsap": "^1.20.4",
-          "isotope": "^1.0.0-alpha.3",
           "isotope-layout": "^3.0.6",
           "jquery": "^3.3.1",
+          "jquery-bridget": "^2.0.1",
           "jquery-touchswipe": "^1.6.19",
+          "lightbox2": "^2.10.0",
           "magnific-popup": "^1.1.0",
           "micromodal": "^0.3.2",
           "normalize.css": "^8.0.0",
@@ -6404,11 +6405,6 @@ Lockfile:
       masonry-layout "^4.1.0"
       outlayer "^2.1.0"
   
-  isotope@^1.0.0-alpha.3:
-    version "1.0.0-alpha.3"
-    resolved "https://registry.yarnpkg.com/isotope/-/isotope-1.0.0-alpha.3.tgz#6668aaf264e78c20cd02463eb5bd6794546bc4ac"
-    integrity sha1-Zmiq8mTnjCDNAkY+tb1nlFRrxKw=
-  
   isstream@~0.1.2:
     version "0.1.2"
     resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -6422,12 +6418,19 @@ Lockfile:
       has-to-string-tag-x "^1.2.0"
       is-object "^1.0.1"
   
+  jquery-bridget@^2.0.1:
+    version "2.0.1"
+    resolved "https://registry.yarnpkg.com/jquery-bridget/-/jquery-bridget-2.0.1.tgz#784d17a85e641780c5d89ac3f8a7eb47b0bce1fc"
+    integrity sha1-eE0XqF5kF4DF2JrD+KfrR7C84fw=
+    dependencies:
+      jquery ">=1.4.2 <4"
+  
   jquery-touchswipe@^1.6.19:
     version "1.6.19"
     resolved "https://registry.yarnpkg.com/jquery-touchswipe/-/jquery-touchswipe-1.6.19.tgz#dfd5ddaec0b78212dd500d29707129b9c7fd6cd4"
     integrity sha512-b0BGje9reNRU3u6ksAK9QqnX7yBRgLNe/wYG7DOfyDlhBlYjayIT8bSOHmcuvptIDW/ubM9CTW/mnZf9Rohuow==
   
-  jquery@^3.3.1:
+  "jquery@>=1.4.2 <4", jquery@^3.3.1:
     version "3.3.1"
     resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
     integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
@@ -6672,6 +6675,11 @@ Lockfile:
     dependencies:
       prelude-ls "~1.1.2"
       type-check "~0.3.2"
+  
+  lightbox2@^2.10.0:
+    version "2.10.0"
+    resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.10.0.tgz#06b3f7b7bd7c1332c20d037602d9657542fd7de4"
+    integrity sha1-BrP3t718EzLCDQN2AtlldUL9feQ=
   
   load-json-file@^1.0.0:
     version "1.1.0"

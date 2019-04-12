@@ -1,0 +1,40 @@
+.services_area {
+    width: 100%;
+    color: #3f3f3f;
+}
+
+.container {
+    width: 100%;
+}
+
+.grid_services_area {
+    margin-bottom: -35px;
+}
+
+.services_item {
+    padding: 15px;
+    // border-bottom: 2px solid #ebebeb;
+    .services_img {
+        text-align: center;
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    .services_title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .services_text p {
+        color: #757575;
+        margin-bottom: 26px;
+    }
+    .services_divider {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .services_divider_separator {
+            border-top: 2px solid #ebebeb;
+            width: 100%;
+        }
+    }
+}

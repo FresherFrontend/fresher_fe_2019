@@ -61,6 +61,7 @@
         "jquery": "^3.3.1",
         "jquery-bridget": "^2.0.1",
         "jquery-touchswipe": "^1.6.19",
+        "lightbox2": "^2.10.0",
         "magnific-popup": "^1.1.0",
         "micromodal": "^0.3.2",
         "normalize.css": "^8.0.0",
