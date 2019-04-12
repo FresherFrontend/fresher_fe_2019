@@ -83,23 +83,6 @@
     a,p{
         color: $text-color-black;
     }
-    .col-photo{
-        min-height: 540px;
-        display: flex;
-        align-items: center;
-    }
-    .report-image{
-        position: absolute;
-        bottom: 40px;
-        left: 57%;
-        z-index: 10;
-        &:after{
-            content: "\f06a";
-            font-family: FontAwesome;
-            color: #ff1d25;
-            font-size: 24px;
-        }
-    }
     .user{
         margin-bottom: 40px;
         a{
@@ -122,9 +105,6 @@
     .photo-sharing{
         display: flex;
         justify-content: flex-end;
-        p{
-            font-size: 14px;
-        }
         ul{
             display: flex;
             li{
@@ -151,40 +131,20 @@
         font-size: 20px;
         text-align: center;
         color: $text-color-black;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: normal;
     }
-    .hotel-info{
-        width: 130px;
-        margin: 0 auto;
-        padding-top: 30px;
-        a{
-            width: 100%;
-            position: relative;
-            padding-top: 66.66%;
-            display: block;
-            text-align: center;
-            img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-            }
-            p{
-                position: absolute;
-                padding-top: 43px;
-            }
-        }
-    }
-    .photo-copy{
-        position: absolute;
-        right: 0;
-        bottom: 4px;
-        font-size: 10px;
-        color: #777;
-    }
+    // .hotel-info{
+    //     // width: 130px;
+    //     // margin: 0 auto;
+    //     // padding-top: 10%;
+    //     // position: relative;
+    //     // img{
+    //     //     // position: absolute;
+    //     //     // top: 0;
+    //     //     // left: 0;
+    //     //     // width: 100%;
+    //     //     // height: 100%;
+    //     // }
+    // }
     img{
         width: 100%;
     }
