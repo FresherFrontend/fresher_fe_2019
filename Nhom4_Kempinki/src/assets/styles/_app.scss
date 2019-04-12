@@ -8,10 +8,22 @@
 @import '../../../node_modules/slick-carousel/slick/slick.css';
 @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import './base/_fonts';
+@import '../../../node_modules/slick-carousel/slick/slick.css';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import './base/animate.css';
+@import './base/jquery.fancybox.min.css';
 @import './base/_global';
 @import './base/_flexboxgrid';
 @import './base/_lazyload';
 
 // Component
+<<<<<<< HEAD
 @import '../../views/components/homepage/explore/explore';
 @import '../../views/components/footer/footer';
+=======
+@import '../../views/components/header/header';
+@import '../../views/components/footer/footer';
+@import '../../views/components/homepage/experiences/experiences';
+@import '../../views/components/homepage/gallery/gallery';
+@import '../../views/components/homepage/specialoffers/specialoffers';
+>>>>>>> origin/nhom4_hieunx
