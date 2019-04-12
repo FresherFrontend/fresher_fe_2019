@@ -83,5 +83,11 @@ const Header = {
     }
   },
 
+  onClickActiveMenu: () => {
+    var allLiMenuLeftLv1 = document.querySelectorAll("ul.menu_left_lv1>li");
+    var allLiMenuRightLv1 = document.querySelectorAll("ul.menu_right_lv1 li");
+    
+  }
+
 };
 export default Header;

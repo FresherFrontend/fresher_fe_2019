@@ -1,9 +1,7 @@
 body {
   padding-top: 0;
 }
-a {
-  list-style: none;
-}
+
 //-------------------------class chung---------------
 //li trên menu mobile
 .li_menu {
@@ -124,25 +122,31 @@ a {
           .menu_left {
             ul.menu_left_lv1 {
               text-align: right;
-              .li__shop:hover .menu_left_lv2{
+              .li__shop:hover .menu_left_lv2 {
                 opacity: 1;
                 margin-top: 0;
               }
-              >li {
+              .li__shop:hover .menu_left_lv2 .wrap_li_lv2{
+                display: block;
+              }
+              li.active_menu_destop_lv1 {
+                a{
+                  color: #fff;
+                  background-color: #212230;
+
+                  span::before {
+                    @extend .span_before_a_menu_destop;
+                    opacity: 1;
+                  }
+                }
+              }
+              > li {
                 @extend .li_menu_destop;
                 position: relative;
-                
-                &:first-child>a {
-                  color: #fff;
-                    background-color: #212230;
-                }
-                &:first-child a span::before {
-                  @extend .span_before_a_menu_destop;
-                  opacity: 1;
-                }
-                >a {
+
+                > a {
                   @extend .a_menu_destop;
-                  >span {
+                  > span {
                     position: relative;
                     font-family: fonts(pTSansNarrow);
                   }
@@ -150,7 +154,6 @@ a {
                     @extend .span_before_a_menu_destop;
                     opacity: 0;
                     transition: opacity 0.2s ease;
-                    
                   }
                   &:hover {
                     color: #fff;
@@ -160,12 +163,12 @@ a {
                     opacity: 1;
                     margin-top: 0;
                   }
-                  
+
                   span.span_icon_shop {
                     &:after {
                       font-weight: normal;
                       font-style: normal;
-                      font-family: 'FontAwesome';
+                      font-family: "FontAwesome";
                       border: none;
                       content: "\f107";
                       font-size: 12px;
@@ -173,54 +176,57 @@ a {
                     }
                   }
                 }
-                .menu_left_lv2{
+                .menu_left_lv2 {
                   position: absolute;
                   width: 187px;
                   margin-top: 26px;
                   opacity: 0;
-                  transition: all .3s ease;
+                  transition: all 0.3s ease;
                   z-index: 100;
+                  background-color: rgba(255,255,255,0.85);
 
-                  li{
-                    text-align: left;
-                    background: rgba(0,0,0, 0.04);
-                    &:hover{
-                      background: #fff;
-                    }
-                    &:hover a{
-                      color: #000;
-                    }
-                    
-                    a{
-                      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-                      padding: 19px 3rem 19px 26px;
-                      text-transform: capitalize;
-                      display: block;
-                      color: #757575;
-                      font-size: 14px;
+                  .wrap_li_lv2{
+                    display: none;
+                    li {
+                      text-align: left;
+                      background: rgba(0, 0, 0, 0.04);
+                      &:hover {
+                        background: #fff;
+                      }
+                      &:hover a {
+                        color: #000;
+                      }
 
-                      span.icon_account:before {
-                        font-family: "Fontawesome";
-                        content: "\f2bd";
-                        padding-right: 4px;
-                      }
-        
-                      span.icon_cart:before {
-                        font-family: "Fontawesome";
-                        content: "\f07a";
-                        padding-right: 4px;
-                      }
-        
-                      span.icon_checkout:before {
-                        font-family: "Fontawesome";
-                        content: "\f09d";
-                        padding-right: 4px;
+                      a {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        padding: 19px 3rem 19px 26px;
+                        text-transform: capitalize;
+                        display: block;
+                        color: #757575;
+                        font-size: 14px;
+
+                        span.icon_account:before {
+                          font-family: "Fontawesome";
+                          content: "\f2bd";
+                          padding-right: 4px;
+                        }
+
+                        span.icon_cart:before {
+                          font-family: "Fontawesome";
+                          content: "\f07a";
+                          padding-right: 4px;
+                        }
+
+                        span.icon_checkout:before {
+                          font-family: "Fontawesome";
+                          content: "\f09d";
+                          padding-right: 4px;
+                        }
                       }
                     }
                   }
                 }
               }
-              
             }
           }
         }
@@ -241,6 +247,18 @@ a {
           .menu_right {
             ul.menu_right_lv1 {
               text-align: left;
+              li.active_menu_destop_lv1 {
+                a{
+                  color: #fff;
+                  background-color: #212230;
+
+                  span::before {
+                    @extend .span_before_a_menu_destop;
+                    opacity: 1;
+                  }
+                }
+                
+              }
               li {
                 @extend .li_menu_destop;
                 a {
@@ -277,7 +295,7 @@ a {
 }
 .wrapp_menu_mobile {
   width: 100%;
-  
+
   @include min-md {
     display: none;
   }
@@ -325,8 +343,8 @@ a {
             a.link_menu_lv2 {
               @extend .a_link_menu;
               padding: 16px 3rem;
-              
-              span{
+
+              span {
                 font-family: fonts(pTSansNarrow);
               }
 
@@ -351,6 +369,26 @@ a {
           }
         }
       }
+    }
+  }
+}
+.banner {
+  background-image: url("https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .container {
+    padding: 0 30px;
+    .wrap-title {
+      padding: 163px 0;
+
+      .title {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 45px;
+        text-transform: uppercase;
+      }
+      
     }
   }
 }
