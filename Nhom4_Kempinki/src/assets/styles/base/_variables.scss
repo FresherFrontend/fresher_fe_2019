@@ -46,7 +46,7 @@ $fz-root: 62.5%; // root font-size, DO NOT CHANGE
 $gutter: 2rem;
 $gutter-xs: 1.5rem;
 $gutter-md: 2rem;
-$container: 75.6%;
+$container: 1170px;
 
 // colors
 $colors: (
@@ -63,10 +63,11 @@ $colors: (
     c-pink-light: #EBCCD1,
     c-red: #A94442,
     bg-color: #010f2a,
-    text-color: #b5a191
+    text-color-footer: #b5a191
 );
 // // main-colors:
 $text-color: color(text-color);
+$text-color-footer: color(text-color-footer);
 $bg-color: color(bg-color);
 $bg-color-primary: color(c-blue);
 $bg-color-primary-white: color(c-white);
