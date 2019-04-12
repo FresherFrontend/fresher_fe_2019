@@ -1,6 +1,19 @@
 $fontsize: 18px;
 $color_ex: #010f2a;
 $height_hotels_des: 550px;
+@mixin button {
+  button {
+    &::before {
+      font-size: 80px;
+      color: rgba(255, 255, 255, 0.6);
+      opacity: 0.6;
+    }
+    &:hover::before {
+      color: white;
+      opacity: 0.8;
+    }
+  }
+}
 @mixin before_after {
   content: "";
   position: absolute;
@@ -42,12 +55,10 @@ $height_hotels_des: 550px;
     position: relative;
     margin-top: 55px;
     height: 70px;
-    // background: #f3f3f3!important;
     .country_name {
       margin-bottom: 0;
       text-align: center;
       z-index: 1;
-      // position: absolute;
       ul {
         display: none !important;
       }
@@ -55,32 +66,18 @@ $height_hotels_des: 550px;
         left: 20px;
         top: 420%;
         opacity: 0;
-        // z-index: 1;
         z-index: 1;
       }
       > .slick-next {
         right: 80px;
         top: 420%;
         opacity: 0;
-        // z-index: 1;
         z-index: 1;
       }
-      > button {
-        &::before {
-          font-size: 80px;
-          color: rgba(255, 255, 255, 0.6);
-          opacity: 0.6;
-        }
-        &:hover::before {
-          color: white;
-          opacity: 0.8;
-        }
-      }
-       .slick-slide {
+      @include button;
+      .slick-slide {
         position: relative;
         height: 70px;
-        // margin: 0 5px;
-        // width: 300px !important;
         .name {
           max-width: 228px;
           line-height: 17px;
@@ -151,8 +148,32 @@ $height_hotels_des: 550px;
     height: $height_hotels_des;
     margin-bottom: 25px;
     z-index: 0;
+    overflow: hidden;
     .hotel_des {
       position: relative;
+      .single_slide {
+        &:hover {
+          .slick-next {
+            opacity: 1;
+          }
+          .slick-prev {
+            opacity: 1;
+          }
+        }
+        @include button;
+        .slick-prev {
+          top: 40%;
+          left: 20px;
+          z-index: 999;
+          opacity: 0;
+        }
+        .slick-next {
+          top: 40%;
+          right: 80px;
+          z-index: 999;
+          opacity: 0;
+        }
+      }
       .img {
         width: 100%;
         height: $height_hotels_des;
@@ -173,17 +194,6 @@ $height_hotels_des: 550px;
           height: 450px;
           top: 100px;
           background: white;
-          .single_slide {
-            button {
-              .slick-prev {
-                position: absolute;
-                top: 50%;
-                left: 100px;
-                cursor: pointer;
-                z-index: 999;
-              }
-            }
-          }
           .hotel_mg {
             width: 100%;
             height: 100%;
