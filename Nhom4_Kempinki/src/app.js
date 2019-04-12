@@ -7,6 +7,8 @@ import Header from './views/components/header/header';
 import Experiences from './views/components/homepage/experiences/experiences';
 import HomeGallery from './views/components/homepage/gallery/gallery';
 import SpecialOffers from './views/components/homepage/specialoffers/specialoffers';
+import Mapbox from './views/components/homepage/mapbox/mapbox';
+
 import './assets/scripts/jquery.fancybox.min.js';
 require('normalize.css');
 require('slick-carousel');
@@ -34,5 +36,6 @@ $(window).on('resize', () => {
 });
 
 window.onload = () => {
-
+  Header.selectLanguage();
+  Mapbox.view();
 };
