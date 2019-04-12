@@ -294,7 +294,6 @@ body {
 }
 .wrapp_menu_mobile {
   width: 100%;
-  background: peru;
 
   @include min-md {
     display: none;
@@ -303,7 +302,6 @@ body {
     overflow: hidden;
     height: 0;
     transition: height 0.3s ease;
-    background: red;
 
     ul.ul_menu_lv1 {
       width: 100%;
@@ -371,23 +369,23 @@ body {
         }
       }
     }
-    .banner {
-      background-image: url("https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      .container {
-        padding: 0 30px;
-        .wrap-title {
-          padding: 163px 0;
+  }
+}
+.banner {
+  background-image: url("https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .container {
+    padding: 0 30px;
+    .wrap-title {
+      padding: 163px 0;
 
-          .title {
-            color: #ffffff;
-            font-weight: 300;
-            font-size: 45px;
-            text-transform: uppercase;
-          }
-        }
+      .title {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 45px;
+        text-transform: uppercase;
       }
     }
   }
