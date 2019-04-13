@@ -18,11 +18,5 @@ const Header = {
     });
   },
 
-  addClassCurrent: () => {
-    $(".header-general .menu-item a").on("click", function() {
-      $('.menu-item a').removeClass("current");
-      $(this).addClass("current");
-    });
-  },
 };
 export default Header;

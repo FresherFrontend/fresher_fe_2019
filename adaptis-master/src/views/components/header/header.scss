@@ -40,6 +40,19 @@
                 &:first-child {
                     display: none;
                 }
+                &.current {
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 2px;
+                        background: $text-color-secondary;
+                        width: 100%;
+                        @include transition(width .5s ease-in-out);
+                    }
+                }
                 a {
                     text-transform: uppercase;
                     color: $text-color-secondary;
@@ -62,19 +75,6 @@
                     &:hover {
                         &:after {
                             width: 100%;
-                        }
-                    }
-                    &.current {
-                        position: relative;
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            height: 2px;
-                            background: $text-color-secondary;
-                            width: 100%;
-                            @include transition(width .5s ease-in-out);
                         }
                     }
                 }

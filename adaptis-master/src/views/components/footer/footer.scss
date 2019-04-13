@@ -1,6 +1,5 @@
 .footer-general {
     padding: 57px 0 35px;
-    margin-top: 100px;
     text-align: center;
     background-image: url('../images/background-footer.png');
     background-position: center;
@@ -28,6 +27,11 @@
         margin-top: 39px;
         li {
             padding-bottom: 11px;
+            &.current {
+                a {
+                    color: #9f57ae;
+                }
+            }
         }
         a {
             font-size: 13px;
@@ -39,7 +43,7 @@
             }
         }
     }
-    .footer-iems {
+    .footer-items {
         font-weight: 500;
         .location {
             letter-spacing: 8px;

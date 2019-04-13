@@ -15,7 +15,7 @@ html {
 body {
     font-size: 16px;
     font-weight: fontWeight(regular);
-    color: $text-color-primary;   
+    color: color(c-39);  
     background: $bg-color-primary;
     // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
@@ -85,8 +85,8 @@ body {
 
     p,
     a {
-        @include typography(fonts(main), fontWeight(regular), 1.6rem, inherit);
-        color: $text-color-primary;
+        @include typography(fonts(main), fontWeight(regular), 16px, inherit);
+        color: color(c-39);
     }
 
     a {
@@ -119,6 +119,9 @@ p {
     padding: 0;
     margin: 0;
 }
+img {
+    max-width: 100%;
+}
 .container {
     max-width: 1024px;
     margin: 0 auto;
@@ -130,6 +133,7 @@ p {
     font-size: 12px;
     font-weight: 500;
     padding: 14.5px 55px 10.5px 20px;
+    width: 200px;
     color: $text-color-secondary;
     letter-spacing: 2px;
     border: 1px solid $text-color-secondary;
@@ -150,6 +154,43 @@ p {
             left: 85%;
         }
     }
+}
+.btn-adaptis-black {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 14.5px 55px 10.5px 20px;
+    width: 200px;
+    color: color(c-violet-4);
+    letter-spacing: 2px;
+    border: 1px solid color(c-violet-4);
+    &:after {
+        content: "→";
+        position: absolute;
+        font-size: 16px;
+        opacity: 0;
+        top: 50%;
+        left: 80%;
+        @include transform(translateY(-50%));
+        @include transition(all .2s ease-in-out);
+    }
+    &:hover {
+        &:after {
+            opacity: 1;
+            left: 85%;
+        }
+    }
+}
+.title-first {
+    font-family: 'CapitoliumW01-2Regular',sans-serif;
+    font-size: 26px;
+    color: color(c-6e);
+    padding-bottom: 3px;
+}
+.title-second {
+    font-family: 'CapitoliumW01-2Regular',sans-serif;
+    font-size: 42px;
+    color: color(c-39);
 }
 // .btn-default {
 //     display: inline-block;
@@ -278,3 +319,4 @@ p {
 // }
 
 @keyframes shine{from{-webkit-mask-position:150%}to{-webkit-mask-position:-50%}};
+@keyframes ballon{0%,100%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}50%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}}

@@ -1,6 +1,6 @@
 .highlight_block {
     position: relative;
-    padding: 180px 0;
+    padding: 175px 0;
     background-image: url('../images/adaptis-vicostone.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -20,11 +20,12 @@
         @include flexbox();
         @include align-items(center);
         p {
-            color: #fff;
+            color: $text-color-secondary;
             font-weight: 500;
             width: 70%;
             text-align: right;
             padding: 0 5%;
+            line-height: 1.6;
         }
     }
 }
@@ -37,5 +38,9 @@
         width: 100%;
         margin-bottom: 30px;
         text-align: center;
+        font-size: 13px;
+    }
+    .highlight_block .content .btn-adaptis {
+        font-size: 9px;
     }
 }
