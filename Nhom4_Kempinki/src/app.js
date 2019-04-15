@@ -13,8 +13,15 @@ import './assets/scripts/jquery.fancybox.min.js';
 require('normalize.css');
 require('slick-carousel');
 
+
 $(() => {
-  // Code here
+  Header.selectHotel();
+  Header.selectRoom();
+  Header.selectAdult();
+  Header.selectChildren();
+  Header.selectAge();
+  Header.selectTypeCode();
+  Header.scrollTopHeader();
 });
 
 $(document).ready(() => {
@@ -27,6 +34,13 @@ $(document).ready(() => {
   HomeGallery.homeGalleryCarousel();
   HomeGallery.homeGalleryCarouselInfo();
   SpecialOffers.specialOffersCarousel();
+  Header.selectHotel();
+  Header.selectRoom();
+  Header.selectAdult();
+  Header.selectChildren();
+  Header.selectAge();
+  Header.scrollTopHeader();
+  Header.selectTypeCode();
 });
 
 $(window).on('resize', () => {
@@ -37,5 +51,7 @@ $(window).on('resize', () => {
 
 window.onload = () => {
   Header.selectLanguage();
+  Header.selectDate();
   Mapbox.view();
+  Header.scrollTopHeader();
 };
