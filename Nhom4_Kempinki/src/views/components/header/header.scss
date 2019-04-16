@@ -266,6 +266,7 @@ header {
             top: 124px;
             left: 0px;
             width: 290px;
+            // transition: 0.4s;
             .menu-left-content.delay{
                 transform: translateX(-100%);
                 padding: 38px 0px;
@@ -326,10 +327,19 @@ header {
         }
         .menu-left.fixed{
             position: fixed;
-            top: 100px;
-            left: 0px;
+            top: 50px;
+            left: 0;
+            transform: translateX(-100%);
             z-index: 99999;
         }
+        .menu-left.is-active{
+           animation: leftToRight 0.4s forwards;
+        }
+        @keyframes leftToRight {
+            0% {transform: translateX(-100%)}
+            100% {transform: translateX(0)}
+        }
+
     }
     .sticky-bar-mobile{
         position: fixed;
@@ -338,7 +348,7 @@ header {
         width: 50px;
         height: 50px;
         background: $bg-color-dark-blue-navy;
-        transition: 0.25s;
+        transition: 0.4s;
         transform: translateX(-100%);
         .navigation-trigger{
             display: flex;
@@ -353,15 +363,40 @@ header {
                 margin: 2px 0;
                 background: #B5A191;
                 display: block;
+                transition: 0.4s;
+                -ms-transform-origin: left center;
+                transform-origin: left center;
+                transform: rotate(0);
+                position: relative;
             }
         }
     }
     .sticky-bar-mobile.show-up{
         transform: translateX(0);
         z-index: 99999;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .sticky-bar-mobile.is-showing{
+        .navigation-trigger{
+            span{
+                &:nth-child(2){
+                    opacity: 0;
+                    transform: rotate(0)
+                }
+                &:nth-child(1){
+                   transform: rotate(34deg)
+                }
+                &:nth-child(3){
+                    transform: rotate(-34deg)
+                }
+            }
+        }
     }
     .booking-block{
         background: $bg-color-dark-blue-navy;
+        height: 50px;
+        transition: height 0.4s;
          .container-fluid{
              width: 1170px;
              padding: 10px 15px;
@@ -423,7 +458,7 @@ header {
                         }
                         .error-msg{
                             span{
-                                display: block;
+                                display: none;
                                 font-size: 10px;
                                 width: 275px;
                                 background: #8E3333;
@@ -473,7 +508,7 @@ header {
                         .error-msg{
                             width: 100%;
                             span{
-                                display: block;
+                                display: none;
                                 font-size: 10px;
                                 width: 100%;
                                 background: #8E3333;
@@ -584,6 +619,11 @@ header {
                             }
                         }
                         .select2-dropdown{
+                            margin-top: 5px;
+                            &.select2-dropdown--below{
+                                border:  1px solid transparent;
+                                border-radius: 2px; 
+                             }
                             .select2-results{
                                 .select2-results__option{
                                     padding: 3px 20px;
@@ -622,29 +662,38 @@ header {
                         .collapse-advanced{
                             margin-top: 10px;
                             .row-select{
-                                display: flex;
+                                display: none;
                                 justify-content: space-between;
                                 .num-adult{
                                     width: 49%;
                                     min-width: 49%;
+                                    position: relative;
                                 }
                                 .num-child{
                                     width: 49%;
                                     min-width: 49%;
+                                    position: relative;
                                 }
                                 .select2-container{
                                     width: 100% !important;
                                 }
                                 .select2-dropdown{
                                     width: auto !important;
+                                    margin-top: 5px;
+                                    &.select2-dropdown--below{
+                                       border:  1px solid transparent;
+                                       border-radius: 2px; 
+                                    }
                                     .select2-results{
                                         .select2-results__option{
                                             text-transform: uppercase;
+                                            white-space: pre;
                                         }
                                     }
                                 }
                             }
                             .row-select-children{
+                                display: none;
                                 .title{
                                     display: block;
                                     width: 100%;
@@ -677,10 +726,18 @@ header {
                                         .select2-selection__rendered{
                                             padding: 0 10px;
                                         }
+                                        .ageChildren{
+                                            &.ageChildren.d-none{
+
+                                            }
+                                        }
                                     }
                                 }
                                 .select2-dropdown{
                                     width: auto !important;
+                                }
+                                &.row-select-children.d-block{
+                                    display: block;
                                 }
                             }
                         }
@@ -688,6 +745,7 @@ header {
                 }
                 .block-option{
                     margin-top: 20px;
+                    display: none;
                     .row{
                         justify-content: center;
                     .type-code-block{
@@ -764,8 +822,14 @@ header {
                     }
                     }
                 }
-             }
+                .block-option.show-up{
+                    display: block;
+                }
+            }
          }
+    }
+    .booking-block.show-up{
+        height: auto;
     }
     .booking-block.fixed{
         position: fixed;

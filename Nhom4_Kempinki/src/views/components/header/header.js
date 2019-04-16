@@ -61,19 +61,19 @@ const Header = {
   selectRoom: () => {
     var data = [
       {
-        "id": "1 Room",
+        "id": "1Room",
         "text": "1 Room"
       },
       {
-          "id": "2 Room",
+          "id": "2Room",
           "text": "2 Rooms"
       },
       {
-        "id": "3 Room",
+        "id": "3Room",
         "text": "3 Rooms"
       },
       {
-        "id": "4 Room",
+        "id": "4Room",
         "text": "4 Rooms"
       }
     ]
@@ -86,19 +86,19 @@ const Header = {
   selectAdult: () => {
     var data = [
       {
-        "id": "1 Adult",
-        "text": "1 Adult Per Room"
+        "id": "1Adult",
+        "text": "1Adult Per Room"
       },
       {
-          "id": "2 Adult",
+          "id": "2Adult",
           "text": "2 Adults Per Room"
       },
       {
-        "id": "3 Adult",
+        "id": "3Adult",
         "text": "3 Adults Per Room"
       },
       {
-        "id": "4 Adult",
+        "id": "4Adult",
         "text": "4 Adults Per Rooms"
       },
     ]
@@ -106,35 +106,6 @@ const Header = {
       data: data,
       minimumResultsForSearch: -1,
       dropdownParent: $('.num-adult')
-    });
-  },
-  selectChildren: () => {
-    var data = [
-      {
-        "id": "",
-        "text": "0 Childrens Per Room"
-      },
-      {
-        "id": "1 Children",
-        "text": "1 Childrens Per Room"
-      },
-      {
-          "id": "2 Children",
-          "text": "2 Childrens Per Room"
-      },
-      {
-        "id": "3 Children",
-        "text": "3 Childrens Per Room"
-      },
-      {
-        "id": "4 Adult",
-        "text": "4 Childrens Per Rooms"
-      },
-    ]
-    $('.numberOfChild').select2({
-      data: data,
-      minimumResultsForSearch: -1,
-      dropdownParent: $('.num-child')
     });
   },
   selectAge: () => {
@@ -197,6 +168,50 @@ const Header = {
       minimumResultsForSearch: -1,
       dropdownParent: $('.form-group.children-select')
     });
+  },
+  selectChildren: () => {
+    var data = [
+      {
+        "id": "0",
+        "text": "0 Childrens Per Room"
+      },
+      {
+        "id": "1Children",
+        "text": "1 Childrens Per Room"
+      },
+      {
+          "id": "2Children",
+          "text": "2 Childrens Per Room"
+      },
+      {
+        "id": "3Children",
+        "text": "3 Childrens Per Room"
+      },
+      {
+        "id": "4Children",
+        "text": "4 Childrens Per Rooms"
+      },
+    ]
+    $('.numberOfChild').select2({
+      data: data,
+      minimumResultsForSearch: -1,
+      dropdownParent: $('.num-child'),
+      tags: true,
+    });
+
+    $('.numberOfChild').on("change", function (e) {
+      let select_val = $(e.currentTarget).val();
+      if(select_val == '1Children'){
+        $('.row-select-children').addClass('d-block');
+      }
+      if(select_val == '2Children'){
+    
+      }
+    });
+    $('.numberOfChild').on("select2:open", function (e) {
+      $(this).next('.select2-container').css("position","absolute")
+    });
+
   },
   selectTypeCode: () => {
     var data = [
@@ -270,6 +285,26 @@ const Header = {
     });
     var b = document.getElementById('check-out').parentNode;
     b.parentNode.insertBefore(picker2.el, b.nextSibling);
+  },
+  showBooking: () => {
+    document.addEventListener('click', function(evt){
+      var inside = document.querySelector('.booking-block');
+      if(event.target.closest(".booking-block")){
+        inside.classList.add('show-up');
+        document.querySelector('.block-option').classList.add('show-up');
+        document.querySelector('.row-select').style.display = "flex";
+        return
+      }
+      document.querySelector('.booking-block').classList.remove('show-up');
+      document.querySelector('.row-select').style.display = "none";
+      document.querySelector('.block-option').classList.remove('show-up');
+    })
+  },
+  showMenu: () => {
+    document.querySelector('.sticky-bar-mobile').addEventListener('click', function(){
+        this.classList.toggle('is-showing');
+        document.querySelector('.menu-left').classList.toggle('is-active');
+    })
   },
   scrollTopHeader: () => {
     const offsetTop = document.querySelector('.booking-block').offsetTop - 20;

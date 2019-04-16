@@ -22,6 +22,7 @@ $(() => {
   Header.selectAge();
   Header.selectTypeCode();
   Header.scrollTopHeader();
+  Header.showBooking();
 });
 
 $(document).ready(() => {
@@ -41,6 +42,7 @@ $(document).ready(() => {
   Header.selectAge();
   Header.scrollTopHeader();
   Header.selectTypeCode();
+  Header.showBooking();
 });
 
 $(window).on('resize', () => {
@@ -54,4 +56,6 @@ window.onload = () => {
   Header.selectDate();
   Mapbox.view();
   Header.scrollTopHeader();
+  Header.showBooking();
+  Header.showMenu();
 };
