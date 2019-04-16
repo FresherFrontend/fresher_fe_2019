@@ -67,10 +67,12 @@ $colors: (
     c-pink-light: #EBCCD1,
     c-red: #A94442,
     bg-color: #010f2a,
-    text-color: #b5a191,
+    text-color: #010f2a,
+    text-color-footer: #b5a191
 );
 // // main-colors:
 $text-color: color(text-color);
+$text-color-footer: color(text-color-footer);
 $bg-color: color(bg-color);
 $bg-color-dark-blue-navy: color(c-dark-blue-navy);
 $bg-color-dark-blue-navy-1: color(c-dark-blue-navy-1);
