@@ -3,8 +3,11 @@ import Global from './views/components/global/global';
 import Header from './views/components/header/header';
 import Wow from './views/components/wow/wow';
 import Slider from './views/components/slider/slider';
+//  Hover from './views/components/the_work_my/the_work_my';
 require('normalize.css');
 require('slick-carousel');
+// require('../src/assets/scripts/jquery.hoverdir');
+// require('../src/assets/scripts/modernizr');
 
 $(() => {
   // Code here
@@ -22,6 +25,7 @@ $(document).ready(() => {
   Global.addClassCurrentFooter('.theContactPage', '#contact_1');
   Wow.useWow();
   Slider.showSlider();
+  // Hover.hoverDiv();
 });
 
 $(window).on('resize', () => {
