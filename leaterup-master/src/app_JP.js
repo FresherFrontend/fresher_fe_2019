@@ -1,7 +1,6 @@
 // import './assets/styles/_app.scss';
 import Global from './views/components/global/global';
 require('normalize.css');
-
 $(() => {
   // Code here
 });

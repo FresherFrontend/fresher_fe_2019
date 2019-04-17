@@ -1,0 +1,175 @@
+footer{
+    text-transform: uppercase;
+    margin-top: 1000px;
+    height: 335px;
+    padding-top: 70px;
+    background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/background-footer-optimized.jpg?11037');
+    .leatherwidth {
+        .footergrid {
+            display: flex;
+            .linkgrid {
+                display: flex;
+                width: 50%;
+                ul {
+                        width: 32.33%;
+                    li{
+                        margin: 0;
+                        &:first-child{
+                            font-size: 20px;
+                            color: #ffffff;
+                            
+                            font-family: Teko;
+                        }
+                        padding: 0px 0px 7px 0px;
+                        a{
+                            padding: 0;
+                            margin: 0;
+                            color: #ffffff;
+                            font-family: Overpass;
+                            font-size: 11px;
+                            letter-spacing: 1px;
+                            font-weight: 400;
+
+                        }
+                    }
+                }
+            }
+            .mediagrid{
+ 
+                width: 50%;
+                .emailgrid{
+
+                    margin-top: -115px;
+                    width: 100%;
+                    padding: 50px 60px;
+                    background-color: #000000;
+                    h4{
+                        font-size: 15px;
+                        font-family: Overpass;
+                        padding-bottom: 12px;
+                        margin: 0;
+                        color: #ffffff;
+                    }
+                    form{
+                        input{
+                          
+                            font-family: Overpass;
+                            font-size: 12px;
+                            height: 37px;
+                            line-height: 37px;
+                            margin: 0;
+                            padding: 0 15px;
+                            width: 80%;
+
+                        }
+                        button{
+                            margin-left: 2%;
+                            width: 18%;
+                            background-color: #40456a;
+                            color: #ffffff;
+                            border: none;
+                            height: 37px;
+                            padding: 9px 5px;
+                            font-size: 12px;
+                            
+                            font-family: Overpass;
+                        }
+                    }
+
+                }
+                .socialgrid{
+                    display: flex;
+                    .payment{
+                        
+                        padding: 45px 0px 15px 0;
+                        width: 50%;
+                        h4{
+                            margin: 0;
+                            font-weight: 400;
+                            color: #ffffff;
+                            font-size: 20px;
+                            font-family: Teko;
+                            margin-bottom: 7px;
+                        }
+                        ul{
+                            li{
+                                padding: 7px 0px;
+                                &:last-child{
+                                    display: flex;
+                                    flex-direction: row;
+                                    img{
+                                        height: 70%;
+                                        cursor: pointer;
+                                    }
+                                }
+                                img{
+                                    height: 90%;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .social{
+                        h4{
+                            margin: 0;
+                            font-weight: 400;
+                            color: #ffffff;
+                            font-size: 20px;
+                            font-family: Teko;
+                            margin-bottom: 7px;
+                        }
+                        width: 50%;
+                        padding: 45px 0px 40px 60px;
+                        ul{
+                            li{
+                                display: block;
+                                float: left;
+                                svg{
+                                    width: 38px;
+                                    height: 38px;
+                                    fill: #ffffff;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width : 857px) {
+            .footergrid{
+
+                width: 100%;
+                .linkgrid{
+                    display: none;
+                }
+            }
+        }
+
+    }
+    .copyrightgrid{
+        margin-top: 0px;
+        height: 42px;
+        line-height: 42px;
+        width: 100%;
+        
+      
+        background-color: #000;
+        text-align: center;
+        small{
+
+            color: #ffffff;
+            font-family: Overpass;
+            font-size: 8px;
+            text-transform: none;
+            a{
+                color: #ffffff;
+                font-family: Overpass;
+                font-size: 8px;
+                text-transform: none;
+            }
+        }
+    }
+
+}

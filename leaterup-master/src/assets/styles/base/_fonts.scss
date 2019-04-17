@@ -42,3 +42,11 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Teko';
+    font-display: fallback;
+    src: url('./fonts/Teko/teko-v8-latin-500.woff') format('woff'),
+        url('./fonts/Teko/teko-v8-latin-500.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

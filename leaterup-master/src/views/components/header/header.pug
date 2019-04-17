@@ -1,49 +1,262 @@
 header
+  div.mobileNav
+    div.hamburger
+        span.hamburspan 
+        span.hamburspan 
+        span.hamburspan 
+        ul.listNav
+            li
+                a.colectionlink(href="")  Log in
+            li.searchform
+                form(action="/search")
+                    svg.icon.icon-search(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 200 200')
+                        path(d='M200 184.4l-46.1-46.1c26-33.7 23.6-82.4-7.2-113.2-33.5-33.5-88.1-33.5-121.6 0s-33.5 88.1 0 121.6c16.8 16.8 38.8 25.1 60.8 25.1 18.5 0 37-6 52.4-17.9l46.1 46.1 15.6-15.6zM40.7 131.1c-24.9-24.9-24.9-65.5 0-90.4C53.2 28.3 69.6 22 85.9 22s32.7 6.2 45.2 18.7c24.9 24.9 24.9 65.5 0 90.4-24.9 24.9-65.5 24.9-90.4 0z')
+                    input(type="text" placeholder="Search products")
+            li
+                a.colectionlink(href="") 
+                    |Jackets
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="") 
+                    |Chaps
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="") 
+                    |Men
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="") 
+                    |women
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="")
+                    |helmets
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="") 
+                    |boots
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="")
+                    |Accessories
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z') 
+            li
+                a.colectionlink(href="") 
+                    |Parts
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.colectionlink(href="") 
+                    |Closeouts
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li.greyitem
+                p
+                    span call
+                    a(href="") 800-846-6010
+                    span /
+                    a(href="") Email us
+            li.greyitem
+                a.colectionlink(href="") 
+                    |About us
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li.greyitem
+                a.colectionlink(href="") 
+                    |Customer Service
+                    svg.icon.icon-arrow-down(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 2048 2048')
+                        path(d='M1523 864q0 13-10 23l-466 466q-10 10-23 10t-23-10L535 887q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z')
+            li
+                a.canada(href="") Leatherup Canada
+                a.wholesale(href="") Myleather Wholesale
+
+
+    //- end mobile nav-------------------------------------
+    div.mobileImage
+        a(href="")
+            img(src="//cdn.shopify.com/s/files/1/2694/4876/t/96/assets/icon--full-color-logo.svg?11062", alt="")
+    div.mobileCart
+        div
+            svg.icon.icon-cart(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 200 200')
+                circle(cx='73.3', cy='152.6', r='13.5')
+                circle(cx='153', cy='153.1', r='13')
+                path(d='M159.2 121.8L200 50.9H46.2L41.4 34H0v8.8h34.7l21.5 75.9.9 3.2h102.1zm25.7-62.2L154.1 113H63.8L49.3 59.6h135.6z')
+        div
+            span.overbass 0
+
   div.topbar
     div.itemleft
         p.overbass Leatherup Canada
     div.itemleft
         p.overbass Myleather Wholesale
-    div.itemright
-        div.cartitem
-            img(src="/assets/images/cart.svg", alt="")
-            span.sl 0
-    div.itemright
-        p.overbass Log in
+    div.mid
     div.itemright
         p.overbass
             | CALL
             a(href='') 800-846-6010
             | /
-            a(href='') Email us
+            a(href='') EMAIL US
+    div.itemright
+        p.overbass Log in
+    div.itemright
+        div.cartitem
+            img(src="/assets/images/cart.svg", alt="")
+            span.sl 0
+
+    //-------------------------------------------END TOPBAR--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---
   div.mainNav.leatherwidth
     div.leatherpic
         a(href="")
-            img(src="https://cdn.shopify.com/s/files/1/2694/4876/t/96/assets/icon--full-color-logo.svg?11037", alt="LeatherUp USA")
+            img#ltherpic(src="https://cdn.shopify.com/s/files/1/2694/4876/t/96/assets/icon--full-color-logo.svg?11037", alt="LeatherUp USA")
     nav 
-        ul.row  
-            li
+        ul#navbor.row  
+            li#JACKETINDX
                 a(href="") JACKETS
-            li
-                a(href="") CHAPS
-            li
+                div#JACKETSUB.subNav
+                    div.leatherwidth
+                        div.leathergrid
+                            div.leathergrid-collection
+                                h3(style="margin-left:40px;") motorcycle-jackets riding apparel
+                                div.collection-item
+                                    div.lgpic
+                                    div.smpics
+                                        a#JKID1.jktype(href="")            
+                                            p 
+                                                span mens leather
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/Mens_Leather_Jackets_large.jpeg?v=1551999433")
+                                        a#JKID2.jktype(href="")
+                                            p 
+                                                span mens mesh and textile 
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/d76a-5bb2414209312_large.jpg?v=1551481872")
+                                        a#JKID3.jktype(href="")
+                                            p mens fashion jackets
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/fashion-men_large.jpg?v=1551772579")
+                                        a#JKID4.jktype(href="")
+                                            p women's          
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/Women-Motorcycle-Jackets_070373c3-ac8b-4ac8-b0d4-a80478371757_large.jpg?v=1552593310")
+                                        a#JKID5.jktype(href="")
+                                            p womens leather jackets
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/Womens-Leather-Jackets_e3aa20e4-c2eb-4b77-96b5-80c1174aa756_large.jpg?v=1552593187")
+                                        a#JKID6.jktype(href="")
+                                            p womens textile and mesh biker jackets
+                                            img(src="//cdn.shopify.com/s/files/1/2694/4876/files/womens-mesh-and-textile_48fee3d9-5fa3-4928-961a-2da717bbad9d_large.jpg?v=1552593374")
+                            div.leathergrid-brand
+                                h3 Shop by brand
+                                ul
+                                    li
+                                        a(href="") Xelement Jackets
+                                    li
+                                        a(href="") Milwaukee Leather
+                                    li
+                                        a(href="") USA Leather
+                                    li
+                                        a(href="") Joe Rocket Jackets
+                                    li
+                                        a(href="") First Gear Jackets
+                                    li(style="width:80%;")
+                                        a(href="") Oxford Motrocycle Jackets  
+            li#CHAPINDX
+                a(href="/test") CHAPS
+                div#CHAPSUB.subNav
+                    div.leatherwidth
+                        div.leathergrid
+                            div.leathergrid-collection(style="padding-left:0px;")  
+                                h3 Our top brands
+                                div.collection-item
+                                    div.fourpics
+                                        img(src="//cdn.shopify.com/s/files/1/2694/4876/files/NavLogo_mens_chaps-no-stroke_169x.png?v=1552594452", alt="")
+                                    div.fourpics
+                                        img(src="//cdn.shopify.com/s/files/1/2694/4876/files/NavLogo_womens_chaps_169x.png?v=1552594492", alt="")
+                                    div.fourpics
+                                        img(src="//cdn.shopify.com/s/files/1/2694/4876/files/NavLogo_leather_pants_169x.png?v=155259453", alt="")
+                                    div.fourpics
+                                        img(src="//cdn.shopify.com/s/files/1/2694/4876/files/NavLogo_denim_pants_169x.png?v=1552594562", alt="")
+
+                            div.leathergrid-brand
+                                h3 Shop by brand
+                                ul
+                                    li
+                                        a(href="") Xelement Chaps
+                                    li
+                                        a(href="") Xelement Pants
+                                    li(style="width:80%;")
+                                        a(href="") Milwaukee Leather Chaps
+                                    li(style="width:80%;")
+                                        a(href="") Milwaukee Leather Pants
+                                    li
+                                        a(href="") Joe Rocket Pants
+                                    li
+                                        a(href="") Tourmaster Pants
+                                    li
+                                        a(href="") Scorpion Pants
+                                    li 
+                                        a(href="") Oxford Pants
+                                    li  
+                                        a(style="color: #5f78b7;" href="") View All brands
+
+                            div.leathergrid-brand
+                                h3 Shop by type
+                                ul
+                                    li
+                                        a(href="") Mens Motorcycle Chaps
+                                    li
+                                        a(href="") Women Motorcycle Chaps
+                                    li
+                                        a(href="") Leather Chaps
+                                    li
+                                        a(href="") Leather pants
+                                    li
+                                        a(href="") Leather and Textile Overpants
+                                    li
+                                        a(href="") Denim Motorcycle Pants
+                                    li 
+                                        a(href="") Mesh and Textile Pants
+                                    li 
+                                        a(href="") Motocross Pants
+            li#MENINDX
                 a(href="") MEN
-            li
+            li#WOMENINDX
                 a(href="") WOMEN
-            li
+            li#HELMETSINDX
                 a(href="") HELMETS
-            li
+            li#BOOTINDX
                 a(href="") BOOTS
-            li
+            li#ACCESSORIESINDX
                 a(href="") ACCESSORIES 
-            li
+            li#PARTSINDX
                 a(href="") PARTS
-            li
+            li#CLOSEOUTSINDX
                 a(href="") CLOSEOUTS
-        form(action="/search")
+        form#srchbar(action="/search")
             svg.icon.icon-search(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 200 200')
                 path(d='M200 184.4l-46.1-46.1c26-33.7 23.6-82.4-7.2-113.2-33.5-33.5-88.1-33.5-121.6 0s-33.5 88.1 0 121.6c16.8 16.8 38.8 25.1 60.8 25.1 18.5 0 37-6 52.4-17.9l46.1 46.1 15.6-15.6zM40.7 131.1c-24.9-24.9-24.9-65.5 0-90.4C53.2 28.3 69.6 22 85.9 22s32.7 6.2 45.2 18.7c24.9 24.9 24.9 65.5 0 90.4-24.9 24.9-65.5 24.9-90.4 0z')
             input(type="search" placeholder="Search Products")
+    //- -----------------------------------------------------END MAIN NAV-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  div#myP.botNav
+    div.item
+        p
+            svg.icon.icon-free-shipping(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 39.55 37.1')
+                path.cls-1(d='M26.15 0H0v37.1h39.55V0zm-3 3v17.41H16.4V3zm13.4 31.1H3V3h10.4v20.41h12.75V3h10.4z')
+                span Free shipping over all $39.99        
+    div.item
+        p
+            svg.icon.icon-low-price(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 38.82 38.81')
+                path.cls-1(d='M20.62 2.14L8.73 0 0 8.73l2.24 12 18.1 18.1 18.48-18.49zM5 19.25L3.24 9.73l6.5-6.5 9.42 1.7 15.41 15.41-14.23 14.23z')
+                path.cls-1(d='M8.23 8.23a4 4 0 1 0 5.72 0 4 4 0 0 0-5.72 0zm3.59 3.59a1 1 0 1 1 0-1.47 1 1 0 0 1 .01 1.47z')
+                span Low price guarantee!       
+    div.item
+        p.bodernone
+            svg.icon.icon-vip(aria-hidden='true', focusable='false', role='presentation', viewbox='0 0 42.96 40.86')
+                path.cls-1(d='M34.76 40.86l-13.28-7.33L8.2 40.86 11.07 26 0 15.61l15-1.87L21.48 0l6.43 13.74 15 1.87L31.89 26zM21.48 30.1l9.12 5-2-10.23 7.61-7.12-10.31-1.24-4.42-9.43-4.42 9.43-10.33 1.28 7.61 7.12-2 10.23z')
+                span 30 Day Easy Returns and Exchanges
+    
 
-  div.subNav
-  div.botNav
+
+
