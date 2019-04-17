@@ -70,7 +70,7 @@ const Mapbox = {
               'icon-image': "circle-15"
             },
             "paint": {
-             'icon-color': '#2a2a2a'
+              'icon-color': '#2a2a2a'
             }
           })
           map.on('click', 'symbols', function (e) {

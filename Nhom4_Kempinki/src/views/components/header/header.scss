@@ -7,9 +7,16 @@ header {
         left: 0;
         width: 100%;
         z-index: 2;
+        height: 100px;
+        display: grid;
+        @include tabletplus {
+            height: auto;
+            background: rgb(1,15,42);
+            position: static;
+        }
         .row.mx-0 {
             margin: 0px;
-            height: 100px;
+            height: 100%;
             .top-logo {
                 @include flexbox();
                 .logo {
@@ -17,6 +24,9 @@ header {
                         display: block;
                         img {
                             width: 35%;
+                            @include tabletplus {
+                                width: 75%;
+                            }
                         }
                     }
                 }
@@ -70,6 +80,9 @@ header {
             .top-panel {
                 align-self: flex-end;
                 margin-bottom: 20px;
+                @include tabletplus {
+                    display: none;
+                }
                 .top-panel-wrap {
                     .top-panel-wrap-menu {
                         @include flexbox();
@@ -102,6 +115,7 @@ header {
                                     transition: 0.4s;
                                     z-index: 10;
                                     opacity: 0;
+                                    z-index: 999;
                                     visibility: hidden;
                                     ul {
                                         background: $bg-color-dark-blue-navy-1;
@@ -151,14 +165,90 @@ header {
                 }
             }
         }
+        .account-widget-desktop{
+            position: absolute;
+            top: 100%;
+            right: 50px;
+            background: color(c-white);
+            box-shadow: 1px 3px 8px #ccc;
+            padding: 17px 22px;
+            width: 500px;
+            z-index: 99;
+            transform: translateY(-100%);
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s;
+            .link{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                color: color(c-dark-blue-navy);
+                a{
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    &:nth-child(2) {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .text{
+                margin-top: 9px;
+                span{
+                    display: block;
+                    color: color(c-dark-blue-navy);
+                    font-family: $font-helvelticaRegular;
+                    &.big{
+                        font-size: 18px;
+                    }
+                    &.small{
+                        font-size: 12px;
+                       
+                    }
+                }
+            }
+            .login-options.login-wrapper{
+                margin-top: 30px;
+                a{
+                    vertical-align: middle;
+                    padding: 7px 0;
+                    color: #021843;
+                    border: 2px solid #B5A191;
+                    background-color: #fff;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 10px;
+                    width: 40%;
+                    display: inline-block;
+                    line-height: 1.4;
+                    &:hover{
+                        background: #B5A191;
+                        color: color(c-white); 
+                    }
+                }
+                span{
+                    margin: 0;
+                    text-align: center;
+                    vertical-align: middle;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    padding: 6px 0;
+                    font-size: 10px;
+                    width: 20%;
+                }
+            }
+        }
     }
     .banner-header{
         height: 620px;
         position: relative;
+        @include tabletplus {
+            height: 0;;
+        }
         .banner-wrapper{
             height: calc(100% - 100px);
             position: absolute;
             top: 100px;
+            z-index: 1;
             left: 0px;
             .banner-wrapper-content{
                 height: 100%;
@@ -244,6 +334,9 @@ header {
                     }
                 }
             }
+            @include tabletplus {
+                display: none;
+            }
         }
         .banner-wrapper-inside-page{
             height: calc(100% - 100px);
@@ -266,7 +359,11 @@ header {
             top: 124px;
             left: 0px;
             width: 290px;
-            // transition: 0.4s;
+            z-index: 100;
+            @include tabletplus {
+                top: 100%;
+                transform: translateX(-100%);
+            }
             .menu-left-content.delay{
                 transform: translateX(-100%);
                 padding: 38px 0px;
@@ -276,6 +373,11 @@ header {
                     -o-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
                     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
                 background: rgba(1,15,42,0.74);
+                @include tabletplus {
+                    background: rgb(1,15,42);
+                    transform: translateX(0);
+                    animation: none;
+                }
                 .menu-title{
                     font-size: 20px;
                     letter-spacing: 2px;
@@ -328,6 +430,7 @@ header {
                 from {transform: translateX(-100%)}
                 to {transform: translateX(0)}
             }
+
         }
         .menu-left.fixed{
             position: fixed;
@@ -343,7 +446,6 @@ header {
             0% {transform: translateX(-100%)}
             100% {transform: translateX(0)}
         }
-
     }
     .sticky-bar-mobile{
         position: fixed;
@@ -353,7 +455,11 @@ header {
         height: 50px;
         background: $bg-color-dark-blue-navy;
         transition: 0.4s;
+        z-index: 9999;
         transform: translateX(-100%);
+        @include tabletplus {
+            transform: translateX(0);
+        }
         .navigation-trigger{
             display: flex;
             height: 100%;
@@ -400,16 +506,57 @@ header {
     .booking-block{
         background: $bg-color-dark-blue-navy;
         max-height: 50px;
+        padding: 10px 0px;
         -webkit-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
         -moz-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
             -o-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
-                transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
-         .container-fluid{
-             width: 1170px;
-             padding: 10px 15px;
+                transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        .container{
+             max-width: 1170px;
+             padding: 0px 15px;
+             margin: 0 auto;
+             @include tabletplus {
+                 display: none;
+             }
+            .title-block-booking{
+                width: 100%;
+                padding: 12px 15px;
+                border-bottom: 1px solid #dce0e0;
+                background-color: #edefed;
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+                .text{
+                    color: color(c-dark-blue-navy);
+                    line-height: 1;
+                    cursor: pointer;
+                    font-size: 22px;
+                    letter-spacing: 0;
+                }
+                span.icon-close{
+                    display: block;
+                    position: relative;
+                    span.line{
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 4px;
+                        top: 0;
+                        right: 0px;
+                        background: #cacccd;
+                        &:nth-child(1){
+                            transform: rotate(45deg)
+                        }
+                        &:nth-child(2){
+                            transform: rotate(-45deg)
+                        }
+                    }
+                }
+            }
             .form-inline-search{
                 width: 100%;
                 display: flex;
+                padding: 0 50px;
                 justify-content: center;
                 .block-location{
                     width: 306px;
@@ -483,7 +630,7 @@ header {
                 }
                 .block-picker{
                     width: 408px;
-                    max-width: 408px;
+                    min-width: 350px;
                     display: flex;
                     flex-wrap: wrap;
                     position: relative;
@@ -628,7 +775,7 @@ header {
                     .select2-dropdown{
                         margin-top: 5px;
                         &.select2-dropdown--below{
-                            border:  1px solid rgba(0,0,0,0.5);
+                            border:  1px solid rgba(0,0,0,0.2);
                             border-radius: 2px; 
                             }
                         .select2-results{
@@ -691,7 +838,7 @@ header {
                                 width: auto !important;
                                 margin-top: 5px;
                                 &.select2-dropdown--below{
-                                    border:  1px solid transparent;
+                                    border:  1px solid rgba(0,0,0,0.2);
                                     border-radius: 2px; 
                                 }
                                 .select2-results{
@@ -747,6 +894,7 @@ header {
 
                             }
                             .select2-dropdown{
+                                margin-top: 5px;
                                 width: auto !important;
                             }
                             &.row-select-children.d-block{
@@ -793,6 +941,7 @@ header {
                         }
                     }
                     .select2-dropdown{
+                        margin-top: 5px;
                         .select2-results{
                             .select2-results__option{
                                 padding: 3px 20px;
@@ -807,6 +956,16 @@ header {
                             .select2-results__option--highlighted{
                                 background: #f5f5f5;
                                 color: color(c-dark-blue-navy)
+                            }
+                        }
+                        &.select2-dropdown--below{
+                            border:  1px solid rgba(0,0,0,0.2);
+                            border-radius: 2px; 
+                        }
+                        .select2-results{
+                            .select2-results__option{
+                                text-transform: uppercase;
+                                white-space: pre;
                             }
                         }
                     }
@@ -839,6 +998,39 @@ header {
             .block-option.show-up{
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+        .show-sm-booking-block{
+            width: 100%;
+            display: none;
+            @include tabletplus {
+                display: block;
+            }
+            .container{
+                margin:  0 auto;
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+                width: max-content;
+                cursor: pointer;
+                span{
+                    display: inline-block;
+                    font-size: 15px;
+                    font-size: 15px;
+                    background-color: #fff;
+                    line-height: 30px;
+                    padding-left: 10px;
+                    padding-right: 40px;
+                    text-transform: uppercase;
+                    color: color(c-dark-blue-navy);
+                }
+                span.icon-search{
+                    background: color(c-brown);
+                    line-height: 30px;
+                    font-size: 19px;
+                    padding: 0 5px;
+                    color: color(c-white);
+                }
             }
         }
     }

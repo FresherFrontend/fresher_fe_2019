@@ -299,13 +299,14 @@ const Header = {
       onOpen: function(){
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
-        this.el.style.top = '35px';
+        this.el.style.top = '45px';
         document.querySelector('.booking-block').style.overflow = 'visible';
       },
       onClose: function(){
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
-        this.el.style.top = '35px';
+        this.el.style.top = '45px';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       },
       onSelect: function() {
         var checkIn = this.getMoment().format('ll');
@@ -323,12 +324,14 @@ const Header = {
       onOpen: function(){
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
-        this.el.style.top = '35px';
+        this.el.style.top = '45px';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       },
       onClose: function(){
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
-        this.el.style.top = '35px';
+        this.el.style.top = '45px';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       },
       onSelect: function() {
         console.log(this.getMoment().format('ll'));
@@ -345,13 +348,16 @@ const Header = {
         document.querySelector('.block-option').classList.add('show-up');
         document.querySelector('.row-select').style.opacity = "1";
         document.querySelector('.row-select').style.visibility = "visible";
-        return
+        return true;
       }
       document.querySelector('.booking-block').classList.remove('show-up');
       document.querySelector('.booking-block').style.overflow = 'hidden';
       document.querySelector('.row-select').style.opacity = "0";
       document.querySelector('.row-select').style.visibility = "hidden";
       document.querySelector('.block-option').classList.remove('show-up');
+    })
+    document.querySelector('.show-sm-booking-block .container').addEventListener('click', function(){
+      this.classList.add('fixed')
     })
   },
   showMenu: () => {
@@ -363,7 +369,7 @@ const Header = {
   scrollTopHeader: () => {
     const offsetTop = document.querySelector('.booking-block').offsetTop - 20;
     window.addEventListener("scroll", function(){
-        if(window.scrollY >= offsetTop){
+        if(window.scrollY > offsetTop){
           document.querySelector('.booking-block').classList.add('fixed');
           document.querySelector('.menu-left').classList.add('fixed');
           document.querySelector('.sticky-bar-mobile').classList.add('show-up');
@@ -372,6 +378,11 @@ const Header = {
           document.querySelector('.booking-block').classList.remove('fixed');
           document.querySelector('.menu-left').classList.remove('fixed');
           document.querySelector('.sticky-bar-mobile').classList.remove('show-up');
+        }
+        
+        if(document.querySelector('.booking-block').offsetTop == 0){
+          document.querySelector('.booking-block').classList.remove('show-up');
+          document.querySelector('.booking-block').style.overflow = "hidden"
         }
     })
     var scrollTo = document.querySelectorAll('.content.overlay .text')
@@ -383,6 +394,16 @@ const Header = {
       })
     });
   },
+  resetStart: () => {
+    const offsetTopresize = document.querySelector('.booking-block').offsetTop;
+    if(offsetTopresize == 0){
+      document.querySelector('.booking-block').classList.remove('fixed');
+      Header.scrollTopHeader();
+    }
+    else{
+      Header.scrollTopHeader();
+    }
+  },
   clickButton: () => {
     document.querySelector('.search.submit').addEventListener('click', function(){
       let formSearchHotel  = document.querySelector('.form-search-hotel').value;
@@ -390,9 +411,11 @@ const Header = {
       let checkOut = document.getElementById('check-out').value;
       if(formSearchHotel == 'Where would you like to go?' || formSearchHotel == ''){
         document.querySelector('.block-location .error-msg').style.display = 'block';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       }
       if(checkIn == '' || checkOut ==''){
         document.querySelector('.block-picker .error-msg').style.display = 'block';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       }
     })
   }

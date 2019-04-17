@@ -58,6 +58,11 @@
         @content;
     }
 }
+@mixin tabletplus {
+    @media (min-width: #{breakpoints(md)}) and (max-width: #{breakpoints(lg)}) {
+        @content;
+    }
+}
 
 @mixin mobile {
     @media screen and (max-width: #{breakpoints(sm) - 1px}) {

@@ -49,6 +49,9 @@ $(window).on('resize', () => {
   setTimeout(() => {
     Global.lazyLoad();
   }, 250);
+
+  Header.resetStart();
+
 });
 
 window.onload = () => {

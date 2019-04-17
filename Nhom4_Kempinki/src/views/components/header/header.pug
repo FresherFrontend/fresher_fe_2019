@@ -2,16 +2,16 @@ header
     .top-header
         .container
             .row.mx-0
-                .top-logo.col-md-3.middle-md
+                .top-logo.col-xs-12.col-md-3.middle-xs.center-xs
                     .logo
                         a(href="/", title="logo")
                             img(src= ("../../../assets/images/logo.png"), alt="Kempinski Logo")
-                .top-slogan.col-md-6.middle-md.center-xs
+                .top-slogan.col-xs-12.col-md-6.middle-xs.center-xs
                     .text-big
                         span KEMPINSKI HOTELS
                     .text-small
                         span A Constellation of Havens 
-                .top-panel.col-md-3
+                .top-panel.col-xs-12.col-md-3
                     .top-panel-wrap
                         ul.top-panel-wrap-menu.end-xs
                             li.multy-language
@@ -25,6 +25,17 @@ header
                                 a.login-link(href="#" title="Login")
                                     span.icon-user
                                     span.text-login Login
+            .account-widget-desktop
+                .link
+                    a(href="#", title="My Account") My account
+                    a(href="#", title="My Account") Need assistance ?
+                .text
+                    span.big Need something special for your upcoming stay?
+                    span.small Access your upcoming trip to modify or cancel your booking.
+                .login-options.login-wrapper
+                    a.btn-default-outline(href="#", title="CREATE A NEW ACCOUNT") CREATE A NEW ACCOUNT
+                    span Or
+                    a.btn-default-outline(href="#", title="LOGIN TO YOUR ACCOUNT") LOGIN TO YOUR ACCOUNT
     .banner-header
         block banner-wrapper-inside-page
             .banner-wrapper
@@ -71,6 +82,8 @@ header
                                     each listSub in list.submenu
                                         li.side-list-lv2
                                             a(href=listSub.link)= listSub.text
+                ul.navigation-only-phone
+                    
     .sticky-bar-mobile
         span.navigation-trigger
             span
@@ -78,7 +91,12 @@ header
             span
     block booking-block
         .booking-block
-            .container-fluid
+            .container
+                .title-block-booking 
+                    .text Search
+                    span.icon-close
+                        span.line
+                        span.line
                 .form-inline-search
                     .block-location
                         .form-group.form-search-location
@@ -119,4 +137,7 @@ header
                         .block.promo-block
                             input(type="text", placeholder="Promotion Code", name="PromotionCode", id="PromotionCode")
                         a(href="#" data-target="#partner-destination-modal" data-toggle="modal" class="partner-info-modal-trigger") Partner Destinations
-
+            .show-sm-booking-block
+                .container
+                    span Where would you like to go?
+                    span.icon-search
