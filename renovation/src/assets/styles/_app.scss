@@ -10,7 +10,11 @@
 @import './base/_global';
 @import './base/_flexboxgrid';
 @import './base/_lazyload';
+
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
 // Component
 @import '../../views/components/header/header';
 @import '../../views/components/footer/footer';
 @import '../../views/components/testimonials/testimonials';
+@import '../../views/components/home/home';

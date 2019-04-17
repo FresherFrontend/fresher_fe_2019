@@ -84,6 +84,13 @@ const Global = {
     }
     return false;
   },
+
+  setPageActive: (onlyClass, activeClass) => {
+    if ($(onlyClass) && $(onlyClass).length > 0) {
+        $('.bgr_header ul li').removeClass('active_menu_destop_lv1');
+        $('.bgr_header ul li'+ activeClass).addClass('active_menu_destop_lv1');
+    }
+}
 };
 
 export default Global;
