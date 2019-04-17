@@ -1,0 +1,131 @@
+header{
+    width: 100%;
+}
+.topbar{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    height: 34px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.overbass{
+        color: #000;
+		font-size: 10px;
+		line-height: 34px;
+		margin-bottom: 0;
+		padding: 0 14px;
+        text-align: center;
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        a{
+            cursor: pointer;
+            color: #5f78b7;
+            font-size: 10px;
+            line-height: 34px;
+            margin: 0 2px;
+            font-weight: 700;
+        } 
+}
+.itemleft{
+    display: inline-block;
+    border-left: 0;
+    border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: initial;
+    border-right: 1px solid #000;
+}
+.itemright{
+    float: right;
+    display: block;
+    border-left: 1px solid #000;
+    img{
+        margin-top: 3px;
+        width:25px;
+        display: inline-block;
+    }
+    .sl{
+        display: inline-block;
+        margin-top: 0px;
+        color: #5f78b7;
+        font-size: 14px;
+        line-height: 34px;
+        height: 34px;
+        position:absolute;
+    }  
+}
+.cartitem{
+    height: 34px;
+    width: 43px;
+    display: block;
+    position: relative;
+    margin: 0px 14px;
+}
+
+// mainNAV
+
+.mainNav{
+    height: 118px;
+    .leatherpic{
+        padding-top: 17px;
+        width: 1120px;
+        display: block;
+        img{
+            display: block;
+            width: 135px;
+            height: 20px;
+            margin: 0 auto;
+        }
+    }
+    nav{
+        width: 100%;
+        position: relative;
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                &:first-child{
+                    padding-left: 0px;
+                }
+                &:last-child {
+                    padding-right: 0px;}
+                padding: 0px 22.4px;
+                display: inline-block;
+                a{
+                    &:hover {
+                        color: #5f78b7;
+                    }
+                    
+                    font-weight: 900;
+                    display: inline-block;
+                    color: #000;
+                    margin: 18px 0px;
+                    font-size: 12px;
+                    
+                }
+            }
+            
+        }
+        form{
+            position: absolute;
+            right: 18px;
+            top:18px;
+            display: block;
+            border-bottom: 2px solid #a9a9a9;
+            svg{
+                width: 14px;
+                margin-right: 5px;
+            }
+            input{ 
+                width: 122px;
+                background-color: transparent;
+                border: 0;          
+                color: #000;
+                font-style: italic;
+                font-family: Overpass, sans-serif;
+                font-size: 12px;
+                
+            }
+        }
+    }
+}

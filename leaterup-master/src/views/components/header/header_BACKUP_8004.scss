@@ -1,0 +1,630 @@
+header{
+<<<<<<< HEAD
+    width: 100%;
+}
+.topbar{
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    height: 34px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.overbass{
+        color: #000;
+		font-size: 10px;
+		line-height: 34px;
+		margin-bottom: 0;
+		padding: 0 14px;
+        text-align: center;
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        a{
+            cursor: pointer;
+            color: #5f78b7;
+            font-size: 10px;
+            line-height: 34px;
+            margin: 0 2px;
+            font-weight: 700;
+        } 
+}
+.itemleft{
+=======
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    .mobileNav{
+        display: none;
+        padding-top: 15px;   
+        width: 100%;
+        justify-content: space-between;
+        .hamburger{
+            margin-left: 20px;
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+           
+            .hamburspan{
+                background-color: #000;
+                display: block;
+                height: 2px;
+                margin-top: 5px;
+                opacity: 1;
+                width: 100%;
+                
+            }
+            .listNav{
+                
+                display: none;
+                text-align: center;
+                top:52px;
+                left: 0;
+                position: absolute;
+                width:100%;
+                .searchform{
+                    form{
+                        background-color: #D9DAE1;
+                        padding: 15px 0px;
+                        border-bottom: #000 1px solid;
+                        svg{
+                            width: 14px;
+                            height: 14px;
+                        }
+                        input{
+                            background-color: #D9DAE1;
+                            text-align: center;
+                            border: none;
+                            width: 90%;
+                        }
+                    }
+                }
+                li{
+                    background-color: #ffffff;
+                    &:first-child{
+                        background-color: #D9DAE1;
+                    }
+                    &:last-child{
+                        background-color: #D9DAE1;
+                        display: flex;
+                        a{
+                            &:last-child{
+                                border-right: none;
+                            }
+                            font-family: Overpass;
+                            text-align: center;
+                            width: 50%;
+                            padding: 15px 0px;
+                            color: #000;
+                            font-size: 10px;
+                            border-right: 1px solid #000;
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                    width:100%;
+                    .colectionlink{
+                        border-bottom: 1px solid #c0c0c0;
+                        display: block;
+                        position: relative;
+                        width: 100%;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: Overpass;
+                        padding: 15px 0px;
+                        color: #000;
+                        svg{
+                            right: 20px;
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                .greyitem{
+                    border-bottom: #000 solid 2px;
+                    background-color: #D9DAE1;
+
+                    p{
+                        padding: 15px 0px;
+                        display: flex;
+                        justify-content: center;
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        font-family: Overpass;
+                        border-bottom: 1px solid #c0c0c0;
+                        a{
+                            
+                            font-family: Overpass;
+                            padding: 0px 3px;
+                            font-size: 14px;
+                            color: #5f78b7;
+                        }
+                        span{
+                            padding: 0px 3px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .mobileImage{
+            img{
+                margin: 0 auto;
+                display: block;
+                width: 135px;
+                height: 20px;
+            }
+        }
+        .mobileCart{
+            cursor: pointer;
+            margin-right: 10px;
+            width: 42px;
+            display: flex;
+            flex-direction: row;
+            div{
+                svg{
+                    width: 28px;
+
+                }
+                span{
+                    font-size: 14px;
+                    color: #40456a;
+                    padding: 0 5px;
+                }
+            }
+        }
+
+        
+    }
+    @media only screen and (max-width : 857px) {
+        .mobileNav{
+            display: flex;
+        }
+        .topbar,.mainNav,.botNav{
+            display: none;
+        }
+
+    }
+}
+.topbar{
+    display: flex;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.overbass{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 10px;
+    line-height: 34px;
+    margin-bottom: 0;
+    padding: 0 14px;
+    text-align: center;
+    font-family: Overpass, sans-serif;
+    font-weight: 700;
+    a{
+        &:hover{
+            text-decoration: underline;
+        }
+        color: #5f78b7;
+        font-size: 10px;
+        line-height: 34px;
+        margin: 0 2px;
+        font-weight: 700;
+    } 
+}
+.itemleft{
+    &:hover{
+        transition: 0.5s;
+        background-color:#b5bcf0;
+    }
+>>>>>>> backup-master-group-3
+    display: inline-block;
+    border-left: 0;
+    border-left-width: 0px;
+    border-left-style: initial;
+    border-left-color: initial;
+    border-right: 1px solid #000;
+<<<<<<< HEAD
+}
+.itemright{
+=======
+    cursor: pointer;
+}
+.mid{
+    flex-grow: 1;
+}
+.itemright{
+
+    &:hover{
+        transition: 0.5s;
+        background-color:#b5bcf0;
+    }
+    cursor: pointer;
+>>>>>>> backup-master-group-3
+    float: right;
+    display: block;
+    border-left: 1px solid #000;
+    img{
+        margin-top: 3px;
+        width:25px;
+        display: inline-block;
+    }
+    .sl{
+        display: inline-block;
+        margin-top: 0px;
+        color: #5f78b7;
+        font-size: 14px;
+        line-height: 34px;
+        height: 34px;
+        position:absolute;
+    }  
+<<<<<<< HEAD
+}
+.cartitem{
+    height: 34px;
+    width: 43px;
+    display: block;
+    position: relative;
+    margin: 0px 14px;
+=======
+>>>>>>> backup-master-group-3
+}
+.cartitem{
+
+<<<<<<< HEAD
+// mainNAV
+
+.mainNav{
+    height: 118px;
+=======
+    height: 34px;
+    width: 43px;
+    display: block;
+    position: relative;
+    margin: 0px 14px;
+}
+
+// mainNAV
+
+.mainNav{
+>>>>>>> backup-master-group-3
+    .leatherpic{
+        padding-top: 17px;
+        width: 1120px;
+        display: block;
+        img{
+<<<<<<< HEAD
+=======
+            transition: all 0.5s ease;
+>>>>>>> backup-master-group-3
+            display: block;
+            width: 135px;
+            height: 20px;
+            margin: 0 auto;
+<<<<<<< HEAD
+        }
+    }
+    nav{
+        width: 100%;
+        position: relative;
+        ul{
+            display: flex;
+            justify-content: center;
+
+            li{
+                &:first-child{
+                    padding-left: 0px;
+                }
+                &:last-child {
+                    padding-right: 0px;}
+                padding: 0px 22.4px;
+                display: inline-block;
+                a{
+                    &:hover {
+                        color: #5f78b7;
+                    }
+                    
+                    font-weight: 900;
+                    display: inline-block;
+                    color: #000;
+                    margin: 18px 0px;
+                    font-size: 12px;
+                    
+                }
+            }
+            
+        }
+        form{
+            position: absolute;
+            right: 18px;
+            top:18px;
+            display: block;
+            border-bottom: 2px solid #a9a9a9;
+            svg{
+                width: 14px;
+                margin-right: 5px;
+            }
+            input{ 
+                width: 122px;
+                background-color: transparent;
+                border: 0;          
+                color: #000;
+                font-style: italic;
+                font-family: Overpass, sans-serif;
+                font-size: 12px;
+                
+=======
+        }
+    }
+    nav{
+        width: 100%;
+        ul{
+            // border-bottom: 3px solid #000;
+            transition: all 0.5s ease;
+            display: flex;
+            justify-content: center;
+            
+            li{
+                &:hover{
+                    .subNav{
+                        // display: block;
+                        @include min-md {
+                            height: 460px;
+                            overflow-y: unset;
+                            visibility: visible;
+                        }
+                    }
+                }
+                &:first-child{
+                    padding-left: 0px;
+                }
+                &:last-child {
+                padding-right: 0px;}
+                padding: 0px 22.4px;
+                display: inline-block;
+                a{
+                    &::after{
+                        content:'';
+                        
+                    }
+                    &:hover{
+                        color: #5f78b7;
+                        
+                    }
+                    font-family: Overpass;
+                    font-weight: bolder;
+                    display: inline-block;
+                    color: #000;
+                    margin: 18px 0px;
+                    font-size: 12px;
+                }
+                .subNav{
+         
+                    background-color: #ffffff;
+                    padding-top: 35px;
+                    // display: none;
+                    height: 0;
+                    overflow-y: hidden;
+                    visibility: hidden;
+                    position: absolute;
+                    transition: height 0.3s ease-in;
+                    left: 0;
+                    width: 100%;
+                    .leatherwidth{
+                        .leathergrid{
+                            margin-bottom: 60px;
+                            display: flex;
+                            padding-left: 30px;
+                            
+                            .leathergrid-collection{
+                                
+                                width: 65%;
+                                h3{
+                                    color: #000;
+                                    font-family: Teko;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    margin:0px 0px 10px 0px;
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                }
+                                .collection-item{
+                                    display: flex;
+                                    width: 100%;
+                                    .fourpics{
+                                        &:hover{
+                                            justify-content: center;         
+                                        }
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        img{
+                                            background: rgba(5, 5, 5, 0.5);
+                                        }
+                                        margin-right: 6px;
+                                        width: 23.273%;
+                                        height: 315px;
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/chaps-sub_large.jpg?v=1552590217');
+                                        background-size: 100% 100%;
+                                    }
+                                    .lgpic{
+                                        margin-left: 40px;
+                                        cursor: pointer;
+                                        margin-right: 10px;
+                                        width: 28.095%;
+                                        height: 315px;
+                                        background-image: url('https://cdn.shopify.com/s/files/1/2694/4876/files/Mens-Leather-Motorcyckle-Jackkets_large.jpg?v=1551771842');
+                                        background-size: 100% 100%;
+                                    }
+                                    .smpics{
+                                        display: flex;
+                                        flex-flow: wrap;
+                                        width: 70%;
+                                        a {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            position: relative;
+                                            width: 25%;
+                                            height: 150px;
+                                            margin: 0px 8px 15px 8px;
+                                            img{
+                                                width: 100%;
+                                                height: 100%
+                                            }
+                                            p{  
+                                            
+                                                width: 100%;
+                                                background: rgba(5, 5, 5, 0.6);
+                                                position: absolute;
+                                                color: #ffffff;
+                                                font-size: 13px;
+                                                font-family: Overpass;
+                                                text-transform: uppercase;
+                                                padding: 12px;
+                                                font-weight: 600;
+                                                text-align: center;
+                                                height: auto;
+                                                transition: height 0.3s ease;
+                                            }    
+
+                                        }
+                                    }
+                                }
+
+                            }
+                            .leathergrid-brand{
+                                margin-left: 10px;
+                                h3{
+                                    font-family: Teko;
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    margin: 0px 0px 10px 0px;
+                                    text-align: left;
+                                    text-transform: uppercase;
+                                    color: #000;
+                                }
+                                ul{
+                                    display:inline-grid;
+                                    
+                                    li{
+                                        padding: 5px 0px 4px 0px;
+                                        a{
+                                            margin: 0;
+                                            padding: 0;
+                                            &:hover{
+                                            text-decoration: underline;
+                                            }
+                                            font-family: Overpass;
+                                            font-size: 12px;
+                                            color: #000;
+                                            font-weight: 500;
+                                            line-height: 12px;
+                                            padding: 5px 0;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                        }
+                                    }
+
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        form{
+            transition: all 0.5s ease;
+            position: absolute;
+            right: 300px;
+            top:87px;
+            display: block;
+            border-bottom: 2px solid #a9a9a9;
+            svg{
+                width: 14px;
+                margin-right: 5px;
+            }
+            input{ 
+                width: 122px;
+                background-color: transparent;
+                border: 0;          
+                color: #000;
+                font-style: italic;
+                font-family: Overpass, sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                
+            }
+        }
+        @media only screen and (max-width : 1687px) {
+            form{
+                right: 10px;   
+            }
+        }
+    }
+}
+@media only screen and (max-width : 1070px) {
+
+    // .leatherwidth,.mainNav{
+    //     padding: 0;
+    //     nav{
+    //         ul{
+                
+    //         }
+    //     }
+    // }
+
+}
+
+
+// //bot navvvvvv
+.botNav{
+    
+    display: flex;
+    .item{
+        border-top: 3px solid #000;
+        height: 33px;
+        opacity: 1;
+        width: 100%;
+        padding: 7px 0px 8px;
+        display: block;
+        background-color: #40456a;
+        p{
+            border-right: #ffffff 1px solid;
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            font-family: "Overpass",sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 15px;
+
+            svg{
+                margin-right: 10px;
+                width: 15px;
+                height: 15px;
+                fill: #ffffff;
+                background: #40456a;
+>>>>>>> backup-master-group-3
+            }
+        }
+    }
+}
+<<<<<<< HEAD
+=======
+.test {
+    .item{
+        display: none;
+    }
+    display: none;
+  }
+  #navbor{
+    border-bottom: none;
+  }
+
+
+>>>>>>> backup-master-group-3
