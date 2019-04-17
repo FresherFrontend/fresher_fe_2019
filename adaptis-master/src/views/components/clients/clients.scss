@@ -63,36 +63,6 @@
                 opacity: 1;
                 @include filter(grayscale(0));
             }
-            &:nth-child(1n) {
-                @include animation-delay(0.2s);
-            }
-            &:nth-child(2n) {
-                @include animation-delay(0.4s);
-            }
-            &:nth-child(3n) {
-                @include animation-delay(0.6s);
-            }
-            &:nth-child(4n) {
-                @include animation-delay(0.8s);
-            }
-            &:nth-child(5n) {
-                @include animation-delay(1s);
-            }
-            &:nth-child(6n) {
-                @include animation-delay(1.2s);
-            }
-            &:nth-child(7n) {
-                @include animation-delay(1.4s);
-            }
-            &:nth-child(8n) {
-                @include animation-delay(1.6s);
-            }
-            &:nth-child(9n) {
-                @include animation-delay(1.8s);
-            }
-            &:nth-child(10n) {
-                @include animation-delay(2s);
-            }
         }
     }
 }
