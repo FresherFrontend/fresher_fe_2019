@@ -60,3 +60,38 @@
     font-weight: 700;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Runda';
+    src: url('./fonts/Runda/Runda-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Runda';
+    src: url('./fonts/Runda/Runda-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Runda';
+    src: url('./fonts/Runda/Runda-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Runda';
+    src: url('./fonts/Runda/Runda.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Runda';
+    src: url('./fonts/Runda/Runda-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

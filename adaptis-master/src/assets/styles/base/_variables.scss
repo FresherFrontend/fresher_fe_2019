@@ -4,6 +4,7 @@ $grid-breakpoints: (
     xs: 481px,
     sm: 768px,
     smplus: 769px,
+    mdminus: 991px,
     md: 992px,
     lg: 1025px,
     xl: 1200px
@@ -19,7 +20,7 @@ $font-weight: (
 );
 
 $fonts: (
-    main: ("Roboto",sans-serif),
+    main: ("Runda",sans-serif),
     heading: ('Kreon', sans-serif),
     content: ('ProximaNova', sans-serif),
     icomoon: ('icomoon'),
@@ -56,6 +57,8 @@ $colors: (
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
     c-red: #A94442,
+    
+    c-brown: #3C213A,
 );
 // // main-colors:
 $bg-color-primary: color(c-blue);
@@ -66,11 +69,17 @@ $bg-color-white-blur: color(c-white-blur);
 $border-color-gray: color(c-gray);
 $border-color-blue: color(c-blue);
 
+$border-color-brow: color(c-brown);
+
+
 $text-color-primary: color(c-dark-blue);
 $text-color-secondary: color(c-white);
 $text-color-black: color(c-black);
 $text-color-blue: color(c-blue);
 $text-color-gray-blur: color(c-gray-blur);
+
+$text-color-brow: color(c-brown);
+
 
 $page-border-radius: .3rem;
 $btn-bg-color-primary: color(c-yellow);
