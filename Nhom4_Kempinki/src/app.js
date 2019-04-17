@@ -15,15 +15,15 @@ require('slick-carousel');
 
 $(() => {
   // Code here
+  olapic.olapic_menu();
+  olapic.olapic_change_text();
 });
 
 $(document).ready(() => {
   Global.lazyLoad();
-  slide.Slider_owl();
-  olapic.olapic_menu();
-  olapic.olapic_change_text();
-  slide.Show_button();
   slide.Single_slide();
+  slide.Slider_owl();
+  slide.Show_button();
   Experiences.experiencesCarousel();
   HomeGallery.homeGalleryCarousel();
   HomeGallery.homeGalleryCarouselInfo();

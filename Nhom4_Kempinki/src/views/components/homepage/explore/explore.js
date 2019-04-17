@@ -41,17 +41,12 @@ const slide = {
   Show_button: () =>{
     var button = document.querySelector('.slick-next');
     var button1 = document.querySelector('.slick-prev');
-    var button3 = document.querySelectorAll('button');
     var hotel = document.querySelectorAll('.hotels_des');
     var china = document.getElementById('china');
-    // var a  = document.querySelectorAll('.olapic-select-mobile');
-    // console.log(a);
-    
     for(let j=0 ; j<hotel.length ; j++){
       hotel[j].onmouseover = () => {
         button.style.opacity = "1";
         button1.style.opacity = "1";
-        // button3.style.opacity = "1";
       }
       hotel[j].onmouseout = () => {
         button.style.opacity = "0";

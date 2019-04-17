@@ -4,8 +4,6 @@ const olapic = {
         var a = document.querySelector('.viewall a');
         var ul = document.querySelector('.olapic-desktop');
         var li = document.querySelectorAll('.olapic-mobile li');
-        var desktop = document.querySelector('.olapic-select-desktop');
-        var width = $(window).width();
         viewall.onclick = () =>{
             if( ul.style.display == 'none'){
                 ul.style.display = 'block';
@@ -13,12 +11,6 @@ const olapic = {
                 ul.style.display = 'none';
             }
             a.setAttribute('class','change_color');
-        }
-        for(let i=0 ; i<li.length ; i++){
-            // li[i].setAttribute('class','');
-            li[i].onclick = ()=>{
-                li[i].classList.add('active1');
-            }
         }
     },
     olapic_change_text: () =>{

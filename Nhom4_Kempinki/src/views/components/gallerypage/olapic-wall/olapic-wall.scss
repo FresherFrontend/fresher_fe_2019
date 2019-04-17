@@ -61,6 +61,14 @@
                 color: white;
               }
             }
+            &:hover{
+              a{
+                color: white
+              }
+              a:before{
+                color: white;
+              }
+            }
           }
         }
         .olapic-desktop {
@@ -160,78 +168,6 @@
           }
         }
       }
-
-      // .olapic-select-mobile {
-      //   width: 180px;
-      //   height: 45px;
-      //   display: none;
-      //   @include mobile {
-      //     display: block;
-      //   }
-      //   position: relative;
-      //   // &:hover {
-      //   //   .olapic-mobile {
-      //   //     display: block;
-      //   //   }
-      //   // }
-      //   .viewall {
-      //     width: 100%;
-      //     height: 100%;
-      //     background: #aea7a1;
-      //     position: relative;
-      //     > a {
-      //       font-size: 15px;
-      //       color: #000;
-      //       background: #aea7a1;
-      //       position: absolute;
-      //       top: 10px;
-      //       left: 30px;
-      //       &::before {
-      //         content: "\f0c9";
-      //         font-family: $font-fontawesome;
-      //         color: #000;
-      //         font-size: 20px;
-      //         margin-right: 15px;
-      //       }
-      //     }
-      //     .change_color {
-      //       color: white;
-      //       &::before {
-      //         color: white;
-      //       }
-      //     }
-      //     &:hover {
-      //       a {
-      //         color: white;
-      //       }
-      //       a:before {
-      //         color: white;
-      //       }
-      //     }
-      //   }
-      //   .olapic-mobile {
-      //     display: none;
-      //     background: #8c8179;
-      //     width: 180px;
-      //     position: absolute;
-      //     top: 45px;
-      //     text-align: center;
-      //     z-index: 1;
-      //     li {
-      //       padding: 10px;
-      //       a {
-      //         font-size: 13px;
-      //         color: black;
-      //       }
-      //     }
-      //     .active1 {
-      //       background: #000;
-      //       a {
-      //         color: $text-color-footer;
-      //       }
-      //     }
-      //   }
-      // }
     }
   }
   .olapic-main {
