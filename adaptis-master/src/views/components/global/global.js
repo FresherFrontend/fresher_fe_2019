@@ -86,14 +86,19 @@ const Global = {
   },
   addClassCurrent: (currentPage, currentMenu) => {
     if ($(currentPage) && $(currentPage).length > 0) {
-        $('.header-general .main-menu ul li.menu-item').removeClass('current');
-        $('.header-general .main-menu ul li' + currentMenu).addClass('current');
+      $('.header-general .main-menu ul li.menu-item').removeClass('current');
+      $('.header-general .main-menu ul li' + currentMenu).addClass('current');
     }
   },
   addClassCurrentFooter: (currentPage, currentMenu) => {
       if ($(currentPage) && $(currentPage).length > 0) {
-          $('.footer-general .footer-menu ul li.item').removeClass('current');
-          $('.footer-general .footer-menu ul li' + currentMenu).addClass('current');
+        $('.footer-general .footer-menu ul li.item').removeClass('current');
+        $('.footer-general .footer-menu ul li' + currentMenu).addClass('current');
+      }
+  },
+  changeColorLogo : (currentPage) => {
+      if ($(currentPage) && $(currentPage).length > 0) {
+        $('.header-general .logo a').css("color", "#000");
       }
   },
 };

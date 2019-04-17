@@ -3,11 +3,11 @@ import Global from './views/components/global/global';
 import Header from './views/components/header/header';
 import Wow from './views/components/wow/wow';
 import Slider from './views/components/slider/slider';
-//  Hover from './views/components/the_work_my/the_work_my';
+import Hover from './views/components/the_work_my/the_work_my';
 require('normalize.css');
 require('slick-carousel');
-// require('../src/assets/scripts/jquery.hoverdir');
-// require('../src/assets/scripts/modernizr');
+require('../src/assets/scripts/jquery.hoverdir');
+require('../src/assets/scripts/modernizr');
 
 $(() => {
   // Code here
@@ -23,9 +23,11 @@ $(document).ready(() => {
   Global.addClassCurrentFooter('.theAgencyPage', '#the_agency_1');
   Global.addClassCurrent('.theContactPage', '#contact');
   Global.addClassCurrentFooter('.theContactPage', '#contact_1');
+  Global.changeColorLogo('.theWorkPage');
+  Global.changeColorLogo('.theContactPage');
   Wow.useWow();
   Slider.showSlider();
-  // Hover.hoverDiv();
+  Hover.hoverDiv();
 });
 
 $(window).on('resize', () => {
