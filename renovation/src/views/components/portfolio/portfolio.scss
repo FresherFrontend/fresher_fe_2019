@@ -1,5 +1,57 @@
+.banner {
+    background-image: url("https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2018/09/page-title.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .container_banner {
+        padding: 0 30px;
+        .wrap-title {
+            padding-top: 120px;
+            padding-bottom: 105px;
+            display: block;
+            @include min-md {
+                padding-top: 150px;
+                padding-bottom: 135px;
+            }
+            .title,
+            .content {
+                font-weight: 300;
+                text-transform: uppercase;
+                margin: 4px 0;
+                line-height: 1;
+            }
+            .title {
+                font-size: 40px;
+                color: #ffffff;
+                @include min-sm {
+                    font-size: 70px;
+                    margin: 8px 0;
+                }
+                @include min-md {
+                    font-size: 90px;
+                    margin: 10px 0;
+                }
+            }
+            .content {
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.85);
+                font-weight: $fontweight-regular;
+                @include min-sm {
+                    font-size: 20px;
+                    margin: 8px 0;
+                }
+                @include min-md {
+                    font-size: 22px;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
 .portfolio_area {
     width: 100%;
+    margin: 65px 0;
 }
 
 .container-fluid {
@@ -21,11 +73,12 @@
                 text-align: center;
                 font-size: 22px;
                 color: #3e606b;
-                font-family: "Lora", serif;
-                font-style: italic;
+                font-family: fonts(pTSansNarrow);
+                // font-style: italic;
                 font-weight: bold;
                 position: relative;
                 display: inline-block;
+                cursor: pointer;
                 &:before {
                     content: "";
                     width: 100%;
@@ -154,7 +207,7 @@
             font-size: 18px;
             z-index: 2;
             color: #3e606b;
-            font-family: "Playfair Display", serif;
+            font-family: fonts(pTSansNarrow);
             margin-top: 25px;
             margin-bottom: 0px;
             -webkit-transition: all 400ms linear 0s;
@@ -172,14 +225,14 @@
                 color: #fcb827;
             }
             @include min-xs {
-                top: 70%;
+                top: 65%;
                 left: 29%;
             }
         }
         .view {
             font-size: 18px;
             color: #3e606b;
-            font-family: "Playfair Display", serif;
+            font-family: fonts(pTSansNarrow);
             margin-top: 25px;
             margin-bottom: 0px;
             -webkit-transition: all 400ms linear 0s;

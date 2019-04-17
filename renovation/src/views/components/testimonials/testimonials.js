@@ -2,8 +2,7 @@ const Testiminials = {
     getAllTestimonials: () => {
         if ($('.bgr_content_testimonial')) {
 
-            var objAllTestimonials = [
-                {
+            var objAllTestimonials = [{
                     id: 1,
                     image: "https://f71lt0q191r215mt-zippykid.netdna-ssl.com/wp-content/uploads/2014/09/sample-testimonial.jpg",
                     name: "Jane Doe",
@@ -67,7 +66,7 @@ const Testiminials = {
                 html += '</div>'
                 html += '</div>'
             });
-            testimonials_items.innerHTML = html;
+            // testimonials_items.innerHTML = html;
         }
     }
 }
