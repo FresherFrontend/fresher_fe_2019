@@ -1,0 +1,297 @@
+.olapic-wall {
+  margin-bottom: 100px;
+  .olapic-top {
+    margin-top: 40px;
+    .olapic-button {
+      display: flex;
+      justify-content: center;
+      a {
+        font-size: 13px;
+        padding: 5px 30px;
+        text-align: center;
+        background: #8c8179;
+        color: white;
+        text-transform: uppercase;
+        &::before {
+          content: "\f093";
+          font-family: $font-fontawesome;
+          font-size: 13px;
+          margin-right: 10px;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .olapic-select {
+      margin-bottom: 10px;
+      @include mobile {
+        margin-top: 30px;
+        margin-bottom: 40px;
+      }
+      display: flex;
+      justify-content: center;
+      .olapic-select-desktop {
+        position: relative;
+        .viewall {
+          display: none;
+          @include mobile {
+            display: block;
+            width: 180px;
+            height: 45px;
+            background: #aea7a1;
+            > a {
+              font-size: 15px;
+              color: #000;
+              background: #aea7a1;
+              position: absolute;
+              top: 10px;
+              left: 30px;
+              &::before {
+                content: "\f0c9";
+                font-family: $font-fontawesome;
+                color: #000;
+                font-size: 20px;
+                margin-right: 15px;
+              }
+            }
+            .change_color {
+              color: white;
+              &::before {
+                color: white;
+              }
+            }
+          }
+        }
+        .olapic-desktop {
+          display: flex;
+          justify-content: center;
+          @include mobile {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background: #8c8179;
+            top: 45;
+            width: 100%;
+            left: 0;
+            z-index: 10;
+          }
+          li {
+            cursor: pointer;
+            margin: 30px;
+            @include mobile {
+              margin: 0;
+              text-align: center;
+              padding: 7px 0;
+            }
+            a {
+              font-size: 14px;
+              position: relative;
+              color: #8c8179;
+              font-weight: 500;
+              @include mobile {
+                color: black;
+                font-size: 13px;
+                &::before {
+                  display: none;
+                }
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                left: -26px;
+                top: 0px;
+                width: 16px;
+                height: 16px;
+                border: 1.5px solid #8c8179;
+                background: white;
+              }
+              &:after {
+                content: "";
+                position: absolute;
+                left: -19px;
+                top: 2px;
+                width: 4px;
+                height: 10px;
+                border: solid black;
+                border-width: 0px 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                display: none;
+              }
+
+              &:hover {
+                // span::after {
+                //   display: block;
+                // }
+                a::before {
+                  border: 1.5px solid $bg-color;
+                }
+                a {
+                  color: $bg-color;
+                }
+              }
+            }
+          }
+          .active {
+            a::after {
+              display: block;
+              @include mobile {
+                display: none;
+              }
+            }
+            a::before {
+              border: 1.5px solid $bg-color;
+            }
+            a {
+              color: $bg-color;
+            }
+          }
+          @include mobile {
+            .active1 {
+              background: #000;
+              a {
+                color: $text-color-footer;
+              }
+            }
+          }
+        }
+      }
+
+      // .olapic-select-mobile {
+      //   width: 180px;
+      //   height: 45px;
+      //   display: none;
+      //   @include mobile {
+      //     display: block;
+      //   }
+      //   position: relative;
+      //   // &:hover {
+      //   //   .olapic-mobile {
+      //   //     display: block;
+      //   //   }
+      //   // }
+      //   .viewall {
+      //     width: 100%;
+      //     height: 100%;
+      //     background: #aea7a1;
+      //     position: relative;
+      //     > a {
+      //       font-size: 15px;
+      //       color: #000;
+      //       background: #aea7a1;
+      //       position: absolute;
+      //       top: 10px;
+      //       left: 30px;
+      //       &::before {
+      //         content: "\f0c9";
+      //         font-family: $font-fontawesome;
+      //         color: #000;
+      //         font-size: 20px;
+      //         margin-right: 15px;
+      //       }
+      //     }
+      //     .change_color {
+      //       color: white;
+      //       &::before {
+      //         color: white;
+      //       }
+      //     }
+      //     &:hover {
+      //       a {
+      //         color: white;
+      //       }
+      //       a:before {
+      //         color: white;
+      //       }
+      //     }
+      //   }
+      //   .olapic-mobile {
+      //     display: none;
+      //     background: #8c8179;
+      //     width: 180px;
+      //     position: absolute;
+      //     top: 45px;
+      //     text-align: center;
+      //     z-index: 1;
+      //     li {
+      //       padding: 10px;
+      //       a {
+      //         font-size: 13px;
+      //         color: black;
+      //       }
+      //     }
+      //     .active1 {
+      //       background: #000;
+      //       a {
+      //         color: $text-color-footer;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+  .olapic-main {
+    .container {
+      display: flex;
+      width: 1200px;
+      margin: auto;
+      @include max-xl {
+        width: 100%;
+      }
+      @include max-md {
+        width: 100%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      .show-image1 {
+        // padding-top: 3px;
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+        // margin-right: 5px;
+       > a {
+          position: relative;
+          display: block;
+          padding-top: 98%;
+          width: 100%;
+          height: 0;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .show-image2 {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        .show-image3 {
+          width: 49%;
+          padding-left: 10px;
+          margin-bottom: 10px;
+          // padding: 5px;
+          a {
+            // width: 50%;
+            position: relative;
+            display: block;
+            padding-top: 100%;
+            width: 100%;
+            height: 0;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

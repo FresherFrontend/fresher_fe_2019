@@ -5,7 +5,7 @@ const slide = {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      speed: 1000,
+      speed: 1200,
       asNavFor: '.country_name'
     });
     $('.country_name').slick({
@@ -18,9 +18,15 @@ const slide = {
       focusOnSelect: true,
       responsive: [
         {
-          breakpoint: 1000,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]
@@ -28,7 +34,7 @@ const slide = {
   },
   Single_slide: () =>{
     $('.single_slide').slick({
-      speed: 300
+      speed: 200
     });
   }
   ,
@@ -38,7 +44,8 @@ const slide = {
     var button3 = document.querySelectorAll('button');
     var hotel = document.querySelectorAll('.hotels_des');
     var china = document.getElementById('china');
-    console.log(button3);
+    // var a  = document.querySelectorAll('.olapic-select-mobile');
+    // console.log(a);
     
     for(let j=0 ; j<hotel.length ; j++){
       hotel[j].onmouseover = () => {
@@ -66,31 +73,6 @@ const slide = {
     button1.onmouseover = () =>{
       button1.style.opacity = ".9";
       button.style.opacity = ".9";
-    }
-  },
-  show_circle: () =>{
-    var span = document.querySelectorAll(".country_name .name span");
-    var name = document.querySelectorAll(".country_name .name");
-    var slick_slide = document.querySelectorAll(".country_name .slick-slide");
-    var next = document.querySelector('.slick-next');
-      
-    for(let i=0 ; i < slick_slide.length ; i++){
-      slick_slide[i].onclick = () =>{
-        span[i-1].classList.remove('circle');
-        span[i+1].classList.remove('circle');
-        span[i+6].classList.remove('circle');
-        span[i-6].classList.remove('circle');
-        name[i].classList.add('selected');
-        name[i-1].classList.remove('selected');
-        name[i+1].classList.remove('selected');
-      }  
-      // next.onclick = () =>{
-      //   name[i].classList.add('selected');
-      //   name[i-1].classList.remove('selected');
-      //   name[i+1].classList.remove('selected');
-      //   name[i+6].classList.remove('selected');
-      //   name[i-6].classList.remove('selected');
-      // }   
     }
   }
 }

@@ -1,11 +1,21 @@
 $fontsize: 18px;
 $color_ex: #010f2a;
 $height_hotels_des: 550px;
+@mixin max-xl {
+  @media screen and (max-width: #{breakpoints(xl)}) {
+    @content;
+  }
+}
+@mixin max-md {
+  @media screen and (max-width: #{breakpoints(md)}) {
+    @content;
+  }
+}
 @mixin button {
   button {
     &::before {
       font-size: 80px;
-      color: rgba(255, 255, 255, .6);
+      color: rgba(255, 255, 255, 0.6);
       opacity: 0.6;
       display: block;
       background-color: white;
@@ -27,6 +37,10 @@ $height_hotels_des: 550px;
 }
 .explore {
   background: #f3f3f3 !important;
+  overflow: hidden;
+  @include device{
+    background: white !important;
+  }
   .country {
     text-align: center;
     color: #010f2a;
@@ -102,13 +116,10 @@ $height_hotels_des: 550px;
             left: 48%;
             display: none;
           }
-          .circle {
-            display: inline-block;
-          }
         }
       }
-      .slick-slide.slick-current{
-        span{
+      .slick-slide.slick-current {
+        span {
           display: inline-block;
         }
       }
@@ -128,6 +139,9 @@ $height_hotels_des: 550px;
       left: 0;
       top: -40px;
       z-index: 10;
+      @include max-xl{
+        width: 100px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -140,6 +154,9 @@ $height_hotels_des: 550px;
       right: 0;
       top: -40px;
       z-index: 10;
+      @include max-xl{
+        width: 100px;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -151,6 +168,9 @@ $height_hotels_des: 550px;
     margin-bottom: 25px;
     z-index: 0;
     overflow: hidden;
+    @include device{
+      height: auto;
+    }
     .hotel_des {
       position: relative;
       .single_slide {
@@ -186,9 +206,22 @@ $height_hotels_des: 550px;
       }
       .containerr {
         margin: 0 auto;
-        width: $container !important;
+        width: 1170px !important;
         padding-left: 30px;
         display: block;
+        @include device{
+          width: 970px !important;
+          word-wrap:break-word; 
+          padding-left: 0;
+        }
+        @include max-md{
+          width: 750px !important;
+          padding-left: 0;
+        }
+        @include mobile{
+          width: auto !important;
+          padding-left: 0px;
+        }
         .hotel_info {
           position: absolute;
           z-index: 999;
@@ -196,6 +229,10 @@ $height_hotels_des: 550px;
           height: 450px;
           top: 100px;
           background: white;
+          @include device{
+            position: inherit;
+            width: 100%;
+          }
           .hotel_mg {
             width: 100%;
             height: 100%;
@@ -212,6 +249,7 @@ $height_hotels_des: 550px;
                 font-size: 13px;
                 margin-top: 10px;
                 margin-bottom: 13px;
+                word-wrap: break-word;
               }
               a {
                 color: $color_ex;
