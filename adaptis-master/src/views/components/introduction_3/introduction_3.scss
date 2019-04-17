@@ -51,6 +51,12 @@
     }
 }
 @media only screen and (max-width: breakpoints(xlminus)) {
+    .introduction_3 {
+        padding-left: 0;
+    }
+    .introduction_3 .container-special {
+        padding: 0 15px;;
+    }
     .introduction_3 .content-details .btn-adaptis-black {
         position: relative;
         display: inline-block;

@@ -8,7 +8,6 @@ require('normalize.css');
 require('slick-carousel');
 require('../src/assets/scripts/jquery.hoverdir');
 require('../src/assets/scripts/modernizr');
-
 $(() => {
   // Code here
 });

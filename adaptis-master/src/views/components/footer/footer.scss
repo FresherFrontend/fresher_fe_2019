@@ -10,8 +10,6 @@
         color: $text-color-secondary;
     }
     .logo {
-        @include animation(fadeInDown .5s linear forwards);
-        @include transition-delay(0.2s);
         a {
             font-size: 20px;
             letter-spacing: 12px;
@@ -29,19 +27,6 @@
         margin-top: 39px;
         li {
             padding-bottom: 11px;
-            @include animation(fadeInDown .5s linear forwards);
-            &:nth-child(1n) {
-                @include transition-delay(0.2s);
-            }
-            &:nth-child(2n) {
-                @include transition-delay(0.4s);
-            }
-            &:nth-child(3n) {
-                @include transition-delay(0.6s);
-            }
-            &:nth-child(4n) {
-                @include transition-delay(0.8);
-            }
             &.current {
                 a {
                     color: #9f57ae;
