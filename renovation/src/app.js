@@ -2,7 +2,7 @@
 import Global from './views/components/global/global';
 import Header from './views/components/header/header';
 import Testiminials from './views/components/testimonials/testimonials';
-import Portfolio from './views/components/portfolio';
+import Portfolio from './views/components/portfolio/portfolio';
 import Home from './views/components/home/home';
 
 require('normalize.css');
