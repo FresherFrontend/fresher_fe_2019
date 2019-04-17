@@ -66,6 +66,9 @@
         .olapic-desktop {
           display: flex;
           justify-content: center;
+          @include min-sm{
+            display: flex !important;
+          }
           @include mobile {
             display: none;
             flex-direction: column;
