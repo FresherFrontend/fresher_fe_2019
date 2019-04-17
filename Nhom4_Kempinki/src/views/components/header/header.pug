@@ -79,60 +79,44 @@ header
     block booking-block
         .booking-block
             .container-fluid
-                form#aa(action="#", method="get")
-                    .form-inline-search
-                        .block-location
-                            .form-group.form-search-location
-                                select.form-search-hotel(name="form-search-hotel")
-                            .error-msg
-                                span WHERE WOULD YOU LIKE TO GO?
-                        .block-picker
-                            .form-group
-                                input(type="text", name="check-in", id="check-in", readonly)
-                                span.icon-calendar
-                            .form-group
-                                input(type="text", name="check-out", id="check-out", readonly)
-                                span.icon-calendar
-                            .error-msg
-                                span PLEASE SELECT YOUR CHECK-IN AND CHECK-OUT DATES
-                        .block-number
-                            mixin select(...values)
-                                    each value in values
-                                        option(value=value)= value
-                            .form-group.guest-select
-                                select.numberOfRoom(nam="NumberOfRoom")
-                                    //- +select('1 Room', '2 Rooms', '3 Rooms', '4 Rooms')
-                                button.search(type="submit") Search
-                            .collapse-advanced
-                                .row-select
-                                    .num-adult
-                                        select.numberOfAdult(nam="NumberOAdult")
-                                            //- +select('1 Adult Per Room', '2 Adults Per Room', '3 Adults Per Room', '4 Adults Per Room')
-                                    .num-child
-                                        select.numberOfChild(nam="NumberOfChild")
-                                            //- +select('1 Children Per Room', '2 Childrens Per Room', '3 Childrens Per Room', '4 Childrens Per Room')
-                                .row-select-children
-                                    span.title Age of Children
-                                    .block-list-children
-                                        .form-group.children-select
-                                            select.ageChildren(name="ChildrenAge[4]")
-                                                //- +select(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-                                        .form-group.children-select
-                                            select.ageChildren(name="ChildrenAge[3]")
-                                                //- +select(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-                                        .form-group.children-select
-                                            select.ageChildren(name="ChildrenAge[2]")
-                                            //-    +select(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-                                        .form-group.children-select
-                                            select.ageChildren(name="ChildrenAge[1]")
-                                            //-    +select(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
-                    .block-option
-                        .row
-                            .type-code-block
-                                select#CodeType(name="CodeType")
-                            .block.code-block
-                                input(type="text", placeholder="Code", name="CodeValue", id="CodeValue")
-                            .block.promo-block
-                                input(type="text", placeholder="Promotion Code", name="PromotionCode", id="PromotionCode")
-                            a(href="#" data-target="#partner-destination-modal" data-toggle="modal" class="partner-info-modal-trigger") Partner Destinations
+                .form-inline-search
+                    .block-location
+                        .form-group.form-search-location
+                            select.form-search-hotel(name="form-search-hotel")
+                        .error-msg
+                            span WHERE WOULD YOU LIKE TO GO?
+                    .block-picker
+                        .form-group
+                            input(type="text", name="check-in", id="check-in", readonly)
+                            span.icon-calendar
+                        .form-group
+                            input(type="text", name="check-out", id="check-out", readonly)
+                            span.icon-calendar
+                        .error-msg
+                            span PLEASE SELECT YOUR CHECK-IN AND CHECK-OUT DATES
+                    .block-number
+                        mixin select(...values)
+                                each value in values
+                                    option(value=value)= value
+                        .form-group.guest-select
+                            select.numberOfRoom(nam="NumberOfRoom")
+                            button.search.submit(type="text") Search
+                        .collapse-advanced
+                            .row-select
+                                .num-adult
+                                    select.numberOfAdult(nam="NumberOAdult")
+                                .num-child
+                                    select.numberOfChild(nam="NumberOfChild")
+                            .row-select-children
+                                span.title Age of Children
+                                .block-list-children
+                .block-option
+                    .row
+                        .type-code-block
+                            select#CodeType(name="CodeType")
+                        .block.code-block
+                            input(type="text", placeholder="Code", name="CodeValue", id="CodeValue")
+                        .block.promo-block
+                            input(type="text", placeholder="Promotion Code", name="PromotionCode", id="PromotionCode")
+                        a(href="#" data-target="#partner-destination-modal" data-toggle="modal" class="partner-info-modal-trigger") Partner Destinations
 

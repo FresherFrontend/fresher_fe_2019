@@ -58,4 +58,5 @@ window.onload = () => {
   Header.scrollTopHeader();
   Header.showBooking();
   Header.showMenu();
+  Header.clickButton();
 };

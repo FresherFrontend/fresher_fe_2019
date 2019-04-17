@@ -270,7 +270,11 @@ header {
             .menu-left-content.delay{
                 transform: translateX(-100%);
                 padding: 38px 0px;
-                animation: showDelay 0.8s forwards;
+                animation: showDelay 0.5s forwards;
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+                -moz-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+                    -o-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
                 background: rgba(1,15,42,0.74);
                 .menu-title{
                     font-size: 20px;
@@ -395,441 +399,451 @@ header {
     }
     .booking-block{
         background: $bg-color-dark-blue-navy;
-        height: 50px;
-        transition: height 0.4s;
+        max-height: 50px;
+        -webkit-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        -moz-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+            -o-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+                transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
          .container-fluid{
              width: 1170px;
              padding: 10px 15px;
-             form{
-                 width: 100%;
-                .form-inline-search{
-                    width: 100%;
-                    display: flex;
-                    justify-content: center;
-                    .block-location{
-                        width: 306px;
-                        max-width: 306px;
-                        .select2-container{
-                            .select2-dropdown--below{
-                                .select2-results{
-                                    .select2-results__option{
-                                        font-size: 13px;
-                                        color: color(c-dark-blue-navy);
-                                        &[aria-selected="true"]{
-                                            background: #5897fb;
-                                            color: color(c-white);
-                                        }
-                                    }
-                                    .select2-results__option--highlighted{
-                                        color: color(c-white);
-                                        background: #5897fb;
-                                    }
-                                }
-                            }
-                        }
-                        .form-search-hotel{
-                            width: 100%;
-                        }
-                        .select2-container--default{
-                            .selection{
-                                .select2-selection--single{
-                                    border: none;
-                                    border-radius: 2px;
-                                    font-size: 12px;
-                                    height: 30px;
-                                    text-transform: uppercase;
-                                    .select2-selection__rendered{
-                                        color: color(c-dark-blue-navy);  
-                                        line-height: 30px;
-                                        position: relative;
-                                        &:before{
-                                            content: $icon-location;
-                                            font-size: 15px;
-                                            margin-right: 5px;
-                                            font-family: '#{$icomoon-font-family}';
-
-                                        }
-                                    }
-                                    .select2-selection__arrow{
-                                        display: none;
-                                    }
-                                }
-                            }
-                        }
-                        .error-msg{
-                            span{
-                                display: none;
-                                font-size: 10px;
-                                width: 275px;
-                                background: #8E3333;
-                                color: #fff;
-                                padding: 5px;
-                                border-radius: 3px;
-                                margin-top: 10px;
-                                text-align: center;
-                                height: 30px;
-                                line-height: 20px;
-                                overflow: hidden;
-                                margin-left: 2px;
-                                margin-bottom: 3px;
-                            }
-                        }
-                    }
-                    .block-picker{
-                        width: 408px;
-                        max-width: 408px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        position: relative;
-                        justify-content: space-between;
-                        margin-left: 4px;
-                        align-self: baseline;
-                        .form-group{
-                            position: relative;
-                            width: 49%;
-                            input{
-                                width: 100%;
-                                height: 30px;
-                                border: none;
-                                border-radius: 2px;
-                                font-size: 13px;
-                                text-transform: uppercase;
-                                color: color(c-black);
-                                padding-left: 10px;
-                                font-family: $font-helvelticaRegular;
-                            }
-                            span{
-                                position: absolute;
-                                top: 8px;
-                                right: 10px;
-                                color: color(c-brown);
-                            }
-                        }
-                        .error-msg{
-                            width: 100%;
-                            span{
-                                display: none;
-                                font-size: 10px;
-                                width: 100%;
-                                background: #8E3333;
-                                color: #fff;
-                                padding: 5px;
-                                border-radius: 3px;
-                                margin-top: 10px;
-                                text-align: center;
-                                height: 30px;
-                                line-height: 20px;
-                                overflow: hidden;
-                                margin-bottom: 3px;
-                            }
-                        }
-                        .pika-single{
-                            width: 100%;
-                            padding-top: 25px;
-                            padding-bottom: 15px;
-                            .pika-lendar{
-                                width: 50%;
-                                margin: 0px;
-                                padding: 0px 12px;
-                                .pika-title{
-                                    .pika-label{
-                                        font-size: 13px;
-                                        line-height: 14px;
-                                        color: color(c-dark-blue-navy);
-                                        font-weight: 300;
-                                        text-transform: uppercase;
-                                    }
-                                }
-                                .pika-table{
-                                    thead{
-                                        th{
-                                            padding-bottom: 5px;
-                                        }
-                                    }
-                                    th{
-                                        font-size: 10px;
-                                        color: #aaaaaa;
-                                        text-transform: uppercase;
-                                        font-weight: 300;
-                                        line-height: 14px;
-                                        abbr {
-                                            text-decoration: none;
-                                        }
-                                    }
-                                    tbody{
-                                        td{
-                                            border: 1px solid #c5c2b5;
-                                            button{
-                                                font-size: 12px;
-                                                text-align: center;
-                                                color: color(c-dark-blue-navy);
-                                                background: none;
-                                            }
-                                            &.is-today{
-                                                button{
-                                                    background: #f5f1ea;
-                                                    color: color(c-dark-blue-navy);
-                                                    font-weight: 300;
-                                                }
-                                            }
-                                            &.is-selected{
-                                                box-shadow: none;
-                                                .pika-button{
-                                                    box-shadow: none;
-                                                    background: color(c-brown);
-                                                    border-radius: 0px;
-                                                    font-weight: 300;
-                                                    color: color(c-white);
-                                                }
-                                            }
-                                        }
-                                        
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .block-number{
-                        width: 260px;
-                        margin-left: 4px;
-                        .select2-container{
-                            .select2-selection--single{
-                                height: 30px;
-                                border: none;
-                                border-radius: 2px;
-                                .select2-selection__rendered{
-                                    font-family: $font-helvelticaRegular;
-                                    padding: 0px 10px;
-                                    line-height: 30px;
-                                    text-transform: uppercase;
-                                    font-size: 13px;
-                                }
-                                .select2-selection__arrow{
-                                    b{
-                                        border-color: #000000 transparent transparent transparent;
-                                    }
-                                }
-                            }
-                        }
-                        .select2-container--open{
-                            .select2-selection__arrow{
-                                b{
-                                    border-color:  transparent transparent #000000 transparent !important;
-                                }
-                            }
-                        }
-                        .select2-dropdown{
-                            margin-top: 5px;
-                            &.select2-dropdown--below{
-                                border:  1px solid transparent;
-                                border-radius: 2px; 
-                             }
+            .form-inline-search{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .block-location{
+                    width: 306px;
+                    max-width: 306px;
+                    .select2-container{
+                        .select2-dropdown--below{
                             .select2-results{
                                 .select2-results__option{
-                                    padding: 3px 20px;
                                     font-size: 13px;
-                                    font-family: $font-helvelticaRegular;
                                     color: color(c-dark-blue-navy);
                                     &[aria-selected="true"]{
-                                        background: #f5f5f5;
+                                        background: #5897fb;
+                                        color: color(c-white);
                                     }
                                 }
                                 .select2-results__option--highlighted{
-                                    background: #f5f5f5;
-                                    color: color(c-dark-blue-navy)
+                                    color: color(c-white);
+                                    background: #5897fb;
                                 }
                             }
                         }
-                        .form-group.guest-select{
-                            display: flex;
-                            justify-content: space-between;
-                            select{
-                                width: 49%;
-                                line-height: 30px;
-                            }
-                            button{
-                                width: 49%;
-                                padding: 0 10px;
-                                color: #fefbfb;
-                                background: color(c-brown);
+                    }
+                    .form-search-hotel{
+                        width: 100%;
+                    }
+                    .select2-container--default{
+                        .selection{
+                            .select2-selection--single{
                                 border: none;
                                 border-radius: 2px;
-                                font-size: 13px;
-                                font-family: $font-helvelticaRegular;
+                                font-size: 12px;
+                                height: 30px;
                                 text-transform: uppercase;
+                                .select2-selection__rendered{
+                                    color: color(c-dark-blue-navy);  
+                                    line-height: 30px;
+                                    position: relative;
+                                    &:before{
+                                        content: $icon-location;
+                                        font-size: 15px;
+                                        margin-right: 5px;
+                                        font-family: '#{$icomoon-font-family}';
+
+                                    }
+                                }
+                                .select2-selection__arrow{
+                                    display: none;
+                                }
                             }
                         }
-                        .collapse-advanced{
+                    }
+                    .error-msg{
+                        display: none;
+                        span{
+                            display: block;
+                            font-size: 10px;
+                            width: 275px;
+                            background: #8E3333;
+                            color: #fff;
+                            padding: 5px;
+                            border-radius: 3px;
                             margin-top: 10px;
-                            .row-select{
-                                display: none;
-                                justify-content: space-between;
-                                .num-adult{
-                                    width: 49%;
-                                    min-width: 49%;
-                                    position: relative;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 20px;
+                            overflow: hidden;
+                            margin-left: 2px;
+                            margin-bottom: 3px;
+                        }
+                    }
+                }
+                .block-picker{
+                    width: 408px;
+                    max-width: 408px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    position: relative;
+                    justify-content: space-between;
+                    margin-left: 4px;
+                    align-self: baseline;
+                    .form-group{
+                        position: relative;
+                        width: 49%;
+                        input{
+                            width: 100%;
+                            height: 30px;
+                            border: none;
+                            border-radius: 2px;
+                            font-size: 13px;
+                            text-transform: uppercase;
+                            color: color(c-black);
+                            padding-left: 10px;
+                            font-family: $font-helvelticaRegular;
+                        }
+                        span{
+                            position: absolute;
+                            top: 8px;
+                            right: 10px;
+                            color: color(c-brown);
+                        }
+                    }
+                    .error-msg{
+                        width: 100%;
+                        display: none;
+                        span{
+                            display: block;
+                            font-size: 10px;
+                            width: 100%;
+                            background: #8E3333;
+                            color: #fff;
+                            padding: 5px;
+                            border-radius: 3px;
+                            margin-top: 10px;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 20px;
+                            overflow: hidden;
+                            margin-bottom: 3px;
+                        }
+                    }
+                    .pika-single{
+                        width: 100%;
+                        padding-top: 25px;
+                        padding-bottom: 15px;
+                        .pika-lendar{
+                            width: 50%;
+                            margin: 0px;
+                            padding: 0px 12px;
+                            .pika-title{
+                                .pika-label{
+                                    font-size: 13px;
+                                    line-height: 14px;
+                                    color: color(c-dark-blue-navy);
+                                    font-weight: 300;
+                                    text-transform: uppercase;
                                 }
-                                .num-child{
-                                    width: 49%;
-                                    min-width: 49%;
-                                    position: relative;
-                                }
-                                .select2-container{
-                                    width: 100% !important;
-                                }
-                                .select2-dropdown{
-                                    width: auto !important;
-                                    margin-top: 5px;
-                                    &.select2-dropdown--below{
-                                       border:  1px solid transparent;
-                                       border-radius: 2px; 
+                            }
+                            .pika-table{
+                                thead{
+                                    th{
+                                        padding-bottom: 5px;
                                     }
-                                    .select2-results{
-                                        .select2-results__option{
-                                            text-transform: uppercase;
-                                            white-space: pre;
+                                }
+                                th{
+                                    font-size: 10px;
+                                    color: #aaaaaa;
+                                    text-transform: uppercase;
+                                    font-weight: 300;
+                                    line-height: 14px;
+                                    abbr {
+                                        text-decoration: none;
+                                    }
+                                }
+                                tbody{
+                                    td{
+                                        border: 1px solid #c5c2b5;
+                                        button{
+                                            font-size: 12px;
+                                            text-align: center;
+                                            color: color(c-dark-blue-navy);
+                                            background: none;
                                         }
+                                        &.is-today{
+                                            button{
+                                                background: #f5f1ea;
+                                                color: color(c-dark-blue-navy);
+                                                font-weight: 300;
+                                            }
+                                        }
+                                        &.is-selected{
+                                            box-shadow: none;
+                                            .pika-button{
+                                                box-shadow: none;
+                                                background: color(c-brown);
+                                                border-radius: 0px;
+                                                font-weight: 300;
+                                                color: color(c-white);
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .block-number{
+                    width: 260px;
+                    margin-left: 4px;
+                    .select2-container{
+                        .select2-selection--single{
+                            height: 30px;
+                            border: none;
+                            border-radius: 2px;
+                            .select2-selection__rendered{
+                                font-family: $font-helvelticaRegular;
+                                padding: 0px 10px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                font-size: 13px;
+                            }
+                            .select2-selection__arrow{
+                                b{
+                                    border-color: #000000 transparent transparent transparent;
+                                }
+                            }
+                        }
+                    }
+                    .select2-container--open{
+                        .select2-selection__arrow{
+                            b{
+                                border-color:  transparent transparent #000000 transparent !important;
+                            }
+                        }
+                    }
+                    .select2-dropdown{
+                        margin-top: 5px;
+                        &.select2-dropdown--below{
+                            border:  1px solid rgba(0,0,0,0.5);
+                            border-radius: 2px; 
+                            }
+                        .select2-results{
+                            .select2-results__option{
+                                padding: 3px 20px;
+                                font-size: 13px;
+                                font-family: $font-helvelticaRegular;
+                                color: color(c-dark-blue-navy);
+                                &[aria-selected="true"]{
+                                    background: #f5f5f5;
+                                }
+                            }
+                            .select2-results__option--highlighted{
+                                background: #f5f5f5;
+                                color: color(c-dark-blue-navy)
+                            }
+                        }
+                    }
+                    .form-group.guest-select{
+                        display: flex;
+                        justify-content: space-between;
+                        select{
+                            width: 49%;
+                            line-height: 30px;
+                        }
+                        button{
+                            width: 49%;
+                            padding: 0 10px;
+                            color: #fefbfb;
+                            background: color(c-brown);
+                            border: none;
+                            border-radius: 2px;
+                            font-size: 13px;
+                            font-family: $font-helvelticaRegular;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                        }
+                    }
+                    .collapse-advanced{
+                        margin-top: 10px;
+                        .row-select{
+                            display: flex;
+                            opacity: 0;
+                            visibility: hidden;
+                            justify-content: space-between;
+                            .num-adult{
+                                width: 49%;
+                                min-width: 49%;
+                                position: relative;
+                            }
+                            .num-child{
+                                width: 49%;
+                                min-width: 49%;
+                                position: relative;
+                            }
+                            .select2-container{
+                                width: 100% !important;
+                            }
+                            .select2-dropdown{
+                                width: auto !important;
+                                margin-top: 5px;
+                                &.select2-dropdown--below{
+                                    border:  1px solid transparent;
+                                    border-radius: 2px; 
+                                }
+                                .select2-results{
+                                    .select2-results__option{
+                                        text-transform: uppercase;
+                                        white-space: pre;
                                     }
                                 }
                             }
-                            .row-select-children{
+                        }
+                        .row-select-children{
+                            .title{
                                 display: none;
-                                .title{
+                                width: 100%;
+                                text-align: center;
+                                color: color(c-white);
+                                text-transform: uppercase;
+                                font-size: 13px;
+                                letter-spacing: 0;
+                                margin-top: 15px;
+                                margin-bottom: 10px;
+                                position: relative;
+                                &:after{
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -10px;
+                                    left: 0;
                                     display: block;
                                     width: 100%;
-                                    text-align: center;
-                                    color: color(c-white);
-                                    text-transform: uppercase;
-                                    font-size: 13px;
-                                    letter-spacing: 0;
-                                    margin-top: 15px;
-                                    margin-bottom: 10px;
-                                    position: relative;
-                                    &:after{
-                                        content: "";
-                                        position: absolute;
-                                        bottom: -10px;
-                                        left: 0;
-                                        display: block;
-                                        width: 100%;
-                                        height: 1px;
-                                        background: #2a2825;
-                                    }
+                                    height: 1px;
+                                    background: #2a2825;
                                 }
-                                .block-list-children{
-                                    display: flex;
-                                    flex-wrap: wrap;
-                                    padding-top: 10px;
-                                    justify-content: center;
-                                    .form-group.children-select{
-                                        margin: 0 2px;
+                                &.d-block{
+                                    display: block;
+                                }
+                            }
+                            .block-list-children{
+                                display: flex;
+                                flex-wrap: wrap;
+                                padding-top: 10px;
+                                justify-content: center;
+                                position: relative;
+                                .form-group.children-select{
+                                    position: relative;
+                                    margin: 0 2px;
+                                    .select2-container{
                                         .select2-selection__rendered{
                                             padding: 0 10px;
                                         }
-                                        .ageChildren{
-                                            &.ageChildren.d-none{
 
-                                            }
-                                        }
                                     }
                                 }
-                                .select2-dropdown{
-                                    width: auto !important;
-                                }
-                                &.row-select-children.d-block{
-                                    display: block;
-                                }
+
+                            }
+                            .select2-dropdown{
+                                width: auto !important;
+                            }
+                            &.row-select-children.d-block{
+                                display: block;
                             }
                         }
                     }
-                }
-                .block-option{
-                    margin-top: 20px;
-                    display: none;
-                    .row{
-                        justify-content: center;
-                    .type-code-block{
-                        width: 165px;
-                        margin: 0 2.5px;
-                        .select2-container{
-                            width: 100% !important;
-                            .select2-selection--single{
-                                height: 30px;
-                                border: none;
-                                border-radius: 2px;
-                                .select2-selection__rendered{
-                                    font-family: $font-helvelticaRegular;
-                                    padding: 0px 10px;
-                                    line-height: 30px;
-                                    text-transform: uppercase;
-                                    font-size: 13px;
-                                }
-                                .select2-selection__arrow{
-                                    b{
-                                        border-color: #000000 transparent transparent transparent;
-                                    }
-                                }
-                            }
-                        }
-                        .select2-container--open{
-                            .select2-selection__arrow{
-                                b{
-                                    border-color:  transparent transparent #000000 transparent !important;
-                                }
-                            }
-                        }
-                        .select2-dropdown{
-                            .select2-results{
-                                .select2-results__option{
-                                    padding: 3px 20px;
-                                    font-size: 13px;
-                                    font-family: $font-helvelticaRegular;
-                                    text-transform: uppercase;
-                                    color: color(c-dark-blue-navy);
-                                    &[aria-selected="true"]{
-                                        background: #f5f5f5;
-                                    }
-                                }
-                                .select2-results__option--highlighted{
-                                    background: #f5f5f5;
-                                    color: color(c-dark-blue-navy)
-                                }
-                            }
-                        }
-                    }
-                    .block{
-                        width: 165px;
-                        margin: 0 2.5px;
-                        input{
-                            background: color(c-white);
-                            border: 0;
-                            border-radius: 2px;
-                            font-size: 12px;
-                            color: color(c-dark-blue-navy);
-                            line-height: 1.308;
-                            text-align: left;
-                            height: 30px;
-                            line-height: 30px;
-                            padding: 0 12px;
-                            width: 100%;
-                        }
-                    }
-                    .partner-info-modal-trigger{
-                        color: #F1EEEA;
-                        margin-left: 10px;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                    }
-                    }
-                }
-                .block-option.show-up{
-                    display: block;
                 }
             }
-         }
+            .block-option{
+                margin-top: 20px;
+                opacity: 0;
+                visibility: hidden;
+                .row{
+                    justify-content: center;
+                .type-code-block{
+                    width: 165px;
+                    margin: 0 2.5px;
+                    .select2-container{
+                        width: 100% !important;
+                        .select2-selection--single{
+                            height: 30px;
+                            border: none;
+                            border-radius: 2px;
+                            .select2-selection__rendered{
+                                font-family: $font-helvelticaRegular;
+                                padding: 0px 10px;
+                                line-height: 30px;
+                                text-transform: uppercase;
+                                font-size: 13px;
+                            }
+                            .select2-selection__arrow{
+                                b{
+                                    border-color: #000000 transparent transparent transparent;
+                                }
+                            }
+                        }
+                    }
+                    .select2-container--open{
+                        .select2-selection__arrow{
+                            b{
+                                border-color:  transparent transparent #000000 transparent !important;
+                            }
+                        }
+                    }
+                    .select2-dropdown{
+                        .select2-results{
+                            .select2-results__option{
+                                padding: 3px 20px;
+                                font-size: 13px;
+                                font-family: $font-helvelticaRegular;
+                                text-transform: uppercase;
+                                color: color(c-dark-blue-navy);
+                                &[aria-selected="true"]{
+                                    background: #f5f5f5;
+                                }
+                            }
+                            .select2-results__option--highlighted{
+                                background: #f5f5f5;
+                                color: color(c-dark-blue-navy)
+                            }
+                        }
+                    }
+                }
+                .block{
+                    width: 165px;
+                    margin: 0 2.5px;
+                    input{
+                        background: color(c-white);
+                        border: 0;
+                        border-radius: 2px;
+                        font-size: 12px;
+                        color: color(c-dark-blue-navy);
+                        line-height: 1.308;
+                        text-align: left;
+                        height: 30px;
+                        line-height: 30px;
+                        padding: 0 12px;
+                        width: 100%;
+                    }
+                }
+                .partner-info-modal-trigger{
+                    color: #F1EEEA;
+                    margin-left: 10px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+                }
+            }
+            .block-option.show-up{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
     .booking-block.show-up{
-        height: auto;
+        max-height: 300px;
     }
     .booking-block.fixed{
         position: fixed;

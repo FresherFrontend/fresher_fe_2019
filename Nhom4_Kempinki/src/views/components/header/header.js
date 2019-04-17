@@ -8,7 +8,7 @@ const Header = {
     })
   },
   selectHotel: () => {
-    var data = [
+    let data = [
       {
         "id": "Where would you like to go?",
         "text": "Where would you like to go?"
@@ -59,7 +59,7 @@ const Header = {
     });
   },
   selectRoom: () => {
-    var data = [
+    let data = [
       {
         "id": "1Room",
         "text": "1 Room"
@@ -82,9 +82,12 @@ const Header = {
       minimumResultsForSearch: -1,
       dropdownParent: $('.form-group.guest-select')
     });
+    $('.numberOfRoom').on("select2:open", function (e) {
+      $('.booking-block').css("overflow","visible");
+    });
   },
   selectAdult: () => {
-    var data = [
+    let data = [
       {
         "id": "1Adult",
         "text": "1Adult Per Room"
@@ -107,9 +110,12 @@ const Header = {
       minimumResultsForSearch: -1,
       dropdownParent: $('.num-adult')
     });
+    $('.numberOfAdult').on("select2:open", function (e) {
+      $('.booking-block').css("overflow","visible");
+    });
   },
   selectAge: () => {
-    var data = [
+    let data = [
       {
         "id": "0",
         "text": "0"
@@ -166,11 +172,14 @@ const Header = {
     $('.ageChildren').select2({
       data: data,
       minimumResultsForSearch: -1,
-      dropdownParent: $('.form-group.children-select')
+      dropdownParent: $('.block-list-children')
+    });
+    $('.ageChildren').on("select2:open", function (e) {
+      $('.booking-block').css("overflow","visible");
     });
   },
   selectChildren: () => {
-    var data = [
+    let data = [
       {
         "id": "0",
         "text": "0 Childrens Per Room"
@@ -195,26 +204,64 @@ const Header = {
     $('.numberOfChild').select2({
       data: data,
       minimumResultsForSearch: -1,
-      dropdownParent: $('.num-child'),
-      tags: true,
+      dropdownParent: $('.num-child')
     });
 
     $('.numberOfChild').on("change", function (e) {
       let select_val = $(e.currentTarget).val();
-      if(select_val == '1Children'){
-        $('.row-select-children').addClass('d-block');
+      let elems = '';
+      var viewSelect = (n) => {
+        console.log(e.currentTarget.length)
+        for (let i = 0; i < n; i++) { 
+          let elem = '<div class=\"form-group children-select\">'+
+          '<select class=\"ageChildren\"' + " " + 'name=\"ChildrenAge['+i+']\">'+
+          '</select>'+
+          '</div>';
+           elems += elem;
+        }
+        $('.block-list-children').html(elems);
       }
-      if(select_val == '2Children'){
-    
+      if(select_val == 0)
+      {
+        $('.row-select-children .title').removeClass('d-block');
+        $('.block-list-children').empty()
+      }
+      if(select_val != 0){
+        $('.row-select-children .title').addClass('d-block');
+        let length = $('.block-list-children').length;
+       
+        if(select_val == '1Children')
+        {
+          if(length == 1)
+          {
+            viewSelect(1);
+            Header.selectAge();
+          }
+        }
+        if(select_val == '2Children')
+        {
+            viewSelect(2);
+            Header.selectAge();
+        }
+        if(select_val == '3Children')
+        {
+            viewSelect(3);
+            Header.selectAge();
+        }
+        if(select_val == '4Children')
+        {
+            viewSelect(4);
+            Header.selectAge();
+        }
       }
     });
     $('.numberOfChild').on("select2:open", function (e) {
       $(this).next('.select2-container').css("position","absolute")
+      $('.booking-block').css("overflow","visible");
     });
-
   },
   selectTypeCode: () => {
-    var data = [
+    let data = [
       {
         "id": "",
         "text": "Type Of Code"
@@ -237,6 +284,9 @@ const Header = {
       minimumResultsForSearch: -1,
       dropdownParent: $('.type-code-block')
     });
+    $('#CodeType').on('select2:open', function (e) {
+        $('.booking-block').css("overflow","visible");
+    });
   },
   selectDate: () => {
     var field = document.getElementById('check-in');
@@ -250,6 +300,7 @@ const Header = {
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
         this.el.style.top = '35px';
+        document.querySelector('.booking-block').style.overflow = 'visible';
       },
       onClose: function(){
         this.el.style.position = 'absolute'; // reset
@@ -292,11 +343,14 @@ const Header = {
       if(event.target.closest(".booking-block")){
         inside.classList.add('show-up');
         document.querySelector('.block-option').classList.add('show-up');
-        document.querySelector('.row-select').style.display = "flex";
+        document.querySelector('.row-select').style.opacity = "1";
+        document.querySelector('.row-select').style.visibility = "visible";
         return
       }
       document.querySelector('.booking-block').classList.remove('show-up');
-      document.querySelector('.row-select').style.display = "none";
+      document.querySelector('.booking-block').style.overflow = 'hidden';
+      document.querySelector('.row-select').style.opacity = "0";
+      document.querySelector('.row-select').style.visibility = "hidden";
       document.querySelector('.block-option').classList.remove('show-up');
     })
   },
@@ -329,5 +383,18 @@ const Header = {
       })
     });
   },
+  clickButton: () => {
+    document.querySelector('.search.submit').addEventListener('click', function(){
+      let formSearchHotel  = document.querySelector('.form-search-hotel').value;
+      let checkIn = document.getElementById('check-in').value;
+      let checkOut = document.getElementById('check-out').value;
+      if(formSearchHotel == 'Where would you like to go?' || formSearchHotel == ''){
+        document.querySelector('.block-location .error-msg').style.display = 'block';
+      }
+      if(checkIn == '' || checkOut ==''){
+        document.querySelector('.block-picker .error-msg').style.display = 'block';
+      }
+    })
+  }
 };
 export default Header;
