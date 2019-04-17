@@ -10,7 +10,7 @@
 @import './base/_global';
 @import './base/_flexboxgrid';
 @import './base/_lazyload';
-
+@import './base/_lightbox';
 @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
 // Component
@@ -18,3 +18,5 @@
 @import '../../views/components/footer/footer';
 @import '../../views/components/testimonials/testimonials';
 @import '../../views/components/home/home';
+@import '../../views/components/portfolio/portfolio';
+@import '../../views/components/services/services.scss';

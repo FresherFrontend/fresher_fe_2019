@@ -43,7 +43,6 @@ html(lang='jp')
 
 
 
-    script(src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js")
     //- Title
     block title
       title Your project!
@@ -55,7 +54,12 @@ html(lang='jp')
     //- block content
     block content
 
+    include ../components/services/services
+
+    //- include ../components/portfolio/portfolio.pug
+
     include ../components/footer/footer.pug
+    
 
     //- block scripts
     block scripts
