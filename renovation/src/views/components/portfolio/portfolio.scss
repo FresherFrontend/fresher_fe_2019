@@ -52,19 +52,17 @@
 .portfolio_area {
     width: 100%;
     margin: 65px 0;
-}
-
-.container-fluid {
-    .row {
-        [class^="col-"] {
-            padding: 0 8px;
-        }
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
     }
 }
 
 .portfolio_filter {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
     ul {
         li {
             display: inline-block;
@@ -74,8 +72,6 @@
                 font-size: 22px;
                 color: #3e606b;
                 font-family: fonts(pTSansNarrow);
-                // font-style: italic;
-                // font-weight: bold;
                 position: relative;
                 display: inline-block;
                 cursor: pointer;
@@ -124,11 +120,12 @@
 }
 
 .grid_portfolio_area {
-    margin-bottom: -35px;
+    margin: 0 8px;
 }
 
 .portfolio_item {
     position: relative;
+    margin: 0 -8px;
     &:hover .portfolio_text {
         opacity: 1;
     }
