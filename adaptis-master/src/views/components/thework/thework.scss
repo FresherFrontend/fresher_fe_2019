@@ -5,7 +5,6 @@ section.a-thework {
         margin: 0 auto;
         padding: 0 15px;
         position: relative;
-        /*text-align: center;*/
         span.thework-title {
             width: 100%;
             display: flex;
@@ -21,7 +20,6 @@ section.a-thework {
     span.thework-title {
         font-family: 'CapitoliumW01-2Regular',sans-serif;
         line-height: 26px;
-        /*font-weight: 300;*/
         font-size: 26px;
         color: #6E6E6E;
     }
@@ -120,19 +118,48 @@ p.content-thework {
     .item-box{
         padding: 35px 40px 25px!important;
     }
+    .p.content-thework{
+        width: 50%;
+    }
     .item-box p.content-item-box{
         height: 60px;
     }
 }
+
 @media only screen and (max-width: breakpoints(mdminus))
 {
-     p.content-thework {
-        width: 100%;
-        font-size: 13px;
-        line-height: 20.5px;
-        font-weight: 405;
+    section.a-thework{
+        padding: 160px 0 120px;
     }
-    .col-item{
-        width: 50%!important;
+    .a-section-title{
+        margin-bottom: 30px;
+    }
+    .row.thework-items{
+        margin-top: 50px;
+    }
+    p.content-thework {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: breakpoints(sm))
+{
+    section.a-thework{
+        padding: 160px 0px 60px;
+    }
+    section.a-thework .container.box-thework span.thework-title{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .a-section-title span.thinking{
+        font-size: 29px;
+        line-height: 36px;
+    }
+    .a-section-title{
+        margin-bottom: 20px;
+    }
+    p.content-thework{
+        line-height: 21px;
+        font-size: 13px;
+        font-weight: 400;
     }
 }
