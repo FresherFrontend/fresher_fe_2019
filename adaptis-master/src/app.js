@@ -1,17 +1,20 @@
 // import './assets/styles/_app.scss';
 import Global from './views/components/global/global';
 import Header from './views/components/header/header';
-import Wow from './views/components/wow/wow';
 import Slider from './views/components/slider/slider';
-import Hover from './views/components/the_work_my/the_work_my';
+// import Hover from './views/components/the_work_my/the_work_my';
+import Hover from './views/components/thework/thework';
+import Wow from './views/components/wow/wow';
 require('normalize.css');
 require('slick-carousel');
-require('../src/assets/scripts/jquery.hoverdir');
-require('../src/assets/scripts/modernizr');
+require('../src/assets/scripts/snake');
+// require('../src/assets/scripts/jquery.hoverdir');
+// require('../src/assets/scripts/modernizr');
+
+
 $(() => {
   // Code here
 });
-
 $(document).ready(() => {
   Global.lazyLoad();
   Header.toggleDropDownMenu();
@@ -26,7 +29,8 @@ $(document).ready(() => {
   Global.changeColorLogo('.theContactPage');
   Wow.useWow();
   Slider.showSlider();
-  Hover.hoverDiv();
+  // Hover.hoverDiv();
+  Hover.hoverDir();
 });
 
 $(window).on('resize', () => {

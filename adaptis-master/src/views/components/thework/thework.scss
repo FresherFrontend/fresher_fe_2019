@@ -1,0 +1,165 @@
+section.a-thework {
+    padding: 160px 0 60px;
+    .container.box-thework {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        position: relative;
+        span.thework-title {
+            width: 100%;
+            display: flex;
+        }
+    }
+}
+.a-section-title {
+    margin-bottom: 20px;
+    font-size: 2.25em;
+    line-height: 1.25em;
+    margin-bottom: 20px;
+    font-weight: 300;
+    span.thework-title {
+        font-family: 'CapitoliumW01-2Regular',sans-serif;
+        line-height: 26px;
+        font-size: 26px;
+        color: #6E6E6E;
+    }
+    span.thinking {
+        font-family: 'CapitoliumW01-2Regular',sans-serif;
+        font-size: 42px;
+        line-height: 52.5px;
+    }
+}
+p.content-thework {
+    width: 50%;
+    line-height: 25.6px;
+    font-weight: 400;
+    font-family: runda,sans-serif;
+    color: #393939;
+}
+.row.thework-items{
+    margin: 100px 0px 0px;
+}
+.col-item{
+    padding: 0px;
+    .link-item{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        cursor: pointer;
+        img.img-thework{
+            width: 100%;
+            @include transition(all .3s ease-in-out);   
+        }
+        .item-box{
+            padding: 25px 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            z-index: 9;
+            color: $text-color-secondary;
+            p.nationalBrand{
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                transition: transform 0.35s;
+                span{
+                    width: 100%;
+                    color: $text-color-secondary;
+                    text-transform: uppercase;
+                }
+            }
+            p.content-item-box{
+               color: $text-color-secondary;
+                font-weight: 300;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 18px;
+                font-family: runda, sans-serif;
+                opacity: 0;
+                transition: opacity 0.2s, transform 0.35s;
+            }
+        }
+    }
+}
+.link-item .item-box p.nationalBrand,
+.link-item .item-box p.content-item-box{
+    transform: translate3d(0,40px,0);
+}
+.col-item .link-item:hover img.img-thework{
+    transform: scale(1.2);
+}
+.link-item:hover img.img-thework,
+.link-item:hover .item-box p.content-item-box{
+    opacity: 1;
+}
+.link-item:hover img.img-thework,
+.link-item:hover .item-box p.nationalBrand,
+.link-item:hover .item-box p.content-item-box{
+    transform: translate3d(0,0,0);
+}
+.link-item:hover .item-box p.content-item-box{
+    transition-duration: 0.35s;
+    transition-delay: 0.05s;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+/*media responsive*/
+@media only screen and (min-width: breakpoints(lg)) {
+    .item-box{
+        padding: 35px 40px 25px!important;
+    }
+    .p.content-thework{
+        width: 50%;
+    }
+    .item-box p.content-item-box{
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: breakpoints(mdminus))
+{
+    section.a-thework{
+        padding: 160px 0 120px;
+    }
+    .a-section-title{
+        margin-bottom: 30px;
+    }
+    .row.thework-items{
+        margin-top: 50px;
+    }
+    p.content-thework {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: breakpoints(sm))
+{
+    section.a-thework{
+        padding: 160px 0px 60px;
+    }
+    section.a-thework .container.box-thework span.thework-title{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .a-section-title span.thinking{
+        font-size: 29px;
+        line-height: 36px;
+    }
+    .a-section-title{
+        margin-bottom: 20px;
+    }
+    p.content-thework{
+        line-height: 21px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}

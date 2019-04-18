@@ -5,6 +5,7 @@ $grid-breakpoints: (
     smminus:767px,
     sm: 768px,
     smplus: 769px,
+    mdminus: 991px,
     md: 992px,
     lg: 1025px,
     xlminus: 1199px,
@@ -70,6 +71,8 @@ $colors: (
     c-violet-5: #9F579E,
     c-black-opacity: rgba(0,0,0,.5),
     c-black-opacity-1: rgba(0,0,0,.75),
+    
+    c-brown: #3C213A,
 );
 // // main-colors:
 $bg-color-primary: color(c-gray-2);
@@ -86,6 +89,9 @@ $bg-color-violet-2: color(c-violet-2);
 $bg-color-violet-3: color(c-violet-3);
 
 
+$border-color-brow: color(c-brown);
+
+
 $text-color-primary: color(c-dark-blue);
 $text-color-secondary: color(c-white);
 $text-color-black: color(c-black);
@@ -95,6 +101,9 @@ $text-color-6e: color(c-6e);
 $text-color-39: color(c-39);
 $text-color-violet-4: color(c-violet-4);
 $text-color-violet-5: color(c-violet-5);
+
+$text-color-brow: color(c-brown);
+
 
 $page-border-radius: .3rem;
 $btn-bg-color-primary: color(c-yellow);
