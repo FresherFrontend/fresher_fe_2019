@@ -6,7 +6,7 @@ const SpecialOffers = {
             infinite: false,
             responsive: [
                 {
-                  breakpoint: 1025,
+                  breakpoint: 1300,
                   settings: {
                     slidesToShow: 2
                   }

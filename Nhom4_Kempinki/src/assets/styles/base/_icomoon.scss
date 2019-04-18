@@ -1,90 +1,145 @@
-$icomoon-font-family: "icomoon" !default;
-$icomoon-font-path: "fonts" !default;
-
-$icon-location: "\e900";
-$icon-map-marker: "\e900";
-$icon-pin: "\e900";
-$icon-user: "\e901";
-$icon-profile: "\e901";
-$icon-avatar: "\e901";
-$icon-caret-down: "\e902";
-$icon-calendar: "\e903";
-$icon-angle-down: "\e904";
-$icon-phone: "\e905";
+/* src/assets/styles/base/_fonts.scss  */
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:  url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.eot?vq4h8');
-  src:  url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.eot?vq4h8#iefix') format('embedded-opentype'),
-    url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.ttf?vq4h8') format('truetype'),
-    url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.woff?vq4h8') format('woff'),
-    url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.svg?vq4h8##{$icomoon-font-family}') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'icomoon';
+    font-display: fallback;
+    src: url('./fonts/icomoon/icomoon.eot?32w7bp');
+    src: url('./fonts/icomoon/icomoon.eot?32w7bp#iefix') format('embedded-opentype'),
+        url('./fonts/icomoon/icomoon.ttf?32w7bp') format('truetype'),
+        url('./fonts/icomoon/icomoon.woff?32w7bp') format('woff'),
+        url('./fonts/icomoon/icomoon.svg?32w7bp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon';
+    speak: none;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon-clock:before {
+    content: "\e935";
 }
 
-.icon-location {
-  &:after {
-    content: $icon-location; 
-  }
+.icon-arrow:before {
+    content: "\e901";
 }
-.icon-map-marker {
-  &:after {
-    content: $icon-map-marker; 
-  }
+
+.icon-phone:before {
+    content: "\e902";
 }
-.icon-pin {
-  &:after {
-    content: $icon-pin; 
-  }
+
+.icon-phone_2:before {
+    content: "\e939";
 }
-.icon-user {
-  &:after {
-    content: $icon-user; 
-  }
+
+.icon-hamburger:before {
+    content: "\e904";
 }
-.icon-profile {
-  &:after {
-    content: $icon-profile; 
-  }
+
+.icon-close:before {
+    content: "\e905";
 }
-.icon-avatar {
-  &:after {
-    content: $icon-avatar; 
-  }
+
+.icon-facebook:before {
+    content: "\e912";
 }
-.icon-caret-down {
-  &:after {
-    content: $icon-caret-down; 
-  }
+
+.icon-heart:before {
+    content: "\e911";
 }
-.icon-calendar {
-  &:after {
-    content: $icon-calendar; 
-  }
+
+.icon-arrow-left:before {
+    content: "\e90a";
 }
-.icon-angle-down {
-  &:after {
-    content: $icon-angle-down; 
-  }
+
+.icon-arrow-right:before {
+    content: "\e90d";
 }
-.icon-phone {
-  &:before {
-    content: $icon-phone; 
-  }
+
+.icon-human:before {
+    content: "\e918";
+}
+
+.icon-email:before {
+    content: "\e919";
+}
+
+.icon-form-phone:before {
+    content: "\e903";
+}
+
+.icon-location:before {
+    content: "\e914";
+}
+
+.icon-trainline:before {
+    content: "\e915";
+}
+
+.icon-search:before {
+    content: "\e92c";
+}
+
+.icon-map:before {
+    content: "\e924";
+}
+
+.icon-check-mark:before {
+    content: "\e927";
+}
+
+.icon-modal-closeBtn:before {
+    content: "\e928";
+}
+
+.icon-elevator:before {
+    content: "\e929";
+}
+
+.icon-car:before {
+    content: "\e92a";
+}
+
+.icon-handicap:before {
+    content: "\e92b";
+}
+
+.icon-shortlist-heart:before {
+    content: "\e926";
+    color: color(c-pink);
+}
+
+.icon-available:before {
+    content: "\e900";
+}
+
+.icon-unavailable:before {
+    content: "\e934";
+}
+
+.icon-comingsoon:before {
+    content: "\e933";
+}
+
+.icon-floorplan:before {
+    content: "\e936";
+}
+
+.icon-pet:before {
+    content: "\e93a";
+}
+
+.icon-heart-noshortlist:before {
+    content: "\e926";
 }

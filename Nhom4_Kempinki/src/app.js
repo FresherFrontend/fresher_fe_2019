@@ -1,7 +1,12 @@
 // import './assets/styles/animation.css';
-import slide from './views/components/homepage/explore/explore';
+// import slide from './views/components/homepage/explore/explore';
+import './assets/scripts/infinitescroll.js';
 require('normalize.css');
 require('slick-carousel');
+import './assets/scripts/imagesloaded.js';
+
+require('isotope-layout');
+require('masonry-layout');
 import Global from './views/components/global/global';
 import Header from './views/components/header/header';
 import Experiences from './views/components/homepage/experiences/experiences';
@@ -12,23 +17,36 @@ import './assets/scripts/jquery.fancybox.min.js';
 import olapic from './views/components/gallerypage/olapic-wall/olapicwall';
 require('normalize.css');
 require('slick-carousel');
+import SpecialOffers2 from './views/components/specialoffers/specialoffers/specialoffers';
+import AboutUs from './views/components/aboutus/aboutus/aboutus';
+import slide from './views/components/homepage/explore/explore';
+import './assets/scripts/jquery.fancybox.min.js';
 
+
+window.WOW = require('wowjs').WOW;
 $(() => {
   // Code here
   olapic.olapic_menu();
   olapic.olapic_change_text();
+  slide.Single_slide();
+  slide.Slider_owl();
+  slide.Show_button();
+  olapic.olapic_fancybox();
 });
 
 $(document).ready(() => {
   Global.lazyLoad();
-  slide.Single_slide();
-  slide.Slider_owl();
-  slide.Show_button();
   Experiences.experiencesCarousel();
   HomeGallery.homeGalleryCarousel();
   HomeGallery.homeGalleryCarouselInfo();
   SpecialOffers.specialOffersCarousel();
-  olapic.olapic_fancybox();
+  SpecialOffers2.showRegions();
+  SpecialOffers2.activeLiAndFilter();
+  SpecialOffers2.stickyMenu();
+  SpecialOffers2.wowJS();
+  SpecialOffers2.filterOffers();
+  SpecialOffers2.loadMore();
+  AboutUs.Slider_owl2();
 });
 
 $(window).on('resize', () => {
@@ -38,6 +56,5 @@ $(window).on('resize', () => {
 });
 
 window.onload = () => {
-  Header.selectLanguage();
-  Mapbox.view();
+
 };

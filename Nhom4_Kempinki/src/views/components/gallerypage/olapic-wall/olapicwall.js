@@ -1,16 +1,18 @@
 const olapic = {
     olapic_menu: () => {
-        var viewall = document.querySelector('.viewall');
-        var a = document.querySelector('.viewall a');
-        var ul = document.querySelector('.olapic-desktop');
-        var li = document.querySelectorAll('.olapic-mobile li');
-        viewall.onclick = () =>{
-            if( ul.style.display == 'none'){
-                ul.style.display = 'block';
-            } else{
-                ul.style.display = 'none';
+        if($('.viewall').length){
+            var viewall = document.querySelector('.viewall');
+            var a = document.querySelector('.viewall a');
+            var ul = document.querySelector('.olapic-desktop');
+            var li = document.querySelectorAll('.olapic-mobile li');
+            viewall.onclick = () =>{
+                if( ul.style.display == 'none'){
+                    ul.style.display = 'block';
+                } else{
+                    ul.style.display = 'none';
+                }
+                a.setAttribute('class','change_color');
             }
-            a.setAttribute('class','change_color');
         }
     },
     olapic_change_text: () =>{

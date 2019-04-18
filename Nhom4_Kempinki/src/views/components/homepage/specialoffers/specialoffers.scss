@@ -1,7 +1,11 @@
 .special-offers{
+    margin-bottom: 64px;
+    @include mobile{
+        margin-bottom: 105px;
+    }
     .container{
-        @include min-md{
-           width: 1140px; 
+        @include min-xl{
+           width: 1120px; 
            padding-left: 15px;
            padding-right: 15px;
         }
@@ -15,6 +19,36 @@
         }
     }
     .offers-slide{
+        .slick-prev{
+            top: 18%;
+            left: -50px;
+            @include max-xl{
+                left: 6px;
+            }
+            @include mobile{
+                left: 10px;
+                top: 21%;
+            }
+        }
+        .slick-next{
+            top: 18%;
+            right: 0px;
+            @include max-xl{
+                right: 58px;
+            }
+            @include mobile{
+                right: 60px;
+                top: 21%;
+            }
+        }
+        .slick-prev, .slick-next{
+            &:before{
+                opacity: 1;
+                display: block;
+                background-color: #ffffff7a;
+                border-radius: 50%;
+            }
+        }
         .slick-slide{
             margin: 0 10px;
         }
