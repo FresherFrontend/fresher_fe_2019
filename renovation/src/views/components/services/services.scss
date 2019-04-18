@@ -83,8 +83,11 @@
         text-transform: uppercase;
         font-weight: $fontweight-light;
         font-family: fonts(main);
-        font-size: 20px;
+        font-size: 28px;
         color: #757575;
+        @include min-lg {
+            font-size: 36px;
+        }
     }
     .services_text p {
         color: #757575;
