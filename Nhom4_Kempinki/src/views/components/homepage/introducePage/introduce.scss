@@ -1,6 +1,7 @@
 .block-introdcue{
     margin-top: 30px;
     .block-introduce-title{
+        padding: 0 15px;
         .block-title{
             margin: 0px;
             font-size: 20px;
@@ -10,40 +11,39 @@
             letter-spacing: 5px;
             text-align: center;
         }
-        .sub-title{
-            font-size: 18px;
-            line-height: 1.44;
+        .text-small{
             margin-top: 8px;
-            display: block;
-            width: fit-content;
-            margin: 0 auto;
-            padding: 0 30px;
-            position: relative;
-            font-family: $font-kingscalson;
-            color: color(c-dark-blue-navy);
-            &:before {
-                content: "";
-                height: 1px;
-                background: #B5A191;
-                width: 100%;
-                position: absolute;
-                top: 12px;
-                right: 100%;
-                max-width: 133px;
-                right: 100%;
-            }
-            &:after {
-                content: "";
-                height: 1px;
-                background: #B5A191;
-                width: 100%;
-                position: absolute;
-                top: 12px;
-                left: 100%;
-                max-width: 133px;
-                right: 100%;
+            text-align: center;
+            overflow: hidden;
+            .sub-title{
+                font-size: 18px;
+                line-height: 1.44;
+                display: inline-block;
+                padding: 0 30px;
+                position: relative;
+                font-family: $font-kingscalson;
+                color: color(c-dark-blue-navy);
+                &:before {
+                    content: "";
+                    height: 1px;
+                    background: #B5A191;
+                    width: 60%;
+                    position: absolute;
+                    top: 12px;
+                    right: 100%;
+                }
+                &:after {
+                    content: "";
+                    height: 1px;
+                    background: #B5A191;
+                    width: 60%;
+                    position: absolute;
+                    top: 12px;
+                    left: 100%;
+                }
             }
         }
+       
     }
     .block-content{
         color: color(c-dark-blue-navy);

@@ -55,7 +55,6 @@ const Header = {
     ];
     $('.form-search-hotel').select2({
       data: data,
-      dropdownParent: $('.form-group.form-search-location')
     });
   },
   selectRoom: () => {
@@ -79,11 +78,8 @@ const Header = {
     ]
     $('.numberOfRoom').select2({
       data: data,
-      minimumResultsForSearch: -1,
-      dropdownParent: $('.form-group.guest-select')
-    });
-    $('.numberOfRoom').on("select2:open", function (e) {
-      $('.booking-block').css("overflow","visible");
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
     });
   },
   selectAdult: () => {
@@ -108,10 +104,7 @@ const Header = {
     $('.numberOfAdult').select2({
       data: data,
       minimumResultsForSearch: -1,
-      dropdownParent: $('.num-adult')
-    });
-    $('.numberOfAdult').on("select2:open", function (e) {
-      $('.booking-block').css("overflow","visible");
+      dropdownAutoWidth: true,
     });
   },
   selectAge: () => {
@@ -171,11 +164,9 @@ const Header = {
     ]
     $('.ageChildren').select2({
       data: data,
-      minimumResultsForSearch: -1,
-      dropdownParent: $('.block-list-children')
-    });
-    $('.ageChildren').on("select2:open", function (e) {
-      $('.booking-block').css("overflow","visible");
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
+      // dropdownParent: $('.block-list-children'), 
     });
   },
   selectChildren: () => {
@@ -203,15 +194,14 @@ const Header = {
     ]
     $('.numberOfChild').select2({
       data: data,
-      minimumResultsForSearch: -1,
-      dropdownParent: $('.num-child')
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
     });
 
     $('.numberOfChild').on("change", function (e) {
       let select_val = $(e.currentTarget).val();
       let elems = '';
       var viewSelect = (n) => {
-        console.log(e.currentTarget.length)
         for (let i = 0; i < n; i++) { 
           let elem = '<div class=\"form-group children-select\">'+
           '<select class=\"ageChildren\"' + " " + 'name=\"ChildrenAge['+i+']\">'+
@@ -255,10 +245,6 @@ const Header = {
         }
       }
     });
-    $('.numberOfChild').on("select2:open", function (e) {
-      $(this).next('.select2-container').css("position","absolute")
-      $('.booking-block').css("overflow","visible");
-    });
   },
   selectTypeCode: () => {
     let data = [
@@ -281,13 +267,11 @@ const Header = {
     ]
     $('#CodeType').select2({
       data: data,
-      minimumResultsForSearch: -1,
-      dropdownParent: $('.type-code-block')
-    });
-    $('#CodeType').on('select2:open', function (e) {
-        $('.booking-block').css("overflow","visible");
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: true,
     });
   },
+
   selectDate: () => {
     var field = document.getElementById('check-in');
     var picker = new Pikaday({
@@ -306,7 +290,7 @@ const Header = {
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
         this.el.style.top = '45px';
-        document.querySelector('.booking-block').style.overflow = 'visible';
+        document.querySelector('.booking-block').style.overflow = '';
       },
       onSelect: function() {
         var checkIn = this.getMoment().format('ll');
@@ -331,7 +315,7 @@ const Header = {
         this.el.style.position = 'absolute'; // reset
         this.el.style.left = '0';
         this.el.style.top = '45px';
-        document.querySelector('.booking-block').style.overflow = 'visible';
+        document.querySelector('.booking-block').style.overflow = '';
       },
       onSelect: function() {
         console.log(this.getMoment().format('ll'));
@@ -351,19 +335,16 @@ const Header = {
         return true;
       }
       document.querySelector('.booking-block').classList.remove('show-up');
-      document.querySelector('.booking-block').style.overflow = 'hidden';
       document.querySelector('.row-select').style.opacity = "0";
       document.querySelector('.row-select').style.visibility = "hidden";
       document.querySelector('.block-option').classList.remove('show-up');
-    })
-    document.querySelector('.show-sm-booking-block .container').addEventListener('click', function(){
-      this.classList.add('fixed')
     })
   },
   showMenu: () => {
     document.querySelector('.sticky-bar-mobile').addEventListener('click', function(){
         this.classList.toggle('is-showing');
         document.querySelector('.menu-left').classList.toggle('is-active');
+        alert('ok')
     })
   },
   scrollTopHeader: () => {
@@ -382,8 +363,13 @@ const Header = {
         
         if(document.querySelector('.booking-block').offsetTop == 0){
           document.querySelector('.booking-block').classList.remove('show-up');
-          document.querySelector('.booking-block').style.overflow = "hidden"
+          document.querySelector('.booking-block').style.overflow = "";
         }
+        $('#CodeType').select2('close')
+        $('.numberOfChild').select2('close')
+        $('.numberOfAdult').select2('close')
+        $('.numberOfRoom').select2('close')
+        $('.ageChildren ').select2('close')
     })
     var scrollTo = document.querySelectorAll('.content.overlay .text')
     scrollTo.forEach(function (elem) {
@@ -411,13 +397,32 @@ const Header = {
       let checkOut = document.getElementById('check-out').value;
       if(formSearchHotel == 'Where would you like to go?' || formSearchHotel == ''){
         document.querySelector('.block-location .error-msg').style.display = 'block';
-        document.querySelector('.booking-block').style.overflow = 'visible';
       }
       if(checkIn == '' || checkOut ==''){
         document.querySelector('.block-picker .error-msg').style.display = 'block';
-        document.querySelector('.booking-block').style.overflow = 'visible';
       }
     })
+    document.querySelector('.show-sm-booking-block .container').addEventListener('click',function(){
+      document.querySelector('.booking-block').classList.add('active');
+      document.querySelector('.booking-block').style.overflow = 'visible';
+      document.querySelector('.sticky-bar-mobile').style.display = "none";
+    });
+    document.querySelector('.title-block-booking .icon-close').addEventListener('click',function(){
+      document.querySelector('.booking-block').classList.remove('active');
+      document.querySelector('.sticky-bar-mobile').style.display = "";
+      document.querySelector('.booking-block').style.overflow = 'hidden';
+    })
+  },
+  check: () => {
+    setInterval(function(){
+      if(document.querySelector('.form-search-hotel').value != 'Where would you like to go?' ){
+          document.querySelector('.block-location .error-msg').style.display = 'none';
+      }
+      if(document.getElementById('check-in').value != '' && document.getElementById('check-out').value != '' ){
+        document.querySelector('.block-picker .error-msg').style.display = 'none';
+      }
+  }, 3000);
   }
 };
+
 export default Header;

@@ -9,7 +9,7 @@ header {
         z-index: 2;
         height: 100px;
         display: grid;
-        @include tabletplus {
+        @include tabletdown {
             height: auto;
             background: rgb(1,15,42);
             position: static;
@@ -24,8 +24,11 @@ header {
                         display: block;
                         img {
                             width: 35%;
-                            @include tabletplus {
+                            @include tabletdown {
                                 width: 75%;
+                            }
+                            @include max-md {
+                                width: 20%;
                             }
                         }
                     }
@@ -44,6 +47,7 @@ header {
                 }
                 .text-small {
                     margin-top: 8px;
+                    overflow: hidden;
                     span {
                         font-family: $font-kingscalson;
                         color: color(c-white);
@@ -52,27 +56,26 @@ header {
                         letter-spacing: -0.9px;
                         padding: 0 15px;
                         position: relative;
+                        display: inline-block;
                         &:before {
                             content: "";
                             height: 1px;
+                            display: block;
                             background: #B5A191;
-                            width: 100%;
+                            width: 60%;
                             position: absolute;
                             top: 10px;
-                            right: 100%;
-                            max-width: 133px;
                             right: 100%;
                         }
                         &:after {
                             content: "";
+                            display: block;
                             height: 1px;
                             background: #B5A191;
-                            width: 100%;
+                            width: 60%;
                             position: absolute;
                             top: 10px;
                             left: 100%;
-                            max-width: 133px;
-                            right: 100%;
                         }
                     }
                 }
@@ -80,7 +83,7 @@ header {
             .top-panel {
                 align-self: flex-end;
                 margin-bottom: 20px;
-                @include tabletplus {
+                @include tabletdown {
                     display: none;
                 }
                 .top-panel-wrap {
@@ -244,22 +247,39 @@ header {
         @include tabletplus {
             height: 0;;
         }
+        @include tabletdown{
+            height: auto;
+        }
         .banner-wrapper{
             height: calc(100% - 100px);
             position: absolute;
             top: 100px;
             z-index: 1;
             left: 0px;
+            @include tabletdown {
+                position: static;
+                height: auto;
+            }
             .banner-wrapper-content{
                 height: 100%;
                 @include flexbox();
                 .banner-images-block-left{
                     height: 100%;
                     width: 50%;
+                    @include tabletdown(){
+                        width: 100%;
+                        position: relative;
+                        padding-top: 56.65%;
+                    }
                     img{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        @include tabletdown{
+                            position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        }
                     }
                 }
                 .banner-images-block-right{
@@ -268,6 +288,9 @@ header {
                     overflow: hidden;
                     @include flexbox();
                     flex-wrap: wrap;
+                    @include tabletdown{
+                        display: none;
+                    }
                     .banner-images-block{
                         width: 50%;
                         height: calc((100% - 65px) / 2);
@@ -360,9 +383,14 @@ header {
             left: 0px;
             width: 290px;
             z-index: 100;
-            @include tabletplus {
+            @include tabletdown {
                 top: 100%;
                 transform: translateX(-100%);
+            }
+            @include tabletdown{
+                position: absolute;
+                top: 0;
+                left: 0;
             }
             .menu-left-content.delay{
                 transform: translateX(-100%);
@@ -373,7 +401,7 @@ header {
                     -o-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); 
                     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); /* easeOutCubic */
                 background: rgba(1,15,42,0.74);
-                @include tabletplus {
+                @include tabletdown {
                     background: rgb(1,15,42);
                     transform: translateX(0);
                     animation: none;
@@ -457,7 +485,7 @@ header {
         transition: 0.4s;
         z-index: 9999;
         transform: translateX(-100%);
-        @include tabletplus {
+        @include tabletdown {
             transform: translateX(0);
         }
         .navigation-trigger{
@@ -507,17 +535,23 @@ header {
         background: $bg-color-dark-blue-navy;
         max-height: 50px;
         padding: 10px 0px;
-        -webkit-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
-        -moz-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
-            -o-transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
-                transition: all 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transition: max-height 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+        -moz-transition: max-height 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+            -o-transition: max-height 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000); 
+                transition: max-height 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        overflow: hidden;
         .container{
-             max-width: 1170px;
-             padding: 0px 15px;
-             margin: 0 auto;
-             @include tabletplus {
-                 display: none;
-             }
+            width: 1170px;
+            padding: 0px 15px;
+            margin: 0 auto;
+            @include max-xl{
+                width: 1100px;
+                max-width: 100%;
+            }
+            @include tabletdown {
+                display: none;
+                width: 100%;
+            }
             .title-block-booking{
                 width: 100%;
                 padding: 12px 15px;
@@ -532,10 +566,12 @@ header {
                     cursor: pointer;
                     font-size: 22px;
                     letter-spacing: 0;
+                    text-transform: uppercase;
                 }
                 span.icon-close{
                     display: block;
                     position: relative;
+                    cursor: pointer;
                     span.line{
                         display: block;
                         position: absolute;
@@ -560,24 +596,13 @@ header {
                 justify-content: center;
                 .block-location{
                     width: 306px;
-                    max-width: 306px;
+                    min-width: 260px;
+                    @include tabletdown {
+                        min-width: 100%;
+                    }
                     .select2-container{
-                        .select2-dropdown--below{
-                            .select2-results{
-                                .select2-results__option{
-                                    font-size: 13px;
-                                    color: color(c-dark-blue-navy);
-                                    &[aria-selected="true"]{
-                                        background: #5897fb;
-                                        color: color(c-white);
-                                    }
-                                }
-                                .select2-results__option--highlighted{
-                                    color: color(c-white);
-                                    background: #5897fb;
-                                }
-                            }
-                        }
+                        min-width: 100%;
+                        max-width: 100%;
                     }
                     .form-search-hotel{
                         width: 100%;
@@ -590,10 +615,18 @@ header {
                                 font-size: 12px;
                                 height: 30px;
                                 text-transform: uppercase;
+                                @include tabletdown {
+                                    border: 1px solid #ccc;
+                                    height: 38px;
+                                }
                                 .select2-selection__rendered{
                                     color: color(c-dark-blue-navy);  
                                     line-height: 30px;
                                     position: relative;
+                                    @include tabletdown {
+                                        line-height: 36px;
+                                        color: #555555;
+                                    }
                                     &:before{
                                         content: $icon-location;
                                         font-size: 15px;
@@ -604,6 +637,10 @@ header {
                                 }
                                 .select2-selection__arrow{
                                     display: none;
+                                    @include tabletdown {
+                                        display: inline-block;
+                                        height: 38px;
+                                    }
                                 }
                             }
                         }
@@ -625,18 +662,27 @@ header {
                             overflow: hidden;
                             margin-left: 2px;
                             margin-bottom: 3px;
+                            @include tabletdown {
+                                width: 100%;
+                            }
                         }
                     }
                 }
                 .block-picker{
                     width: 408px;
-                    min-width: 350px;
+                    min-width: 408px;
                     display: flex;
                     flex-wrap: wrap;
                     position: relative;
                     justify-content: space-between;
                     margin-left: 4px;
                     align-self: baseline;
+                    @include tabletdown {
+                        width: 100%;
+                        min-width: 100%;
+                        margin-left: 0;
+                        margin-top: 8px;
+                    }
                     .form-group{
                         position: relative;
                         width: 49%;
@@ -650,6 +696,11 @@ header {
                             color: color(c-black);
                             padding-left: 10px;
                             font-family: $font-helvelticaRegular;
+                            @include tabletdown {
+                               height: 38px;
+                               border: 1px solid #ccc;
+                               padding-left: 0;
+                            }
                         }
                         span{
                             position: absolute;
@@ -745,20 +796,34 @@ header {
                 }
                 .block-number{
                     width: 260px;
+                    min-width: 260px;
                     margin-left: 4px;
+                    @include tabletdown{
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-top: 8px;
+                    }
                     .select2-container{
                         .select2-selection--single{
                             height: 30px;
                             border: none;
                             border-radius: 2px;
+                            @include  tabletdown{
+                                height: 38px;
+                                border: 1px solid #ccc;
+                            }
                             .select2-selection__rendered{
                                 font-family: $font-helvelticaRegular;
                                 padding: 0px 10px;
                                 line-height: 30px;
                                 text-transform: uppercase;
                                 font-size: 13px;
+                                @include  tabletdown{
+                                    line-height: 38px;
+                                }
                             }
                             .select2-selection__arrow{
+                                height: 30px;
                                 b{
                                     border-color: #000000 transparent transparent transparent;
                                 }
@@ -769,28 +834,6 @@ header {
                         .select2-selection__arrow{
                             b{
                                 border-color:  transparent transparent #000000 transparent !important;
-                            }
-                        }
-                    }
-                    .select2-dropdown{
-                        margin-top: 5px;
-                        &.select2-dropdown--below{
-                            border:  1px solid rgba(0,0,0,0.2);
-                            border-radius: 2px; 
-                            }
-                        .select2-results{
-                            .select2-results__option{
-                                padding: 3px 20px;
-                                font-size: 13px;
-                                font-family: $font-helvelticaRegular;
-                                color: color(c-dark-blue-navy);
-                                &[aria-selected="true"]{
-                                    background: #f5f5f5;
-                                }
-                            }
-                            .select2-results__option--highlighted{
-                                background: #f5f5f5;
-                                color: color(c-dark-blue-navy)
                             }
                         }
                     }
@@ -812,44 +855,60 @@ header {
                             font-family: $font-helvelticaRegular;
                             text-transform: uppercase;
                             cursor: pointer;
+                            @include tabletdown{
+                                width: 100%;
+                                padding: 20px;
+                                display: none;
+                            }
+                        }
+                        .select2-container{
+                            min-width: 49%;
+                            @include tabletdown{
+                                min-width: 100%;
+                            }
                         }
                     }
                     .collapse-advanced{
                         margin-top: 10px;
+                        @include tabletdown{
+                            margin-top: 8px;
+                        }
                         .row-select{
                             display: flex;
                             opacity: 0;
                             visibility: hidden;
                             justify-content: space-between;
+                            @include  tabletdown{
+                                flex-direction: column;
+                            }
                             .num-adult{
                                 width: 49%;
                                 min-width: 49%;
                                 position: relative;
+                                @include tabletdown{
+                                    width: 100%;
+                                    min-width: 100%;
+                                }
                             }
                             .num-child{
                                 width: 49%;
                                 min-width: 49%;
                                 position: relative;
+                                @include tabletdown{
+                                    margin-top: 8px;
+                                    width: 100%;
+                                    min-width: 100%;
+                                }
                             }
                             .select2-container{
                                 width: 100% !important;
                             }
-                            .select2-dropdown{
-                                width: auto !important;
-                                margin-top: 5px;
-                                &.select2-dropdown--below{
-                                    border:  1px solid rgba(0,0,0,0.2);
-                                    border-radius: 2px; 
-                                }
-                                .select2-results{
-                                    .select2-results__option{
-                                        text-transform: uppercase;
-                                        white-space: pre;
-                                    }
-                                }
-                            }
                         }
                         .row-select-children{
+                            @include tabletdown{
+                                display: flex;
+                                flex-direction: column;
+                            }
                             .title{
                                 display: none;
                                 width: 100%;
@@ -893,13 +952,6 @@ header {
                                 }
 
                             }
-                            .select2-dropdown{
-                                margin-top: 5px;
-                                width: auto !important;
-                            }
-                            &.row-select-children.d-block{
-                                display: block;
-                            }
                         }
                     }
                 }
@@ -908,8 +960,12 @@ header {
                 margin-top: 20px;
                 opacity: 0;
                 visibility: hidden;
+                @include tabletdown{
+                    margin-top: 0px;
+                }
                 .row{
                     justify-content: center;
+                    margin: 0px;
                 .type-code-block{
                     width: 165px;
                     margin: 0 2.5px;
@@ -937,35 +993,6 @@ header {
                         .select2-selection__arrow{
                             b{
                                 border-color:  transparent transparent #000000 transparent !important;
-                            }
-                        }
-                    }
-                    .select2-dropdown{
-                        margin-top: 5px;
-                        .select2-results{
-                            .select2-results__option{
-                                padding: 3px 20px;
-                                font-size: 13px;
-                                font-family: $font-helvelticaRegular;
-                                text-transform: uppercase;
-                                color: color(c-dark-blue-navy);
-                                &[aria-selected="true"]{
-                                    background: #f5f5f5;
-                                }
-                            }
-                            .select2-results__option--highlighted{
-                                background: #f5f5f5;
-                                color: color(c-dark-blue-navy)
-                            }
-                        }
-                        &.select2-dropdown--below{
-                            border:  1px solid rgba(0,0,0,0.2);
-                            border-radius: 2px; 
-                        }
-                        .select2-results{
-                            .select2-results__option{
-                                text-transform: uppercase;
-                                white-space: pre;
                             }
                         }
                     }
@@ -1003,7 +1030,7 @@ header {
         .show-sm-booking-block{
             width: 100%;
             display: none;
-            @include tabletplus {
+            @include tabletdown {
                 display: block;
             }
             .container{
@@ -1042,6 +1069,57 @@ header {
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 800;
+    }
+    .booking-block.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 900;
+        min-height: 100vh;
+        overflow: auto !important;
+        background: color(c-white);
+        .show-sm-booking-block{
+            display: none;
+        }
+        .select2-selection--single{
+            border: 1px solid #CCC !important;
+        }
+        .container{
+            display: block;
+            .title-block-booking{
+                display: flex;
+            }
+            .form-inline-search{
+                flex-direction: column;
+                margin-top: 20px;
+                padding: 0 15px;
+                .block-location{
+                    width: 100%;
+                }
+            }
+        }   
+    }
+}
+.customs{
+    .select2-search--dropdown{
+        // display: none;
+    }
+    .select2-results{
+        .select2-results__option{
+            color: color(c-dark-blue-navy);
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 3px 20px;
+            white-space: nowrap;
+            font-family: $font-helvelticaRegular;
+            &.select2-results__option--highlighted{
+                background: #f5f5f5;
+                &[aria-selected="true"]{
+                    background: #f5f5f5;
+                }
+            }
+        }
     }
 }

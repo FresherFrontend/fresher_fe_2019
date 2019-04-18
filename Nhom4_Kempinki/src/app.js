@@ -22,7 +22,7 @@ $(() => {
   Header.selectAge();
   Header.selectTypeCode();
   Header.scrollTopHeader();
-  Header.showBooking();
+  // Header.showBooking();
 });
 
 $(document).ready(() => {
@@ -42,16 +42,15 @@ $(document).ready(() => {
   Header.selectAge();
   Header.scrollTopHeader();
   Header.selectTypeCode();
-  Header.showBooking();
+  // Header.showBooking();
+  Header.check();
 });
 
 $(window).on('resize', () => {
   setTimeout(() => {
     Global.lazyLoad();
   }, 250);
-
   Header.resetStart();
-
 });
 
 window.onload = () => {
@@ -59,7 +58,8 @@ window.onload = () => {
   Header.selectDate();
   Mapbox.view();
   Header.scrollTopHeader();
-  Header.showBooking();
+  // Header.showBooking();
   Header.showMenu();
   Header.clickButton();
+  Header.check();
 };
