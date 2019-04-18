@@ -1,6 +1,12 @@
+var $ = require('jquery');
 var jQueryBridget = require('jquery-bridget');
 var Isotope = require('isotope-layout');
-import '../../../../assets/scripts/imagesloaded.js';
+
+// provide jQuery argument
+import imagesLoaded from '../../../../assets/scripts/imagesloaded.js';
+imagesLoaded.makeJQueryPlugin( $ );
+import infiniteScroll from '../../../../assets/scripts/infinitescroll.js';
+infiniteScroll.makeJQueryPlugin( $ );
 const SpecialOffers2 = {
     showRegions: () => {
         $('button.region-dropdown-toggle').click(function(event) {
@@ -58,61 +64,18 @@ const SpecialOffers2 = {
       new WOW().init();
     },
     loadMore: () => {
-      //-------------------------------------//
-  // init Isotope
-      var $grid = $('.new-special-offers').isotope({
-        itemSelector: 'none', // select none at first
-        // nicer reveal transition
-        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-      });
-
-      // initial items reveal
-      $grid.imagesLoaded( function() {
-        $grid.removeClass('are-images-unloaded');
-        $grid.isotope( 'option', { itemSelector: 'a.new-special-offers-item' });
-        var $items = $grid.find('a.new-special-offers-item');
-        $grid.isotope( 'appended', $items );
-      });
-
-      //-------------------------------------//
-      // hack CodePen to load pens as pages
-
-      var nextPenSlugs = [
-        '202252c2f5f192688dada252913ccf13',
-        'a308f05af22690139e9a2bc655bfe3ee',
-        '6c9ff23039157ee37b3ab982245eef28',
-      ];
-
-      function getPenPath() {
-        var slug = nextPenSlugs[ this.loadCount ];
-        if ( slug ) {
-          return 'https://s.codepen.io/desandro/debug/' + slug;
+      $(window).scroll(function () {
+        if($(document).height() - 500 <= $(window).scrollTop() + $(window).height()) {
+            $('.imgloading').fadeOut(1000);
+            setTimeout(function(){ 
+              $('.a-hide').css('display','block'); 
+            }, 1000);
+            $('.new-special-offers').isotope({
+              // options
+              itemSelector: 'a.new-special-offers-item'
+            });
         }
-      }
-
-      //-------------------------------------//
-      // init Infinte Scroll
-
-      // get Isotope instance
-      var iso = $grid.data('isotope');
-
-      $grid.infiniteScroll({
-        path: getPenPath,
-        status: '.page-load-status',
-        // do not set append
-        // do not set outlayer
-      });
-
-      // append items on load
-      $grid.on( 'load.infiniteScroll', function( event, response, path ) {
-        var $items = $( response ).find('a.new-special-offers-item');
-        // append items after images loaded
-        $items.imagesLoaded( function() {
-          $grid.append( $items );
-          $grid.isotope( 'insert', $items );
-        });
-      });
+     });
     }
     
   };
