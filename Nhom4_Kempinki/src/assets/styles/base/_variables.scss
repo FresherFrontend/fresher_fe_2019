@@ -19,17 +19,23 @@ $font-weight: (
 );
 
 $fonts: (
-    main: ("Roboto",sans-serif),
-    heading: ('Kreon', sans-serif),
-    content: ('ProximaNova', sans-serif),
+    main: ("Helvetica",sans-serif),
+    kingscalson: ("KingsCalsonItalic",Arial,sans-serif),
     icomoon: ('icomoon'),
-    fontawesome: ('Fontawesome')
+    fontawesome: ('Fontawesome'),
+    arial: ('Arial'),
+    helvelticaBold: ('Helvetica-bold'),
+    helvelticaRegular: ('Helvetica-Regular')
 );
 
 $font-main: fonts(main);
-$font-heading: fonts(heading);
+$font-helvelticaBold: fonts(helvelticaBold);
+$font-helvelticaRegular: fonts(helvelticaRegular);
+$font-kingscalson: fonts(kingscalson);
 $font-icomoon: fonts(icomoon);
 $font-fontawesome: fonts(fontawesome);
+$font-arial: fonts(arial);
+$font-icomoon: fonts(icomoon);
 
 $fontweight-light: fontWeight(light);
 $fontweight-regular: fontWeight(regular);
@@ -41,6 +47,7 @@ $fz-root: 62.5%; // root font-size, DO NOT CHANGE
 $gutter: 2rem;
 $gutter-xs: 1.5rem;
 $gutter-md: 2rem;
+$container: 75.6%;
 
 // colors
 $colors: (
@@ -55,9 +62,15 @@ $colors: (
     c-gray: #e5ebee,
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
-    c-red: #A94442
+    c-red: #A94442,
+    bg-color: #010f2a,
+    text-color: #010f2a,
+    text-color-footer: #b5a191
 );
 // // main-colors:
+$text-color: color(text-color);
+$text-color-footer: color(text-color-footer);
+$bg-color: color(bg-color);
 $bg-color-primary: color(c-blue);
 $bg-color-primary-white: color(c-white);
 $bg-color-primary-pink: color(c-pink);

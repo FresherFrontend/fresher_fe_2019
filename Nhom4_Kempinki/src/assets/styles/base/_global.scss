@@ -1,6 +1,8 @@
-* {
-    font-family: $font-main;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: $font-main;
 }
 
 *:focus {
@@ -21,7 +23,6 @@ body {
     padding-top: 60px;
     line-height: 2.3rem;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     @include not-mobile {
         padding-top: 90px;
     }
@@ -63,32 +64,32 @@ body {
 
     // typography
     h1 {
-        @include typography(fonts(heading), fontWeight(bold), 4rem, 4.8rem);
+        @include typography(fonts(hel-light), fontWeight(bold), 4rem, 4.8rem);
     }
 
     h2 {
-        @include typography(fonts(heading), fontWeight(bold), 3.5rem, 4.4rem);
+        @include typography(fonts(hel-light), fontWeight(bold), 3.5rem, 4.4rem);
     }
 
     h3 {
-        @include typography(fonts(heading), fontWeight(bold), 2.8rem, 1.33);
+        @include typography(fonts(hel-light), fontWeight(bold), 2.8rem, 1.33);
     }
 
     h4 {
-        @include typography(fonts(heading), fontWeight(bold), 1.8rem, 2.4rem);
+        @include typography(fonts(hel-light), fontWeight(bold), 1.8rem, 2.4rem);
     }
 
     h5 {
-        @include typography(fonts(heading), fontWeight(bold), 1.8rem, 2.4rem);
+        @include typography(fonts(hel-light), fontWeight(bold), 1.8rem, 2.4rem);
     }
 
     h6 {
-        @include typography(fonts(main), fontWeight(bold), 1.8rem, 2.4rem);
+        @include typography(fonts(hel-light), fontWeight(bold), 1.8rem, 2.4rem);
     }
 
     p,
     a {
-        @include typography(fonts(main), fontWeight(regular), 1.6rem, inherit);
+        @include typography(fonts(hel-light), fontWeight(regular), 1.6rem, inherit);
         color: $text-color-primary;
     }
 
