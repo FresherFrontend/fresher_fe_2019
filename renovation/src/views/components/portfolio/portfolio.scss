@@ -217,16 +217,20 @@
             font-size: 20px;
             position: absolute;
             top: 60%;
-            left: 30%;
+            left: 28%;
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             &:hover {
-                color: #fcb827;
+                color: #fcb828;
             }
             @include min-xs {
                 top: 65%;
-                left: 29%;
+                left: 28%;
+                font-size: 26px;
+            }
+            @include min-sm {
+                font-size: 20px;
             }
         }
         .view {
@@ -239,7 +243,6 @@
             -o-transition: all 400ms linear 0s;
             transition: all 400ms linear 0s;
             color: white;
-            font-size: 20px;
             position: absolute;
             top: 70%;
             left: 27%;
@@ -248,6 +251,10 @@
             transform: translate(-50%, -50%);
             @include min-xs {
                 top: 78%;
+                font-size: 26px;
+            }
+            @include min-sm {
+                font-size: 20px;
             }
             &::after {
                 font-family: "Fontawesome";
