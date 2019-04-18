@@ -107,7 +107,10 @@
                         padding-left: 0;
                     }
                     .title{
-                        height: 25px;
+                        height: 52px;
+                        overflow: hidden;
+                        margin-top: 10px;
+                        margin-bottom: 0;
                     }
                     .description{
                         height: calc(100% - 100px);

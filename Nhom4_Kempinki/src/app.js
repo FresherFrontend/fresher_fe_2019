@@ -13,6 +13,8 @@ import Experiences from './views/components/homepage/experiences/experiences';
 import HomeGallery from './views/components/homepage/gallery/gallery';
 import SpecialOffers from './views/components/homepage/specialoffers/specialoffers';
 import SpecialOffers2 from './views/components/specialoffers/specialoffers/specialoffers';
+import AboutUs from './views/components/aboutus/aboutus/aboutus';
+import slide from './views/components/homepage/explore/explore';
 import './assets/scripts/jquery.fancybox.min.js';
 
 
@@ -23,7 +25,7 @@ $(() => {
 
 $(document).ready(() => {
   Global.lazyLoad();
-  // slide.Slider_owl();
+  
   // slide.Show_button();
   // slide.show_circle();
   // slide.Single_slide();
@@ -38,6 +40,9 @@ $(document).ready(() => {
   SpecialOffers2.wowJS();
   SpecialOffers2.filterOffers();
   SpecialOffers2.loadMore();
+  
+  slide.Slider_owl();
+  AboutUs.Slider_owl2();
 });
 
 $(window).on('resize', () => {
