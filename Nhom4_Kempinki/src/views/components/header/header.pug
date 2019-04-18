@@ -1,1 +1,94 @@
+<<<<<<< HEAD
 h2 HEADER
+=======
+header
+    .top-header
+        .container
+            .row.mx-0
+                .top-logo.col-md-3.middle-md
+                    .logo
+                        a(href="#", title="logo")
+                            img(src= ("../../../assets/images/logo.png"), alt="Kempinski Logo")
+                .top-slogan.col-md-6.middle-md.center-xs
+                    .text-big
+                        span KEMPINSKI HOTELS
+                    .text-small
+                        span A Constellation of Havens 
+                .top-panel.col-md-3
+                    .top-panel-wrap
+                        ul.top-panel-wrap-menu.end-xs
+                            li.multy-language
+                                .dropdown.open
+                                    span.dropdown-toggle.icon-angle-down
+                                        span.content English
+                                    .dropdown-menu-block.center-xs
+                                        include ../../mixins/list.pug
+                                        +list('dropdown-menu', 'العربية', 'español', 'français', 'русский', '中文', 'Deutsch')
+                            li.loginLink
+                                a.login-link(href="#" title="Login")
+                                    span.icon-user
+                                    span.text-login Login
+    .banner-header
+        .banner-wrapper
+            .banner-wrapper-content
+                .banner-images-block-left
+                    img(src="../../../assets/images/header/banner-header.jpg", alt="Banner Header")
+                .banner-images-block-right
+                    .banner-images-block
+                        .content-block
+                            .images-cover
+                                img(src="../../../assets/images/header/destinations-map.jpg", alt="Desnitaion")
+                            .content.overlay
+                                span.text OUR DESTINATIONS 
+                    .banner-images-block
+                        .content-block
+                            .images-cover
+                                img(src="../../../assets/images/header/experience.jpg", alt="experience")
+                            .content.overlay
+                                span.text Experience
+                    .search-form
+                        span HOW MAY WE ASSIST YOU ?
+                    .banner-images-block
+                        .content-block
+                            .images-cover
+                                img(src="../../../assets/images/header/special-offers.jpg", alt="Offers")
+                            .content.overlay
+                                span.text Offers
+                    .banner-images-block
+                        .content-block
+                            .images-cover
+                                img(src="../../../assets/images/header/our-hotel.png", alt="Our Hotel")
+                            .content.overlay
+                                span.text Our Hotel               
+        .menu-left
+            .menu-left-content.delay
+                span.menu-title Overview
+                //- - var pages = {desnitaions: '/destinations', experiences: '/experiences-by-kempinski', special: '/special-offers', loyalty: '/loyalty-programme', meetingsEvent: '/meetings-and-events', blog: '/blog', about: '/about-us', guestGallery: '/guest-gallery', }
+                - var menus = [{text: 'desnitaions', link: '/desnitaions'}, {text: 'special offers', link: '/special-offers', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}] }, {text: 'guestGallery', link: '/guest-gallery'  }, {text: 'about', link: '/about-us'}];
+                ul.side-menu
+                    each list in menus
+                        li.side-list-lv-1
+                            a(href=list.link)= list.text
+                            if list.submenu
+                                ul.sub-menu
+                                    each listSub in list.submenu
+                                        li.side-list-lv2
+                                            a(href=listSub.link)= listSub.text
+    .sticky-bar-mobile
+        span.navigation-trigger
+            span
+            span
+            span
+    .booking-block
+        .container-fluid
+            form#aa(action="#", method="get")
+                .form-inline-search
+                    .block-location
+                        .form-group.form-search-location
+                            select#a(name='cad')
+                        .error-msg
+                            span WHERE WOULD YOU LIKE TO GO?
+                    .block-picker
+                    .block-number
+                    button(type="submit")
+>>>>>>> e8153545b07f7c88a34cd10a7b87a20a6bdaeef7

@@ -27,11 +27,11 @@ module.exports = (env) => {
         './assets/styles/_app.scss',
         './app.js',
       ],
-      app_JP: [
-        'babel-polyfill',
-        './assets/styles/_app-JP.scss',
-        './app_JP.js',
-      ],
+      // app_JP: [
+      //   'babel-polyfill',
+      //   './assets/styles/_app-JP.scss',
+      //   './app_JP.js',
+      // ],
     },
     output: {
       path: path.resolve(__dirname, '../dist'),
@@ -162,13 +162,13 @@ module.exports = (env) => {
         chunks: ['app', 'index'],
         chunksSortMode: (a, b) => (a.names[0] === 'index' ? 1 : 0),
       }),
-      new HtmlWebpackPlugin({
-        locale: 'jp_JP',
-        filename: 'index_JP.html',
-        template: 'views/index.pug',
-        chunks: ['app_JP', 'index'],
-        chunksSortMode: (a, b) => (a.names[0] === 'index' ? 1 : 0),
-      }),
+      // new HtmlWebpackPlugin({
+      //   locale: 'jp_JP',
+      //   filename: 'index_JP.html',
+      //   template: 'views/index.pug',
+      //   chunks: ['app_JP', 'index'],
+      //   chunksSortMode: (a, b) => (a.names[0] === 'index' ? 1 : 0),
+      // }),
 
 
       new webpack.ProvidePlugin({
