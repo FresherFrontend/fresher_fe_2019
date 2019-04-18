@@ -6,7 +6,13 @@ block title
 block basicSeo
   meta(name='description' content='home page')
   meta(name='keywords', content='home, page')
+  meta(name='description' content='Special page')
+  meta(name='keywords', content='Special, page')
   meta(name='author' content='')
 
 block content
+    block banner-wrapper-inside-page
+      .banner-wrapper-inside-page
+        .banner-wrapper-content
+          img(src="../../assets/images/header/banner-header-special-offers.jpg", alt="Banner Header")
     include ../components/specialoffers/specialoffers/specialoffers.pug

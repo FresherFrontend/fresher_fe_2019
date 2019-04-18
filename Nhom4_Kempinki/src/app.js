@@ -24,10 +24,19 @@ import './assets/scripts/jquery.fancybox.min.js';
 
 
 window.WOW = require('wowjs').WOW;
+  
 $(() => {
   // Code here
   olapic.olapic_menu();
   olapic.olapic_change_text();
+  Header.selectHotel();
+  Header.selectRoom();
+  Header.selectAdult();
+  Header.selectChildren();
+  Header.selectAge();
+  Header.selectTypeCode();
+  Header.scrollTopHeader();
+  // Header.showBooking();
 });
 
 $(document).ready(() => {
@@ -47,14 +56,32 @@ $(document).ready(() => {
   SpecialOffers2.filterOffers();
   SpecialOffers2.loadMore();
   AboutUs.Slider_owl2();
+  Header.selectHotel();
+  Header.selectRoom();
+  Header.selectAdult();
+  Header.selectChildren();
+  Header.selectAge();
+  Header.scrollTopHeader();
+  Header.selectTypeCode();
+  // Header.showBooking();
+  Header.check();
 });
 
 $(window).on('resize', () => {
   setTimeout(() => {
     Global.lazyLoad();
   }, 250);
+  Header.resetStart();
 });
 
 window.onload = () => {
 
+  Header.selectLanguage();
+  Header.selectDate();
+  Mapbox.view();
+  Header.scrollTopHeader();
+  Header.showBooking();
+  Header.showMenu();
+  Header.clickButton();
+  Header.check();
 };

@@ -16,6 +16,16 @@
         @content;
     }
 }
+@mixin max-md {
+    @media (max-width: #{breakpoints(md)}) {
+        @content;
+    }
+}
+@mixin max-xl {
+    @media (max-width: #{breakpoints(xl)}) {
+        @content;
+    }
+}
 
 @mixin min-sm {
     @media (min-width: #{breakpoints(sm)}) {
@@ -55,6 +65,16 @@
 
 @mixin tablet {
     @media (min-width: #{breakpoints(sm)}) and (max-width: #{breakpoints(lg)}) {
+        @content;
+    }
+}
+@mixin tabletplus {
+    @media (min-width: #{breakpoints(md)}) and (max-width: #{breakpoints(lg)}) {
+        @content;
+    }
+}
+@mixin tabletdown {
+    @media (max-width: #{breakpoints(lg)}) {
         @content;
     }
 }

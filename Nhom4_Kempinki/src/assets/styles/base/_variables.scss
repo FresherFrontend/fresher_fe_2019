@@ -1,5 +1,6 @@
 // breakpoints
 $grid-breakpoints: (
+    xxxs: 320px,
     xxs: 360px,
     xs: 481px,
     sm: 768px,
@@ -62,6 +63,7 @@ $colors: (
     c-gray: #e5ebee,
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
+    c-brown: #b5a191,
     c-red: #A94442,
     bg-color: #010f2a,
     text-color: #010f2a,

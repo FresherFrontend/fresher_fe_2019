@@ -9,5 +9,10 @@ block basicSeo
   meta(name='author' content='')
 
 block content
-    include ../components/gallerypage/showus/showus.pug
-    include ../components/gallerypage/olapic-wall/olapic-wall.pug
+  block banner-wrapper-inside-page
+  .banner-wrapper-inside-page
+    .banner-wrapper-content
+      img(src="../../assets/images/header/banner-header-page-galley.jpg", alt="Banner Header")
+  include ../components/gallerypage/showus/showus.pug
+  include ../components/gallerypage/olapic-wall/olapic-wall.pug
+  
