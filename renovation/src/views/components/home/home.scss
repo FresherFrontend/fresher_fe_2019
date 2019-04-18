@@ -212,6 +212,12 @@
     .wrap_service {
         border-top: 1px solid #e5e5e5;
         border-bottom: 1px solid #e5e5e5;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+        }
     }
 }
 
@@ -261,5 +267,15 @@
     background-color: #f1f1f1;
     .wrap_testionials {
         padding-top: 60px;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            width: 100%;
+            .column_item_testimonial {
+                margin: 0 8px;
+                width: 100%;
+            }
+        }
     }
 }

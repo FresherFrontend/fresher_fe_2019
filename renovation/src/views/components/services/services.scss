@@ -48,11 +48,18 @@
         }
     }
 }
+
 .services_area {
     width: 100%;
     color: #3f3f3f;
     margin: 65px 0;
     font-family: fonts(pTSansNarrow);
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 72px 15px;
+        width: 100%;
+    }
 }
 
 .grid_services_area {
@@ -70,7 +77,7 @@
             max-width: 100%;
         }
     }
-    .services_title h2{
+    .services_title h2 {
         text-align: center;
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -78,7 +85,6 @@
         font-family: fonts(main);
         font-size: 20px;
         color: #757575;
-        
     }
     .services_text p {
         color: #757575;
