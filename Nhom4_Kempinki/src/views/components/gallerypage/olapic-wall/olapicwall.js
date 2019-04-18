@@ -28,6 +28,11 @@ const olapic = {
                 a_change.innerHTML = the_a[i].text;
             }
         }
+    },
+    olapic_fancybox: ()=>{
+        $('.image-gallery').fancybox({
+            loop:true
+        });
     }
 }
 export default olapic;

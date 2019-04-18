@@ -28,6 +28,7 @@ $(document).ready(() => {
   HomeGallery.homeGalleryCarousel();
   HomeGallery.homeGalleryCarouselInfo();
   SpecialOffers.specialOffersCarousel();
+  olapic.olapic_fancybox();
 });
 
 $(window).on('resize', () => {
