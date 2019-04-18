@@ -3,6 +3,4 @@
 mixin list(id, ...items)
   ul(id=id)
     each item in items
-      li
-        a(href="#")= item
-        
+      li= item

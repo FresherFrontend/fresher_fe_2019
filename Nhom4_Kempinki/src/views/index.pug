@@ -1,7 +1,7 @@
 extends ./layouts/master.pug
 
 block title
-  title My Page - Index
+  title Kempinski
 
 block content
   .page-wrapper
@@ -11,4 +11,19 @@ block content
         //- include components/homepage/experiences/experiences.pug
         //- include components/homepage/gallery/gallery.pug
         //- include components/homepage/specialoffers/specialoffers.pug
-        include components/homepage/explore/explore.pug 
+        //- include components/homepage/explore/explore.pug 
+  //- hieu
+  - var pages = { homePage: '/homepage', testPage: '/test'  }
+
+  //- Desktop page
+  section.page.home__page
+    h1.page__title # Index Homepage
+
+    ul(style="list-style: disc; padding-left: 4rem; margin: 4rem 0")
+      each val, index in pages
+        li
+          a(href=val)= index
+  include ./components/homepage/experiences/experiences.pug
+  include ./components/homepage/gallery/gallery.pug
+  include ./components/homepage/specialoffers/specialoffers.pug
+  include ./components/homepage/explore/explore.pug
