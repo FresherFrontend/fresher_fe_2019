@@ -1,5 +1,5 @@
 section.a-thework {
-    padding: 160px 0 60px;
+    padding: 157px 0 120px;
     .container.box-thework {
         max-width: 1200px;
         margin: 0 auto;
@@ -10,32 +10,31 @@ section.a-thework {
             display: flex;
         }
     }
-}
-.a-section-title {
-    margin-bottom: 20px;
-    font-size: 2.25em;
-    line-height: 1.25em;
-    margin-bottom: 20px;
-    font-weight: 300;
-    span.thework-title {
-        font-family: 'CapitoliumW01-2Regular',sans-serif;
-        line-height: 26px;
-        font-size: 26px;
-        color: #6E6E6E;
+    .a-section-title {
+        font-size: 2.25em;
+        line-height: 1.25em;
+        margin-bottom: 28px;
+        font-weight: 300;
+        span.thework-title {
+            font-family: 'CapitoliumW01-2Regular',sans-serif;
+            line-height: 26px;
+            font-size: 26px;
+            color: #6E6E6E;
+        }
+        span.thinking {
+            font-family: 'CapitoliumW01-2Regular',sans-serif;
+            font-size: 42px;
+            line-height: 52.5px;
+        }
     }
-    span.thinking {
-        font-family: 'CapitoliumW01-2Regular',sans-serif;
-        font-size: 42px;
-        line-height: 52.5px;
+    p.content-thework {
+        width: 50%;
+        line-height: 25.6px;
+        font-weight: 400;
+        color: #393939;
     }
 }
-p.content-thework {
-    width: 50%;
-    line-height: 25.6px;
-    font-weight: 400;
-    font-family: runda,sans-serif;
-    color: #393939;
-}
+
 .row.thework-items{
     margin: 100px 0px 0px;
 }
@@ -47,12 +46,13 @@ p.content-thework {
         flex-wrap: wrap;
         overflow: hidden;
         cursor: pointer;
+        height: 390px;
         img.img-thework{
             width: 100%;
             @include transition(all .3s ease-in-out);   
         }
         .item-box{
-            padding: 25px 20px;
+            padding: 35px 40px 25px;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -64,20 +64,25 @@ p.content-thework {
                 display: flex;
                 flex-wrap: wrap;
                 margin-bottom: 10px;
-                transition: transform 0.35s;
+                @include transition(transform 0.35s);
+                @include transform(translate(0,100%));
+                font-size: 19px;
                 span{
                     width: 100%;
                     color: $text-color-secondary;
                     text-transform: uppercase;
+                    &:first-child {
+                        margin-bottom: 2px;
+                    }
                 }
             }
             p.content-item-box{
                color: $text-color-secondary;
-                font-weight: 300;
+                font-weight: 500;
                 font-size: 12px;
                 letter-spacing: 1px;
                 line-height: 18px;
-                font-family: runda, sans-serif;
+                height: 60px;
                 opacity: 0;
                 transition: opacity 0.2s, transform 0.35s;
             }
@@ -111,55 +116,46 @@ p.content-thework {
     background: rgba(0,0,0,.5);
     top: 0;
     left: 0;
-    color: #fff;
+    color: $text-color-secondary;
 }
 /*media responsive*/
-@media only screen and (min-width: breakpoints(lg)) {
-    .item-box{
-        padding: 35px 40px 25px!important;
-    }
-    .p.content-thework{
-        width: 50%;
-    }
-    .item-box p.content-item-box{
-        height: 60px;
-    }
-}
 
-@media only screen and (max-width: breakpoints(mdminus))
+@media only screen and (max-width: breakpoints(mdminus)) 
 {
-    section.a-thework{
-        padding: 160px 0 120px;
-    }
-    .a-section-title{
-        margin-bottom: 30px;
-    }
     .row.thework-items{
         margin-top: 50px;
     }
-    p.content-thework {
+    section.a-thework p.content-thework {
         width: 100%;
     }
 }
-@media only screen and (max-width: breakpoints(sm))
+@media only screen and (max-width: breakpoints(smminus))
 {
-    section.a-thework{
-        padding: 160px 0px 60px;
-    }
     section.a-thework .container.box-thework span.thework-title{
         font-size: 18px;
         line-height: 18px;
     }
-    .a-section-title span.thinking{
+    section.a-thework .a-section-title span.thinking{
         font-size: 29px;
         line-height: 36px;
     }
-    .a-section-title{
+    section.a-thework .a-section-title{
         margin-bottom: 20px;
     }
-    p.content-thework{
+    section.a-thework p.content-thework{
         line-height: 21px;
         font-size: 13px;
         font-weight: 400;
     }
+    section.a-thework {
+        padding-bottom: 60px;
+    }
+    .col-item .link-item .item-box p.nationalBrand {
+        font-size: 15px;
+        @include transform(translate(0,0));
+    }
+    .link-item .item-box p.content-item-box {
+        display: none;
+    }
+
 }
