@@ -1,4 +1,17 @@
+
+@keyframes myAnimation {
+  from {bottom: 10%;visibility: hidden;}
+  to {bottom: 20%;visibility: visible;}
+}
+
 .fade {
+  .slick-slide.slick-active{
+    .wrap_des{
+
+      animation: myAnimation .5s ease-out forwards;
+      animation-delay: 1s;
+    }
+  }
   .slider_fade {
     .slider_img {
       max-height: 750px;
@@ -15,15 +28,16 @@
     }
     .wrap_des{
       position: absolute;
-      bottom: 20%;
+      bottom: 10%;
       left: 10%;
+      visibility: hidden;
 
       .wrap_slogan_slider{
         background-color: rgba(255, 255, 255, 0.88);
         padding: 10px 11px;
-        width: 160px;
-        
+        width: 160px;  
         position: relative;
+        
         @include min-xs {
           width: 334px;
           padding: 20px 23px
@@ -48,7 +62,7 @@
           }
           @include min-md {
             line-height: 41px;
-            font-size: 37px;
+            font-size: 36px;
           }
         }
       }
@@ -157,5 +171,95 @@
   .slick-dots li:hover button:before{
     background: #fff;
 
+  }
+}
+
+.block_title_{
+  text-align: center;
+  width: 100%;
+  font-weight: $fontweight-light;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  .title_{
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.7px;
+    color: #3f3f3f;
+    padding: 8px 0;
+
+    @include min-md {
+      font-size: 36px;
+    }
+  }
+  .slogan_{
+    color: rgba(2,2,2,0.46);
+    font-size: 16px;
+    letter-spacing: 4px;
+    padding: 8px 0;
+
+    @include min-md {
+      font-size: 18px;
+      letter-spacing: 7px;
+    }
+
+  }
+}
+  
+.sesion_our_service{
+  margin-bottom: 30px;
+  .wrap_service{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    
+  }
+}
+.session_featured_work{
+  .wrap_featured{
+    background-color: #2e2f42;
+
+    .title__feature{
+      color: #fff;
+    }
+    .slogan__feature{
+      color: rgba(255,255,255,0.46);
+    }
+    .wrap_portfolio_item{
+      display: block;
+    }
+    .btn_view_portfolio{
+      margin-top: 60px;
+      text-align: center;
+      span{
+        padding: 15px 25px;
+        font-weight: 400;
+        line-height: 1.3em;
+        color: #393939;
+        background-color: #f6c427;
+        letter-spacing: 0;
+        font-family: fonts(pTSansNarrow);
+        font-size: 17px;
+        text-align: center;
+        z-index: 100;
+
+        &::after{
+          font-family: "Fontawesome";
+          content: "\f03e";
+          padding-left: 10px;
+          font-size: 17px;
+          color: $text-color-black;
+        }
+        &:hover {
+          background-color: #ffd957;
+        }
+      }
+      
+    }
+  }
+}
+.session_testionials{
+  background-color: #f1f1f1;
+  .wrap_testionials{
+    padding-top: 60px;
   }
 }

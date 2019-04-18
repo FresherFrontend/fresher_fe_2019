@@ -70,7 +70,7 @@
   padding: 80px 0;
   background-color: #f1f1f1;
   .container {
-    margin: 10px;
+    padding: 10px;
     @include desktop{
         margin: 0 40px;
     }
@@ -158,4 +158,17 @@
       }
     }
   }
+}
+#back_to_top{
+	position: fixed;
+	bottom: 30px;
+	right: -200px;
+  background: url("http://www.loftfive.ch/fileadmin/templates/images/scroll_to_top.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+	display: block;
+	width: 50px;
+	height: 50px;
+  transition: 1s all;
+  z-index: 999;
 }

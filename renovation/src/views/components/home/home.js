@@ -9,5 +9,6 @@ const Home = {
             // autoplay:true,
           });
     }
+    
 }
 export default Home;

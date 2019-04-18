@@ -1,6 +1,6 @@
 const Testiminials = {
     getAllTestimonials: () => {
-        if ($('.bgr_content_testimonial')) {
+        if ($('.bgr_content_testimonial')&&$('.bgr_content_testimonial').length > 0) {
 
             var objAllTestimonials = [{
                     id: 1,
@@ -66,7 +66,7 @@ const Testiminials = {
                 html += '</div>'
                 html += '</div>'
             });
-            // testimonials_items.innerHTML = html;
+            testimonials_items.innerHTML = html;
         }
     }
 }
