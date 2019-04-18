@@ -119,7 +119,14 @@ section.a-thework {
     color: $text-color-secondary;
 }
 /*media responsive*/
-
+@media only screen and (max-width: breakpoints(xlminus)) {
+    .col-item .link-item {
+        height: auto;
+    }
+    .col-item .link-item img.img-thework {
+        height: 100%;
+    }
+}
 @media only screen and (max-width: breakpoints(mdminus)) 
 {
     .row.thework-items{
