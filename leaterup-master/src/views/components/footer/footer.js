@@ -3,3 +3,9 @@ window.onresize = function() {
       document.getElementsByClassName("linkgrid").style.display="none";
   }
 };
+
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
