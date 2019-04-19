@@ -11,7 +11,11 @@ $icon-caret-down: "\e902";
 $icon-calendar: "\e903";
 $icon-angle-down: "\e904";
 $icon-phone: "\e905";
-
+$icon-search: "\e906";
+$icon-magnifier: "\e906";
+$icon-magnifying-glass: "\e906";
+$icon-inspect: "\e906";
+$icon-find: "\e906";
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:  url('./#{$icomoon-font-path}/#{$icomoon-font-family}/#{$icomoon-font-family}.eot?vq4h8');
@@ -37,7 +41,31 @@ $icon-phone: "\e905";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-magnifier {
+  &:before {
+    content: $icon-magnifier; 
+  }
+}
+.icon-magnifying-glass {
+  &:before {
+    content: $icon-magnifying-glass; 
+  }
+}
+.icon-inspect {
+  &:before {
+    content: $icon-inspect; 
+  }
+}
+.icon-find {
+  &:before {
+    content: $icon-find; 
+  }
+}
 .icon-location {
   &:after {
     content: $icon-location; 

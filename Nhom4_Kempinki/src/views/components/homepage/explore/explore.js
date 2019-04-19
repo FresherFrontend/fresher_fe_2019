@@ -5,7 +5,7 @@ const slide = {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      speed: 1000,
+      speed: 1200,
       asNavFor: '.country_name'
     });
     $('.country_name').slick({
@@ -18,9 +18,15 @@ const slide = {
       focusOnSelect: true,
       responsive: [
         {
-          breakpoint: 1000,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
           }
         }
       ]
@@ -28,69 +34,51 @@ const slide = {
   },
   Single_slide: () =>{
     $('.single_slide').slick({
-      speed: 300
+      speed: 200
     });
   }
   ,
   Show_button: () =>{
-    var button = document.querySelector('.slick-next');
-    var button1 = document.querySelector('.slick-prev');
-    var button3 = document.querySelectorAll('button');
-    var hotel = document.querySelectorAll('.hotels_des');
-    var china = document.getElementById('china');
-    console.log(button3);
-    
-    for(let j=0 ; j<hotel.length ; j++){
-      hotel[j].onmouseover = () => {
-        button.style.opacity = "1";
-        button1.style.opacity = "1";
-        // button3.style.opacity = "1";
+    if($('.slick-next,.slick-prev,.hotels_des,#china').length){
+      var button = document.querySelector('.slick-next');
+      var button1 = document.querySelector('.slick-prev');
+      var hotel = document.querySelectorAll('.hotels_des');
+      var china = document.getElementById('china');
+      for(let j=0 ; j<hotel.length ; j++){
+        hotel[j].onmouseover = () => {
+          button.style.opacity = "1";
+          button1.style.opacity = "1";
+        }
+        hotel[j].onmouseout = () => {
+          button.style.opacity = "0";
+          button1.style.opacity = "0";
+        }
       }
-      hotel[j].onmouseout = () => {
-        button.style.opacity = "0";
-        button1.style.opacity = "0";
+      china.onmouseover = () => {
+        button.style.display = "none";
+        button1.style.display = "none";
+      }
+      china.onmouseout = () => {
+        button.style.display = "block";
+        button1.style.display = "block";
+      }
+      button.onmouseover = () => {
+        button.style.opacity = ".9";
+        button1.style.opacity = ".9";
+      }
+      button1.onmouseover = () =>{
+        button1.style.opacity = ".9";
+        button.style.opacity = ".9";
       }
     }
-    china.onmouseover = () => {
-      button.style.display = "none";
-      button1.style.display = "none";
-    }
-    china.onmouseout = () => {
-      button.style.display = "block";
-      button1.style.display = "block";
-    }
-    button.onmouseover = () => {
-      button.style.opacity = ".9";
-      button1.style.opacity = ".9";
-    }
-    button1.onmouseover = () =>{
-      button1.style.opacity = ".9";
-      button.style.opacity = ".9";
-    }
-  },
-  show_circle: () =>{
-    var span = document.querySelectorAll(".country_name .name span");
-    var name = document.querySelectorAll(".country_name .name");
-    var slick_slide = document.querySelectorAll(".country_name .slick-slide");
-    var next = document.querySelector('.slick-next');
-      
-    for(let i=0 ; i < slick_slide.length ; i++){
-      slick_slide[i].onclick = () =>{
-        span[i-1].classList.remove('circle');
-        span[i+1].classList.remove('circle');
-        span[i+6].classList.remove('circle');
-        span[i-6].classList.remove('circle');
-        name[i].classList.add('selected');
-        name[i-1].classList.remove('selected');
-        name[i+1].classList.remove('selected');
-      }  
-      // next.onclick = () =>{
-      //   name[i].classList.add('selected');
-      //   name[i-1].classList.remove('selected');
-      //   name[i+1].classList.remove('selected');
-      //   name[i+6].classList.remove('selected');
-      //   name[i-6].classList.remove('selected');
-      // }   
+    if($('#china').length){
+      var button = document.querySelector('.slick-next');
+      var button1 = document.querySelector('.slick-prev');
+      button.style.display = 'none';
+      button1.style.display = 'none';
+    } else{
+      button.style.display = 'block';
+      button1.style.display = 'block';
     }
   }
 }

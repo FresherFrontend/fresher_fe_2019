@@ -1,7 +1,7 @@
 //- Master layout
 
 doctype html
-html(lang='en')
+html(lang='jp')
   head
 
     //- Meta
@@ -37,6 +37,9 @@ html(lang='en')
     //- Favicons
     link(rel='shortcut icon', href=require('images/favicons/favicon.ico'))
 
+    //- Fonts
+    //- link(href="https://fonts.googleapis.com/css?family=Quicksand", rel='stylesheet')
+
 
 
     //- Title
@@ -44,14 +47,14 @@ html(lang='en')
       title Your project!
 
   body
-    //- header
+    header
     include ../components/header/header.pug
 
     //- block content
     block content
+
     
     include ../components/footer/footer.pug
-    //- block scripts
     block scripts
 
     script(id="ze-snippet", src="https://static.zdassets.com/ekr/snippet.js?key=a0d065e1-295a-4de9-89f4-106bb253506a" defer)

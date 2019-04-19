@@ -1,5 +1,6 @@
 // breakpoints
 $grid-breakpoints: (
+    xxxs: 320px,
     xxs: 360px,
     xs: 481px,
     sm: 768px,
@@ -31,7 +32,7 @@ $fonts: (
 $font-main: fonts(main);
 $font-helvelticaBold: fonts(helvelticaBold);
 $font-helvelticaRegular: fonts(helvelticaRegular);
-$font-kingscalson: fonts(kingscalson);  
+$font-kingscalson: fonts(kingscalson);
 $font-icomoon: fonts(icomoon);
 $font-fontawesome: fonts(fontawesome);
 $font-arial: fonts(arial);
@@ -47,7 +48,7 @@ $fz-root: 62.5%; // root font-size, DO NOT CHANGE
 $gutter: 2rem;
 $gutter-xs: 1.5rem;
 $gutter-md: 2rem;
-$container: 75.6%;
+$container: 75.9%;
 
 // colors
 $colors: (
@@ -55,9 +56,8 @@ $colors: (
     c-white-blur: #f5f6f7,
     c-blue: #0089ce,
     c-dark-blue: #003b59,
-    // c-dark-blue-navy: #00052e,
-    c-dark-blue-navy: #010F2A,
-    c-dark-blue-navy-1: #021b4d,
+    c-dark-blue-navy: #00052e,
+    c-dark-blue-navy-1: #021b4b,
     c-dark-blue-navy-2: #02215c,
     c-pink: #ff566b,
     c-black: #000000,
@@ -65,6 +65,7 @@ $colors: (
     c-gray: #e5ebee,
     c-gray-1: #ddd,
     c-pink-light: #EBCCD1,
+    c-brown: #b5a191,
     c-red: #A94442,
     bg-color: #010f2a,
     text-color: #010f2a,
@@ -74,11 +75,11 @@ $colors: (
 $text-color: color(text-color);
 $text-color-footer: color(text-color-footer);
 $bg-color: color(bg-color);
+$bg-color-primary: color(c-blue);
+$bg-color-primary-white: color(c-white);
 $bg-color-dark-blue-navy: color(c-dark-blue-navy);
 $bg-color-dark-blue-navy-1: color(c-dark-blue-navy-1);
 $bg-color-dark-blue-navy-2: color(c-dark-blue-navy-2);
-$bg-color-primary: color(c-blue);
-$bg-color-primary-white: color(c-white);
 $bg-color-primary-pink: color(c-pink);
 $bg-color-black: color(c-black);
 $bg-color-white-blur: color(c-white-blur);

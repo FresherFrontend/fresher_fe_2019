@@ -3,7 +3,7 @@ const Mapbox = {
         var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
         mapboxgl.accessToken = 'pk.eyJ1IjoibmFtbGUiLCJhIjoiY2p1YXhoeXJ6MDN3YTQ0cXIyaHFmeDd0cCJ9.IjUYao8ekzV8YKvK4zncnQ';
         var map = new mapboxgl.Map({
-            container: 'map',
+            container: 'destination-map',
             style: 'mapbox://styles/namle/cjub1h6z21evg1frnwajplh69',
             center: [30.416,29.257],
             zoom: 2.1   
@@ -70,7 +70,7 @@ const Mapbox = {
               'icon-image': "circle-15"
             },
             "paint": {
-             'icon-color': '#2a2a2a'
+              'icon-color': '#2a2a2a'
             }
           })
           map.on('click', 'symbols', function (e) {

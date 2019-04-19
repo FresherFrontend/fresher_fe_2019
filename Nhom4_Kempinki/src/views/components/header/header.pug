@@ -2,16 +2,16 @@ header
     .top-header
         .container
             .row.mx-0
-                .top-logo.col-md-3.middle-md
+                .top-logo.col-xs-12.col-md-3.middle-xs.center-xs
                     .logo
-                        a(href="#", title="logo")
+                        a(href="/", title="logo")
                             img(src= ("../../../assets/images/logo.png"), alt="Kempinski Logo")
-                .top-slogan.col-md-6.middle-md.center-xs
+                .top-slogan.col-xs-12.col-md-6.middle-xs.center-xs
                     .text-big
                         span KEMPINSKI HOTELS
                     .text-small
                         span A Constellation of Havens 
-                .top-panel.col-md-3
+                .top-panel.col-xs-12.col-md-3
                     .top-panel-wrap
                         ul.top-panel-wrap-menu.end-xs
                             li.multy-language
@@ -25,43 +25,54 @@ header
                                 a.login-link(href="#" title="Login")
                                     span.icon-user
                                     span.text-login Login
+            .account-widget-desktop
+                .link
+                    a(href="#", title="My Account") My account
+                    a(href="#", title="My Account") Need assistance ?
+                .text
+                    span.big Need something special for your upcoming stay?
+                    span.small Access your upcoming trip to modify or cancel your booking.
+                .login-options.login-wrapper
+                    a.btn-default-outline(href="#", title="CREATE A NEW ACCOUNT") CREATE A NEW ACCOUNT
+                    span Or
+                    a.btn-default-outline(href="#", title="LOGIN TO YOUR ACCOUNT") LOGIN TO YOUR ACCOUNT
     .banner-header
-        .banner-wrapper
-            .banner-wrapper-content
-                .banner-images-block-left
-                    img(src="../../../assets/images/header/banner-header.jpg", alt="Banner Header")
-                .banner-images-block-right
-                    .banner-images-block
-                        .content-block
-                            .images-cover
-                                img(src="../../../assets/images/header/destinations-map.jpg", alt="Desnitaion")
-                            .content.overlay
-                                span.text OUR DESTINATIONS 
-                    .banner-images-block
-                        .content-block
-                            .images-cover
-                                img(src="../../../assets/images/header/experience.jpg", alt="experience")
-                            .content.overlay
-                                span.text Experience
-                    .search-form
-                        span HOW MAY WE ASSIST YOU ?
-                    .banner-images-block
-                        .content-block
-                            .images-cover
-                                img(src="../../../assets/images/header/special-offers.jpg", alt="Offers")
-                            .content.overlay
-                                span.text Offers
-                    .banner-images-block
-                        .content-block
-                            .images-cover
-                                img(src="../../../assets/images/header/our-hotel.png", alt="Our Hotel")
-                            .content.overlay
-                                span.text Our Hotel               
+        block banner-wrapper-inside-page
+            .banner-wrapper
+                .banner-wrapper-content
+                    .banner-images-block-left
+                        img(src="../../../assets/images/header/banner-header.jpg", alt="Banner Header")
+                    .banner-images-block-right
+                        .banner-images-block
+                            .content-block
+                                .images-cover
+                                    img(src="../../../assets/images/header/destinations-map.jpg", alt="Desnitaion")
+                                .content.overlay
+                                    span.text(data-target="destination-map") OUR DESTINATIONS 
+                        .banner-images-block
+                            .content-block
+                                .images-cover
+                                    img(src="../../../assets/images/header/experience.jpg", alt="experience")
+                                .content.overlay
+                                    span.text(data-target="experience") Experience
+                        .search-form
+                            span HOW MAY WE ASSIST YOU ?
+                        .banner-images-block
+                            .content-block
+                                .images-cover
+                                    img(src="../../../assets/images/header/special-offers.jpg", alt="Offers")
+                                .content.overlay
+                                    span.text(data-target="offers") Offers
+                        .banner-images-block
+                            .content-block
+                                .images-cover
+                                    img(src="../../../assets/images/header/our-hotel.png", alt="Our Hotel")
+                                .content.overlay
+                                    span.text(data-target="our-hotel") Our Hotel               
         .menu-left
             .menu-left-content.delay
                 span.menu-title Overview
-                //- - var pages = {desnitaions: '/destinations', experiences: '/experiences-by-kempinski', special: '/special-offers', loyalty: '/loyalty-programme', meetingsEvent: '/meetings-and-events', blog: '/blog', about: '/about-us', guestGallery: '/guest-gallery', }
-                - var menus = [{text: 'desnitaions', link: '/desnitaions'}, {text: 'special offers', link: '/special-offers', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}] }, {text: 'guestGallery', link: '/guest-gallery'  }, {text: 'about', link: '/about-us'}];
+                - var menus = [{text: 'special offers', link: '/special-offers', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}] }, {text: '#Kempinski Gallery', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}], link: '/guest-gallery'  }, {text: 'about us', link: '/about-us'}];
                 ul.side-menu
                     each list in menus
                         li.side-list-lv-1
@@ -71,20 +82,73 @@ header
                                     each listSub in list.submenu
                                         li.side-list-lv2
                                             a(href=listSub.link)= listSub.text
+                ul.navigation-only-phone
+                    li.multy-language
+                        .dropdown.open
+                            span.dropdown-toggle.icon-angle-down
+                                span.content English
+                            .dropdown-menu-block.center-xs
+                                include ../../mixins/list.pug
+                                +list('dropdown-menu', 'العربية', 'español', 'français', 'русский', '中文', 'Deutsch')
+                    li.login-wrapper
+                        a(title="Login", href="#") resgiter
+                    li.resgiter-wrapper
+                        a(title="Resgiter", href="#") Resgiter
+                    
     .sticky-bar-mobile
         span.navigation-trigger
             span
             span
             span
-    .booking-block
-        .container-fluid
-            form#aa(action="#", method="get")
+    block booking-block
+        .booking-block
+            .container
+                .title-block-booking 
+                    .text Search
+                    span.icon-close
+                        span.line
+                        span.line
                 .form-inline-search
                     .block-location
                         .form-group.form-search-location
-                            select#a(name='cad')
+                            select.form-search-hotel(name="form-search-hotel")
                         .error-msg
                             span WHERE WOULD YOU LIKE TO GO?
                     .block-picker
+                        .form-group
+                            input(type="text", name="check-in", id="check-in", readonly)
+                            span.icon-calendar
+                        .form-group
+                            input(type="text", name="check-out", id="check-out", readonly)
+                            span.icon-calendar
+                        .error-msg
+                            span PLEASE SELECT YOUR CHECK-IN AND CHECK-OUT DATES
                     .block-number
-                    button(type="submit")
+                        mixin select(...values)
+                                each value in values
+                                    option(value=value)= value
+                        .form-group.guest-select
+                            select.numberOfRoom(nam="NumberOfRoom")
+                            button.search.submit(type="text") Search
+                        .collapse-advanced
+                            .row-select
+                                .num-adult
+                                    select.numberOfAdult(nam="NumberOAdult")
+                                .num-child
+                                    select.numberOfChild(nam="NumberOfChild")
+                            .row-select-children
+                                span.title Age of Children
+                                .block-list-children
+                .block-option
+                    .row
+                        .type-code-block
+                            select#CodeType(name="CodeType")
+                        .block.code-block
+                            input(type="text", placeholder="Code", name="CodeValue", id="CodeValue")
+                        .block.promo-block
+                            input(type="text", placeholder="Promotion Code", name="PromotionCode", id="PromotionCode")
+                        a(href="#" data-target="#partner-destination-modal" data-toggle="modal" class="partner-info-modal-trigger") Partner Destinations
+            .show-sm-booking-block
+                .container
+                    span Where would you like to go?
+                    span.icon-search

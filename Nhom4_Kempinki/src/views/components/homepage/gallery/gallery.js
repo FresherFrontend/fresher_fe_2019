@@ -5,6 +5,12 @@ const HomeGallery = {
             arrows: true,
             responsive: [
                 {
+                  breakpoint: 1300,
+                  settings: {
+                    slidesToShow: 4
+                  }
+                },
+                {
                   breakpoint: 1025,
                   settings: {
                     slidesToShow: 3
