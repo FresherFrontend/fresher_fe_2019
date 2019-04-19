@@ -50,6 +50,8 @@ $(() => {
   slide.Slider_owl();
   slide.Show_button();
   olapic.olapic_fancybox();
+  olapic.olapic_fillter();
+  olapic.filter_event();
 });
 
 $(document).ready(() => {
