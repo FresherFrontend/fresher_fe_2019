@@ -215,3 +215,10 @@
 	-o-transition: $value;
 	-ms-transition: $value;
 }
+@mixin transform($value) {
+	transform: $value;
+	-moz-transform: $value;
+	-webkit-transform: $value;
+	-o-transform: $value;
+	-ms-transform: $value;
+}

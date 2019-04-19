@@ -51,7 +51,7 @@ section.relative{
             color: #fff;
         
         }
-        &::after .item-text-center {
+        &::after, &.item-text-center {
             position: absolute;
             width: 100%;
             height: 100%;
