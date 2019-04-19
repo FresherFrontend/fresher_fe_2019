@@ -159,6 +159,17 @@
     }
   }
 }
+.underFooter{
+  background-color: #eaeaea;
+  padding: 40px 0px 10px 0px;
+  width: 100%;
+  p{
+    margin-bottom: 26px;
+    color: rgba(0,0,0,0.38);
+    text-align: center;
+    padding: 10px;
+  }
+}
 #back_to_top{
 	position: fixed;
 	bottom: 30px;
