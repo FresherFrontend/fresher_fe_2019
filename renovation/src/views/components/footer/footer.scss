@@ -72,7 +72,7 @@
   .container {
     padding: 10px;
     @include desktop{
-        margin: 0 40px;
+        padding: 0 40px;
     }
     .column_footer {
       .footer_title {
