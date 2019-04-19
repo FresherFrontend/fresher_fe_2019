@@ -55,7 +55,7 @@ const Header = {
     ];
     $('.form-search-hotel').select2({
       data: data,
-    });
+    }).data('select2').$dropdown.addClass('my-container-hotel');
   },
   selectRoom: () => {
     let data = [
@@ -80,7 +80,7 @@ const Header = {
       data: data,
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-    });
+    }).data('select2').$dropdown.addClass('my-container');
   },
   selectAdult: () => {
     let data = [
@@ -105,7 +105,7 @@ const Header = {
       data: data,
       minimumResultsForSearch: -1,
       dropdownAutoWidth: true,
-    });
+    }).data('select2').$dropdown.addClass('my-container');
   },
   selectAge: () => {
     let data = [
@@ -166,8 +166,7 @@ const Header = {
       data: data,
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-      // dropdownParent: $('.block-list-children'), 
-    });
+    }).data('select2').$dropdown.addClass('my-container');
   },
   selectChildren: () => {
     let data = [
@@ -196,7 +195,7 @@ const Header = {
       data: data,
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-    });
+    }).data('select2').$dropdown.addClass('my-container');
 
     $('.numberOfChild').on("change", function (e) {
       let select_val = $(e.currentTarget).val();
@@ -269,7 +268,7 @@ const Header = {
       data: data,
       minimumResultsForSearch: Infinity,
       dropdownAutoWidth: true,
-    });
+    }).data('select2').$dropdown.addClass('my-container');
   },
 
   selectDate: () => {
@@ -344,7 +343,6 @@ const Header = {
     document.querySelector('.sticky-bar-mobile').addEventListener('click', function(){
         this.classList.toggle('is-showing');
         document.querySelector('.menu-left').classList.toggle('is-active');
-        alert('ok')
     })
   },
   scrollTopHeader: () => {
@@ -375,8 +373,8 @@ const Header = {
     scrollTo.forEach(function (elem) {
       elem.addEventListener('click', function(){
         var id = this.dataset.target;
-        var y = document.getElementById(id).offsetTop;
-        $("html, body").animate({ scrollTop: y }, 500);
+        var y = document.getElementById(id).offsetTop - 100;
+        $("html, body").animate({ scrollTop: y }, 100);
       })
     });
   },
@@ -411,6 +409,9 @@ const Header = {
       document.querySelector('.booking-block').classList.remove('active');
       document.querySelector('.sticky-bar-mobile').style.display = "";
       document.querySelector('.booking-block').style.overflow = 'hidden';
+    })
+    document.querySelector('.top-header .loginLink').addEventListener('click', function(){
+        document.querySelector('.account-widget-desktop').classList.toggle('show-up');
     })
   },
   check: () => {

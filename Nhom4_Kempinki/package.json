@@ -64,6 +64,7 @@
     "jquery-touchswipe": "^1.6.19",
     "lodash": "^4.17.11",
     "magnific-popup": "^1.1.0",
+    "mapbox-gl": "^0.53.1",
     "masonry-layout": "^4.2.2",
     "micromodal": "^0.3.2",
     "moment": "^2.24.0",

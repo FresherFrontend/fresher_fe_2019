@@ -47,15 +47,14 @@ html(lang='jp')
       title Your project!
 
   body
-    //- header
-    //- include ../components/header/header.pug
+    header
+    include ../components/header/header.pug
 
     //- block content
     block content
 
     
-    //- include ../components/footer/footer.pug
-    //- block scripts
+    include ../components/footer/footer.pug
     block scripts
 
     script(id="ze-snippet", src="https://static.zdassets.com/ekr/snippet.js?key=a0d065e1-295a-4de9-89f4-106bb253506a" defer)

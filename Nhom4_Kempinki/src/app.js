@@ -36,7 +36,9 @@ $(() => {
   Header.selectAge();
   Header.selectTypeCode();
   Header.scrollTopHeader();
-  // Header.showBooking();
+  Header.showBooking();
+  Header.showMenu();
+
 });
 
 $(document).ready(() => {
@@ -63,8 +65,10 @@ $(document).ready(() => {
   Header.selectAge();
   Header.scrollTopHeader();
   Header.selectTypeCode();
-  // Header.showBooking();
+  Header.showBooking();
   Header.check();
+  Header.showMenu();
+
 });
 
 $(window).on('resize', () => {
@@ -75,7 +79,7 @@ $(window).on('resize', () => {
 });
 
 window.onload = () => {
-
+  Header.selectTypeCode();
   Header.selectLanguage();
   Header.selectDate();
   Mapbox.view();

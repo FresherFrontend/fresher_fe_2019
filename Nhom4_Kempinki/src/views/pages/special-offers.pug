@@ -10,9 +10,10 @@ block basicSeo
   meta(name='keywords', content='Special, page')
   meta(name='author' content='')
 
+
+block banner-wrapper-inside-page
+  .banner-wrapper-inside-page
+    .banner-wrapper-content
+      img(src="../../assets/images/header/banner-header-special-offers.jpg", alt="Banner Header")
 block content
-    block banner-wrapper-inside-page
-      .banner-wrapper-inside-page
-        .banner-wrapper-content
-          img(src="../../assets/images/header/banner-header-special-offers.jpg", alt="Banner Header")
-    include ../components/specialoffers/specialoffers/specialoffers.pug
+  include ../components/specialoffers/specialoffers/specialoffers.pug
