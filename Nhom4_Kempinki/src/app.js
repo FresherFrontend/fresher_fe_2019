@@ -46,19 +46,18 @@ $(() => {
   SpecialOffers2.activeLiAndFilter();
   SpecialOffers2.loadMore();
   SpecialOffers2.stickyMenu();
-
+  slide.Single_slide();
+  slide.Slider_owl();
+  slide.Show_button();
+  olapic.olapic_fancybox();
 });
 
 $(document).ready(() => {
   Global.lazyLoad();
-  slide.Single_slide();
-  slide.Slider_owl();
-  slide.Show_button();
   Experiences.experiencesCarousel();
   HomeGallery.homeGalleryCarousel();
   HomeGallery.homeGalleryCarouselInfo();
   SpecialOffers.specialOffersCarousel();
-  olapic.olapic_fancybox();
   SpecialOffers2.showRegions();
   SpecialOffers2.activeLiAndFilter();
   SpecialOffers2.stickyMenu();
