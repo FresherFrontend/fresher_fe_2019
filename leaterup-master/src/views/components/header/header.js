@@ -53,11 +53,29 @@ const Header = {
     HamburgerSlideDown:()=>{
         $(".hamburger").click(function(){
             $(".listNav").slideToggle(300);
-          });
-        $(".hamburger").click(function(){
-            $("header").css({"position":"static"});
-        });
+            // $("header").css({"position":"static"});
 
+          });
+        //   ---------------------------------------------------------------------
+
+          $(".icon-arrow-down").on("click", function() {
+            // $(this).attr("data-check","1")
+            // if ($(this).data("check")==1) {
+            //     $(this).parent('li').find('#subMobileNav').find('li').slideToggle(300)
+            // }
+            $("#subMobileNav li").slideUp(300)
+            $(this).parent('li').find('#subMobileNav').find('li').slideDown(300)
+            $(this).parent('li').mousemove(function(){
+                event.preventDefault();
+            })
+          }) 
+
+    },
+
+    SVGdropdownMobileMenu:()=>{
+        $(".icon-arrow-down").click(function(){
+            $("#subMobileNav").css({"display":"block"});
+        });
     }
 
 };

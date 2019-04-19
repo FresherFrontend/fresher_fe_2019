@@ -11,7 +11,7 @@ $(() => {
 
 $(document).ready(() => {
   Global.lazyLoad();
-  //header---
+  //header-----------------------------------HEAD------------------------------
   Header.HomepageHoverFullImageOnMenuItem();
 
   // Header.HomepageHoverFullSubMenu('#JACKETINDX', '#JACKETSUB');
@@ -19,11 +19,26 @@ $(document).ready(() => {
 
   Header.HeaderHoverMenu('#CHAPINDX', '.subNav');
   Header.HeaderHoverMenu('#JACKETINDX', '.subNav');
+  Header.HeaderHoverMenu('#WOMENINDX', '.subNav');
+  Header.HeaderHoverMenu('#HELMETSINDX', '.subNav');
+  Header.HeaderHoverMenu('#BOOTINDX', '.subNav');
+  Header.HeaderHoverMenu('#ACCESSORIESINDX', '.subNav');
+  Header.HeaderHoverMenu('#PARTSINDX', '.subNav');
+  Header.HeaderHoverMenu('#CLOSEOUTSINDX', '.subNav');
+  Header.HeaderHoverMenu('#MENINDX', '.subNav');
+  
 
   Header.DisapearBottomNav('#JACKETINDX','#JACKETSUB','.botNav');
   Header.DisapearBottomNav('#CHAPINDX','#CHAPSUB','.botNav');
+  Header.DisapearBottomNav('#MENINDX','#MENSUB','.botNav');
+  
 
   Header.HamburgerSlideDown();
+  Header.SVGdropdownMobileMenu();
+
+  // CHAPPS------------------------------------------------------------------------
+  Chaps.SliderChap();
+  Chaps.SlideInfoProduct();
 });
 
 $(window).on('resize', () => {

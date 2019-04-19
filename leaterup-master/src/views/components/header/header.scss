@@ -1,9 +1,14 @@
 header{
     position: fixed; 
     top: 0;
+    z-index: 2;
     width: 100%;
     background-color: #ffffff;
     .mobileNav{
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        z-index: 2;
         display: none;
         padding-top: 15px;   
         width: 100%;
@@ -23,98 +28,7 @@ header{
                 width: 100%;
                 
             }
-            .listNav{
-                
-                display: none;
-                text-align: center;
-                top:52px;
-                left: 0;
-                position: absolute;
-                width:100%;
-                .searchform{
-                    form{
-                        background-color: #D9DAE1;
-                        padding: 15px 0px;
-                        border-bottom: #000 1px solid;
-                        svg{
-                            width: 14px;
-                            height: 14px;
-                        }
-                        input{
-                            background-color: #D9DAE1;
-                            text-align: center;
-                            border: none;
-                            width: 90%;
-                        }
-                    }
-                }
-                li{
-                    background-color: #ffffff;
-                    &:first-child{
-                        background-color: #D9DAE1;
-                    }
-                    &:last-child{
-                        background-color: #D9DAE1;
-                        display: flex;
-                        a{
-                            &:last-child{
-                                border-right: none;
-                            }
-                            font-family: Overpass;
-                            text-align: center;
-                            width: 50%;
-                            padding: 15px 0px;
-                            color: #000;
-                            font-size: 10px;
-                            border-right: 1px solid #000;
-                            border-bottom: 1px solid #000;
-                        }
-                    }
-                    width:100%;
-                    .colectionlink{
-                        border-bottom: 1px solid #c0c0c0;
-                        display: block;
-                        position: relative;
-                        width: 100%;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        font-family: Overpass;
-                        padding: 15px 0px;
-                        color: #000;
-                        svg{
-                            right: 20px;
-                            position: absolute;
-                            width: 20px;
-                            height: 20px;
-                        }
-                    }
-                }
-                .greyitem{
-                    border-bottom: #000 solid 2px;
-                    background-color: #D9DAE1;
 
-                    p{
-                        padding: 15px 0px;
-                        display: flex;
-                        justify-content: center;
-                        text-transform: uppercase;
-                        font-size: 14px;
-                        font-family: Overpass;
-                        border-bottom: 1px solid #c0c0c0;
-                        a{
-                            
-                            font-family: Overpass;
-                            padding: 0px 3px;
-                            font-size: 14px;
-                            color: #5f78b7;
-                        }
-                        span{
-                            padding: 0px 3px;
-                        }
-                        
-                    }
-                }
-            }
         }
         .mobileImage{
             img{
@@ -154,6 +68,124 @@ header{
         }
 
     }
+    .mainMobileNav{
+        
+        .listNav{
+            overflow-x: scroll;
+            display: none;
+            text-align: center;
+            top:52px;
+            left: 0;
+            position: absolute;
+            z-index: 1;
+            width:100%;
+            .searchform{
+                form{
+                    background-color: #D9DAE1;
+                    padding: 15px 0px;
+                    border-bottom: #000 1px solid;
+                    svg{
+                        width: 14px;
+                        height: 14px;
+                    }
+                    input{
+                        background-color: #D9DAE1;
+                        text-align: center;
+                        border: none;
+                        width: 90%;
+                        font-size: 14px;
+                    }
+                }
+            }
+            li{
+                position: relative;
+                .icon-arrow-down{
+                
+                    position: absolute;
+                    z-index: 10;
+                    top:15px;
+                    right: 20px;
+                    width: 20px;
+                    height: 20px;
+                }
+                #subMobileNav{
+                    
+                    li{ 
+                    
+                        display: none;
+                        background-color: #dfdfdf;
+                        border-bottom: 1px solid #c0c0c0;
+                        .colectionlink{
+                            font-size: 11px;
+                            &:last-child{
+                                border-bottom: none;
+                                width: 100%;
+                                
+                            }
+                        }
+                    }
+                }
+                background-color: #ffffff;
+                &:first-child{
+                    background-color: #D9DAE1;
+                }
+                &:last-child{
+                    background-color: #D9DAE1;
+                    display: flex;
+                    a{
+                        &:last-child{
+                            border-right: none;
+                        }
+                        font-family: Overpass;
+                        text-align: center;
+                        width: 50%;
+                        padding: 15px 0px;
+                        color: #000;
+                        font-size: 10px;
+                        border-right: 1px solid #000;
+                        border-bottom: 1px solid #000;
+                    }
+                }
+                width:100%;
+                .colectionlink{
+                    border-bottom: 1px solid #c0c0c0;
+                    display: block;
+                    width: 100%;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-family: Overpass;
+                    padding: 15px 0px;
+                    color: #000;
+                }
+            }
+            .greyitem{
+                border-bottom: #000 solid 2px;
+                background-color: #D9DAE1;
+
+                p{
+                    padding: 15px 0px;
+                    display: flex;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-family: Overpass;
+                    border-bottom: 1px solid #c0c0c0;
+                    a{
+                        
+                        font-family: Overpass;
+                        padding: 0px 3px;
+                        font-size: 14px;
+                        color: #5f78b7;
+                    }
+                    span{
+                        padding: 0px 3px;
+                    }
+                    
+                }
+            }
+        }
+    }
+
 }
 .topbar{
     display: flex;
@@ -336,8 +368,14 @@ header{
                                         margin-right: 6px;
                                         width: 23.273%;
                                         height: 315px;
-                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/chaps-sub_large.jpg?v=1552590217');
+                                        
                                         background-size: 100% 100%;
+                                    }
+                                    .fourpicChap{
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/chaps-sub_large.jpg?v=1552590217');
+                                    }
+                                    .fourpicHelmet{
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/LeatherUp_Nav_Helmets_SnowMaster_7f24fe24-5968-4f49-8818-29157f93ccb7_large.jpg?v=1539338813');
                                     }
                                     .lgpic{
                                         margin-left: 40px;
@@ -345,8 +383,20 @@ header{
                                         margin-right: 10px;
                                         width: 28.095%;
                                         height: 315px;
-                                        background-image: url('https://cdn.shopify.com/s/files/1/2694/4876/files/Mens-Leather-Motorcyckle-Jackkets_large.jpg?v=1551771842');
+                                        
                                         background-size: 100% 100%;
+                                    }
+                                    .lgpicJacket{
+                                        background-image: url('https://cdn.shopify.com/s/files/1/2694/4876/files/Mens-Leather-Motorcyckle-Jackkets_large.jpg?v=1551771842');
+                                    }
+                                    .lgpicWoMen{
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/LeatherUp_Nav_M_NewArrival_13a515a4-5f27-4fea-8690-e94697946c09_large.jpg?v=1528934054');
+                                    }   
+                                    .lgpicMen{
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/LeatherUp_Nav_M_NewArrival_13a515a4-5f27-4fea-8690-e94697946c09_large.jpg?v=1528934054');
+                                    }
+                                    .lgpicCLOSEOUTS{
+                                        background-image: url('//cdn.shopify.com/s/files/1/2694/4876/files/LeatherUp_Nav_AllCloseout_large.jpg?v=1528242816');
                                     }
                                     .smpics{
                                         display: flex;
