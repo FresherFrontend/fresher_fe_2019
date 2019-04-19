@@ -71,15 +71,6 @@ const slide = {
         button.style.opacity = ".9";
       }
     }
-    if($('#china').length){
-      var button = document.querySelector('.slick-next');
-      var button1 = document.querySelector('.slick-prev');
-      button.style.display = 'none';
-      button1.style.display = 'none';
-    } else{
-      button.style.display = 'block';
-      button1.style.display = 'block';
-    }
   }
 }
 
