@@ -1,0 +1,119 @@
+.banner3(style='background-image:url("../../../assets/images/final.jpg"),-webkit-gradient(linear,right top,left top,from(transparent),to(rgba(0,0,0,.75)));')
+    .container-fluid
+                .banner-title3
+                        h2 JOIN DISCOVERY
+                img(src="../../../assets/images/arrow.png")
+section
+    .container-fluid
+        .row
+            .col-md-4
+                .join-dis
+                    p Join the DISCOVERY loyalty programme and enjoy rewards at more than 550+ hotels, resorts, and palaces worldwide
+                    br
+                    ul
+                        li 
+                            p Sign up for free and start receiving benefits like complimentary internet access as soon as your first stay
+                        li
+                            p  Stay more to earn additional benefits and 
+                            a.link(href="") Local Experience awards
+                    p An exciting journey awaits. Discover it today.
+            .col-md-8
+                //dmnm
+                .tabs(data-tabs='')
+                    .tab
+                        input#tab-1(type='radio', name='tabgroup', checked='')
+                        label(for='tab-1') YOUR PROFILE
+                        .tab__content
+                            form
+                                .group
+                                    .row
+                                        .col-md-5
+                                            label(for="language") LANGUAGE PREFERENCE
+                                            select
+                                                option(value='en') English
+                                                option(value='ger') German
+                                                option(value='spa') Spainsh
+                                                option(value='jap') Japanese
+                                                option(value='fre') French
+                                                option(value='por') Portuguese
+                                                option(value='chi') Chinese
+                                                option(value='vi') Vietnamese
+
+                                .big-group
+                                    .row
+                                        .col-md-2
+                                            label(for="title") TITLE
+                                            select
+                                                option(value='title') TITLE.
+                                                option(value='mr') Mr.
+                                                option(value='mrs') Mrs.
+                                                option(value='ms') Ms.
+                                                option(value='dr') Dr.
+                                        .col-md-5
+                                            label(for="") FIRST NAME
+                                            input(type="text")
+                                        .col-md-5
+                                            label(for="") LAST NAME
+                                            input(type="text") 
+                                .group
+                                    .row
+                                        .col-md-5
+                                            label(for="email") E-MAIl
+                                            input
+                            .toggle-line
+                                button
+                                    img(src="../../../assets/images/add.png", alt="")
+                                    p ADD DATE OF BIRTH, PHONE AND ADDRESS
+                                    small Information will help our hotels and brands provide you with better service.
+                            button.next NEXT STEP
+
+                    .tab
+                        input#tab-2(type='radio', name='tabgroup')
+                        label(for='tab-2') USERNAME & PASSWORD
+                        .tab__content
+                            p SELECT A USERNAME AND PASSWORD:
+                            .group
+                                .row
+                                    .col-md-5
+                                        label(for="email") USERNAME
+                                        input
+                            .big-group
+                                .row
+                                    .col-md-5
+                                        label(for="email") PASSWORD
+                                        input
+                                    .col-md-5
+                                        label(for="email") CONFIRM PASSWORD
+                                        input
+                            .group
+                                .row
+                                    .col-md-5
+                                        button.active PREVIOUS STEP
+                                    .col-md-5
+                                        button.active NEXT STEP
+
+                    .tab
+                        input#tab-3(type='radio', name='tabgroup')
+                        label(for='tab-3') COMMUNICATIONS
+                        .tab__content
+                            .check-group
+                                .row
+                                    .col-sm-1
+                                        input(type="checkbox")
+                                    .col-sm-11
+                                        span I would like to receive emails about DISCOVERY promotions and special offers. I can unsubscribe at any time from future emails and manage my email subscriptions.
+                            .check-group
+                                .row
+                                    .col-sm-1
+                                        input(type="checkbox")
+                                    .col-sm-11
+                                        span By enroling as a DISCOVERY Member, I agree to the <a class="link">DISCOVERY Programme Terms & Conditions.</a> will receive a registration confirmation email with your DISCOVERY membership number.
+                            .group
+                                .row
+                                    .col-md-5
+                                        button.active PREVIOUS STEP
+                                    .col-md-5
+                                        button.register BECOME A MEMBER
+                                        
+                            p.last-p For more information about how we process and protect your personal data, please see our <a class="link">Privacy Policy.</a>
+            

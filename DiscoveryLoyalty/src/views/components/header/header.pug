@@ -1,0 +1,65 @@
+
+.head
+    #navbar 
+        .container-box.box
+            .row
+                .col-lg-3.col-md-3.col-sm-4.col-xs-5
+                    .logo-icon
+                        a(href="http://localhost:8080/homepage")
+                            img(src="../../../assets/images/header/site-logo.svg" alt="logo")
+                .col-lg-9.col-md-9.col-sm-8.col-xs-7
+                    span.open-sidenav(style='') ☰
+                    #mySidenav.sidenav
+                        a.closebtn(href='javascript:void(0)' style="color: #fff; font-weight: 800;") ×
+                            .sign-in-mb-sidenav
+                                .sign-in-items
+                                    a.ii(href="#") SIGN-IN
+                                    a.ii(href="#") JOIN DISCOVERY
+                                    a.ii(href="#") MY RESERVATIONS
+
+
+                            .nav-items
+                                a.nav-item(href="http://localhost:8080/specialoffers") SPECIAL OFFERS
+                                a.nav-item(href="#") DESTINATIONS
+                                a.nav-item(href="#") HOTEL BRANDS
+                                a.nav-item(href="http://localhost:8080/membership-benefit") MEMBERSHIP BENEFITS
+                                a.nav-item(href="#") FIND LOCAL EXPERIENCES
+
+                            .language
+                                .dropdown
+                                    button.dropbtn ENGLISH
+                                        i.material-icons(style='font-size:12px;') arrow_drop_down
+                                    #myDropdown.dropdown-content
+                                        a(href='#EN') ENGLISH
+                                        a(href='#ZH') 中文
+                                        a(href='#DE') Deutsch
+
+                            .footer-nav-sidenav
+                                a(href="#") SITE MAP
+                                a(href="#") ABOUT GHA
+                                a(href="#") PRESS
+                                a(href="#") FREQUENTLY ASKED QUESTIONS
+                            .clear    
+            
+        .sign-in-mb
+            .sign-in-items
+                a.ii(href="#") SIGN-IN
+                a.ii(href="#") JOIN 
+                    span.u-isHidden-xs DISCOVERY
+                a.ii(href="#" style="text-align: right;") MY RESERVATIONS  
+        .sticky-nav
+            .container-box
+                .row
+                    .col-lg-9.col-md-12.col-xs-12
+                        .search-group
+                            button.search-button(onclick="openSearchBar()") find hotels
+                            #search-bar
+                                .search-container
+                                    input.search-input(placeholder="Find Hotels by Location, Hotel Name or Brand")
+                                    a.searchall(href="#searchall") ALL SEARCHES
+                    .col-lg-3.col-md-12.col-xs-12.sign-in-pc
+                         .sign-in
+                            .sign-in-items
+                                a.ii(href="#") SIGN-IN
+                                a.ii(href="#") JOIN
+                                a.ii(href="#") MY RESERVATIONS

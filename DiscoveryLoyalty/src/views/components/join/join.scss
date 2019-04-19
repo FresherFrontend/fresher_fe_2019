@@ -1,0 +1,212 @@
+.join-dis{
+    padding: 30px 0px 20px 0px;
+}
+.join-dis ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.join-dis p{
+    color: #373a3c;
+    font-family: proxima-nova;
+    font-size: 13px;
+    line-height: 18.2px;
+    text-align: left;
+}
+.mega-form{
+    margin-left: 30px;
+}
+.form-nav{
+    padding-bottom: 30px;
+}
+.tablinks{
+    font-size: 18px;
+    color: #b5b5b5;
+    margin-right: 30px;
+    
+}
+.tablinks:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+  font-family: proxima-nova;
+  padding-top: 50px;
+  line-height: 1.4;
+  font-size: 1.4em;
+}
+
+.tabs {
+  clear: both;
+  position: relative;
+  max-width: 650px;
+  margin: 0 auto;
+  /* you can either manually set a min-height here or do it via JS ---> */
+}
+
+.tab {
+  float: left;
+  margin-bottom: 70px;
+}
+
+.tab label {
+    font-size: 18px;
+    font-weight: 400;
+  margin-right: 30px;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+
+.tab [type=radio] {
+  display: none;
+}
+
+.tab__content {
+  position: relative;
+  top: 60px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .2s cubic-bezier(.42, 0, .34, 1.01);
+  opacity: 0;
+}
+
+[type=radio]:checked~label {
+  border-bottom: 2px solid #1d1d1d;
+  color: #1d1d1d;
+  z-index: 2;
+}
+
+[type=radio]:checked~label~.tab__content {
+  z-index: 1;
+  opacity: 1;
+}
+.tab__content label{
+    color: black;
+    font-size: 12px;
+}
+.group{
+    margin-bottom: 20px;
+}
+.group select{
+    width: 100%;
+    height: 38px;
+    background-color: #eaeaea;
+    border: none;
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+    
+}
+.group input {
+  width: 100%;
+  height: 38px;
+  background-color: #eaeaea;
+  border: none;
+  margin: 10px 0 0 0;
+  padding-left: 10px;
+  ;
+
+}
+.big-group{
+    margin-bottom: 20px;
+}
+.big-group input{
+    width: 100%;
+    height: 38px;
+    background-color: #eaeaea;
+    border: none;
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+}
+.big-group select {
+  width: 100%;
+  height: 38px;
+  background-color: #eaeaea;
+  border: none;
+  margin: 10px 0 0 0;
+  padding-left: 10px;
+}
+.toggle-line p{
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0px;
+    float: left;
+}
+.toggle-line small {
+  font-size: 12px;
+  color: #ae9962;
+  float: left;
+}
+.toggle-line button{
+    height: 50px;
+    border:none;
+    background-color: white;
+    padding-left: 0px;
+    cursor: pointer;
+}
+.toggle-line img{
+float: left;
+margin-right: 10px;
+}
+.next{
+    color: white;
+    background-color: #9D9D9C;
+    width: 40%;
+    height: 40px;
+    border: none;
+    margin: 20px 0 20px 0;
+    cursor: not-allowed;
+    font-size: 15px;
+}
+.next:hover{
+    background-color: rgb(131, 131, 129);
+}
+.active{
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    height: 40px;
+    border: none;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.active:hover{
+    background-color: rgb(20, 20, 20);
+}
+.check-group{
+   width: 75%;
+}
+.check-group input{
+    background-color: #ebebeb;
+    vertical-align: middle;
+}
+.check-group span {
+    display: block;
+  float: right;
+  text-align: left;
+  padding: 0;
+}
+.register {
+    background-color: #b8a063;
+    width: 100%;
+    color: white;
+    height: 40px;
+    border: none;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.register:hover{
+    background-color: #a38d54;
+}
+.last-p{
+    margin-top:-20px;
+    width: 70%;
+}

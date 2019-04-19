@@ -1,0 +1,51 @@
+.banner2 {
+  height: 430px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.banner-title2 {
+    position: relative;
+    top: 300px;
+    transition: none 0s ease 0s;
+}
+
+.banner2 h2 {
+  color: white;
+  font-size: 40px;
+  margin: 0 0 -40px;
+  font-family: proxima-nova;
+  font-weight: normal;
+}
+.banner2 span {
+  color: #d1c49c;
+  font-size: 40px;
+  margin: 0 0 -40px;
+  font-family: proxima-nova;
+  font-weight: normal;
+}
+.banner2 img{
+            position: relative;
+            top: 366px;
+            transition: none 0s ease 0s;
+            height: 20px;
+}
+.button{
+    padding: 9px 30px;
+    color: white;
+    background-color: #ae9962;
+}
+.button:hover {
+  color: white;
+  background-color: #ad8d3c;
+}
+.col-md-8 b{
+  color: black;
+}
+.col-md-8 a{
+  color: #d1c49c;
+}
+
+

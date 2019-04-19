@@ -1,0 +1,73 @@
+    .ImgFit {
+        height: 570px;
+        
+    }
+    .textOnPic{
+        position: absolute;
+        text-align: right;
+        top: 500;
+        right: 0;
+        margin-bottom: 100
+    }
+    .AboutDiscovery-header {
+      margin-top: 30px;
+      overflow: hidden;
+      height: auto;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 90px;
+      box-sizing: inherit;
+      font-family: proxima-nova,Open Sans,Gill Sans MT,Corbel,Helvetica Neue,Helvetica,Arial,sans-serif;
+      font-size: 1rem;
+      line-height: 2;
+      color: #373a3c;
+      font-weight: 300;
+    }
+
+    .content {
+      display: block;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-family: proxima-nova,Open Sans,Gill Sans MT,Corbel,Helvetica Neue,Helvetica,Arial,sans-serif;
+      line-height: 1.4;
+      color: #373a3c;
+      box-sizing: inherit;
+      text-align: justify ;
+      padding: 0 90px;
+      margin-bottom: 30px;
+      font-size: 23px;
+      margin-top: 0;
+      font-weight: 400;
+      margin-left: 5%;
+      margin-right: 5%;
+      
+    }
+
+    .AboutDiscovery-title {
+      width: 100%;
+      display: block;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+      font-weight: 400;
+      color: #373a3c;
+
+    }
+    .AboutDiscovery-scrollDown:focus, .AboutDiscovery-scrollDown:hover {
+      text-decoration: underline;
+      color: #ac9760;
+    }
+    
+    
+  .catalog{
+    background-color: rgb(218, 211, 211);
+    padding: 50px 0px;
+  }
+  .catalog img{ 
+    width: 80%;
+    margin-bottom: 50px;
+    align-items: center;
+  }

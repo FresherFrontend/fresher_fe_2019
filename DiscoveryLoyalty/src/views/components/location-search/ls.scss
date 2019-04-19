@@ -1,0 +1,135 @@
+@media all and (min-width:1024px) {
+    .search-btn {
+        display: none;
+    }
+}
+
+@media all and (min-width:768px) and (max-width:1024px) {
+    .ls-dropdown-content {
+        display: none;
+    }
+
+    .sc {
+        margin-top: 130px;
+        margin-left: 50px;
+    }
+
+    .h1 {
+        margin-left: 20px;
+    }
+}
+
+@media all and (min-width:420px) and (max-width:767px) {
+    .sc {
+        margin-top: 130px;
+        margin-left: 50px;
+    }
+    .ls-dropdown-content {
+        display: none;
+    }
+    .h1 {
+        margin-left: 20px;
+        font-size: 24px !important;
+        line-height: 1em !important;
+    }
+    .ls-search {
+        width: 100% !important;
+    }
+    .search-icon {
+        display: none;
+    }
+    .searchls::after { 
+        content: "Search";
+    }
+    .searchls {
+        font-size: 15px !important;
+        color: black !important;
+    }
+}
+
+@media all and (max-width:420px) {
+    .ls-dropdown-content {
+        display: none;
+    }
+    .h1 {
+        margin-left: 20px;
+        font-size: 24px !important;
+        line-height: 1em !important;
+    }
+    .ls-search {
+        width: 100% !important;
+    }
+    .search-icon {
+        display: none;
+    }
+    .searchls::after { 
+        content: "Search";
+    }
+    .searchls {
+        font-size: 15px !important;
+        color: black !important;
+    }
+}
+
+.search-btn {
+    color: #000;
+    background: 0 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;    
+}
+.ls-dropdown-content {
+    transition: .2s;
+}
+#body-search {
+    margin-top: 100px;
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin-bottom: 0;
+    color: black !important;
+}
+
+.filter {
+    display: none;
+}
+
+.ls-input {
+    width: 100%;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: normal;
+    padding: 11px 40px 5px 0px;
+    background-color: transparent;
+    width: 100%; 
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+}
+
+.ls-search {
+    margin-top: 20px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 4px;
+    background: #ebebeb;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3);
+    cursor: pointer;
+}
+.search-icon {
+    margin: 5px auto;
+    width: 100%;
+}
+
+.ls-search:hover {
+    background: #d2d1d1;
+}
+
+.show {display: block;}

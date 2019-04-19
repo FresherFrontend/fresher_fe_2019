@@ -1,0 +1,19 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - home
+
+block basicSeo
+  meta(name='description' content='home page')
+  meta(name='keywords', content='home, page')
+  meta(name='author' content='')
+
+block content
+
+  
+  //- Desktop page
+  include ../components/homepage/homepage.pug
+  include ../components/middle/middle.pug
+  include ../components/catalog/catalog.pug
+
+  section.page.home__page
