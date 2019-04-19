@@ -34,6 +34,9 @@ $height_hotels_des: 550px;
   height: 1px;
   top: 12px;
   background: $text-color-footer;
+  @include mobile{
+    width: 80%;
+  }
 }
 .explore {
   background: #f3f3f3 !important;
@@ -59,10 +62,16 @@ $height_hotels_des: 550px;
       &::before {
         @include before_after;
         left: -142px;
+        @include mobile{
+          left: -110px;
+        }
       }
       &::after {
         @include before_after;
         right: -142px;
+        @include mobile{
+          right: -110px;
+        }
       }
     }
   }
