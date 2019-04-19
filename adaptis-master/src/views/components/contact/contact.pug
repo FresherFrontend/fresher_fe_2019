@@ -5,16 +5,16 @@
     .content_contact
         p We’re always looking to meet and work with companies that have forwarded thinking views. Our team is a mixed bunch of strategists, designers, developers, analysts, with passionate and all-round nice people.
     .form_contact
-        form(action="", method="get", id="submit")
+        form(action="../agency/agency.pug", id="demo")
             .form_input
                 label First name*
-                input.firstname(type='text', name='firstname')
+                input.firstname(type='text', name='firstname', required)
             .form_input
                 label Last name*
-                input.firstname(type='text' name='lastname')
+                input.firstname(type='text' name='lastname', required)
             .form_input
                 label Email address*
-                input.firstname(type='email' name='email')
+                input.firstname(type='email' name='email', required)
             .form_input
                 label Company
                 input.firstname(type='text' name='company')
@@ -22,4 +22,5 @@
                 label Phone number
                 input.firstname(type='text' name='phone')
             .form_button
-                button(type='submit') SUBMIT
+                a(href="thanks")
+                    button SUBMIT

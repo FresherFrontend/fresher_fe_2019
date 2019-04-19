@@ -265,6 +265,9 @@
 }
 
 @include mobile{
+    .part2 .child1 .children1 {
+        margin: 0 50px 7% 0;
+    }
     .part2{
         .child7{
             margin: 0 auto;

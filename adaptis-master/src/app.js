@@ -4,6 +4,7 @@ import Header from './views/components/header/header';
 import Slider from './views/components/slider/slider';
 import Hover from './views/components/thework/thework';
 import Wow from './views/components/wow/wow';
+// import Form from './views/components/contact/contact';
 require('normalize.css');
 require('slick-carousel');
 require('../src/assets/scripts/snake');
@@ -28,6 +29,7 @@ $(document).ready(() => {
   Wow.useWow();
   Slider.showSlider();
   Hover.hoverDir();
+  // Form.submitForm();
 });
 
 $(window).on('resize', () => {
