@@ -97,7 +97,6 @@ window.onload = () => {
   Header.selectChildren();
   Header.selectAge();
   Header.selectTypeCode();
-  Mapbox.view();
   Header.scrollTopHeader();
   Header.showBooking();
   Header.showMenu();
@@ -105,4 +104,7 @@ window.onload = () => {
   Header.selectLanguage()
   Header.check();
   Header.selectDate();
+  if(document.querySelector('.map') && document.querySelector('.map')==null){
+  Mapbox.view();
+  }
 };
