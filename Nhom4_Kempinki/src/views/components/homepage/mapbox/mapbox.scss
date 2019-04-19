@@ -1,6 +1,8 @@
 .mapboxgl-map{
     height: 550px;
     background: #E5E3DF;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 40px;
     &:before {
         content: '';
@@ -41,6 +43,14 @@
     .mapboxgl-popup{
         max-width: 600px;
         .mapboxgl-popup-content{
+            @include mobile{
+                width: 90%;
+                margin: 0 auto;  
+            }
+            @include max-xs{
+                height: 200px;
+                overflow: auto;
+            }
             .block-info{
                 padding: 15px;
                 .info-title{
@@ -56,18 +66,36 @@
                 .info-content{
                     display: flex;
                     flex-wrap: wrap;
+                    @include max-xs{
+                        flex-direction: column;
+                    }
                     .img-cover{
                         width: 240px;
                         min-width: 240px;
                         margin-right: 30px;
                         margin-bottom: 15px;
+                        @include max-xs{
+                            width: 100%;
+                            position: relative;
+                            padding-top: 56.65%;
+                        }
                         img.avatar{
                             width: 100%;
+                            @include max-xs{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 100%;
+                                object-fit: cover;
+                            }
                         }
                     }
                     .descripton{
                         line-height: 1.6;
                         flex: 1;
+                        @include max-xs{
+                            padding-right: 15px;
+                        }
                         p{
                             font-family: $font-arial;
                             font-size: 12px;

@@ -162,12 +162,22 @@ const Header = {
         "text": "12"
       },
     ]
-    $('.ageChildren').select2({
-      data: data,
-      minimumResultsForSearch: Infinity,
-      dropdownAutoWidth: true,
-    }).data('select2').$dropdown.addClass('my-container');
+    if($('.ageChildren').length != 0){
+      $('.ageChildren').select2({
+        data: data,
+        minimumResultsForSearch: Infinity,
+        dropdownAutoWidth: true,
+      }).data('select2').$dropdown.addClass('my-container');
+    }
+    else{
+        $('.ageChildren').select2({
+          data: data,
+          minimumResultsForSearch: Infinity,
+          dropdownAutoWidth: true,
+        });
+    }
   },
+
   selectChildren: () => {
     let data = [
       {
@@ -293,7 +303,6 @@ const Header = {
       },
       onSelect: function() {
         var checkIn = this.getMoment().format('ll');
-        document.getElementById('check-out').value = checkIn;
     }
     });
     var a = field.parentNode;
@@ -347,8 +356,14 @@ const Header = {
   },
   scrollTopHeader: () => {
     const offsetTop = document.querySelector('.booking-block').offsetTop - 20;
-    window.addEventListener("scroll", function(){
-        if(window.scrollY > offsetTop){
+    if(offsetTop <= 0){
+          document.querySelector('.booking-block').classList.remove('fixed');
+          document.querySelector('.menu-left').classList.remove('fixed');
+          document.querySelector('.sticky-bar-mobile').classList.remove('show-up');
+    }
+    else{
+      window.addEventListener("scroll", function(){
+        if(window.scrollY >= offsetTop){
           document.querySelector('.booking-block').classList.add('fixed');
           document.querySelector('.menu-left').classList.add('fixed');
           document.querySelector('.sticky-bar-mobile').classList.add('show-up');
@@ -369,6 +384,7 @@ const Header = {
         $('.numberOfRoom').select2('close')
         $('.ageChildren ').select2('close')
     })
+    }
     var scrollTo = document.querySelectorAll('.content.overlay .text')
     scrollTo.forEach(function (elem) {
       elem.addEventListener('click', function(){
@@ -389,17 +405,21 @@ const Header = {
     }
   },
   clickButton: () => {
-    document.querySelector('.search.submit').addEventListener('click', function(){
-      let formSearchHotel  = document.querySelector('.form-search-hotel').value;
-      let checkIn = document.getElementById('check-in').value;
-      let checkOut = document.getElementById('check-out').value;
-      if(formSearchHotel == 'Where would you like to go?' || formSearchHotel == ''){
-        document.querySelector('.block-location .error-msg').style.display = 'block';
-      }
-      if(checkIn == '' || checkOut ==''){
-        document.querySelector('.block-picker .error-msg').style.display = 'block';
-      }
-    })
+    let elem = document.querySelectorAll('.btn-search');
+    elem.forEach(function (elem){
+      elem.addEventListener('click', function(){
+        let formSearchHotel  = document.querySelector('.form-search-hotel').value;
+        let checkIn = document.getElementById('check-in').value;
+        let checkOut = document.getElementById('check-out').value;
+        if(formSearchHotel == 'Where would you like to go?' || formSearchHotel == ''){
+          document.querySelector('.block-location .error-msg').style.display = 'block';
+        }
+        if(checkIn == '' || checkOut ==''){
+          document.querySelector('.block-picker .error-msg').style.display = 'block';
+        }
+      })
+    });
+
     document.querySelector('.show-sm-booking-block .container').addEventListener('click',function(){
       document.querySelector('.booking-block').classList.add('active');
       document.querySelector('.booking-block').style.overflow = 'visible';
@@ -413,6 +433,19 @@ const Header = {
     document.querySelector('.top-header .loginLink').addEventListener('click', function(){
         document.querySelector('.account-widget-desktop').classList.toggle('show-up');
     })
+    let viewSubMenu = document.querySelectorAll('.side-list-lv-1 .icon-angle-down');
+
+    viewSubMenu.forEach(function (elem) {
+      elem.addEventListener('click',function(){
+        this.parentElement.querySelector('.sub-menu').classList.toggle('d-block');
+        document.querySelector('.menu-left').classList.toggle('big-width');
+      })  
+    });
+
+    document.querySelector('.navigation-only-phone .dropdown').addEventListener('click', function(){
+      document.querySelector('.navigation-only-phone .dropdown-menu-block').classList.toggle('d-block');
+      console.log('ok')
+    });
   },
   check: () => {
     setInterval(function(){
@@ -423,6 +456,7 @@ const Header = {
         document.querySelector('.block-picker .error-msg').style.display = 'none';
       }
   }, 3000);
+ 
   }
 };
 

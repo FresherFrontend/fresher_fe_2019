@@ -2,7 +2,7 @@ header
     .top-header
         .container
             .row.mx-0
-                .top-logo.col-xs-12.col-md-3.middle-xs.center-xs
+                .top-logo.col-xs-12.col-md-3.middle-xs
                     .logo
                         a(href="/", title="logo")
                             img(src= ("../../../assets/images/logo.png"), alt="Kempinski Logo")
@@ -77,6 +77,7 @@ header
                     each list in menus
                         li.side-list-lv-1
                             a(href=list.link)= list.text
+                            span.icon-angle-down
                             if list.submenu
                                 ul.sub-menu
                                     each listSub in list.submenu
@@ -85,13 +86,14 @@ header
                 ul.navigation-only-phone
                     li.multy-language
                         .dropdown.open
-                            span.dropdown-toggle.icon-angle-down
+                            span.dropdown-toggle
                                 span.content English
+                                span.icon-angle-down
                             .dropdown-menu-block.center-xs
                                 include ../../mixins/list.pug
                                 +list('dropdown-menu', 'العربية', 'español', 'français', 'русский', '中文', 'Deutsch')
                     li.login-wrapper
-                        a(title="Login", href="#") resgiter
+                        a(title="Login", href="#") Login
                     li.resgiter-wrapper
                         a(title="Resgiter", href="#") Resgiter
                     
@@ -129,7 +131,7 @@ header
                                     option(value=value)= value
                         .form-group.guest-select
                             select.numberOfRoom(nam="NumberOfRoom")
-                            button.search.submit(type="text") Search
+                            button.btn-search(type="submit") Search
                         .collapse-advanced
                             .row-select
                                 .num-adult
@@ -140,6 +142,7 @@ header
                                 span.title Age of Children
                                 .block-list-children
                 .block-option
+                    .title Option
                     .row
                         .type-code-block
                             select#CodeType(name="CodeType")
@@ -148,6 +151,7 @@ header
                         .block.promo-block
                             input(type="text", placeholder="Promotion Code", name="PromotionCode", id="PromotionCode")
                         a(href="#" data-target="#partner-destination-modal" data-toggle="modal" class="partner-info-modal-trigger") Partner Destinations
+                    button.btn-search(type="submit") Search
             .show-sm-booking-block
                 .container
                     span Where would you like to go?

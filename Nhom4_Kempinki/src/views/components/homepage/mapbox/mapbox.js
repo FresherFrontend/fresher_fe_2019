@@ -1,3 +1,4 @@
+
 const Mapbox = {
     view: () => {
         var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
@@ -9,6 +10,7 @@ const Mapbox = {
             zoom: 2.1   
         });
         map.scrollZoom.disable();
+        map.addControl(new mapboxgl.FullscreenControl());
         map.on('load', function () {
           map.addLayer({
             "id": "symbols",
@@ -135,7 +137,7 @@ const Mapbox = {
             map.on('mouseleave', 'symbols', function () {
               map.getCanvas().style.cursor = '';
             });
-      });      
+      });     
     }
 }
 export default Mapbox;

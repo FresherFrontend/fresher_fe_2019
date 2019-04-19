@@ -44,6 +44,11 @@
         @content;
     }
 }
+@mixin max-xs {
+    @media screen and (max-width: #{breakpoints(xs)}) {
+        @content;
+    }
+}
 
 @mixin min-xxs {
     @media screen and (max-width: #{breakpoints(xxs)}) {

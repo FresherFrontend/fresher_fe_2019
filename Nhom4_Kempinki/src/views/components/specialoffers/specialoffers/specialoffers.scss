@@ -25,6 +25,9 @@
         margin-bottom: 45px;
         .control-label{
             font-size: 13px;
+            @include min-xxs{
+                font-size: 11px;
+            }
         }
         .col-region{
             padding-left: 0;
@@ -187,6 +190,9 @@
                 width: 100%;
                 @include mobile{
                     padding: 17px;
+                }
+                @include min-xxs{
+                    padding: 4px;
                 }
             }
             p.hotel-name{

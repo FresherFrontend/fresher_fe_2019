@@ -37,7 +37,15 @@ $(() => {
   Header.selectTypeCode();
   Header.scrollTopHeader();
   Header.showBooking();
+  Header.selectDate();
   Header.showMenu();
+  Header.check();
+  Header.clickButton();
+  AboutUs.Slider_owl2();
+  SpecialOffers2.filterOffers();
+  SpecialOffers2.activeLiAndFilter();
+  SpecialOffers2.loadMore();
+  SpecialOffers2.stickyMenu();
 
 });
 
@@ -63,12 +71,12 @@ $(document).ready(() => {
   Header.selectAdult();
   Header.selectChildren();
   Header.selectAge();
-  Header.scrollTopHeader();
   Header.selectTypeCode();
+  Header.scrollTopHeader();
   Header.showBooking();
-  Header.check();
   Header.showMenu();
-
+  Header.check();
+  Header.clickButton();
 });
 
 $(window).on('resize', () => {
@@ -79,13 +87,18 @@ $(window).on('resize', () => {
 });
 
 window.onload = () => {
+  Header.selectHotel();
+  Header.selectRoom();
+  Header.selectAdult();
+  Header.selectChildren();
+  Header.selectAge();
   Header.selectTypeCode();
-  Header.selectLanguage();
-  Header.selectDate();
   Mapbox.view();
+  Header.selectLanguage()
   Header.scrollTopHeader();
   Header.showBooking();
   Header.showMenu();
   Header.clickButton();
   Header.check();
+  Header.selectDate();
 };
