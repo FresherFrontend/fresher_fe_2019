@@ -104,7 +104,7 @@ window.onload = () => {
   Header.selectLanguage()
   Header.check();
   Header.selectDate();
-  if(document.querySelector('.map') && document.querySelector('.map')==null){
-  Mapbox.view();
+  if(document.querySelector('.map') || document.querySelector('.map')==null){
+    Mapbox.view();
   }
 };
