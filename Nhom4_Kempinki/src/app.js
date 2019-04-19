@@ -41,6 +41,7 @@ $(() => {
   Header.showMenu();
   Header.check();
   Header.clickButton();
+  Header.selectLanguage();
   AboutUs.Slider_owl2();
   SpecialOffers2.filterOffers();
   SpecialOffers2.activeLiAndFilter();
@@ -52,6 +53,7 @@ $(() => {
   olapic.olapic_fancybox();
   olapic.olapic_fillter();
   olapic.filter_event();
+
 });
 
 $(document).ready(() => {
@@ -78,6 +80,7 @@ $(document).ready(() => {
   Header.showMenu();
   Header.check();
   Header.clickButton();
+  Header.selectLanguage();
 });
 
 $(window).on('resize', () => {
@@ -95,11 +98,11 @@ window.onload = () => {
   Header.selectAge();
   Header.selectTypeCode();
   Mapbox.view();
-  Header.selectLanguage()
   Header.scrollTopHeader();
   Header.showBooking();
   Header.showMenu();
   Header.clickButton();
+  Header.selectLanguage()
   Header.check();
   Header.selectDate();
 };
