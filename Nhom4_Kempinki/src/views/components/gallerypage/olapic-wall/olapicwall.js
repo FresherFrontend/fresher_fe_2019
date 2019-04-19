@@ -50,7 +50,7 @@ const olapic = {
         });
     },
     filter_event: ()=>{
-        $('.olapic-desktop li a').click(function(event) {
+        $('.olapic-desktop li').click(function(event) {
             event.preventDefault();
             var category = $(this).data('filter');
             if(category == '.viewall'){

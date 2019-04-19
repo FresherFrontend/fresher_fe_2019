@@ -214,7 +214,7 @@
             float: inherit;
           }
           overflow: hidden;
-          padding: 5px;
+          margin: 5px;
           @include mobile{
             margin: 5px;
             padding: 0;
@@ -254,10 +254,10 @@
           }
         }
         .full{
-          width: 25%;
+          width: 24%;
           height: 300px;
           @include max-md{
-            width: 50%;
+            width: 48%;
             height: 450px;
           }
           @include mobile{
@@ -272,10 +272,10 @@
           // height: 45%;
         }
         .notful{
-          width: 25%;
+          width: 24%;
           height: 300px;
           @include max-md{
-            width: 50%;
+            width: 48%;
             height: 450px;
           }
           @include mobile{
