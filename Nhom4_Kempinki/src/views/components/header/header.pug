@@ -72,7 +72,7 @@ header
         .menu-left
             .menu-left-content.delay
                 span.menu-title Overview
-                - var menus = [{text: 'special offers', link: '/special-offers', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}] }, {text: '#Kempinski Gallery', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}], link: '/guest-gallery'  }, {text: 'about us', link: '/about-us'}];
+                - var menus = [{text: 'special offers', link: '/special-offers', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}] }, {text: '#Kempinski Gallery', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}], link: '/guest-gallery'  }, {text: 'about us', link: '/about-us', submenu: [{text: 'sub-2-1', link: '###'}, {text: 'sub-2-2', link: '###'}]}];
                 ul.side-menu
                     each list in menus
                         li.side-list-lv-1

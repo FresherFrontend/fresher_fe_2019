@@ -42,7 +42,6 @@ $(() => {
   Header.check();
   Header.clickButton();
   Header.selectLanguage();
-  AboutUs.Slider_owl2();
   SpecialOffers2.filterOffers();
   SpecialOffers2.activeLiAndFilter();
   SpecialOffers2.loadMore();
@@ -53,7 +52,7 @@ $(() => {
   olapic.olapic_fancybox();
   olapic.olapic_fillter();
   olapic.filter_event();
-
+  AboutUs.Slider_owl2();
 });
 
 $(document).ready(() => {
@@ -68,7 +67,6 @@ $(document).ready(() => {
   SpecialOffers2.wowJS();
   SpecialOffers2.filterOffers();
   SpecialOffers2.loadMore();
-  AboutUs.Slider_owl2();
   Header.selectHotel();
   Header.selectRoom();
   Header.selectAdult();
@@ -81,6 +79,7 @@ $(document).ready(() => {
   Header.check();
   Header.clickButton();
   Header.selectLanguage();
+  AboutUs.Slider_owl2();
 });
 
 $(window).on('resize', () => {
@@ -101,10 +100,8 @@ window.onload = () => {
   Header.showBooking();
   Header.showMenu();
   Header.clickButton();
-  Header.selectLanguage()
+  Header.selectLanguage();
   Header.check();
   Header.selectDate();
-  if(document.querySelector('.map') || document.querySelector('.map')==null){
-    Mapbox.view();
-  }
+  Mapbox.view();
 };
