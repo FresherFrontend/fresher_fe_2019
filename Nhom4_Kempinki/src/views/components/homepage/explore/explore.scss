@@ -82,9 +82,13 @@ $height_hotels_des: 550px;
         top: 420%;
         opacity: 0;
         z-index: 1;
+        @include mobile{
+          opacity: 1;
+          top: 370% !important;
+        }
         @include max-md{
           opacity: 1;
-          top: 370%;
+          top: 420%;
         }
       }
       > .slick-next {
@@ -94,11 +98,11 @@ $height_hotels_des: 550px;
         z-index: 1;
         @include mobile{
           right: 70px;
-          top: 370%;
+          top: 370% !important;
         }
         @include max-md{
           opacity: 1;
-          top: 370%;
+          top: 420%;
         }
       }
       @include button;
@@ -188,12 +192,18 @@ $height_hotels_des: 550px;
         &:hover {
           .slick-next {
             opacity: 1;
+            @include max-md{
+              display: none;
+            }
             @include mobile{
               display: none;
             }
           }
           .slick-prev {
             opacity: 1;
+            @include max-md{
+              display: none;
+            }
             @include mobile{
               display: none;
             }
@@ -209,6 +219,9 @@ $height_hotels_des: 550px;
             top: 25%;
             opacity: 0;
           }
+          @include device{
+            top: 25%;
+          }
           @include max-md{
             top: 25%;
             opacity: 0;
@@ -222,6 +235,9 @@ $height_hotels_des: 550px;
           @include max-md{
             top: 25%;
             opacity: 0;
+          }
+          @include device{
+            top: 25%;
           }
           @include mobile {
             top: 25% ;
